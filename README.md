@@ -1,2 +1,2 @@
-# veusz-plotting
+# veusz
 github pages repository
