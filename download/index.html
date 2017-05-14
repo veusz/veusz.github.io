@@ -4,7 +4,10 @@ title: Download Veusz
 ---
 
 {% assign ver = site.data.release["release"] %}
-{% assign dlroot = "http://download.gna.org/veusz" %}
+
+{% capture dlroot %}
+https://github.com/veusz/veusz/releases/download/veusz-{{ver}}
+{% endcapture %}
 
 <div class="blurb">
   <h1>{{ page.title }}</h1>
@@ -13,23 +16,23 @@ title: Download Veusz
   <p>Latest version is {{ver}} (see <a href="/releasenotes/{{ver}}.txt">release notes</a>)</p>
   <ul>
     <li>
-      <a href="{{dlroot}}/Binaries-Windows/veusz-{{ver}}-windows-setup.exe">Latest Windows binary</a>
-      (<a href="{{dlroot}}/Binaries-Windows/veusz-{{ver}}-windows-setup.exe.sig">GPG/PGP signature</a>)
+      <a href="{{dlroot}}/veusz-{{ver}}-windows-setup.exe">Latest Windows binary</a>
+      (<a href="{{dlroot}}/veusz-{{ver}}-windows-setup.exe.sig">GPG/PGP signature</a>)
     </li>
     <li>
-      <a href="{{dlroot}}/Binaries-AppleOSX/veusz-{{ver}}-AppleOSX.dmg">Latest Mac OS X binary</a>
-      (<a href="{{dlroot}}/Binaries-AppleOSX/veusz-{{ver}}-AppleOSX.dmg.sig">GPG/PGP signature</a>)
+      <a href="{{dlroot}}/veusz-{{ver}}-AppleOSX.dmg">Latest Mac OS X binary</a>
+      (<a href="{{dlroot}}/veusz-{{ver}}-AppleOSX.dmg.sig">GPG/PGP signature</a>)
     </li>
     <li>
-      <a href="{{dlroot}}/Binaries-Linux-i386/veusz-{{ver}}-linux-i386.tar.gz">Latest Linux binary</a>
-      (<a href="{{dlroot}}/Binaries-Linux-i386/veusz-{{ver}}-linux-i386.tar.gz.sig">GPG/PGP signature</a>)
+      <a href="{{dlroot}}/veusz-{{ver}}-linux-i386.tar.gz">Latest Linux binary</a>
+      (<a href="{{dlroot}}/veusz-{{ver}}-linux-i386.tar.gz.sig">GPG/PGP signature</a>)
     </li>
     <li>
       <a href="{{dlroot}}/veusz-{{ver}}.tar.gz">Latest source code</a> with <a href="/releasenotes/{{ver}}-install.txt">install notes</a>
       (<a href="{{dlroot}}/veusz-{{ver}}.tar.gz.sig">GPG/PGP signature</a>)
       or on <a href="https://pypi.python.org/pypi/veusz/">PyPI</a>
     </li>
-    <li><a href="{{dlroot}}/">All downloads</a></li>
+    <li><a href="https://github.com/veusz/veusz/releases">All recent releases</a></li>
   </ul>
 
   <p>
