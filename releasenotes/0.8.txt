@@ -1,0 +1,88 @@
+Veusz 0.8
+---------
+Velvet Ember Under Sky Zenith
+-----------------------------
+http://home.gna.org/veusz/
+
+Veusz is Copyright (C) 2003-2005 Jeremy Sanders <jeremy@jeremysanders.net>
+Licenced under the GPL (version 2 or greater)
+
+Veusz is a scientific plotting package written in Python (currently
+100% Python). It uses PyQt for display and user-interfaces, and
+numarray for handling the numeric data. Veusz is designed to produce
+publication-ready Postscript output.
+
+Veusz provides a GUI, command line and scripting interface (based on
+Python) to its plotting facilities. The plots are built using an
+object-based system to provide a consistent interface.
+
+Changes from 0.7:
+ Please refer to ChangeLog for all the changes.
+ Highlights include:
+  * Datasets can be linked together with expressions
+  * SVG export
+  * Edit/Copy/Cut support of widgets
+  * Pan image with mouse
+  * Click on graph to change settings
+  * Lots of UI improvements
+
+Features of package:
+ * X-Y plots (with errorbars)
+ * Images (with colour mappings)
+ * Stepped plots (for histograms)
+ * Line plots
+ * Function plots
+ * Fitting functions to data
+ * Stacked plots and arrays of plots
+ * Plot keys
+ * Plot labels
+ * LaTeX-like formatting for text
+ * EPS output
+ * Simple data importing
+ * Scripting interface
+ * Save/Load plots
+ * Dataset manipulation
+ * Embed Veusz within other programs
+
+To be done:
+ * Contour plots
+ * UI improvements
+ * Import filters (for qdp and other plotting packages, fits, csv)
+
+Requirements:
+ Python (probably 2.3 or greater required)
+   http://www.python.org/
+ Qt (free edition)
+   http://www.trolltech.com/products/qt/  
+ PyQt (SIP is required to be installed first)
+   http://www.riverbankcomputing.co.uk/pyqt/
+   http://www.riverbankcomputing.co.uk/sip/
+ numarray
+   http://www.stsci.edu/resources/software_hardware/numarray
+ Microsoft Core Fonts (recommended)
+   http://corefonts.sourceforge.net/
+ PyFITS (optional)
+   http://www.stsci.edu/resources/software_hardware/pyfits
+
+For documentation on using Veusz, see the "Documents" directory. The
+manual is in pdf, html and text format (generated from docbook).
+
+If you enjoy using Veusz, I would love to hear from you. Please join
+the mailing lists at
+
+https://gna.org/mail/?group=veusz
+
+to discuss new features or if you'd like to contribute code. The
+newest code can always be found in CVS.
+
+If non GPL projects are interested in using Veusz code, please contact
+me. I am happy to consider relicencing code for other free projects,
+if I am legally allowed to do so.
+
+Cheers
+
+Jeremy
+
+-------------------------------------------------------------------------------
+$Id: 0.8.txt,v 1.1 2005/10/20 19:27:41 jeremysanders Exp $
+ 

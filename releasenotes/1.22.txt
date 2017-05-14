@@ -1,0 +1,143 @@
+Veusz 1.22
+----------
+http://home.gna.org/veusz/
+
+Veusz is a scientific plotting package.  It is designed to produce
+publication-ready Postscript, PDF or SVG output. Graphs are built-up
+by combining plotting widgets. The user interface aims to be simple,
+consistent and powerful.
+
+Veusz provides GUI, Python module, command line, scripting, DBUS and
+SAMP interfaces to its plotting facilities. It also allows for
+manipulation and editing of datasets. Data can be captured from
+external sources such as Internet sockets or other programs.
+
+Changes in 1.22:
+ * Add option to ignore white space following delimiters when importing CSVs
+ * Allow x/yedge and x/ycent to be inverted to change data order
+   when import 2D data
+ * Rewrite of widget tree internals to fix miscellaneous bugs
+ * Optionally use astropy for SAMP
+ * Add setting to extend the python import path
+ * Add option to select widgets with same name on page
+ * Resize rectangular shapes keeping other corners fixed. Old symmetric
+   resize behaviour is retained if shift is pressed.
+
+Bug fixes
+ * Fix faulty caching of datasets expressions
+ * Do not auto mirror axes if shared axis placed in grid and ignore
+   other hidden axes for mirroring purposes
+ * gridatedge 2D import option inverts values in rows
+ * y values for 2D datasets in data edit dialog are inverted
+ * Fix crash when constructing 2D dataset with constants
+ * Fix crash when interpreting date values with unicode
+ * Fix for crash when moving ellipses on broken axes
+ * Fix crash when editing datetime data
+ * Fix crash when renaming 2D datasets in dataset editor
+ * If 2d dataset does not exist, don't crash when using colorbar
+ * Ignore HDF5 data types which are not supported by h5py
+ * Catch recursion limit errors properly
+ * In sort and text sort plugins, clip length to minimum
+ * Do not plot functions with more than 1D in function plotter
+ * Catch error for shapes widgets with no coordinates
+ * Handle zero length datasets in subtract minimum or mean
+ * Clip range of zoom between 0.05 and 20x
+ * Catch errors in CSV date format
+ * Do not allow 2D datasets to be used for labels in label widget
+ * Handle unicode data correctly in clipboard data
+ * Fix data import dialog for fits files in unicode paths
+
+Features of package:
+ Plotting features:
+  * X-Y plots (with errorbars)
+  * Line and function plots
+  * Contour plots
+  * Images (with colour mappings and colorbars)
+  * Stepped plots (for histograms)
+  * Bar graphs
+  * Vector field plots
+  * Box plots
+  * Polar plots
+  * Ternary plots
+  * Plotting dates
+  * Fitting functions to data
+  * Stacked plots and arrays of plots
+  * Nested plots
+  * Plot keys
+  * Plot labels
+  * Shapes and arrows on plots
+  * LaTeX-like formatting for text
+  * Multiple axes
+  * Axes with steps in axis scale (broken axes)
+  * Axis scales using functional forms
+  * Plotting functions of datasets
+ Input and output:
+  * EPS/PDF/PNG/SVG/EMF export
+  * Dataset creation/manipulation
+  * Embed Veusz within other programs
+  * Text, HDF5, CSV, FITS, NPY/NPZ, QDP, binary and user-plugin importing
+  * Data can be captured from external sources
+ Extending:
+  * Use as a Python module
+  * User defined functions, constants and can import external Python functions
+  * Plugin interface to allow user to write or load code to
+     - import data using new formats
+     - make new datasets, optionally linked to existing datasets
+     - arbitrarily manipulate the document
+  * Scripting interface
+  * Control with DBUS and SAMP
+ Other features:
+  * Data picker
+  * Interactive tutorial
+  * Multithreaded rendering
+
+Requirements for source install:
+ Python 2.x (2.6 or greater required) or 3.x (3.3 or greater required)
+   http://www.python.org/
+ Qt >= 4.6 (free edition)
+   http://www.trolltech.com/products/qt/
+ PyQt >= 4.5 (SIP is required to be installed first)
+   http://www.riverbankcomputing.co.uk/software/pyqt/
+   http://www.riverbankcomputing.co.uk/software/sip/
+ numpy >= 1.0
+   http://numpy.scipy.org/
+
+Optional requirements:
+ h5py (optional for HDF5 support)
+   http://www.h5py.org/
+ astropy >= 0.2 or PyFITS >= 1.1 (optional for FITS import)
+   http://www.stsci.edu/resources/software_hardware/pyfits
+   http://www.astropy.org/
+ pyemf >= 2.0.0 (optional for EMF export)
+   http://pyemf.sourceforge.net/
+ PyMinuit >= 1.1.2 (optional improved fitting)
+   http://code.google.com/p/pyminuit/
+ dbus-python, for dbus interface
+   http://dbus.freedesktop.org/doc/dbus-python/
+ astropy (optional for VO table import)
+   http://www.astropy.org/
+ SAMPy or astropy >= 0.4 (optional for SAMP support)
+   http://pypi.python.org/pypi/sampy/
+
+Veusz is Copyright (C) 2003-2014 Jeremy Sanders <jeremy@jeremysanders.net>
+ and contributors.
+It is licenced under the GPL (version 2 or greater).
+
+For documentation on using Veusz, see the "Documents" directory. The
+manual is in PDF, HTML and text format (generated from docbook). The
+examples are also useful documentation. Please also see and contribute
+to the Veusz wiki: https://github.com/jeremysanders/veusz/wiki
+
+Issues with the current version:
+
+  * Due to a bug in the Qt XML processing, some MathML elements
+    containing purely white space (e.g. thin space) will give an error.
+
+If you enjoy using Veusz, we would love to hear from you. Please join
+the mailing lists at
+
+https://gna.org/mail/?group=veusz
+
+to discuss new features or if you'd like to contribute code. The
+latest code can always be found in the Git repository
+at https://github.com/jeremysanders/veusz.git.

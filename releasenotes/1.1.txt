@@ -1,0 +1,80 @@
+Veusz 1.1
+---------
+Velvet Ember Under Sky Zenith
+-----------------------------
+http://home.gna.org/veusz/
+
+Veusz is Copyright (C) 2003-2008 Jeremy Sanders <jeremy@jeremysanders.net>
+Licenced under the GPL (version 2 or greater).
+
+Veusz is a scientific plotting package written in Python, using PyQt4
+for display and user-interfaces, and numpy for handling the numeric
+data. Veusz is designed to produce publication-ready Postscript/PDF
+output. The user interface aims to be simple, consistent and powerful.
+
+Veusz provides a GUI, command line, embedding and scripting interface
+(based on Python) to its plotting facilities. It also allows for
+manipulation and editing of datasets.
+
+Feature changes from 1.0:
+ * Axes autoscale when plotting functions
+ * Labels can be dragged around on plots
+ * More marker symbols
+ * SVG export of plots
+
+ * The point plotting and axis range code has been rewritten.
+ * Includes quite a few minor bugfixes
+ 
+Features of package:
+ * X-Y plots (with errorbars)
+ * Line and function plots
+ * Contour plots
+ * Images (with colour mappings and colorbars)
+ * Stepped plots (for histograms)
+ * Fitting functions to data
+ * Stacked plots and arrays of plots
+ * Plot keys
+ * Plot labels
+ * LaTeX-like formatting for text
+ * EPS/PDF/PNG export
+ * Scripting interface
+ * Dataset creation/manipulation
+ * Embed Veusz within other programs
+ * Text, CSV and FITS importing
+
+Requirements:
+ Python (2.3 or greater required)
+   http://www.python.org/
+ Qt >= 4.3 (free edition)
+   http://www.trolltech.com/products/qt/  
+ PyQt >= 4.3 (SIP is required to be installed first)
+   http://www.riverbankcomputing.co.uk/pyqt/
+   http://www.riverbankcomputing.co.uk/sip/
+ numpy >= 1.0
+   http://numpy.scipy.org/
+ Microsoft Core Fonts (recommended for nice output)
+   http://corefonts.sourceforge.net/
+ PyFITS >= 1.1 (optional for FITS import)
+   http://www.stsci.edu/resources/software_hardware/pyfits
+
+For documentation on using Veusz, see the "Documents" directory. The
+manual is in pdf, html and text format (generated from docbook).
+
+Issues:
+ * Can be very slow to plot large datasets if antialiasing is enabled.
+   Right click on graph and disable antialias to speed up output.
+ * The embedding interface appears to crash on exiting.
+
+If you enjoy using Veusz, I would love to hear from you. Please join
+the mailing lists at
+
+https://gna.org/mail/?group=veusz
+
+to discuss new features or if you'd like to contribute code. The
+latest code can always be found in the SVN repository.
+
+Jeremy Sanders
+
+-------------------------------------------------------------------------------
+$Id: README 748 2008-10-01 19:49:35Z jeremysanders $
+ 

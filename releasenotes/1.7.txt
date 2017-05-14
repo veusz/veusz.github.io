@@ -1,0 +1,117 @@
+Veusz 1.7
+---------
+Velvet Ember Under Sky Zenith
+-----------------------------
+http://home.gna.org/veusz/
+
+Veusz is Copyright (C) 2003-2010 Jeremy Sanders <jeremy@jeremysanders.net>
+Licenced under the GPL (version 2 or greater).
+
+Veusz is a Qt4 based scientific plotting package. It is written in
+Python, using PyQt4 for display and user-interfaces, and numpy for
+handling the numeric data. Veusz is designed to produce
+publication-ready Postscript/PDF/SVG output. The user interface aims
+to be simple, consistent and powerful.
+
+Veusz provides a GUI, command line, embedding and scripting interface
+(based on Python) to its plotting facilities. It also allows for
+manipulation and editing of datasets. Data can be captured from
+external sources such as internet sockets or other programs.
+
+Changes in 1.7:
+ * Widgets can be moved by dragged and dropped in the widget tree, or copied
+   by holding down ctrl at the same time
+ * Tick labels are centred if possible at the start and ends of axes
+ * When putting graphs in grid, axis labels and tick labels are placed
+   in much better positions
+ * Embedding module is shipped in binary versions
+ * Grid lines can be drawn on axis minor ticks
+ * Contour widget can draw minor (dotted) contours between main contours
+ * Logarithmic contours have proper logarithmic spacing
+ * Fixes for widget names and dataset names with Unicode characters, including
+   copy and paste
+ * Optional smoothing in the image widget
+
+Minor changes:
+ * Errors in evaluating expressions are logged in the console window, and
+   do not show exceptions
+ * Fix problems when importing multiple symbols from python modules in the
+   custom import dialog
+ * Use minus sign for negative numbers in tick labels, rather than hyphens
+ * Contour widget lines can have transparency
+ * Datasets are sorted by name when writing to saved document
+ * Use correct status for paste button when starting application
+ * Add option for extra space between axes and tick labels, and axis labels
+ * Preference added for background color of exported bitmaps
+ * Add IsClosed() and WaitForClose() embedding functions to check whether plot
+   window is closed, or to wait for closing of plot window.
+
+Features of package:
+ * X-Y plots (with errorbars)
+ * Line and function plots
+ * Contour plots
+ * Images (with colour mappings and colorbars)
+ * Stepped plots (for histograms)
+ * Bar graphs
+ * Plotting dates
+ * Fitting functions to data
+ * Stacked plots and arrays of plots
+ * Plot keys
+ * Plot labels
+ * Shapes and arrows on plots
+ * LaTeX-like formatting for text
+ * EPS/PDF/PNG/SVG/EMF export
+ * Scripting interface
+ * Dataset creation/manipulation
+ * Embed Veusz within other programs
+ * Text, CSV and FITS importing
+ * Data can be captured from external sources
+ * User defined functions, constants and can import external Python functions
+
+Requirements for source install:
+ Python (2.4 or greater required)
+   http://www.python.org/
+ Qt >= 4.3 (free edition)
+   http://www.trolltech.com/products/qt/  
+ PyQt >= 4.3 (SIP is required to be installed first)
+   http://www.riverbankcomputing.co.uk/pyqt/
+   http://www.riverbankcomputing.co.uk/sip/
+ numpy >= 1.0
+   http://numpy.scipy.org/
+
+Optional:
+ Microsoft Core Fonts (recommended for nice output)
+   http://corefonts.sourceforge.net/
+ PyFITS >= 1.1 (optional for FITS import)
+   http://www.stsci.edu/resources/software_hardware/pyfits
+ pyemf >= 2.0.0 (optional for EMF export)
+   http://pyemf.sourceforge.net/
+ For EMF and better SVG export, PyQt >= 4.6 or better is
+   required, to fix a bug in the C++ wrapping
+
+For documentation on using Veusz, see the "Documents" directory. The
+manual is in PDF, HTML and text format (generated from docbook). The
+examples are also useful documentation.
+
+Issues with the current version:
+
+ * Due to Qt, hatched regions sometimes look rather poor when exported
+   to PostScript, PDF or SVG.
+
+ * Due to a bug in Qt, some long lines, or using log scales, can lead
+   to very slow plot times under X11. It is fixed by upgrading to
+   Qt-4.5.1 (or using a binary). Switching off antialiasing in the options
+   may help.
+
+If you enjoy using Veusz, I would love to hear from you. Please join
+the mailing lists at
+
+https://gna.org/mail/?group=veusz
+
+to discuss new features or if you'd like to contribute code. The
+latest code can always be found in the SVN repository.
+
+Jeremy Sanders
+
+-------------------------------------------------------------------------------
+$Id: README 1211 2010-03-26 22:29:48Z jeremysanders $

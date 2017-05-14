@@ -1,0 +1,145 @@
+Veusz 1.9
+---------
+Velvet Ember Under Sky Zenith
+-----------------------------
+http://home.gna.org/veusz/
+
+Veusz is Copyright (C) 2003-2010 Jeremy Sanders <jeremy@jeremysanders.net>
+Licenced under the GPL (version 2 or greater).
+
+Veusz is a Qt4 based scientific plotting package. It is written in
+Python, using PyQt4 for display and user-interfaces, and numpy for
+handling the numeric data. Veusz is designed to produce
+publication-ready Postscript/PDF/SVG output. The user interface aims
+to be simple, consistent and powerful.
+
+Veusz provides a GUI, command line, embedding and scripting interface
+(based on Python) to its plotting facilities. It also allows for
+manipulation and editing of datasets. Data can be captured from
+external sources such as internet sockets or other programs.
+
+Changes in 1.9:
+ * Added "Dataset plugins" to easily allow the user to write or load Python
+   code to make new datasets, optionally linked to existing datasets.
+   Includes plugins as standard for
+    - Adding and multiplying constants or datasets
+    - Dividing datasets
+    - Computing means of datasets
+    - Computing extremes of datasets
+    - Joining or combining datasets as parts or element by element
+    - Thinning points from datasets
+    - Converting from polar to Cartesian coordinates
+    - Filtering datasets using expressions
+   See here for details: http://barmag.net/veusz-wiki/DatasetPlugins
+ * Added "Tools plugins" which allow the user to write Veusz macros
+   in Python which can take parameters and be added to the menu.
+   Includes plugins for
+    - Randomizing or replacing colors
+    - Finding and replacing text
+    - Increasing / decreasing font sizes
+    - Cloning widgets for different datasets
+   See here for details: http://barmag.net/veusz-wiki/ToolsPlugins
+ * C++ code added to speed up data to image conversion
+ * Add vector field plot type
+ * Add text dataset support for Import plugins
+ * Add "Node" embedding interface to easily allow manipulation of the
+   widget/setting tree. See http://barmag.net/veusz-wiki/EmbeddingPython
+ * Veusz now starts in home directory or previous directory used. This
+   can be switched off in the preferences dialog to use current directory.
+ * Distances specified in points now show drop down box with common point
+   sizes to make increasing/decreasing sizes much easier.
+
+Minor features added:
+ * Color selectors are updated if new colors added to other color selectors
+ * Exception dialog box uses web to send data rather than email, so no
+   mail transfer agent is required.
+ * Text entry box brought up with '..' goes away when clicking outside it
+ * Improvements to appearance of buttons in Mac OS X
+
+Bug fixes:
+ * Fixed dataset expressions for zero-dimension expressions
+ * Dialog boxes are properly destroyed on closing to stop memory leaks
+ * Do not give error if same dataset defined in dataset dialog and
+   descriptor in data file
+ * Fix license on some C++ files
+ * Use correct web browser when clicking on links in menus
+ * Exceptions are caught and user notified when loading plugins
+ * Missing recent files are removed from recent files menu
+ * Non finite values ignored when fitting data
+ * When fitting data min and max properties used if set
+
+Features of package:
+ * X-Y plots (with errorbars)
+ * Line and function plots
+ * Contour plots
+ * Images (with colour mappings and colorbars)
+ * Stepped plots (for histograms)
+ * Bar graphs
+ * Vector field plots
+ * Plotting dates
+ * Fitting functions to data
+ * Stacked plots and arrays of plots
+ * Plot keys
+ * Plot labels
+ * Shapes and arrows on plots
+ * LaTeX-like formatting for text
+ * EPS/PDF/PNG/SVG/EMF export
+ * Scripting interface
+ * Dataset creation/manipulation
+ * Embed Veusz within other programs
+ * Text, CSV, FITS and user-plugin importing
+ * Data can be captured from external sources
+ * User defined functions, constants and can import external Python functions
+ * Plugin interface to allow user to write or load code to
+    - import data using new formats
+    - make new datasets, optionally linked to existing datasets
+    - arbitrarily manipulate the document
+
+Requirements for source install:
+ Python (2.4 or greater required)
+   http://www.python.org/
+ Qt >= 4.3 (free edition)
+   http://www.trolltech.com/products/qt/  
+ PyQt >= 4.3 (SIP is required to be installed first)
+   http://www.riverbankcomputing.co.uk/pyqt/
+   http://www.riverbankcomputing.co.uk/sip/
+ numpy >= 1.0
+   http://numpy.scipy.org/
+
+Optional:
+ Microsoft Core Fonts (recommended for nice output)
+   http://corefonts.sourceforge.net/
+ PyFITS >= 1.1 (optional for FITS import)
+   http://www.stsci.edu/resources/software_hardware/pyfits
+ pyemf >= 2.0.0 (optional for EMF export)
+   http://pyemf.sourceforge.net/
+ For EMF and better SVG export, PyQt >= 4.6 or better is
+   required, to fix a bug in the C++ wrapping
+
+For documentation on using Veusz, see the "Documents" directory. The
+manual is in PDF, HTML and text format (generated from docbook). The
+examples are also useful documentation. Please also see and contribute
+to the Veusz wiki: http://barmag.net/veusz-wiki/
+
+Issues with the current version:
+
+ * Plots can sometimes be slow using antialiasing. Go to the
+   preferences dialog or right click on the plot to disable
+   antialiasing.
+
+ * Some recent versions of PyQt/SIP will causes crashes when exporting
+   SVG files. Update to 4.7.4 (if released) or a recent snapshot to
+   solve this problem.
+
+If you enjoy using Veusz, I would love to hear from you. Please join
+the mailing lists at
+
+https://gna.org/mail/?group=veusz
+
+to discuss new features or if you'd like to contribute code. The
+latest code can always be found in the SVN repository.
+
+Jeremy Sanders
+
+-------------------------------------------------------------------------------
+$Id: README 1388 2010-08-29 15:28:22Z jeremysanders $

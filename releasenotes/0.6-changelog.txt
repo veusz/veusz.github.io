@@ -1,0 +1,184 @@
+* 2005-05-19 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Make size of property window more sensible by default
+	- Documentation update
+	- Add inside.vsz example
+	- Released 0.6
+	
+* 2005-05-18 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Add icon for main window
+	- Veusz should look in $HOME not /home/$USER for config file
+	- Actually allow data to be modified in Data->Edit dialog
+	
+* 2005-05-17 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Add signal handler to catch ctrl+c and ask to close docs -
+	James Graham's idea
+	- Changed File->Quit to close all windows. File->Close Window
+	closes current window
+	
+* 2005-05-15 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Patch from James Graham to make Ctrl+P print
+	- Patch adapted from James to make new documents start in new windows
+	- Add context menu to plot window to change update period
+	- Also add force update option
+	- Change lots of button pressed() to clicked() as pressed() breaks
+	appearance of button
+	- Allow datasets to be unlinked in data edit dialog
+	- Add Import button to data edit dialog
+	- Dialog box improvements (spacing and so on)
+	
+* 2005-05-14 Jeremy Sanders <jeremy@jeremysanders.net>
+	- New widget property code using QTable
+	
+* 2005-05-11 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Make super and subscripts move further up and down
+	- Adjust alignment code to take account of above modification
+	- Document embedding Veusz in other programs
+	- Document security of Veusz scripts
+	
+* 2005-05-10 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Fit dataset options now have drop down menus
+	- Added \font{fontname}{text} and \size{[+-]fontsize}{text} to
+	LaTeX-like parser to change font or font size
+	- Also some bug fixes to LaTeX-like parser
+	- Modeless dialogs fixed to use close instead of done
+	- Fitting can now fit selected ranges of data (see fitRange parameter)
+	- Various fitting sanity checks
+	- Fitting should now work for functions of y as well as x
+	
+* 2005-05-09 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Fix problem with log axis if minimum is zero
+	- Highlight setting label if has mouse over / focus / context menu
+	- Remove label from top of context menus
+	- Fix properties shortcut label
+	
+* 2005-05-08 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Add embed module to embed Veusz in other Python apps
+	
+* 2005-05-07 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Complete data editing dialog
+	- Add data new dialog
+	- Add data new dialog to Data menu in main window
+	
+* 2005-05-04 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Put in Jamie Crummy's patch to show "Untitled" for new document
+	
+* 2005-05-03 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Take out toolbar position hack from mainwindow
+	- More work on data edit dialog
+	
+* 2005-05-02 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Axes on other side of graph are automatically reflected
+	- Reflected text rotated by 90 rather than 270 degrees
+	- Put property name on property context menu
+	- Shortcut keys added to quitting dialog
+	- Slight tooltip fixes in property editor
+	- Property context menu added for items in widget tree
+	- Widgets can now be renamed (Rename command added too)
+	- Labels for properties can now have keyboard focus. This allows
+	context menu to be used from keyboard.
+	- Widget names cannot contain /
+	
+* 2005-05-01 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Put in patch from James Graham to choose from list of fonts
+	- Use context menu for settings, rather than button
+	- Add missing descr for marker and markerSize
+	- View menu can show/hide dock windows
+	
+* 2005-04-28 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Fixed colour of axis/tick labels
+
+* 2005-04-25 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Allow subsettings to be set in Add command
+	a__b maps to a/b, e.g. Add('xy', MarkerFill__color='red')
+	- Numbers can be initial letter of dataset name
+	
+* 2005-04-23 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Twiddle rounding in axis.py to try to avoid off-by-one pixel bugs
+	- Move distance calculation code into Distance setting
+	
+* 2005-04-22 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Display drop down list of units based on James Graham's patch
+	- Use drop down list of datasets for appropriate settings
+	
+* 2005-04-21 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Widgets can now be added if a parent allows the widget as parent
+	- New item selected after widget is added
+	- Removed text widget from menu and tooltip
+	- Added widget buttons now in separate toolbar (ordering of
+	importance and alphabetical now)
+	
+* 2005-04-19 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Fix to allow unicode font names
+	- Lots more unicode fixes (like unicode labels, etc). Unicode
+	characters can now be used for filenames, and axis labels
+	- Handle bad descriptors in import dialog
+	
+* 2005-04-18 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Fixed fitting for old versions of numarray (no isnan)
+	- Fixed data reading bug, where numbers on columns which aren't
+	used are propagated to next line
+	- Show busy cursor while reading data and opening files, saving
+	files and exporting data
+	- Empty document is not "dirty", so don't show save dialog
+	- Added circ, odot, and (left|right|up|down) arrow in LaTeX mode
+	
+* 2005-04-16 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Get distutils working properly with standard distutils
+	- Added histogram example
+	- Released 0.5
+	
+* 2005-04-14 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Introduced patch by James Graham to make the save warning dialog
+	use verbs instead of yes/no
+	- Imported distutils (setuputils), and added support for distutils
+	- Add scripts to start veusz from bin directory
+	
+* 2005-04-11 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Imported data files may be linked to the document, which means
+	their data won't be saved with the document, but reloaded each
+	time it is loaded
+	
+* 2005-04-10 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Added exception dialog to send in bug reports
+	- Axis values checked for being round wrong way
+	
+* 2005-04-09 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Different types of error bars supported (diamond, curve, box)
+	- Improve function plot line clipping near edges
+	- Filled regions above/below/left/right of function
+	- Filled regions above/below xy points (or histogram)
+	- Axis setting to match one axis to another (equal scales)
+	- resolve function moved to document from commandinterface
+	(helps axis matching)
+	
+* 2005-04-03 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Fixed widget moving buttons! - correct algorithm now
+	- Implemented save/restore of window and dock positions between
+	sessions
+
+* 2005-04-02 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Fixed always-redrawing bug
+	- Implemented widget delete button
+	- Implemented widget moving buttons
+	
+* 2005-03-26 Jeremy Sanders <jeremy@jeremysanders.net>
+	- TextLabels now support rotation
+
+* 2005-03-25 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Veusz now tracks default settings in ~/.veusz.def file for each
+	user
+	- It is possible to copy settings from one widget to another using
+	a menu
+	- The bullseye symbol works correctly now
+	- Reading data now gives the count of conversion errors rather
+	than throwing an exception (in the import dialog)
+	- ImportFile and ImportString now also return the number of
+	conversion errors during reading (as part of a tuple)
+	- Added ChangeLog file
+	- Fixed problems where Veusz doesn't update plot window due to Qt
+	clipping
+	- Fitting widget now stores chi2, dof, reduced chi2 setting
+	(readonly). This allows	scripts to query these values.
+	
+	
+	

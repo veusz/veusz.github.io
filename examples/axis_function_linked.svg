@@ -1,0 +1,1122 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="531.49px" height="425.19px" version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+<desc>Veusz output document</desc>
+<defs>
+<clipPath id="c0">
+<path d="m0,0l531.49,0l0,425.19l-531.49,0l0,-425.19"/>
+</clipPath>
+<clipPath id="c1">
+<path d="m60.23,42.51l464.17,0l0,340.15l-464.17,0l0,-340.15"/>
+</clipPath>
+<clipPath id="c2">
+<path d="m115.15,54.21l354.33,0l0,11.7l-354.33,0l0,-11.7"/>
+</clipPath>
+</defs>
+<g stroke-linejoin="bevel" stroke-linecap="square" stroke="#000000" fill-rule="evenodd">
+<g clip-path="url(#c0)">
+<g fill="#ffffff" stroke-width="0.62">
+<path d="m60.23,42.51l464.17,0l0,340.15l-464.17,0l0,-340.15"/>
+</g>
+</g>
+<g clip-path="url(#c1)">
+<g fill="none" stroke="#808080" stroke-width="0.62">
+<path d="M60.23,334.08l464.17,0M60.23,285.48l464.17,0M60.23,236.89l464.17,0M60.23,188.3l464.17,0M60.23,139.7l464.17,0M60.23,91.11l464.17,0"/>
+</g>
+<g fill="none" stroke="#d3d3d3" stroke-width="0.62">
+<path d="M494.03,42.51l0,340.15M402.83,42.51l0,340.15M334.02,42.51l0,340.15M279.31,42.51l0,340.15M234.15,42.51l0,340.15M195.79,42.51l0,340.15"/>
+</g>
+<g fill="none" stroke="#808080" stroke-width="0.62">
+<path d="M162.48,42.51l0,340.15M402.83,42.51l0,340.15"/>
+</g>
+<g fill="none" stroke="#ff00ff" stroke-dasharray="1.87,3.75" stroke-width="1.87">
+<polyline fill="none" points="60.23,198.38 69.7,204.23 79.18,215.74 88.65,230.42 98.12,245.66 107.6,259.12 117.07,269.1 126.54,274.66 136.01,275.56 145.49,272.18 154.96,265.3 164.43,255.96 173.91,245.27 183.38,234.27 192.85,223.87 202.33,214.75 211.8,207.42 221.27,202.15 230.74,199.03 240.22,198.02 249.69,198.94 259.16,201.54 268.64,205.55 278.11,210.64 287.58,216.5 297.05,222.85 306.53,229.42 316,235.97 325.47,242.32 334.95,248.32 344.42,253.83 353.89,258.78 363.36,263.12 372.84,266.8 382.31,269.83 391.78,272.2 401.26,273.94 410.73,275.08 420.2,275.66 429.68,275.73 439.15,275.34 448.62,274.52 458.09,273.34 467.57,271.83 477.04,270.05 486.51,268.04 495.99,265.84 505.46,263.49 514.93,261.01 524.4,258.45"/>
+</g>
+</g>
+<g clip-path="url(#c2)">
+<g fill="none" stroke-width="1">
+<image x="115.15" y="54.21" width="354.33" height="11.7" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAAABCAYAAAAW0qa2AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABpJREFUKM9j/M/A8J+BHoAOtjAy0AsMH88AAF2ZBAA2HhZYAAAAAElFTkSuQmCC" preserveAspectRatio="none"/>
+</g>
+</g>
+<g clip-path="url(#c0)">
+<g fill="none" stroke-width="0.62">
+<path d="m115.15,54.21l354.33,0l0,11.7l-354.33,0l0,-11.7"/>
+</g>
+<g fill="none" stroke-linecap="butt" stroke-width="0.62">
+<path d="M115.15,65.91l354.33,0"/>
+<path d="M115.74,65.91l0,-3.75M145.12,65.91l0,-3.75M174.5,65.91l0,-3.75M203.88,65.91l0,-3.75M233.26,65.91l0,-3.75M262.64,65.91l0,-3.75M292.02,65.91l0,-3.75M321.4,65.91l0,-3.75M350.79,65.91l0,-3.75M380.17,65.91l0,-3.75M409.55,65.91l0,-3.75M438.93,65.91l0,-3.75M468.31,65.91l0,-3.75"/>
+<path d="M115.74,65.91l0,-7.5M174.5,65.91l0,-7.5M233.26,65.91l0,-7.5M292.02,65.91l0,-7.5M350.79,65.91l0,-7.5M409.55,65.91l0,-7.5M468.31,65.91l0,-7.5"/>
+</g>
+<g fill="none" stroke-width="1">
+<g stroke="none" fill="#000000" fill-opacity="1" font-family="DejaVu Serif" font-size="10.0">
+<text x="247.47" y="91.11" textLength="89.7">Supernova colour</text>
+<text x="103.54" y="77.41" textLength="24.4">−0.3</text>
+<text x="162.3" y="77.41" textLength="24.4">−0.2</text>
+<text x="221.06" y="77.41" textLength="24.4">−0.1</text>
+<text x="288.82" y="77.41" textLength="6.4">0</text>
+<text x="342.78" y="77.41" textLength="16">0.1</text>
+<text x="401.55" y="77.41" textLength="16">0.2</text>
+<text x="460.31" y="77.41" textLength="16">0.3</text>
+</g>
+</g>
+</g>
+<g clip-path="url(#c1)">
+<g fill="none" stroke-linecap="butt" stroke-width="0.62">
+<path d="M75.19,280.82l0,-1.94M76.06,284.32l0,-1.94M67.74,302.01l0,-3.49M81.21,270.13l0,-3.49M79,273.24l0,-1.94M86.45,250.69l0,-4.27M83.75,270.91l0,-1.16M65.38,322.03l0,-5.05M72.86,290.73l0,-2.33M73.79,284.71l0,-1.94M66.1,334.86l0,-4.27M90.43,251.08l0,-1.16M64.27,348.07l0,-6.22M68.4,311.73l0,-3.49M82.56,269.16l0,-1.94M68.16,315.61l0,-3.11M75.16,281.79l0,-1.55M69.39,312.31l0,-3.11M68.76,314.84l0,-3.11M77.86,276.74l0,-3.49M71.15,306.28l0,-3.88M78.28,288.79l0,-5.44M63.55,336.22l0,-7.77M74.03,274.79l0,-8.94M64.39,353.71l0,-6.6M69.93,310.75l0,-5.05M77.02,283.73l0,-2.72M71.81,288.21l0,-5.44M72.11,293.65l0,-6.99M65.11,336.02l0,-5.05M64.84,332.52l0,-5.44M64.54,331.94l0,-5.83M69.36,312.5l0,-2.72M67.56,325.91l0,-3.49M67.41,317.56l0,-3.49M68.01,316.58l0,-3.49M64.39,340.88l0,-6.22M63.97,309.78l0,-7.77M63.34,358.96l0,-8.16M62.83,342.05l0,-9.71M65.17,297.54l0,-6.22M68.19,302.78l0,-4.27M74.87,282.18l0,-5.05M67.5,310.75l0,-3.88M64.78,341.46l0,-5.83M70.92,296.37l0,-4.27M62.18,374.9l0,-12.82M63.73,304.92l0,-7.38M61.52,380.92l0,-19.82M61.73,375.67l0,-16.71M74.84,295.59l0,-1.94M66.82,319.89l0,-5.44M64.54,332.52l0,-6.99M68.46,303.56l0,-3.11M62.33,380.15l0,-12.05M62.8,354.88l0,-10.1M97.46,246.61l0,-1.16M61.13,311.34l0,-27.99M71.01,303.95l0,-2.72M65.23,330l0,-5.44M65.11,320.67l0,-5.05M65.62,332.13l0,-4.66M69.18,313.67l0,-4.66M62.21,343.6l0,-12.82M66.76,319.89l0,-4.27M65.14,330.19l0,-5.05M67.17,306.28l0,-3.88M71.15,294.81l0,-2.72M66.01,298.51l0,-4.27M65.5,325.91l0,-6.6M64.06,329.02l0,-6.99M64.27,349.05l0,-6.22M69.66,300.84l0,-2.72M63.1,361.87l0,-8.94M67.26,314.64l0,-3.88M65.23,340.3l0,-5.05M76.3,283.93l0,-2.33M62.54,362.26l0,-10.88M64.9,293.84l0,-5.44M65.32,323l0,-5.05M63.28,332.13l0,-8.16M68.58,315.22l0,-3.11M65.38,334.66l0,-5.05M62.06,333.3l0,-13.99M63.37,351.38l0,-8.16M69.21,300.06l0,-3.11M63.1,349.43l0,-8.94M63.04,358.96l0,-8.94M65.2,330.58l0,-5.05M64.21,335.63l0,-6.6M66.25,322.22l0,-8.55M62.86,354.49l0,-9.71M71.6,296.95l0,-5.44M63.61,356.43l0,-11.27M67.95,313.47l0,-6.99M66.25,315.03l0,-6.99M61.91,347.49l0,-15.55M63.82,346.32l0,-9.33M65.32,311.14l0,-5.83M65.02,319.69l0,-5.44M64.72,343.02l0,-5.83M63.07,355.46l0,-8.94M76.51,279.07l0,-2.33M106.95,238.06l0,-1.16M71.99,300.65l0,-2.33M97.37,242.53l0,-1.94M103.36,229.31l0,-1.55M99.11,245.25l0,-1.16M83.69,268.77l0,-1.16M245.78,170.61l0,-3.49M230.82,172.16l0,-2.72M150.01,199.38l0,-3.88M173.96,186.55l0,-1.94M188.92,187.13l0,-1.94M132.06,207.35l0,-3.11M150.01,214.54l0,-14.77M132.06,218.23l0,-1.16M191.91,183.63l0,-2.33M209.87,176.83l0,-1.94M350.53,148.06l0,-5.83M203.58,185.19l0,-2.33M188.92,194.32l0,-7.38"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<g transform="translate(75.19,279.85)">
+<path d="m3.75,0c0,2.07,-1.67,3.75,-3.75,3.75c-2.07,0,-3.75,-1.67,-3.75,-3.75c0,-2.07,1.67,-3.75,3.75,-3.75c2.07,0,3.75,1.67,3.75,3.75" id="p0"/>
+</g>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="76.06" y="283.35"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="67.74" y="300.26"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="81.21" y="268.38"/>
+<use xlink:href="#p0" x="79" y="272.27"/>
+<use xlink:href="#p0" x="86.45" y="248.55"/>
+<use xlink:href="#p0" x="83.75" y="270.32"/>
+<use xlink:href="#p0" x="65.38" y="319.5"/>
+<use xlink:href="#p0" x="72.86" y="289.57"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="73.79" y="283.73"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="66.1" y="332.72"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="90.43" y="250.5"/>
+<use xlink:href="#p0" x="64.27" y="344.96"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="68.4" y="309.98"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="82.56" y="268.18"/>
+<use xlink:href="#p0" x="68.16" y="314.06"/>
+<use xlink:href="#p0" x="75.16" y="281.01"/>
+<use xlink:href="#p0" x="69.39" y="310.75"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="68.76" y="313.28"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="77.86" y="274.99"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="71.15" y="304.34"/>
+</g>
+<g fill="#ff0000" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="78.28" y="286.07"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="63.55" y="332.33"/>
+<use xlink:href="#p0" x="74.03" y="270.32"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="64.39" y="350.41"/>
+<use xlink:href="#p0" x="69.93" y="308.23"/>
+<use xlink:href="#p0" x="77.02" y="282.37"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="71.81" y="285.48"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="72.11" y="290.15"/>
+<use xlink:href="#p0" x="65.11" y="333.5"/>
+<use xlink:href="#p0" x="64.84" y="329.8"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="64.54" y="329.02"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="69.36" y="311.14"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="67.56" y="324.17"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="67.41" y="315.81"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="68.01" y="314.84"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="64.39" y="337.77"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="63.97" y="305.89"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="63.34" y="354.88"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="62.83" y="337.19"/>
+<use xlink:href="#p0" x="65.17" y="294.43"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="68.19" y="300.65"/>
+<use xlink:href="#p0" x="74.87" y="279.65"/>
+<use xlink:href="#p0" x="67.5" y="308.81"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="64.78" y="338.55"/>
+<use xlink:href="#p0" x="70.92" y="294.23"/>
+<use xlink:href="#p0" x="62.18" y="368.48"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="63.73" y="301.23"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="61.52" y="371.01"/>
+<use xlink:href="#p0" x="61.73" y="367.32"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="74.84" y="294.62"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="66.82" y="317.17"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="64.54" y="329.02"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="68.46" y="302.01"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="62.33" y="374.12"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="62.8" y="349.82"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="97.46" y="246.03"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="61.13" y="297.34"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="71.01" y="302.59"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="65.23" y="327.28"/>
+<use xlink:href="#p0" x="65.11" y="318.14"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="65.62" y="329.8"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="69.18" y="311.34"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="62.21" y="337.19"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="66.76" y="317.75"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="65.14" y="327.66"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="67.17" y="304.34"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="71.15" y="293.45"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="66.01" y="296.37"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="65.5" y="322.61"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="64.06" y="325.53"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="64.27" y="345.94"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="69.66" y="299.48"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="63.1" y="357.4"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="67.26" y="312.7"/>
+<use xlink:href="#p0" x="65.23" y="337.77"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="76.3" y="282.76"/>
+<use xlink:href="#p0" x="62.54" y="356.82"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="64.9" y="291.12"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="65.32" y="320.47"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="63.28" y="328.05"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="68.58" y="313.67"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="65.38" y="332.13"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="62.06" y="326.3"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="63.37" y="347.3"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="69.21" y="298.51"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="63.1" y="344.96"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="63.04" y="354.49"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="65.2" y="328.05"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="64.21" y="332.33"/>
+<use xlink:href="#p0" x="66.25" y="317.95"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="62.86" y="349.63"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="71.6" y="294.23"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="63.61" y="350.79"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="67.95" y="309.98"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="66.25" y="311.53"/>
+<use xlink:href="#p0" x="61.91" y="339.72"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="63.82" y="341.66"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="65.32" y="308.23"/>
+<use xlink:href="#p0" x="65.02" y="316.97"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="64.72" y="340.1"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="63.07" y="350.99"/>
+<use xlink:href="#p0" x="76.51" y="277.9"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="106.95" y="237.47"/>
+<use xlink:href="#p0" x="71.99" y="299.48"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="97.37" y="241.56"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="103.36" y="228.53"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="99.11" y="244.67"/>
+<use xlink:href="#p0" x="83.69" y="268.18"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="245.78" y="168.86"/>
+<use xlink:href="#p0" x="230.82" y="170.8"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="150.01" y="197.43"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="173.96" y="185.58"/>
+</g>
+<g fill="#ff0000" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="188.92" y="186.16"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="132.06" y="205.79"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="150.01" y="207.15"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="132.06" y="217.65"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="191.91" y="182.47"/>
+<use xlink:href="#p0" x="209.87" y="175.86"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="350.53" y="145.15"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="203.58" y="184.02"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="188.92" y="190.63"/>
+</g>
+<g fill="#000000" stroke-linecap="butt" stroke-width="0.62">
+<path d="M308.63,154.28l0,-3.49M184.73,190.43l0,-2.72M234.11,177.22l0,-3.49M194.9,181.1l0,-1.94M233.51,169.44l0,-3.88M156,200.93l0,-1.55M256.85,163.03l0,-4.66M188.92,183.44l0,-2.72M201.49,177.22l0,-2.33M172.16,175.27l0,-5.83M217.65,176.25l0,-2.33M288.58,157.59l0,-11.27M233.81,171.97l0,-2.72M188.92,175.27l0,-1.94M194.9,174.88l0,-2.33M308.03,151.75l0,-6.6M256.55,165.75l0,-4.27M208.37,183.05l0,-1.94M206.88,178.19l0,-1.94M230.82,173.72l0,-2.33M176.35,188.69l0,-2.72M194.9,187.32l0,-2.33M203.88,178.58l0,-2.33M244.28,176.25l0,-3.88M179.94,195.49l0,-1.94M256.26,176.44l0,-4.27M209.27,166.92l0,-2.33M199.39,173.52l0,-4.27M195.8,175.86l0,-2.33M187.42,194.32l0,-5.83M114.1,228.34l0,-1.16M111.71,233l0,-1.16M173.36,187.91l0,-4.27M171.56,199.57l0,-3.11M185.93,181.88l0,-2.33M172.16,203.46l0,-3.11M166.17,191.21l0,-6.22M197.3,182.85l0,-1.94"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="308.63" y="152.53"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="184.73" y="189.07"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="234.11" y="175.47"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="194.9" y="180.13"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="233.51" y="167.5"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="156" y="200.15"/>
+<use xlink:href="#p0" x="256.85" y="160.7"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="188.92" y="182.08"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="201.49" y="176.05"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="172.16" y="172.36"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="217.65" y="175.08"/>
+</g>
+<g fill="#ff0000" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="288.58" y="151.95"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="233.81" y="170.61"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="188.92" y="174.3"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="194.9" y="173.72"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="308.03" y="148.45"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="256.55" y="163.61"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="208.37" y="182.08"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="206.88" y="177.22"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="230.82" y="172.55"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="176.35" y="187.32"/>
+<use xlink:href="#p0" x="194.9" y="186.16"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="203.88" y="177.41"/>
+<use xlink:href="#p0" x="244.28" y="174.3"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="179.94" y="194.52"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="256.26" y="174.3"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="209.27" y="165.75"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="199.39" y="171.39"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="195.8" y="174.69"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="187.42" y="191.41"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="114.1" y="227.75"/>
+<use xlink:href="#p0" x="111.71" y="232.42"/>
+<use xlink:href="#p0" x="173.36" y="185.77"/>
+<use xlink:href="#p0" x="171.56" y="198.02"/>
+<use xlink:href="#p0" x="185.93" y="180.72"/>
+<use xlink:href="#p0" x="172.16" y="201.9"/>
+<use xlink:href="#p0" x="166.17" y="188.1"/>
+<use xlink:href="#p0" x="197.3" y="181.88"/>
+</g>
+<g fill="#000000" stroke-linecap="butt" stroke-width="0.62">
+<path d="M143.43,204.62l0,-2.33M202.98,185.38l0,-2.72M344.54,155.25l0,-3.88M376.56,146.7l0,-5.05M304.44,156.61l0,-3.49M196.4,175.86l0,-2.72M417.86,171.97l0,-20.99M170.66,171l0,-2.33M214.06,182.08l0,-9.33M186.82,187.32l0,-1.94M343.34,151.17l0,-7.38M317.31,146.89l0,-3.88M368.78,153.5l0,-6.99M340.35,143.59l0,-6.22M218.25,182.27l0,-3.11M253.26,151.75l0,-6.6M352.92,151.37l0,-3.88M325.09,155.25l0,-4.27M304.14,139.9l0,-7.77M269.12,153.11l0,-3.11M230.22,178.38l0,-2.33M273.01,164.58l0,-3.11M161.86,197.82l0,-3.49M178.89,190.05l0,-2.33M303.24,142.42l0,-3.49M299.35,145.53l0,-3.11M324.19,143.4l0,-3.88M309.53,155.84l0,-3.49M321.8,140.09l0,-5.44M291.27,165.55l0,-3.11"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="143.43" y="203.46"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="202.98" y="184.02"/>
+<use xlink:href="#p0" x="344.54" y="153.31"/>
+<use xlink:href="#p0" x="376.56" y="144.17"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="304.44" y="154.86"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="196.4" y="174.5"/>
+</g>
+<g fill="#ff0000" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="417.86" y="161.47"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="170.66" y="169.83"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="214.06" y="177.41"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="186.82" y="186.35"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="343.34" y="147.48"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="317.31" y="144.95"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="368.78" y="150"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="340.35" y="140.48"/>
+<use xlink:href="#p0" x="218.25" y="180.72"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="253.26" y="148.45"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="352.92" y="149.42"/>
+</g>
+<g fill="#ff0000" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="325.09" y="153.11"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="304.14" y="136.01"/>
+</g>
+<g fill="#ff0000" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="269.12" y="151.56"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="230.22" y="177.22"/>
+<use xlink:href="#p0" x="273.01" y="163.03"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="161.86" y="196.07"/>
+<use xlink:href="#p0" x="178.89" y="188.88"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="303.24" y="140.67"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="299.35" y="143.98"/>
+<use xlink:href="#p0" x="324.19" y="141.45"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="309.53" y="154.09"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="321.8" y="137.37"/>
+</g>
+<g fill="#ff0000" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="291.27" y="164"/>
+</g>
+<g fill="#000000" stroke-linecap="butt" stroke-width="0.62">
+<path d="M222.74,179.16l0,-2.33M284.69,162.25l0,-2.72M251.77,164.58l0,-3.11M188.92,182.66l0,-3.11M251.77,166.33l0,-3.49M208.97,176.83l0,-2.33M191.91,175.66l0,-1.94M166.47,185.96l0,-1.94M293.66,155.84l0,-3.49M221.84,176.44l0,-1.94M317.61,151.37l0,-3.11M365.49,142.23l0,-3.88M401.4,147.28l0,-4.66M315.81,150.59l0,-3.49M470.24,129.01l0,-6.99M352.02,143.78l0,-3.49M350.53,141.06l0,-3.49M281.69,164.58l0,-4.66M476.22,127.07l0,-6.6M197.9,169.25l0,-4.27M365.49,146.89l0,-7.77M395.42,140.48l0,-4.27M428.34,122.21l0,-4.66M416.37,127.46l0,-5.05M311.32,157.97l0,-5.44M362.5,141.06l0,-3.88M216.15,178.77l0,-3.11M202.39,179.74l0,-5.83M344.54,148.26l0,-3.88M449.29,129.79l0,-5.44M450.78,134.84l0,-6.22M217.65,160.7l0,-4.66M124.87,197.04l0,-3.11M280.2,160.31l0,-3.11M401.4,136.01l0,-6.22M524.4,112.88l0,-10.1M438.81,128.82l0,-4.66M461.26,127.46l0,-5.44M329.58,159.33l0,-3.49M311.62,153.89l0,-3.11M167.67,160.7l0,-1.94M345.74,156.61l0,-9.33M251.17,168.28l0,-2.33M428.34,144.17l0,-6.22M479.21,131.73l0,-45.09M451.38,113.07l0,-6.6M260.74,157l0,-3.88M251.77,165.94l0,-13.6M345.74,156.03l0,-13.21M340.05,155.25l0,-4.27"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="222.74" y="177.99"/>
+<use xlink:href="#p0" x="284.69" y="160.89"/>
+<use xlink:href="#p0" x="251.77" y="163.03"/>
+<use xlink:href="#p0" x="188.92" y="181.1"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="251.77" y="164.58"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="208.97" y="175.66"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="191.91" y="174.69"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="166.47" y="184.99"/>
+<use xlink:href="#p0" x="293.66" y="154.09"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="221.84" y="175.47"/>
+<use xlink:href="#p0" x="317.61" y="149.81"/>
+<use xlink:href="#p0" x="365.49" y="140.29"/>
+<use xlink:href="#p0" x="401.4" y="144.95"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="315.81" y="148.84"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="470.24" y="125.51"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="352.02" y="142.04"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="350.53" y="139.31"/>
+<use xlink:href="#p0" x="281.69" y="162.25"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="476.22" y="123.76"/>
+<use xlink:href="#p0" x="197.9" y="167.11"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="365.49" y="143.01"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="395.42" y="138.34"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="428.34" y="119.88"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="416.37" y="124.93"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="311.32" y="155.25"/>
+<use xlink:href="#p0" x="362.5" y="139.12"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="216.15" y="177.22"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="202.39" y="176.83"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="344.54" y="146.31"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="449.29" y="127.07"/>
+<use xlink:href="#p0" x="450.78" y="131.73"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="217.65" y="158.36"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="124.87" y="195.49"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="280.2" y="158.75"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="401.4" y="132.9"/>
+<use xlink:href="#p0" x="524.4" y="107.82"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="438.81" y="126.48"/>
+<use xlink:href="#p0" x="461.26" y="124.74"/>
+<use xlink:href="#p0" x="329.58" y="157.59"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="311.62" y="152.34"/>
+<use xlink:href="#p0" x="167.67" y="159.72"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="345.74" y="151.95"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="251.17" y="167.11"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="428.34" y="141.06"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="479.21" y="109.19"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="451.38" y="109.77"/>
+<use xlink:href="#p0" x="260.74" y="155.06"/>
+<use xlink:href="#p0" x="251.77" y="159.14"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="345.74" y="149.42"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="340.05" y="153.11"/>
+</g>
+<g fill="#000000" stroke-linecap="butt" stroke-width="0.62">
+<path d="M231.42,149.23l0,-3.49M200.29,162.83l0,-1.94M311.62,154.86l0,-3.49M347.53,151.17l0,-5.05M306.17,154.28l0,-3.49M338.56,145.53l0,-6.6M195.2,174.88l0,-1.55M242.79,168.66l0,-2.33M308.63,156.42l0,-3.88M271.82,157.97l0,-3.49M184.43,188.49l0,-1.55M226.93,179.74l0,-2.33M296.96,156.61l0,-3.11M268.23,160.11l0,-3.11M249.67,165.55l0,-2.72M134.63,216.48l0,-3.11M219.44,170.22l0,-2.33M159.29,202.49l0,-1.16M163.78,190.05l0,-1.55M347.83,150.98l0,-5.83M243.69,159.92l0,-2.33M162.04,195.88l0,-1.16M354.42,145.73l0,-9.33M272.72,155.64l0,-3.11M278.7,157.97l0,-2.72M200.89,170.41l0,-1.94M245.78,164.58l0,-2.33M216.15,173.52l0,-2.33M170.66,192.18l0,-1.55M231.12,174.88l0,-2.72M240.99,173.52l0,-2.33M337.69,148.26l0,-6.22M145.52,213.95l0,-1.16M147.38,198.02l0,-1.94M224.23,158.36l0,-3.11M320,154.67l0,-5.44M208.67,180.33l0,-1.94M302.94,153.31l0,-3.49M286.48,159.33l0,-3.49M304.74,155.45l0,-3.11M285.28,163.03l0,-3.11M225.31,170.41l0,-1.94M167.31,188.49l0,-1.55M362.5,142.62l0,-10.49M281.99,158.56l0,-2.72M188.92,183.44l0,-1.94M217.65,167.5l0,-2.33M237.4,172.16l0,-2.72M331.07,155.84l0,-4.66M344.24,152.14l0,-5.44M198.11,189.07l0,-3.88M171.23,194.91l0,-1.55M299.65,150.98l0,-3.88M263.44,158.56l0,-2.72M234.32,168.47l0,-2.72M224.83,172.75l0,-2.33M302.64,155.84l0,-3.88M344.54,150.98l0,-5.05M161.18,199.18l0,-1.16M332.57,147.48l0,-4.27M138.94,204.82l0,-1.16M252.66,164.39l0,-2.72M267.03,155.45l0,-2.72M167.07,190.63l0,-1.55M276.01,162.64l0,-3.11M234.11,172.94l0,-2.33M247.82,172.16l0,-2.33M305.04,148.45l0,-3.88M194.61,188.3l0,-1.94M266.13,167.69l0,-2.72M320.6,152.34l0,-4.27M211.15,179.94l0,-1.94M198.71,189.66l0,-7.38M237.1,172.36l0,-3.11M187.72,185.77l0,-1.94M158.69,192.38l0,-8.16M219.15,175.27l0,-2.33M234.71,169.05l0,-3.88M159.89,217.65l0,-1.55M215.55,167.89l0,-3.49M180.24,190.05l0,-2.72M161.98,203.26l0,-6.99M190.71,189.27l0,-1.94M168.87,201.51l0,-2.72M190.71,189.27l0,-1.94M152.71,192.38l0,-2.72M162.58,195.49l0,-2.33M159.59,189.07l0,-2.33M200.59,188.3l0,-1.94M131.76,204.82l0,-1.94M165.58,183.63l0,-2.33M243.39,161.86l0,-7.38M249.07,172.36l0,-2.72M253.26,172.55l0,-2.72M188.62,186.35l0,-1.94M208.97,181.88l0,-2.72M221.54,174.3l0,-2.72M228.12,177.99l0,-2.33M182.93,191.8l0,-1.94M183.53,179.55l0,-4.27M239.5,165.75l0,-3.49M245.48,171.39l0,-3.11M186.52,190.63l0,-2.72M221.84,173.91l0,-2.33M180.24,178.77l0,-3.11M125.47,212.59l0,-2.72M249.67,176.83l0,-3.49M174.85,193.16l0,-3.11M150.61,175.86l0,-5.44M161.98,193.93l0,-2.33M212.86,184.02l0,-2.72M186.23,177.61l0,-4.66M179.64,171.77l0,-4.27M207.77,181.3l0,-2.33M265.83,172.55l0,-3.49M210.47,172.36l0,-5.05M265.83,170.03l0,-3.11M208.37,181.69l0,-2.33M240.69,170.61l0,-2.72M186.23,191.02l0,-3.11M164.38,186.35l0,-1.94M123.98,199.57l0,-3.49M163.18,204.62l0,-1.94M141.33,202.49l0,-2.72M229.02,183.24l0,-5.05M142.23,200.93l0,-3.49M234.41,164.19l0,-2.72M263.74,165.75l0,-2.72M180.24,173.33l0,-2.72M184.73,162.64l0,-4.27M145.82,190.24l0,-4.66M154.2,200.35l0,-4.27M234.11,174.88l0,-3.49M198.79,178.19l0,-2.72M162.28,206.18l0,-3.11M261.04,167.89l0,-3.49M249.07,171.97l0,-2.72M216.45,174.3l0,-2.72M170.36,198.21l0,-1.94M152.71,201.51l0,-1.94M218.25,175.08l0,-3.49M140.44,197.04l0,-2.33M124.87,202.29l0,-2.72M268.23,162.64l0,-4.27M145.22,205.79l0,-2.33M212.26,181.49l0,-2.33M293.96,158.95l0,-4.27M243.69,172.94l0,-4.27M187.42,192.38l0,-6.99M121.58,219.2l0,-1.16M123.38,221.73l0,-3.88M107.82,224.84l0,-1.16M114.4,230.86l0,-1.16M255.66,185.38l0,-9.71M106.62,235.53l0,-5.44M228.42,183.44l0,-5.83M134.75,202.49l0,-9.33M115.3,219.2l0,-3.88"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="231.42" y="147.48"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="200.29" y="161.86"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="311.62" y="153.11"/>
+<use xlink:href="#p0" x="347.53" y="148.64"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="306.17" y="152.53"/>
+</g>
+<g fill="#ff0000" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="338.56" y="142.23"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="195.2" y="174.11"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="242.79" y="167.5"/>
+</g>
+<g fill="#ff0000" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="308.63" y="154.48"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="271.82" y="156.22"/>
+<use xlink:href="#p0" x="184.43" y="187.71"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="226.93" y="178.58"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="296.96" y="155.06"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="268.23" y="158.56"/>
+<use xlink:href="#p0" x="249.67" y="164.19"/>
+<use xlink:href="#p0" x="134.63" y="214.93"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="219.44" y="169.05"/>
+<use xlink:href="#p0" x="159.29" y="201.9"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="163.78" y="189.27"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="347.83" y="148.06"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="243.69" y="158.75"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="162.04" y="195.29"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="354.42" y="141.06"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="272.72" y="154.09"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="278.7" y="156.61"/>
+<use xlink:href="#p0" x="200.89" y="169.44"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="245.78" y="163.42"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="216.15" y="172.36"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="170.66" y="191.41"/>
+<use xlink:href="#p0" x="231.12" y="173.52"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="240.99" y="172.36"/>
+</g>
+<g fill="#ff0000" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="337.69" y="145.15"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="145.52" y="213.37"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="147.38" y="197.04"/>
+<use xlink:href="#p0" x="224.23" y="156.81"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="320" y="151.95"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="208.67" y="179.36"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="302.94" y="151.56"/>
+</g>
+<g fill="#ff0000" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="286.48" y="157.59"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="304.74" y="153.89"/>
+<use xlink:href="#p0" x="285.28" y="161.47"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="225.31" y="169.44"/>
+<use xlink:href="#p0" x="167.31" y="187.71"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="362.5" y="137.37"/>
+<use xlink:href="#p0" x="281.99" y="157.2"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="188.92" y="182.47"/>
+<use xlink:href="#p0" x="217.65" y="166.33"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="237.4" y="170.8"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="331.07" y="153.5"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="344.24" y="149.42"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="198.11" y="187.13"/>
+<use xlink:href="#p0" x="171.23" y="194.13"/>
+</g>
+<g fill="#ff0000" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="299.65" y="149.03"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="263.44" y="157.2"/>
+<use xlink:href="#p0" x="234.32" y="167.11"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="224.83" y="171.58"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="302.64" y="153.89"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="344.54" y="148.45"/>
+<use xlink:href="#p0" x="161.18" y="198.6"/>
+</g>
+<g fill="#ff0000" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="332.57" y="145.34"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="138.94" y="204.24"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="252.66" y="163.03"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="267.03" y="154.09"/>
+<use xlink:href="#p0" x="167.07" y="189.85"/>
+<use xlink:href="#p0" x="276.01" y="161.08"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="234.11" y="171.77"/>
+<use xlink:href="#p0" x="247.82" y="171"/>
+<use xlink:href="#p0" x="305.04" y="146.51"/>
+<use xlink:href="#p0" x="194.61" y="187.32"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="266.13" y="166.33"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="320.6" y="150.2"/>
+<use xlink:href="#p0" x="211.15" y="178.97"/>
+<use xlink:href="#p0" x="198.71" y="185.96"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="237.1" y="170.8"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="187.72" y="184.8"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="158.69" y="188.3"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="219.15" y="174.11"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="234.71" y="167.11"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="159.89" y="216.87"/>
+<use xlink:href="#p0" x="215.55" y="166.14"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="180.24" y="188.69"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="161.98" y="199.76"/>
+<use xlink:href="#p0" x="190.71" y="188.3"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="168.87" y="200.15"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="190.71" y="188.3"/>
+<use xlink:href="#p0" x="152.71" y="191.02"/>
+<use xlink:href="#p0" x="162.58" y="194.32"/>
+<use xlink:href="#p0" x="159.59" y="187.91"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="200.59" y="187.32"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="131.76" y="203.85"/>
+<use xlink:href="#p0" x="165.58" y="182.47"/>
+<use xlink:href="#p0" x="243.39" y="158.17"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="249.07" y="171"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="253.26" y="171.19"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="188.62" y="185.38"/>
+<use xlink:href="#p0" x="208.97" y="180.52"/>
+<use xlink:href="#p0" x="221.54" y="172.94"/>
+<use xlink:href="#p0" x="228.12" y="176.83"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="182.93" y="190.82"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="183.53" y="177.41"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="239.5" y="164"/>
+<use xlink:href="#p0" x="245.48" y="169.83"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="186.52" y="189.27"/>
+<use xlink:href="#p0" x="221.84" y="172.75"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="180.24" y="177.22"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="125.47" y="211.23"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="249.67" y="175.08"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="174.85" y="191.6"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="150.61" y="173.14"/>
+<use xlink:href="#p0" x="161.98" y="192.77"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="212.86" y="182.66"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="186.23" y="175.27"/>
+<use xlink:href="#p0" x="179.64" y="169.64"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="207.77" y="180.13"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="265.83" y="170.8"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="210.47" y="169.83"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="265.83" y="168.47"/>
+<use xlink:href="#p0" x="208.37" y="180.52"/>
+<use xlink:href="#p0" x="240.69" y="169.25"/>
+<use xlink:href="#p0" x="186.23" y="189.46"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="164.38" y="185.38"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="123.98" y="197.82"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="163.18" y="203.65"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="141.33" y="201.13"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="229.02" y="180.72"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="142.23" y="199.18"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="234.41" y="162.83"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="263.74" y="164.39"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="180.24" y="171.97"/>
+<use xlink:href="#p0" x="184.73" y="160.5"/>
+<use xlink:href="#p0" x="145.82" y="187.91"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="154.2" y="198.21"/>
+</g>
+<g fill="#ff0000" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="234.11" y="173.14"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="198.79" y="176.83"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="162.28" y="204.62"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="261.04" y="166.14"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="249.07" y="170.61"/>
+<use xlink:href="#p0" x="216.45" y="172.94"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="170.36" y="197.24"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="152.71" y="200.54"/>
+<use xlink:href="#p0" x="218.25" y="173.33"/>
+<use xlink:href="#p0" x="140.44" y="195.88"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="124.87" y="200.93"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="268.23" y="160.5"/>
+<use xlink:href="#p0" x="145.22" y="204.62"/>
+<use xlink:href="#p0" x="212.26" y="180.33"/>
+<use xlink:href="#p0" x="293.96" y="156.81"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="243.69" y="170.8"/>
+</g>
+<g fill="#00ffff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="187.42" y="188.88"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="121.58" y="218.62"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="123.38" y="219.79"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="107.82" y="224.26"/>
+<use xlink:href="#p0" x="114.4" y="230.28"/>
+</g>
+<g fill="#ffff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="255.66" y="180.52"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="106.62" y="232.81"/>
+</g>
+<g fill="#ff0000" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="228.42" y="180.52"/>
+</g>
+<g fill="#0000ff" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="134.75" y="197.82"/>
+</g>
+<g fill="#00ff00" stroke-linejoin="miter" stroke-width="0.62">
+<use xlink:href="#p0" x="115.3" y="217.26"/>
+</g>
+</g>
+<g clip-path="url(#c0)">
+<g fill="none" stroke-width="1">
+<g stroke="none" fill="#000000" fill-opacity="1" font-family="DejaVu Serif" font-size="17.5">
+<text x="157.8" y="365.66" textLength="343.4">Data taken from Kowalski et al. (2008)</text>
+</g>
+</g>
+<g fill="none" stroke-linecap="butt" stroke-width="0.62">
+<path d="M60.23,42.51l464.17,0"/>
+<path d="M494.03,42.51l0,3.75M402.83,42.51l0,3.75M334.02,42.51l0,3.75M279.31,42.51l0,3.75M234.15,42.51l0,3.75M195.79,42.51l0,3.75"/>
+<path d="M162.48,42.51l0,7.5M402.83,42.51l0,7.5"/>
+</g>
+<g fill="none" stroke-width="1">
+<g stroke="none" fill="#000000" fill-opacity="1" font-family="DejaVu Serif" font-size="17.5">
+<text x="176.92" y="16.3" textLength="230.8">Time since big bang (Gyr)</text>
+</g>
+<g stroke="none" fill="#000000" fill-opacity="1" font-family="DejaVu Serif" font-size="15.0">
+<text x="152.97" y="39.11" textLength="19">10</text>
+<text x="398.08" y="39.11" textLength="9.5">5</text>
+</g>
+</g>
+<g fill="none" stroke-linecap="butt" stroke-width="0.62">
+<path d="M60.23,382.67l0,-340.15"/>
+<path d="M60.23,382.67l3.75,0M60.23,372.95l3.75,0M60.23,363.23l3.75,0M60.23,353.52l3.75,0M60.23,343.8l3.75,0M60.23,334.08l3.75,0M60.23,324.36l3.75,0M60.23,314.64l3.75,0M60.23,304.92l3.75,0M60.23,295.2l3.75,0M60.23,285.48l3.75,0M60.23,275.77l3.75,0M60.23,266.05l3.75,0M60.23,256.33l3.75,0M60.23,246.61l3.75,0M60.23,236.89l3.75,0M60.23,227.17l3.75,0M60.23,217.45l3.75,0M60.23,207.73l3.75,0M60.23,198.02l3.75,0M60.23,188.3l3.75,0M60.23,178.58l3.75,0M60.23,168.86l3.75,0M60.23,159.14l3.75,0M60.23,149.42l3.75,0M60.23,139.7l3.75,0M60.23,129.98l3.75,0M60.23,120.26l3.75,0M60.23,110.55l3.75,0M60.23,100.83l3.75,0M60.23,91.11l3.75,0M60.23,81.39l3.75,0M60.23,71.67l3.75,0M60.23,61.95l3.75,0M60.23,52.23l3.75,0M60.23,42.51l3.75,0"/>
+<path d="M60.23,382.67l7.5,0M60.23,334.08l7.5,0M60.23,285.48l7.5,0M60.23,236.89l7.5,0M60.23,188.3l7.5,0M60.23,139.7l7.5,0M60.23,91.11l7.5,0M60.23,42.51l7.5,0"/>
+<path d="M524.4,382.67l0,-340.15"/>
+<path d="M524.4,382.67l-3.75,0M524.4,372.95l-3.75,0M524.4,363.23l-3.75,0M524.4,353.52l-3.75,0M524.4,343.8l-3.75,0M524.4,334.08l-3.75,0M524.4,324.36l-3.75,0M524.4,314.64l-3.75,0M524.4,304.92l-3.75,0M524.4,295.2l-3.75,0M524.4,285.48l-3.75,0M524.4,275.77l-3.75,0M524.4,266.05l-3.75,0M524.4,256.33l-3.75,0M524.4,246.61l-3.75,0M524.4,236.89l-3.75,0M524.4,227.17l-3.75,0M524.4,217.45l-3.75,0M524.4,207.73l-3.75,0M524.4,198.02l-3.75,0M524.4,188.3l-3.75,0M524.4,178.58l-3.75,0M524.4,168.86l-3.75,0M524.4,159.14l-3.75,0M524.4,149.42l-3.75,0M524.4,139.7l-3.75,0M524.4,129.98l-3.75,0M524.4,120.26l-3.75,0M524.4,110.55l-3.75,0M524.4,100.83l-3.75,0M524.4,91.11l-3.75,0M524.4,81.39l-3.75,0M524.4,71.67l-3.75,0M524.4,61.95l-3.75,0M524.4,52.23l-3.75,0M524.4,42.51l-3.75,0"/>
+<path d="M524.4,382.67l-7.5,0M524.4,334.08l-7.5,0M524.4,285.48l-7.5,0M524.4,236.89l-7.5,0M524.4,188.3l-7.5,0M524.4,139.7l-7.5,0M524.4,91.11l-7.5,0M524.4,42.51l-7.5,0"/>
+</g>
+<g fill="none" stroke-width="1">
+<g transform="matrix(0 -1 1 0 16.3 316.29)">
+<g stroke="none" fill="#000000" fill-opacity="1" font-family="DejaVu Serif" font-size="17.5">
+<text x="0" y="0" textLength="207.4">Maximum B magnitude</text>
+</g>
+</g>
+<g stroke="none" fill="#000000" fill-opacity="1" font-family="DejaVu Serif" font-size="15.0">
+<text x="23.53" y="388.42" textLength="33.3">12.5</text>
+<text x="37.83" y="339.83" textLength="19">15</text>
+<text x="23.53" y="291.23" textLength="33.3">17.5</text>
+<text x="37.83" y="242.64" textLength="19">20</text>
+<text x="23.53" y="194.05" textLength="33.3">22.5</text>
+<text x="37.83" y="145.45" textLength="19">25</text>
+<text x="23.53" y="96.86" textLength="33.3">27.5</text>
+<text x="37.83" y="48.26" textLength="19">30</text>
+</g>
+</g>
+<g fill="none" stroke-linecap="butt" stroke-width="0.62">
+<path d="M60.23,382.67l464.17,0"/>
+<path d="M60.23,382.67l0,-3.75M90.16,382.67l0,-3.75M120.09,382.67l0,-3.75M150.01,382.67l0,-3.75M179.94,382.67l0,-3.75M209.87,382.67l0,-3.75M239.8,382.67l0,-3.75M269.72,382.67l0,-3.75M299.65,382.67l0,-3.75M329.58,382.67l0,-3.75M359.5,382.67l0,-3.75M389.43,382.67l0,-3.75M419.36,382.67l0,-3.75M449.29,382.67l0,-3.75M479.21,382.67l0,-3.75M509.14,382.67l0,-3.75"/>
+<path d="M60.23,382.67l0,-7.5M120.09,382.67l0,-7.5M179.94,382.67l0,-7.5M239.8,382.67l0,-7.5M299.65,382.67l0,-7.5M359.5,382.67l0,-7.5M419.36,382.67l0,-7.5M479.21,382.67l0,-7.5"/>
+</g>
+<g fill="none" stroke-width="1">
+<g stroke="none" fill="#000000" fill-opacity="1" font-family="DejaVu Serif" font-size="17.5">
+<text x="255.22" y="421.09" textLength="74.2">Redshift</text>
+</g>
+<g stroke="none" fill="#000000" fill-opacity="1" font-family="DejaVu Serif" font-size="15.0">
+<text x="55.48" y="400.07" textLength="9.5">0</text>
+<text x="108.19" y="400.07" textLength="23.8">0.2</text>
+<text x="168.04" y="400.07" textLength="23.8">0.4</text>
+<text x="227.9" y="400.07" textLength="23.8">0.6</text>
+<text x="287.75" y="400.07" textLength="23.8">0.8</text>
+<text x="354.75" y="400.07" textLength="9.5">1</text>
+<text x="407.46" y="400.07" textLength="23.8">1.2</text>
+<text x="467.31" y="400.07" textLength="23.8">1.4</text>
+</g>
+</g>
+</g>
+</g>
+</svg>

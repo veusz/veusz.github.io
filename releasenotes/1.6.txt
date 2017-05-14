@@ -1,0 +1,114 @@
+Veusz 1.6
+---------
+Velvet Ember Under Sky Zenith
+-----------------------------
+http://home.gna.org/veusz/
+
+Veusz is Copyright (C) 2003-2010 Jeremy Sanders <jeremy@jeremysanders.net>
+Licenced under the GPL (version 2 or greater).
+
+Veusz is a Qt4 based scientific plotting package. It is written in
+Python, using PyQt4 for display and user-interfaces, and numpy for
+handling the numeric data. Veusz is designed to produce
+publication-ready Postscript/PDF/SVG output. The user interface aims
+to be simple, consistent and powerful.
+
+Veusz provides a GUI, command line, embedding and scripting interface
+(based on Python) to its plotting facilities. It also allows for
+manipulation and editing of datasets. Data can be captured from
+external sources such as internet sockets or other programs.
+
+Changes in 1.6:
+ * User defined constants, functions or external Python imports can be
+   defined for use when evaluating expressions.
+ * Import descriptor is much more tolerant of syntax, e.g. "x,+- y,+,-" can
+   now be specified as "x +- y + -".
+ * New SVG export (PyQt >= 4.6). Supports clipping and exports text
+   as paths for full WYSIWYG.
+ * Dataset names can now contain any character except "`". Names containing
+   non-alphanumeric characters can be quoted in expressions `like so`*1.23
+ * Widget names can contain any character except "/"
+ * A transparency dataset can be provided to specify the per-pixel
+   transparency of the image widget.
+ * A polygon widget has been added.
+ * There is a new option to place axis ticks outside the plot (outer ticks
+   setting on axis widget)
+ * Several new line styles have been added.
+ * Several new plotting markers have been added.
+ * The capture dialog can optionally retain the last N values captured.
+
+Minor changes:
+ * Use of flat cap line style for plotting error bars for exactness.
+ * Add fixes for saving imported unicode text.
+ * Fix image colors for big endian systems (e.g. Mac PPC).
+ * Add boxfill error bar style, plotting errors as filled boxes.
+ * Positive and negative error bars are forced to have the correct sign.
+
+Features of package:
+ * X-Y plots (with errorbars)
+ * Line and function plots
+ * Contour plots
+ * Images (with colour mappings and colorbars)
+ * Stepped plots (for histograms)
+ * Bar graphs
+ * Plotting dates
+ * Fitting functions to data
+ * Stacked plots and arrays of plots
+ * Plot keys
+ * Plot labels
+ * Shapes and arrows on plots
+ * LaTeX-like formatting for text
+ * EPS/PDF/PNG/SVG/EMF export
+ * Scripting interface
+ * Dataset creation/manipulation
+ * Embed Veusz within other programs
+ * Text, CSV and FITS importing
+ * Data can be captured from external sources
+
+Requirements for source install:
+ Python (2.4 or greater required)
+   http://www.python.org/
+ Qt >= 4.3 (free edition)
+   http://www.trolltech.com/products/qt/  
+ PyQt >= 4.3 (SIP is required to be installed first)
+   http://www.riverbankcomputing.co.uk/pyqt/
+   http://www.riverbankcomputing.co.uk/sip/
+ numpy >= 1.0
+   http://numpy.scipy.org/
+
+Optional:
+ Microsoft Core Fonts (recommended for nice output)
+   http://corefonts.sourceforge.net/
+ PyFITS >= 1.1 (optional for FITS import)
+   http://www.stsci.edu/resources/software_hardware/pyfits
+ pyemf >= 2.0.0 (optional for EMF export)
+   http://pyemf.sourceforge.net/
+ For EMF and better SVG export, PyQt >= 4.6 or better is
+   required, to fix a bug in the C++ wrapping
+
+For documentation on using Veusz, see the "Documents" directory. The
+manual is in PDF, HTML and text format (generated from docbook). The
+examples are also useful documentation.
+
+Issues with the current version:
+
+ * Due to Qt, hatched regions sometimes look rather poor when exported
+   to PostScript, PDF or SVG.
+
+ * Due to a bug in Qt, some long lines, or using log scales, can lead
+   to very slow plot times under X11. It is fixed by upgrading to
+   Qt-4.5.1 (or using a binary). Switching off antialiasing in the options
+   may help.
+
+If you enjoy using Veusz, I would love to hear from you. Please join
+the mailing lists at
+
+https://gna.org/mail/?group=veusz
+
+to discuss new features or if you'd like to contribute code. The
+latest code can always be found in the SVN repository.
+
+Jeremy Sanders
+
+-------------------------------------------------------------------------------
+$Id: README 1123 2010-01-19 21:17:19Z jeremysanders $

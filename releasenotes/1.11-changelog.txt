@@ -1,0 +1,41 @@
+Changes in 1.11:
+ * New data point picker for finding coordinates of points on plot
+   (contributed by B.K. Stuhl)
+ * New data navigator window for filtering, sorting and examining
+   dataset statistics
+ * ".." button next to dataset settings pops up data navigator for
+   choosing datasets
+ * Data fitting can now use PyMinuit, giving error estimates
+   (B.K. Stuhl)
+ * Console history now uses currently entered characters to select
+   lines from history (B.K. Stuhl)
+ * New self test script, comparing graph output with expected output
+ * Put superscripts and subscripts above each other when
+   formatting (B.K. Stuhl)
+ * Key entries can have multiple lines (using \\) (B.K. Stuhl)
+ * Option to treat blanks as data items in CSV files
+ * Locale support added for number formatting
+    - Can use current locale or US/English in documents
+    - Can use US/English or current local in user interface
+ * Contours avoid missing (nan) values
+
+ * Linux binaries are now created on a more modern system
+ * Windows binaries now use MSVC for compilation
+
+Bug fixes:
+ * CSV import with blank columns fixed
+ * Embedding module now working when using binary
+ * Remember current directory with unicode characters
+ * Extension module now compiles under MSVC in Windows
+ * Output is always appended to console (B.K. Stuhl)
+ * \r characters sometimes break data import in Windows
+ * If using --export option, add directory of script to import path
+
+Minor bug fixes:
+ * Zero sized dataset contour plot fix
+ * Fix problem on context menu for axis match setting
+ * Small values on log axis fix
+ * Disable data edit dialog context menu when no datasets
+ * Loading files with unicode filenames on command line
+ * Do not allow non finite float settings
+

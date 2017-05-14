@@ -1,0 +1,75 @@
+Veusz 0.4  [first public release]
+---------
+Velvet Ember Under Sky Zenith
+-----------------------------
+http://home.gna.org/veusz/
+
+Veusz is Copyright (C) 2003-2005 Jeremy Sanders <jeremy@jeremysanders.net>
+Licenced under the GPL (version 2 or greater)
+
+Veusz is a scientific plotting package written in Python (currently
+100% Python). It uses PyQt for display and user-interfaces, and
+numarray for handling the numeric data. Veusz is designed to produce
+publication-ready Postscript output.
+
+Veusz provides a GUI, command line and scripting interface (based on
+Python) to its plotting facilities. The plots are built using an
+object-based system to provide a consistent interface.
+
+Currently done:
+ * X-Y plots (with errorbars)
+ * Stepped plots (for histograms)
+ * Line plots
+ * Function plots
+ * Stacked plots and arrays of plots
+ * Plot keys
+ * Plot labels
+ * LaTeX-like formatting for text
+ * EPS output
+ * Simple data importing
+ * Scripting interface
+ * Save/Load plots
+ * Some work on a manual and introduction
+
+To be done:
+ * Contour plots
+ * Images
+ * Filled regions
+ * UI improvements
+ * Import filters (for qdp and other plotting packages, fits, csv)
+ * Data manipulation
+ * Python embedding interface (for embedding Veusz in other programs).
+   [some of the external interface is complete]
+ * Proper installation program
+
+Requirements:
+ Python (probably 2.3 or greater required)
+   http://www.python.org/
+ Qt (free edition)
+   http://www.trolltech.com/products/qt/  
+ PyQt (SIP is required to be installed first)
+   http://www.riverbankcomputing.co.uk/pyqt/
+   http://www.riverbankcomputing.co.uk/sip/
+ numarray
+   http://www.stsci.edu/resources/software_hardware/numarray
+ Microsoft Core Fonts (recommended)
+   http://corefonts.sourceforge.net/
+
+For documentation on using Veusz, see the "Documents" directory. The
+manual is in pdf, html and text format (generated from docbook).
+
+If you enjoy using Veusz, I would love to hear from you. Please join
+the mailing lists at
+
+https://gna.org/mail/?group=veusz
+
+to discuss new features or if you'd like to contribute code. The
+newest code can always be found in CVS.
+
+Cheers
+
+Jeremy
+
+-------------------------------------------------------------------------------
+$Id: 0.4.txt,v 1.1 2005/03/13 21:06:04 jeremysanders Exp $
+ 

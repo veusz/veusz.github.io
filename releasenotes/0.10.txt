@@ -1,0 +1,80 @@
+Veusz 0.10
+----------
+Velvet Ember Under Sky Zenith
+-----------------------------
+http://home.gna.org/veusz/
+
+Veusz is Copyright (C) 2003-2006 Jeremy Sanders <jeremy@jeremysanders.net>
+Licenced under the GPL (version 2 or greater).
+
+Veusz is a scientific plotting package written in Python, using PyQt
+for display and user-interfaces, and numarray for handling the numeric
+data. Veusz is designed to produce publication-ready Postscript
+output. The user interface aims to be simple, consistent and powerful.
+
+Veusz provides a GUI, command line, embedding and scripting interface
+(based on Python) to its plotting facilities. It also allows for
+manipulation and editing of datasets.
+
+Changes from 0.9:
+ Please refer to ChangeLog for all the changes.
+ Highlights include:
+   * CSV import of data
+   * Stylesheets to easily change graph appearance
+   * Many user interface improvements
+   * Extra plotting features and bug fixes
+
+Features of package:
+ * X-Y plots (with errorbars)
+ * Contour plots
+ * Images (with colour mappings)
+ * Stepped plots (for histograms)
+ * Line plots
+ * Function plots
+ * Fitting functions to data
+ * Stacked plots and arrays of plots
+ * Plot keys
+ * Plot labels
+ * LaTeX-like formatting for text
+ * EPS output
+ * Simple data importing
+ * Scripting interface
+ * Save/Load plots
+ * Dataset manipulation
+ * Embed Veusz within other programs
+
+Requirements:
+ Python (probably 2.3 or greater required)
+   http://www.python.org/
+ Qt (free edition)
+   http://www.trolltech.com/products/qt/  
+ PyQt (SIP is required to be installed first)
+   http://www.riverbankcomputing.co.uk/pyqt/
+   http://www.riverbankcomputing.co.uk/sip/
+ numarray
+   http://www.stsci.edu/resources/software_hardware/numarray
+ Microsoft Core Fonts (recommended)
+   http://corefonts.sourceforge.net/
+ PyFITS (optional)
+   http://www.stsci.edu/resources/software_hardware/pyfits
+
+For documentation on using Veusz, see the "Documents" directory. The
+manual is in pdf, html and text format (generated from docbook).
+
+If you enjoy using Veusz, I would love to hear from you. Please join
+the mailing lists at
+
+https://gna.org/mail/?group=veusz
+
+to discuss new features or if you'd like to contribute code. The
+latest code can always be found in the SVN repository.
+
+If non GPL projects are interested in using Veusz code, please contact
+me. I am happy to consider relicencing code for other free projects,
+if I am legally allowed to do so.
+
+Jeremy Sanders
+
+-------------------------------------------------------------------------------
+$Id: 0.10.txt,v 1.1 2006/06/18 10:02:38 jeremysanders Exp $
+ 

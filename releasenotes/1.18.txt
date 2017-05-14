@@ -1,0 +1,133 @@
+Veusz 1.18
+----------
+http://home.gna.org/veusz/
+
+Veusz is a scientific plotting package.  It is designed to produce
+publication-ready Postscript/PDF/SVG output. Graphs are built-up by
+combining plotting widgets. The user interface aims to be simple,
+consistent and powerful.
+
+Veusz provides GUI, Python module, command line, scripting, DBUS and
+SAMP interfaces to its plotting facilities. It also allows for
+manipulation and editing of datasets. Data can be captured from
+external sources such as Internet sockets or other programs.
+
+Changes in 1.18:
+ * Add support for dataset expressions when plotting
+ * Add axis-function widget for plotting axes which have a scale given
+   by a function, or are linked to a different axis via a function
+ * Add stepped colour maps
+ * Support editing multiple datasets simultaneously in editor
+ * Add setting to fix aspect-ratio of graphs
+ * Add 'vcentre' line step mode for vertical step plots
+ * Add internal margin setting for grids to separate sub-plots
+ * Add pixel, pixel_wcs, fraction and linear_wcs FITS import
+   coordinate system modes
+ * Add drop down toolbar button menu to create axis widgets
+ * More efficient widget dependency resolution
+
+Bug fixes:
+ * Fix reversed 'broken'-axes
+ * Do not always draw axes above other widgets (fixes problem with key
+   below axis)
+ * Fix use of transparency image when plotting non-square images
+ * Allow lists passed as xrange and yrange to create 2D dataset
+ * Fix FieldBool positioning for plugins
+ * QDP import: fix "no" values when used mixed with numbers
+ * Remove warning of log images with zeros
+ * For embedded mode, always return string for __repr__
+ * Workaround for windows appearing behind for Mac OS X
+
+Features of package:
+ Plotting features:
+  * X-Y plots (with errorbars)
+  * Line and function plots
+  * Contour plots
+  * Images (with colour mappings and colorbars)
+  * Stepped plots (for histograms)
+  * Bar graphs
+  * Vector field plots
+  * Box plots
+  * Polar plots
+  * Ternary plots
+  * Plotting dates
+  * Fitting functions to data
+  * Stacked plots and arrays of plots
+  * Nested plots
+  * Plot keys
+  * Plot labels
+  * Shapes and arrows on plots
+  * LaTeX-like formatting for text
+  * Multiple axes
+  * Axes with steps in axis scale (broken axes)
+  * Axis scales using functional forms
+  * Plotting functions of datasets
+ Input and output:
+  * EPS/PDF/PNG/SVG/EMF export
+  * Dataset creation/manipulation
+  * Embed Veusz within other programs
+  * Text, CSV, FITS, NPY/NPZ, QDP, binary and user-plugin importing
+  * Data can be captured from external sources
+ Extending:
+  * Use as a Python module
+  * User defined functions, constants and can import external Python functions
+  * Plugin interface to allow user to write or load code to
+     - import data using new formats
+     - make new datasets, optionally linked to existing datasets
+     - arbitrarily manipulate the document
+  * Scripting interface
+  * Control with DBUS and SAMP
+ Other features:
+  * Data picker
+  * Interactive tutorial
+  * Multithreaded rendering
+
+Requirements for source install:
+ Python 2.x (2.6 or greater required)
+   http://www.python.org/
+ Qt >= 4.4 (free edition)
+   http://www.trolltech.com/products/qt/
+ PyQt >= 4.5 (SIP is required to be installed first)
+   http://www.riverbankcomputing.co.uk/software/pyqt/
+   http://www.riverbankcomputing.co.uk/software/sip/
+ numpy >= 1.0
+   http://numpy.scipy.org/
+
+Optional:
+ PyFITS >= 1.1 (optional for FITS import)
+   http://www.stsci.edu/resources/software_hardware/pyfits
+ pyemf >= 2.0.0 (optional for EMF export)
+   http://pyemf.sourceforge.net/
+ PyMinuit >= 1.1.2 (optional improved fitting)
+   http://code.google.com/p/pyminuit/
+ For EMF and better SVG export, PyQt >= 4.6 or better is
+   required, to fix a bug in the C++ wrapping
+ dbus-python, for dbus interface
+   http://dbus.freedesktop.org/doc/dbus-python/
+ astropy (optional for VO table import)
+   http://www.astropy.org/
+ SAMPy (optional for SAMP support)
+   http://pypi.python.org/pypi/sampy/
+
+Veusz is Copyright (C) 2003-2013 Jeremy Sanders
+<jeremy@jeremysanders.net> and contributors. It is licenced under the
+GPL (version 2 or greater).
+
+For documentation on using Veusz, see the "Documents" directory. The
+manual is in PDF, HTML and text format (generated from docbook). The
+examples are also useful documentation. Please also see and contribute
+to the Veusz wiki: http://barmag.net/veusz-wiki/
+
+Issues with the current version:
+
+  * Due to a bug in the Qt XML processing, some MathML elements
+    containing purely white space (e.g. thin space) will give an error.
+
+If you enjoy using Veusz, we would love to hear from you. Please join
+the mailing lists at
+
+https://gna.org/mail/?group=veusz
+
+to discuss new features or if you'd like to contribute code. The
+latest code can always be found in the Git repository
+at https://github.com/jeremysanders/veusz.git.

@@ -1,0 +1,131 @@
+Veusz 1.12
+----------
+Velvet Ember Under Sky Zenith
+-----------------------------
+http://home.gna.org/veusz/
+
+Copyright (C) 2003-2011 Jeremy Sanders <jeremy@jeremysanders.net>
+and contributors.
+
+Licenced under the GPL (version 2 or greater).
+
+Veusz is a Qt4 based scientific plotting package. It is written in
+Python, using PyQt4 for display and user-interfaces, and numpy for
+handling the numeric data. Veusz is designed to produce
+publication-ready Postscript/PDF/SVG output. The user interface aims
+to be simple, consistent and powerful.
+
+Veusz provides a GUI, command line, embedding and scripting interface
+(based on Python) to its plotting facilities. It also allows for
+manipulation and editing of datasets. Data can be captured from
+external sources such as internet sockets or other programs.
+
+Changes in 1.12:
+ * Multiple widgets can now be selected for editing properties
+ * Add Edit->Select menu and context menu for above
+ * Added context menu on dataset browser for filenames to reload,
+   delete or unlink all associated datasets
+ * New tree-like dataset browsing widget is shown in data edit dialog
+ * Importing 1D fits images is now supported
+ * Date / time data has its own dataset type
+ * The data edit dialog box can create or edit date/time data in
+   human-readable form
+
+Minor improvements:
+ * Add LaTeX commands \cdot, \nabla, \overline plus some arrows
+ * Inform user in exception dialog if a new version is available
+ * Add linevertbar and linehorzbar error bar styles
+
+Bug fixes:
+ * Fix crash on filling filled error regions if no error bars
+ * Remove grouping separator to numbers in locale as it creates
+   ambiguous lists of numbers
+ * Undo works properly for boolean and integer settings
+ * Prevent widgets getting the same names when dragging and dropping
+ * Hidden plot widgets are ignored when calculating axis ranges
+ * Combo boxes are now case sensitive when displaying matches with
+   previous text
+ * Fix errors if plotting DatasetRange or Dataset1DPlugin datasets
+   against data with nan values
+ * Fix division by zero in dataset preview
+ * Do not leave settings pointing to deleted widgets after an undo
+ * Fix errors when using super/subscripts of super/subscripts
+ * Fix crash when giving positions of bar plot and labels
+ * Do not allow dataset names to be invalid after remaining
+ * Several EMF format bug fixes, including not showing hidden lines
+   and not connecting points making curves
+ * Stop crash when contouring zero-sized datasets
+
+Features of package:
+ * X-Y plots (with errorbars)
+ * Line and function plots
+ * Contour plots
+ * Images (with colour mappings and colorbars)
+ * Stepped plots (for histograms)
+ * Bar graphs
+ * Vector field plots
+ * Box plots
+ * Polar plots
+ * Plotting dates
+ * Fitting functions to data
+ * Stacked plots and arrays of plots
+ * Plot keys
+ * Plot labels
+ * Shapes and arrows on plots
+ * LaTeX-like formatting for text
+ * EPS/PDF/PNG/SVG/EMF export
+ * Scripting interface
+ * Dataset creation/manipulation
+ * Embed Veusz within other programs
+ * Text, CSV, FITS and user-plugin importing
+ * Data can be captured from external sources
+ * User defined functions, constants and can import external Python functions
+ * Plugin interface to allow user to write or load code to
+    - import data using new formats
+    - make new datasets, optionally linked to existing datasets
+    - arbitrarily manipulate the document
+ * Data picker
+
+Requirements for source install:
+ Python (2.4 or greater required)
+   http://www.python.org/
+ Qt >= 4.3 (free edition)
+   http://www.trolltech.com/products/qt/  
+ PyQt >= 4.3 (SIP is required to be installed first)
+   http://www.riverbankcomputing.co.uk/pyqt/
+   http://www.riverbankcomputing.co.uk/sip/
+ numpy >= 1.0
+   http://numpy.scipy.org/
+
+Optional:
+ Microsoft Core Fonts (recommended for nice output)
+   http://corefonts.sourceforge.net/
+ PyFITS >= 1.1 (optional for FITS import)
+   http://www.stsci.edu/resources/software_hardware/pyfits
+ pyemf >= 2.0.0 (optional for EMF export)
+   http://pyemf.sourceforge.net/
+ PyMinuit >= 1.1.2 (optional improved fitting)
+   http://code.google.com/p/pyminuit/
+ For EMF and better SVG export, PyQt >= 4.6 or better is
+   required, to fix a bug in the C++ wrapping
+   
+
+For documentation on using Veusz, see the "Documents" directory. The
+manual is in PDF, HTML and text format (generated from docbook). The
+examples are also useful documentation. Please also see and contribute
+to the Veusz wiki: http://barmag.net/veusz-wiki/
+
+Issues with the current version:
+
+ * Some recent versions of PyQt/SIP will causes crashes when exporting
+   SVG files. Update to 4.7.4 (if released) or a recent snapshot to
+   solve this problem.
+
+If you enjoy using Veusz, we would love to hear from you. Please join
+the mailing lists at
+
+https://gna.org/mail/?group=veusz
+
+to discuss new features or if you'd like to contribute code. The
+latest code can always be found in the Git repository
+at https://github.com/jeremysanders/veusz.git.

@@ -1,0 +1,1453 @@
+------------------------------------------------------------------------
+r613 | jeremysanders | 2007-05-22 21:05:56 +0100 (Tue, 22 May 2007) | 2 lines
+
+Update manual images for veusz-0.99.0
+
+------------------------------------------------------------------------
+r612 | jeremysanders | 2007-05-21 22:28:18 +0100 (Mon, 21 May 2007) | 2 lines
+
+Fix contours with new line styles
+
+------------------------------------------------------------------------
+r611 | jeremysanders | 2007-05-21 22:28:03 +0100 (Mon, 21 May 2007) | 2 lines
+
+Fix pdf output for windows
+
+------------------------------------------------------------------------
+r610 | jeremysanders | 2007-05-20 12:44:28 +0100 (Sun, 20 May 2007) | 2 lines
+
+slight README fix
+
+------------------------------------------------------------------------
+r609 | jeremysanders | 2007-05-20 12:41:17 +0100 (Sun, 20 May 2007) | 2 lines
+
+Update README and INSTALL for new release
+
+------------------------------------------------------------------------
+r608 | jeremysanders | 2007-05-20 12:23:21 +0100 (Sun, 20 May 2007) | 2 lines
+
+Hack PDF output to fix paper size
+
+------------------------------------------------------------------------
+r607 | jeremysanders | 2007-05-20 11:23:15 +0100 (Sun, 20 May 2007) | 2 lines
+
+Update windows installer file for pyinstaller and add keywords
+
+------------------------------------------------------------------------
+r606 | jeremysanders | 2007-05-20 11:18:09 +0100 (Sun, 20 May 2007) | 2 lines
+
+Add Qt4 entries to changelog
+
+------------------------------------------------------------------------
+r605 | jeremysanders | 2007-05-20 11:12:32 +0100 (Sun, 20 May 2007) | 2 lines
+
+Update manifest
+
+------------------------------------------------------------------------
+r604 | jeremysanders | 2007-05-20 11:11:48 +0100 (Sun, 20 May 2007) | 2 lines
+
+Update install
+
+------------------------------------------------------------------------
+r603 | jeremysanders | 2007-05-20 10:59:56 +0100 (Sun, 20 May 2007) | 2 lines
+
+Fixes for pyinstaller
+
+------------------------------------------------------------------------
+r602 | jeremysanders | 2007-05-20 10:47:12 +0100 (Sun, 20 May 2007) | 2 lines
+
+Merge windows and unix installer scripts
+
+------------------------------------------------------------------------
+r601 | jeremysanders | 2007-05-16 10:08:09 +0100 (Wed, 16 May 2007) | 2 lines
+
+Add capacity for extra line style, and added dotted-fine style
+
+------------------------------------------------------------------------
+r600 | jeremysanders | 2007-05-14 12:10:12 +0100 (Mon, 14 May 2007) | 2 lines
+
+Export in postscript if possible for eps files
+
+------------------------------------------------------------------------
+r599 | jeremysanders | 2007-05-13 16:07:30 +0100 (Sun, 13 May 2007) | 2 lines
+
+Add for windows installer
+
+------------------------------------------------------------------------
+r598 | jeremysanders | 2007-05-10 20:00:13 +0100 (Thu, 10 May 2007) | 2 lines
+
+Add support for transparent image colors
+
+------------------------------------------------------------------------
+r597 | jeremysanders | 2007-05-07 12:02:46 +0100 (Mon, 07 May 2007) | 2 lines
+
+Fix for Qt<4.2
+
+------------------------------------------------------------------------
+r596 | jeremysanders | 2007-05-06 15:18:07 +0100 (Sun, 06 May 2007) | 2 lines
+
+Try to expand tree edit tree by default
+
+------------------------------------------------------------------------
+r595 | jeremysanders | 2007-05-06 15:17:35 +0100 (Sun, 06 May 2007) | 2 lines
+
+Enable linking of dataset expressions by default
+
+------------------------------------------------------------------------
+r594 | jeremysanders | 2007-05-05 18:16:04 +0100 (Sat, 05 May 2007) | 2 lines
+
+Add colorbar to mandelbrot
+
+------------------------------------------------------------------------
+r593 | jeremysanders | 2007-05-05 18:08:27 +0100 (Sat, 05 May 2007) | 2 lines
+
+View->Windows menu needs to update every time it is shown
+
+------------------------------------------------------------------------
+r592 | jeremysanders | 2007-05-05 15:07:21 +0100 (Sat, 05 May 2007) | 2 lines
+
+Add view menu for hiding/viewing toolbars/property windows
+
+------------------------------------------------------------------------
+r591 | jeremysanders | 2007-05-05 11:24:25 +0100 (Sat, 05 May 2007) | 2 lines
+
+Do not place new windows on top of each other
+
+------------------------------------------------------------------------
+r590 | jeremysanders | 2007-05-05 11:08:29 +0100 (Sat, 05 May 2007) | 2 lines
+
+Minor bug fix
+
+------------------------------------------------------------------------
+r589 | jeremysanders | 2007-05-05 11:08:10 +0100 (Sat, 05 May 2007) | 2 lines
+
+Remember export format between calls
+
+------------------------------------------------------------------------
+r588 | jeremysanders | 2007-05-01 14:26:39 +0100 (Tue, 01 May 2007) | 2 lines
+
+Plot data line on top of error bar lines
+
+------------------------------------------------------------------------
+r587 | jeremysanders | 2007-05-01 14:22:56 +0100 (Tue, 01 May 2007) | 2 lines
+
+Correct histograms with right steps
+
+------------------------------------------------------------------------
+r586 | jeremysanders | 2007-05-01 14:15:06 +0100 (Tue, 01 May 2007) | 2 lines
+
+Fix invalid points error for functional datasets
+
+------------------------------------------------------------------------
+r585 | jeremysanders | 2007-05-01 12:41:02 +0100 (Tue, 01 May 2007) | 2 lines
+
+Chop datasets into pieces for plotting if they contain invalid pts (e.g. nan, inf)
+
+------------------------------------------------------------------------
+r584 | jeremysanders | 2007-04-29 12:46:58 +0100 (Sun, 29 Apr 2007) | 2 lines
+
+Fix copy, cut and paste
+
+------------------------------------------------------------------------
+r583 | jeremysanders | 2007-04-29 11:35:17 +0100 (Sun, 29 Apr 2007) | 2 lines
+
+Add transparency option for images
+
+------------------------------------------------------------------------
+r582 | jeremysanders | 2007-04-28 21:41:50 +0100 (Sat, 28 Apr 2007) | 3 lines
+
+Get rid of some integer casts as part of the qt3->qt4 transition
+Improvements to colorbar
+
+------------------------------------------------------------------------
+r581 | jeremysanders | 2007-04-26 20:01:54 +0100 (Thu, 26 Apr 2007) | 2 lines
+
+Fix trimming used file list
+
+------------------------------------------------------------------------
+r580 | jeremysanders | 2007-04-26 14:39:49 +0100 (Thu, 26 Apr 2007) | 2 lines
+
+Fix typo in textrender
+
+------------------------------------------------------------------------
+r579 | jeremysanders | 2007-04-22 17:21:34 +0100 (Sun, 22 Apr 2007) | 2 lines
+
+Change way colorbar size/position is specified
+
+------------------------------------------------------------------------
+r578 | jeremysanders | 2007-04-22 16:17:07 +0100 (Sun, 22 Apr 2007) | 2 lines
+
+Move key options to formatting
+
+------------------------------------------------------------------------
+r577 | jeremysanders | 2007-04-22 16:12:28 +0100 (Sun, 22 Apr 2007) | 2 lines
+
+Force antialiasing
+
+------------------------------------------------------------------------
+r576 | jeremysanders | 2007-04-22 15:37:52 +0100 (Sun, 22 Apr 2007) | 2 lines
+
+Fix height of vertically-centred characters
+
+------------------------------------------------------------------------
+r575 | jeremysanders | 2007-04-22 14:56:34 +0100 (Sun, 22 Apr 2007) | 2 lines
+
+Use floating point values in rendering
+
+------------------------------------------------------------------------
+r574 | jeremysanders | 2007-04-22 14:56:00 +0100 (Sun, 22 Apr 2007) | 2 lines
+
+Small fix of data edit dialog
+
+------------------------------------------------------------------------
+r573 | jeremysanders | 2007-04-14 17:28:50 +0100 (Sat, 14 Apr 2007) | 2 lines
+
+Fix bug where scroll mode doesn't disable after mouse released
+
+------------------------------------------------------------------------
+r572 | jeremysanders | 2007-04-14 17:20:13 +0100 (Sat, 14 Apr 2007) | 2 lines
+
+Add new license dialog, and improve GPL() command
+
+------------------------------------------------------------------------
+r571 | jeremysanders | 2007-04-12 14:52:44 +0100 (Thu, 12 Apr 2007) | 2 lines
+
+Do not show hidden plotters in key. Also code cleanup.
+
+------------------------------------------------------------------------
+r570 | jeremysanders | 2007-04-12 12:38:43 +0100 (Thu, 12 Apr 2007) | 2 lines
+
+Fix model error when deleting widgets
+
+------------------------------------------------------------------------
+r569 | jeremysanders | 2007-04-11 22:24:20 +0100 (Wed, 11 Apr 2007) | 7 lines
+
+Improved veusz formatting. Now allowed are standard C formatting 
+strings (man printf), Veusz extensions: %Ve which prints in scientific 
+notation foo x 10^bar, %Vg which switches between standard formatting 
+and scientific formatting >1e4 and <1e-2. Also are data formatting 
+options %VDx where x is listed in 
+http://docs.python.org/lib/module-time.html under the strftime function 
+
+------------------------------------------------------------------------
+r568 | jeremysanders | 2007-03-12 22:25:04 +0000 (Mon, 12 Mar 2007) | 2 lines
+
+Fix for when colorbar is within grid
+
+------------------------------------------------------------------------
+r567 | jeremysanders | 2007-03-12 22:19:15 +0000 (Mon, 12 Mar 2007) | 2 lines
+
+Some further colorbar fixes
+
+------------------------------------------------------------------------
+r566 | jeremysanders | 2007-03-12 21:56:40 +0000 (Mon, 12 Mar 2007) | 2 lines
+
+Further work on colorbar. Largely works.
+
+------------------------------------------------------------------------
+r565 | jeremysanders | 2007-03-05 21:23:25 +0000 (Mon, 05 Mar 2007) | 2 lines
+
+Further colorbar updates
+
+------------------------------------------------------------------------
+r564 | jeremysanders | 2007-03-05 21:02:34 +0000 (Mon, 05 Mar 2007) | 2 lines
+
+Initial colorbar framework code
+
+------------------------------------------------------------------------
+r563 | jeremysanders | 2007-02-25 17:50:26 +0000 (Sun, 25 Feb 2007) | 2 lines
+
+Add windows installer file for NSIS
+
+------------------------------------------------------------------------
+r562 | jeremysanders | 2007-02-25 14:12:38 +0000 (Sun, 25 Feb 2007) | 2 lines
+
+Use py2exe if available in setup
+
+------------------------------------------------------------------------
+r561 | jeremysanders | 2007-02-24 17:32:23 +0000 (Sat, 24 Feb 2007) | 2 lines
+
+Move toolbar for adding widgets to top of window instead of side
+
+------------------------------------------------------------------------
+r560 | jeremysanders | 2007-02-24 17:27:39 +0000 (Sat, 24 Feb 2007) | 2 lines
+
+setup cleanups
+
+------------------------------------------------------------------------
+r559 | jeremysanders | 2007-02-24 17:19:52 +0000 (Sat, 24 Feb 2007) | 2 lines
+
+Separate out function to find veusz directory (to help py2exe)
+
+------------------------------------------------------------------------
+r558 | jeremysanders | 2007-02-24 16:52:12 +0000 (Sat, 24 Feb 2007) | 2 lines
+
+Preserve tab index on formatting window on switching widgets
+
+------------------------------------------------------------------------
+r557 | jeremysanders | 2007-02-12 16:54:27 +0000 (Mon, 12 Feb 2007) | 2 lines
+
+Fix linked datasets with spaces in expressions
+
+------------------------------------------------------------------------
+r556 | jeremysanders | 2007-01-11 17:31:27 +0000 (Thu, 11 Jan 2007) | 2 lines
+
+Hack to fix axis label behaviour
+
+------------------------------------------------------------------------
+r555 | jeremysanders | 2006-12-31 15:14:48 +0000 (Sun, 31 Dec 2006) | 2 lines
+
+Better user descriptions on tree
+
+------------------------------------------------------------------------
+r554 | jeremysanders | 2006-12-31 14:42:34 +0000 (Sun, 31 Dec 2006) | 2 lines
+
+Make 1st column stretch in treeview
+
+------------------------------------------------------------------------
+r553 | jeremysanders | 2006-12-29 16:26:38 +0000 (Fri, 29 Dec 2006) | 2 lines
+
+Cleanup of function plotting
+
+------------------------------------------------------------------------
+r552 | jeremysanders | 2006-12-29 16:04:34 +0000 (Fri, 29 Dec 2006) | 2 lines
+
+Fix image colour scaling to use correct calculations
+
+------------------------------------------------------------------------
+r551 | jeremysanders | 2006-12-28 19:38:13 +0000 (Thu, 28 Dec 2006) | 2 lines
+
+Optimisation when loading in files to suspend updates
+
+------------------------------------------------------------------------
+r550 | jeremysanders | 2006-12-28 18:38:43 +0000 (Thu, 28 Dec 2006) | 2 lines
+
+Preview colormaps on selection widget
+
+------------------------------------------------------------------------
+r549 | jeremysanders | 2006-12-28 17:11:16 +0000 (Thu, 28 Dec 2006) | 2 lines
+
+Make some options formatting for contour and image
+
+------------------------------------------------------------------------
+r548 | jeremysanders | 2006-12-28 14:18:51 +0000 (Thu, 28 Dec 2006) | 2 lines
+
+Change contour routines to use NumPy rather than Numarray
+
+------------------------------------------------------------------------
+r547 | jeremysanders | 2006-12-24 15:57:10 +0000 (Sun, 24 Dec 2006) | 4 lines
+
+Allow transparent fills
+Add hide option to all widgets
+Tie plotter fill to line colour
+
+------------------------------------------------------------------------
+r546 | jeremysanders | 2006-12-08 05:02:36 +0000 (Fri, 08 Dec 2006) | 2 lines
+
+Make File->Close work. Some minor changes too.
+
+------------------------------------------------------------------------
+r545 | jeremysanders | 2006-11-26 12:51:32 +0000 (Sun, 26 Nov 2006) | 2 lines
+
+Minor settings fixes
+
+------------------------------------------------------------------------
+r544 | jeremysanders | 2006-11-26 11:45:19 +0000 (Sun, 26 Nov 2006) | 2 lines
+
+Fix graph zooming and make capitalisation more consistent
+
+------------------------------------------------------------------------
+r543 | jeremysanders | 2006-11-26 11:13:07 +0000 (Sun, 26 Nov 2006) | 2 lines
+
+Fix dialogs for Qt4.2
+
+------------------------------------------------------------------------
+r542 | jeremysanders | 2006-11-20 14:40:43 +0000 (Mon, 20 Nov 2006) | 2 lines
+
+Slight cleanup
+
+------------------------------------------------------------------------
+r541 | jeremysanders | 2006-11-20 14:37:59 +0000 (Mon, 20 Nov 2006) | 2 lines
+
+Sort keys in FloatDict setting
+
+------------------------------------------------------------------------
+r540 | jeremysanders | 2006-11-20 10:34:05 +0000 (Mon, 20 Nov 2006) | 2 lines
+
+Some more numarray->numpy conversions
+
+------------------------------------------------------------------------
+r539 | jeremysanders | 2006-11-19 16:17:57 +0000 (Sun, 19 Nov 2006) | 2 lines
+
+Implement separate formatting options
+
+------------------------------------------------------------------------
+r538 | jeremysanders | 2006-11-19 16:05:39 +0000 (Sun, 19 Nov 2006) | 2 lines
+
+Some qt4.2 fixes
+
+------------------------------------------------------------------------
+r537 | jeremysanders | 2006-11-19 12:51:43 +0000 (Sun, 19 Nov 2006) | 2 lines
+
+Minor syntax edit
+
+------------------------------------------------------------------------
+r536 | jeremysanders | 2006-11-19 12:44:18 +0000 (Sun, 19 Nov 2006) | 4 lines
+
+Improve grid widget to allow scalings of columns and rows. Remove 
+splitter widget as functionality is exceeded by grid and was only 
+introduced for a few days.
+
+------------------------------------------------------------------------
+r535 | jeremysanders | 2006-11-19 12:12:11 +0000 (Sun, 19 Nov 2006) | 2 lines
+
+Make slightly more robust
+
+------------------------------------------------------------------------
+r534 | jeremysanders | 2006-11-19 12:10:38 +0000 (Sun, 19 Nov 2006) | 3 lines
+
+Improve grid layout code and fix positioning bug in case where graph is 
+moved out of grid.
+
+------------------------------------------------------------------------
+r533 | jeremysanders | 2006-11-19 09:54:26 +0000 (Sun, 19 Nov 2006) | 2 lines
+
+Slight axis value formatting improvement
+
+------------------------------------------------------------------------
+r532 | jeremysanders | 2006-11-18 19:13:22 +0000 (Sat, 18 Nov 2006) | 2 lines
+
+Add label showing axis mouse position on status bar
+
+------------------------------------------------------------------------
+r531 | jeremysanders | 2006-11-18 16:33:47 +0000 (Sat, 18 Nov 2006) | 2 lines
+
+Improve control sizes in data edit dialog
+
+------------------------------------------------------------------------
+r530 | jeremysanders | 2006-11-18 13:17:49 +0000 (Sat, 18 Nov 2006) | 2 lines
+
+First stab at numpy conversion
+
+------------------------------------------------------------------------
+r529 | jeremysanders | 2006-11-17 21:50:37 +0000 (Fri, 17 Nov 2006) | 2 lines
+
+Remove final reference to stylesheet (hopefully)
+
+------------------------------------------------------------------------
+r528 | jeremysanders | 2006-11-17 21:49:01 +0000 (Fri, 17 Nov 2006) | 2 lines
+
+Stylesheet code is much clearer. Removed much cruft from collections, including font choices.
+
+------------------------------------------------------------------------
+r527 | jeremysanders | 2006-11-17 20:53:00 +0000 (Fri, 17 Nov 2006) | 2 lines
+
+Put titles in tabbed settings to help user
+
+------------------------------------------------------------------------
+r526 | jeremysanders | 2006-11-17 20:31:40 +0000 (Fri, 17 Nov 2006) | 2 lines
+
+Fix actions in widgets
+
+------------------------------------------------------------------------
+r525 | jeremysanders | 2006-11-17 14:52:41 +0000 (Fri, 17 Nov 2006) | 2 lines
+
+Add splitter widget
+
+------------------------------------------------------------------------
+r524 | jeremysanders | 2006-11-16 17:44:11 +0000 (Thu, 16 Nov 2006) | 2 lines
+
+Get image coordinates correct way round
+
+------------------------------------------------------------------------
+r520 | jeremysanders | 2006-11-13 10:09:37 +0000 (Mon, 13 Nov 2006) | 2 lines
+
+Improve subsetting order
+
+------------------------------------------------------------------------
+r519 | jeremysanders | 2006-11-12 17:17:01 +0000 (Sun, 12 Nov 2006) | 2 lines
+
+Fix bounding box on postscript output
+
+------------------------------------------------------------------------
+r508 | jeremysanders | 2006-11-12 15:37:43 +0000 (Sun, 12 Nov 2006) | 2 lines
+
+Minor change
+
+------------------------------------------------------------------------
+r507 | jeremysanders | 2006-11-12 14:35:33 +0000 (Sun, 12 Nov 2006) | 2 lines
+
+Mostly fix embed.py
+
+------------------------------------------------------------------------
+r506 | jeremysanders | 2006-11-12 14:02:56 +0000 (Sun, 12 Nov 2006) | 2 lines
+
+Fix veusz_listen
+
+------------------------------------------------------------------------
+r505 | jeremysanders | 2006-11-12 13:02:20 +0000 (Sun, 12 Nov 2006) | 2 lines
+
+Change bitmap export to now use just Qt (not ghostscript). Add jpeg and bmp export formats. Allow jpeg quality to be adjusted.
+
+------------------------------------------------------------------------
+r503 | jeremysanders | 2006-11-11 16:57:48 +0000 (Sat, 11 Nov 2006) | 2 lines
+
+Add preferences dialog
+
+------------------------------------------------------------------------
+r502 | jeremysanders | 2006-11-11 14:22:52 +0000 (Sat, 11 Nov 2006) | 2 lines
+
+Fix png export
+
+------------------------------------------------------------------------
+r501 | jeremysanders | 2006-11-11 14:15:48 +0000 (Sat, 11 Nov 2006) | 2 lines
+
+Allow antialiasing to be toggled
+
+------------------------------------------------------------------------
+r500 | jeremysanders | 2006-11-11 13:34:17 +0000 (Sat, 11 Nov 2006) | 2 lines
+
+Add short descriptions to Settings objects
+
+------------------------------------------------------------------------
+r499 | jeremysanders | 2006-11-11 12:47:52 +0000 (Sat, 11 Nov 2006) | 2 lines
+
+Add linking icons/menu options
+
+------------------------------------------------------------------------
+r498 | jeremysanders | 2006-11-11 11:18:06 +0000 (Sat, 11 Nov 2006) | 2 lines
+
+Minor edit
+
+------------------------------------------------------------------------
+r497 | jeremysanders | 2006-11-11 11:10:23 +0000 (Sat, 11 Nov 2006) | 2 lines
+
+Add context menu to tree and implement rename
+
+------------------------------------------------------------------------
+r496 | jeremysanders | 2006-11-11 10:33:56 +0000 (Sat, 11 Nov 2006) | 2 lines
+
+Manually place buttons for creating widgets
+
+------------------------------------------------------------------------
+r495 | jeremysanders | 2006-11-11 10:26:20 +0000 (Sat, 11 Nov 2006) | 2 lines
+
+Minor changes
+
+------------------------------------------------------------------------
+r494 | jeremysanders | 2006-11-08 14:09:15 +0000 (Wed, 08 Nov 2006) | 2 lines
+
+Add more text labels
+
+------------------------------------------------------------------------
+r493 | jeremysanders | 2006-11-08 12:07:24 +0000 (Wed, 08 Nov 2006) | 2 lines
+
+More user descriptions for settings
+
+------------------------------------------------------------------------
+r492 | jeremysanders | 2006-11-07 21:28:01 +0000 (Tue, 07 Nov 2006) | 2 lines
+
+Add user descriptions to settings
+
+------------------------------------------------------------------------
+r491 | jeremysanders | 2006-11-07 20:51:23 +0000 (Tue, 07 Nov 2006) | 2 lines
+
+Clean up setting copying and initialising
+
+------------------------------------------------------------------------
+r490 | jeremysanders | 2006-11-05 19:38:34 +0000 (Sun, 05 Nov 2006) | 2 lines
+
+Make modifications to Choice settings update controls
+
+------------------------------------------------------------------------
+r489 | jeremysanders | 2006-11-05 18:15:14 +0000 (Sun, 05 Nov 2006) | 2 lines
+
+Add blank down arrow
+
+------------------------------------------------------------------------
+r488 | jeremysanders | 2006-11-05 18:14:59 +0000 (Sun, 05 Nov 2006) | 2 lines
+
+New button by settings
+
+------------------------------------------------------------------------
+r487 | jeremysanders | 2006-11-05 17:07:28 +0000 (Sun, 05 Nov 2006) | 2 lines
+
+Add special label class
+
+------------------------------------------------------------------------
+r486 | jeremysanders | 2006-11-05 14:11:28 +0000 (Sun, 05 Nov 2006) | 2 lines
+
+Remove != None and == None
+
+------------------------------------------------------------------------
+r485 | jeremysanders | 2006-11-04 22:05:00 +0000 (Sat, 04 Nov 2006) | 2 lines
+
+Fixes for rename
+
+------------------------------------------------------------------------
+r484 | jeremysanders | 2006-11-04 21:33:38 +0000 (Sat, 04 Nov 2006) | 2 lines
+
+Allow widgets to be resizable
+
+------------------------------------------------------------------------
+r483 | jeremysanders | 2006-11-04 16:57:41 +0000 (Sat, 04 Nov 2006) | 2 lines
+
+Separate properties dock
+
+------------------------------------------------------------------------
+r482 | jeremysanders | 2006-11-04 14:08:08 +0000 (Sat, 04 Nov 2006) | 2 lines
+
+Simplify treeeditwindow
+
+------------------------------------------------------------------------
+r481 | jeremysanders | 2006-11-04 13:11:58 +0000 (Sat, 04 Nov 2006) | 2 lines
+
+Add formatting window
+
+------------------------------------------------------------------------
+r480 | jeremysanders | 2006-10-30 20:41:45 +0000 (Mon, 30 Oct 2006) | 2 lines
+
+Make graph zoom / select mutually exclusive
+
+------------------------------------------------------------------------
+r479 | jeremysanders | 2006-10-29 16:53:59 +0000 (Sun, 29 Oct 2006) | 2 lines
+
+Diable svg output, and enable pdf output
+
+------------------------------------------------------------------------
+r478 | jeremysanders | 2006-10-29 16:07:31 +0000 (Sun, 29 Oct 2006) | 2 lines
+
+Warn no pages for printing and exporting
+
+------------------------------------------------------------------------
+r477 | jeremysanders | 2006-10-29 15:59:35 +0000 (Sun, 29 Oct 2006) | 2 lines
+
+Fix print dialog
+
+------------------------------------------------------------------------
+r476 | jeremysanders | 2006-10-29 15:30:09 +0000 (Sun, 29 Oct 2006) | 2 lines
+
+Fix drop of vsz files into mainwindow
+
+------------------------------------------------------------------------
+r475 | jeremysanders | 2006-10-29 15:07:12 +0000 (Sun, 29 Oct 2006) | 2 lines
+
+Fix open/save directories and restore toolbar state
+
+------------------------------------------------------------------------
+r474 | jeremysanders | 2006-10-29 14:21:33 +0000 (Sun, 29 Oct 2006) | 2 lines
+
+Improve zoom icon
+
+------------------------------------------------------------------------
+r473 | jeremysanders | 2006-10-28 17:55:58 +0100 (Sat, 28 Oct 2006) | 2 lines
+
+Fix zoom button
+
+------------------------------------------------------------------------
+r472 | jeremysanders | 2006-10-28 17:38:37 +0100 (Sat, 28 Oct 2006) | 2 lines
+
+Fix setting default page settings
+
+------------------------------------------------------------------------
+r471 | jeremysanders | 2006-10-28 17:32:31 +0100 (Sat, 28 Oct 2006) | 2 lines
+
+Prevent axis blowing up if user gives identical axis min and max
+
+------------------------------------------------------------------------
+r470 | jeremysanders | 2006-10-28 17:29:08 +0100 (Sat, 28 Oct 2006) | 2 lines
+
+Change table to list in exception dialog
+
+------------------------------------------------------------------------
+r469 | jeremysanders | 2006-10-23 22:23:29 +0100 (Mon, 23 Oct 2006) | 2 lines
+
+Work on fixing settings
+
+------------------------------------------------------------------------
+r468 | jeremysanders | 2006-10-22 18:18:16 +0100 (Sun, 22 Oct 2006) | 2 lines
+
+Turn off wrap on 2D import preview
+
+------------------------------------------------------------------------
+r467 | jeremysanders | 2006-10-22 18:10:41 +0100 (Sun, 22 Oct 2006) | 2 lines
+
+Fix 2D import
+
+------------------------------------------------------------------------
+r466 | jeremysanders | 2006-10-22 16:59:59 +0100 (Sun, 22 Oct 2006) | 2 lines
+
+Notification for CSV import
+
+------------------------------------------------------------------------
+r464 | jeremysanders | 2006-10-19 21:34:51 +0100 (Thu, 19 Oct 2006) | 2 lines
+
+Implement fits import
+
+------------------------------------------------------------------------
+r463 | jeremysanders | 2006-10-18 20:33:32 +0100 (Wed, 18 Oct 2006) | 2 lines
+
+Fix moving
+
+------------------------------------------------------------------------
+r462 | jeremysanders | 2006-10-15 19:02:43 +0100 (Sun, 15 Oct 2006) | 2 lines
+
+Start of fits import work
+
+------------------------------------------------------------------------
+r461 | jeremysanders | 2006-10-15 12:30:30 +0100 (Sun, 15 Oct 2006) | 2 lines
+
+Do table csv preview
+
+------------------------------------------------------------------------
+r459 | jeremysanders | 2006-10-14 19:44:06 +0100 (Sat, 14 Oct 2006) | 2 lines
+
+Change comment
+
+------------------------------------------------------------------------
+r458 | jeremysanders | 2006-10-14 19:42:44 +0100 (Sat, 14 Oct 2006) | 2 lines
+
+Implement 2D data viewing dialog
+
+------------------------------------------------------------------------
+r457 | jeremysanders | 2006-10-14 19:19:25 +0100 (Sat, 14 Oct 2006) | 2 lines
+
+Fix reload dialog
+
+------------------------------------------------------------------------
+r456 | jeremysanders | 2006-10-14 18:16:31 +0100 (Sat, 14 Oct 2006) | 2 lines
+
+Fix about dialog
+
+------------------------------------------------------------------------
+r455 | jeremysanders | 2006-10-14 13:01:37 +0100 (Sat, 14 Oct 2006) | 2 lines
+
+Clicking on widgets moves between pages
+
+------------------------------------------------------------------------
+r454 | jeremysanders | 2006-10-14 12:02:20 +0100 (Sat, 14 Oct 2006) | 2 lines
+
+Fix exception dialog for qt4
+
+------------------------------------------------------------------------
+r453 | jeremysanders | 2006-10-14 10:09:10 +0100 (Sat, 14 Oct 2006) | 2 lines
+
+Fix width, height and page zooming
+
+------------------------------------------------------------------------
+r452 | jeremysanders | 2006-10-14 09:51:09 +0100 (Sat, 14 Oct 2006) | 2 lines
+
+Fix zoom rectangle and logo
+
+------------------------------------------------------------------------
+r451 | jeremysanders | 2006-10-13 22:05:44 +0100 (Fri, 13 Oct 2006) | 2 lines
+
+Fixed some signals
+
+------------------------------------------------------------------------
+r450 | jeremysanders | 2006-10-11 22:01:01 +0100 (Wed, 11 Oct 2006) | 2 lines
+
+Work getting plot window working
+
+------------------------------------------------------------------------
+r449 | jeremysanders | 2006-10-11 19:54:13 +0100 (Wed, 11 Oct 2006) | 2 lines
+
+Improve import dialog
+
+------------------------------------------------------------------------
+r448 | jeremysanders | 2006-10-08 12:57:19 +0100 (Sun, 08 Oct 2006) | 2 lines
+
+Initial copy/paste widget support
+
+------------------------------------------------------------------------
+r447 | jeremysanders | 2006-10-01 14:11:22 +0100 (Sun, 01 Oct 2006) | 2 lines
+
+Use internal pointer in model class
+
+------------------------------------------------------------------------
+r446 | jeremysanders | 2006-09-24 17:34:00 +0100 (Sun, 24 Sep 2006) | 2 lines
+
+Remove ==None
+
+------------------------------------------------------------------------
+r445 | jeremysanders | 2006-09-24 17:29:07 +0100 (Sun, 24 Sep 2006) | 2 lines
+
+Get much of widget adding working
+
+------------------------------------------------------------------------
+r444 | jeremysanders | 2006-09-16 20:36:36 +0100 (Sat, 16 Sep 2006) | 2 lines
+
+More work towards adding widgets
+
+------------------------------------------------------------------------
+r443 | jeremysanders | 2006-08-31 22:26:40 +0100 (Thu, 31 Aug 2006) | 2 lines
+
+Add menus for settings
+
+------------------------------------------------------------------------
+r442 | jeremysanders | 2006-08-28 17:30:16 +0100 (Mon, 28 Aug 2006) | 2 lines
+
+Fix much of treeeditwindow
+
+------------------------------------------------------------------------
+r441 | jeremysanders | 2006-08-20 17:29:39 +0100 (Sun, 20 Aug 2006) | 2 lines
+
+Get edit controls working
+
+------------------------------------------------------------------------
+r440 | jeremysanders | 2006-08-12 17:02:00 +0100 (Sat, 12 Aug 2006) | 2 lines
+
+Progress towards property list
+
+------------------------------------------------------------------------
+r439 | jeremysanders | 2006-08-12 16:02:36 +0100 (Sat, 12 Aug 2006) | 2 lines
+
+Fix up tree updates
+
+------------------------------------------------------------------------
+r438 | jeremysanders | 2006-08-12 15:44:13 +0100 (Sat, 12 Aug 2006) | 2 lines
+
+Add data create dialog
+
+------------------------------------------------------------------------
+r435 | jeremysanders | 2006-07-24 22:09:48 +0100 (Mon, 24 Jul 2006) | 2 lines
+
+Data create dialog mostly done
+
+------------------------------------------------------------------------
+r434 | jeremysanders | 2006-07-15 20:34:53 +0100 (Sat, 15 Jul 2006) | 2 lines
+
+Renaming and duplication enabled
+
+------------------------------------------------------------------------
+r433 | jeremysanders | 2006-07-15 19:41:46 +0100 (Sat, 15 Jul 2006) | 2 lines
+
+More of data edit dialog working
+
+------------------------------------------------------------------------
+r432 | jeremysanders | 2006-07-15 15:39:08 +0100 (Sat, 15 Jul 2006) | 2 lines
+
+More work on data editing dialog
+
+------------------------------------------------------------------------
+r429 | jeremysanders | 2006-07-09 15:45:25 +0100 (Sun, 09 Jul 2006) | 2 lines
+
+Get some of data edit dialog working
+
+------------------------------------------------------------------------
+r428 | jeremysanders | 2006-07-08 22:49:05 +0100 (Sat, 08 Jul 2006) | 2 lines
+
+Use .ui file for import dialog and fix export
+
+------------------------------------------------------------------------
+r427 | jeremysanders | 2006-07-04 21:02:16 +0100 (Tue, 04 Jul 2006) | 2 lines
+
+Tree partially works
+
+------------------------------------------------------------------------
+r426 | jeremysanders | 2006-07-04 20:16:33 +0100 (Tue, 04 Jul 2006) | 2 lines
+
+Some progress getting tree to work
+
+------------------------------------------------------------------------
+r425 | jeremysanders | 2006-07-02 20:06:05 +0100 (Sun, 02 Jul 2006) | 2 lines
+
+Changed implementation to weakref - doesn't work still
+
+------------------------------------------------------------------------
+r424 | jeremysanders | 2006-07-02 17:31:09 +0100 (Sun, 02 Jul 2006) | 2 lines
+
+Further changes
+
+------------------------------------------------------------------------
+r423 | jeremysanders | 2006-07-02 17:22:51 +0100 (Sun, 02 Jul 2006) | 2 lines
+
+First stab at tree edit (does not work)
+
+------------------------------------------------------------------------
+r422 | jeremysanders | 2006-07-02 15:59:23 +0100 (Sun, 02 Jul 2006) | 2 lines
+
+Further updates
+
+------------------------------------------------------------------------
+r421 | jeremysanders | 2006-07-01 18:35:09 +0100 (Sat, 01 Jul 2006) | 2 lines
+
+Change more qt to qt4
+
+------------------------------------------------------------------------
+r420 | jeremysanders | 2006-07-01 18:34:57 +0100 (Sat, 01 Jul 2006) | 2 lines
+
+Fix for qt4
+
+------------------------------------------------------------------------
+r419 | jeremysanders | 2006-07-01 18:10:12 +0100 (Sat, 01 Jul 2006) | 2 lines
+
+Change qt to qt4
+
+------------------------------------------------------------------------
+r418 | jeremysanders | 2006-07-01 18:07:53 +0100 (Sat, 01 Jul 2006) | 2 lines
+
+Fix image widget
+
+------------------------------------------------------------------------
+r417 | jeremysanders | 2006-07-01 17:56:37 +0100 (Sat, 01 Jul 2006) | 2 lines
+
+Many more plotting fixes
+
+------------------------------------------------------------------------
+r416 | jeremysanders | 2006-07-01 14:06:45 +0100 (Sat, 01 Jul 2006) | 2 lines
+
+Change qt. to qt4.
+
+------------------------------------------------------------------------
+r414 | jeremysanders | 2006-06-25 17:04:19 +0100 (Sun, 25 Jun 2006) | 2 lines
+
+Fix plotwindow
+
+------------------------------------------------------------------------
+r413 | jeremysanders | 2006-06-25 16:19:18 +0100 (Sun, 25 Jun 2006) | 2 lines
+
+Some fixes
+
+------------------------------------------------------------------------
+r412 | jeremysanders | 2006-06-24 22:22:08 +0100 (Sat, 24 Jun 2006) | 2 lines
+
+Work to get qt4 working (console appears mostly to work)
+
+------------------------------------------------------------------------
+r411 | jeremysanders | 2006-06-24 22:13:46 +0100 (Sat, 24 Jun 2006) | 1 line
+
+Making a qt4 version of veusz
+
+(using svn log output above for speed)
+
+* 2006-12-09 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Add transparency for lines and fills
+  - Make default fill color linked to line color for plotters
+  - Add hide option to widgets, and to widget context menu
+	
+* 2006-06-17 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Supply __file__ to document file so that they know
+    where the are on disk
+  - Add example_import.vsz example file
+  - Bump version to 0.10 ready for release
+  - Don't need to distribute eps examples
+	
+* 2006-06-16 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Fixed Veusz to be able to run without being installed
+  - Likewise change veusz_listen.py
+	
+* 2006-06-15 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Fix mix up of x and y in function plotting clipping
+	
+* 2006-06-14 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Fix filling under functions with start and end points
+  - Fix embed.py under new regime
+  - Add multiaxes example
+  - Add linkeddatasets example
+  - Fix bug with CSV asymmetric errors
+  - Add csv_example plot
+  - Add CSV details to documentation
+	
+* 2006-06-11 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Move to Subversion from CVS
+
+* 2006-06-10 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Get rid of hack on PYTHONPATH - everything is imported
+    from under veusz
+
+* 2006-06-08 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Remove dependency of widget module on settings module
+  - Move Painter from widgets to document
+	
+* 2006-06-03 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Remove obsolete pref.py from utils
+	
+* 2006-05-29 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Import path munging to avoid 2x importing
+	
+* 2006-05-28 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Further minor changes for rpm packaging
+
+* 2006-05-27 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Move logo and icon for helping install
+	
+* 2006-05-21 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Further reference improvements
+  - Add icon for stylesheet
+  - Add default filename for exporting eps files
+  - Clean up document operation batching
+  - Add Import/Export stylesheet menu items
+  
+* 2006-04-24 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Fix new labels on actions
+	
+* 2006-04-10 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Clip plotters to axes ranges rather than plot
+	
+* 2006-04-09 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Further icons for treeview
+  - Move link buttons into label of setting
+  - Linked setting should not be RO by default
+  - Use weak references in settings for notification of changes
+    (removes need for deleting references to notifiers)
+	
+* 2006-04-06 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Large chunk of new stylesheet code added
+  - Extra icons for treeview
+  
+* 2006-03-23 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Manual major tick values can be specified
+	
+* 2006-03-19 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Command line opened files should also act as recent files
+	
+* 2006-03-14 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Added patch from James to add recent files menu
+  - Correct bug where very small graph ranges cause problems
+	 (thanks James)
+	
+* 2006-02-25 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Rework line marker point plotting 
+  - Add lozenge plot symbols
+  - Tweak click to select to add another couple of pixels
+  
+* 2006-02-22 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Improved arrow symbol shapes
+  - Added arrows pointing away from the point
+	
+* 2006-02-13 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Fixed problem reloading data files with blocks
+	
+* 2006-02-05 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Fixed bug where linked datasets may not work in saved files
+  - Key positioning improved in the case of no border
+  - Reorganising some of the Dataset/LinkedFile code
+  - Backend CSV importing done
+  - Added ImportFileCSV command
+  - Added CSV tab to import dialog
+	
+* 2006-02-04 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Add a few more plot symbols
+  - Make Paste undoable
+  - Paste preserves widget name if possible
+	
+* 2006-02-02 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Add upside down triangle plot symbol
+	
+* 2006-01-28 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Some fixes to work around Windows issues
+
+* 2006-01-18 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Get ready for 0.9
+
+* 2006-01-15 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Convert FITS import to operations
+  - All CommandInterface now uses operations
+  - Fix FITS file detection code
+  - Clear history after file loaded
+  
+* 2006-01-14 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Make fitting use operations
+  - Update (some) commandinterface to use operations
+  
+* 2006-01-02 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Bug fix with missing axes
+  - Update main copyright years to 2006
+  
+* 2006-01-01 Jeremy Sanders <jeremy@jeremysanders.net>
+  - pychecker fixes
+  - Yet more undo/redo changes (dataset edit)
+  
+* 2005-12-31 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Yet more undo/redo changes
+  - Take dataset operations out of doc.py
+
+* 2005-12-27 Jeremy Sanders <jeremy@jeremysanders.net>
+  - Undo/redo implementation started
+
+* 2005-11-27 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Add GetClick command. Returns position on axes for user's click
+
+* 2005-11-23 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Add Pointer button, and enable graph zooming
+	- Add EnableToolbar embedded command to enable graph toolbar
+	
+* 2005-11-21 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Allow contours to be clicked on
+	
+* 2005-11-19 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Reorganisation of view toolbar / menus into PlotWindow
+	
+* 2005-11-14 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Added options to hide horizontal and vertical error bars
+	- Added "descriptor" command in data files to change descriptor
+	on the fly
+	
+* 2005-11-10 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Rubber band graph zooming mostly working
+	
+* 2005-11-06 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Imported matplotlib contour routine into source
+	
+* 2005-11-05 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Rejigged and cleaned contour setting work
+	- Contour plotting and filling largely complete and functional
+	
+* 2005-11-03 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Much more contour setting work
+	
+* 2005-10-27 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Basic contour plotting added (requires veusz_helpers package
+	at the moment)
+	- Change several setting types to use classmethods where
+	appropriate
+	- Start of work towards LineSet setting type
+	
+* 2005-10-23 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Some work towards contour plotting
+	
+* 2005-10-20 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Release 0.8
+	
+* 2005-10-19 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Added SVG export support
+
+* 2005-10-17 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Added stock icons for copy, cut, paste
+	
+* 2005-10-16 Jeremy Sanders <jeremy@jeremysanders.net>
+	- A long wait!
+	- Added patch by James Graham to support copy/cut/paste support
+	of widgets. Cleaned up to make the logic more simple.
+	- A widget should get the selection after another is deleted
+	- CreateWindow becomes a MainWindow classmethod
+	
+* 2005-09-23 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Finally get dataset linking working with cross dependencies
+	
+* 2005-09-13 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Add linecross and lineplus markers
+	- Fix a couple of dataset link bugs
+	
+* 2005-09-11 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Increase size of star, cross and triangle markers by 20%
+	to match other markers better
+	- Increase pentagon too
+	- Start work to tie settings together
+	
+* 2005-08-30 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Time out splash logo
+	- Use left click for panning instead of middle click. Left click
+	after timeout changes cursor to panning cursor
+	
+* 2005-08-29 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Allow datasets to be linked to other datasets using expressions
+	- Add SetDataExpression command
+	- Modify create dataset and edit dataset dialogs to allow linked
+	datasets
+	- Add some other zoom icons
+	
+* 2005-08-20 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Change drop down lists to use grey rather than red
+	- Allow user to click on widgets, and they are selected
+	in the widget tree
+	- Middle mouse button can scroll the plot window around
+	
+* 2005-08-03 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Add "scale" setting for TickLabels
+	
+* 2005-08-02 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Settings controls cleanups
+	- Implement Axis setting (for choosing axes)
+	- Show Marker pixmaps on drop down list
+	
+* 2005-07-29 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Add line styles pixmaps to drop down menu
+	- Add colour pixmaps to drop down menu
+
+* 2005-07-28 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Add colour choosing button
+	- Put fill styles pixmap on drop down menu
+	
+* 2005-07-23 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Fix PNG export without extension
+	- Add Mandelbrot example
+	- Released 0.7
+	
+* 2005-07-20 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Add support for blocks of data in import files
+	- Add support for skipped columns using a comma
+	
+* 2005-07-19 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Document FITS import and 2D dataset commands
+	
+* 2005-07-18 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Make area around key smaller if no border
+	
+* 2005-07-17 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Handle axis with max < min (reversed)
+	- Get RA WCS correct on FITS import
+	
+* 2005-07-12 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Provide other parts of dataset in data create dialog
+	
+* 2005-07-11 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Add patch by James Graham to add the correct extension to
+	an exported file if it is not given (slightly modified)
+	
+* 2005-07-10 Jeremy Sanders <jeremy@jeremysanders.net>
+	- FITS dialog finished
+	- FITS data can be linked to files
+	- ImportFITSFile added to command interface
+	- Linking works for datasets, and added various options to 
+	ImportFile2D
+	
+* 2005-07-05 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Start FITS import dialog
+	
+* 2005-07-03 Jeremy Sanders <jeremy@jeremysanders.net>
+	- 2D data import dialog
+	- Improvements to 1D data import dialog
+	
+* 2005-07-02 Jeremy Sanders <jeremy@jeremysanders.net>
+	- 2D datasets can be saved
+	- 2D datasets can be imported
+	
+* 2005-06-28 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Further Image support
+
+* 2005-06-26 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Initial Image support (not yet working)
+
+* 2005-06-21 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Slight changes to doc eps/png generation logic
+	
+* 2005-06-18 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Enable key length of line to be changed
+	- Put a comment in blank __init__.py files to support windows
+	unzip tools
+	
+* 2005-06-17 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Fix bug with unfilled symbols on key
+	
+* 2005-06-16 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Provide fit outExpr setting, giving output expression as text
+	- Fix error symmetrising for asymmetric errors
+	- Better button behaviour for editing text popup
+	
+* 2005-06-13 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Fix multi-window problem on opening files
+	- Fix xy widget line clipping problem
+	- Move directory manipulation to using os.path
+	- Make a new control for text property editing. Can popup a window
+	to help the user edit the text
+	
+* 2005-06-12 Jeremy Sanders <jeremy@jeremysanders.net>
+        - ReloadData command and Data, Reload dialog added to reload
+	linked datasets (idea J. Graham)
+	- Add icon for reload, create, and new datasets
+	- os.path import added to commandinterface
+	- GPL() command works now
+	- function plotters can be set to plot only over a particular
+	range (patch by James Graham)
+	- Use QSettings to do settings code rather than own code (based on
+	patch by James Graham)
+	- Default settings for root widget fixed
+	- Made clipping region larger to help get diamond error box angles
+	correct
+	- Small fix to dataset creation dialog (unsized object error)
+	
+* 2005-06-11 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Command line parsing now uses optparse (thanks to J Graham for
+	inspiration)
+	- MainWindow now accepts drops of files (patch by James Graham)
+	- MainWindow has per-window working directory (again J. Graham)
+
+* 2005-05-24 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Fix axis positioning in stacked plot where one margin is zero
+	
+* 2005-05-19 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Make size of property window more sensible by default
+	- Documentation update
+	- Add inside.vsz example
+	- Released 0.6
+	
+* 2005-05-18 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Add icon for main window
+	- Veusz should look in $HOME not /home/$USER for config file
+	- Actually allow data to be modified in Data->Edit dialog
+	
+* 2005-05-17 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Add signal handler to catch ctrl+c and ask to close docs -
+	James Graham's idea
+	- Changed File->Quit to close all windows. File->Close Window
+	closes current window
+	
+* 2005-05-15 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Patch from James Graham to make Ctrl+P print
+	- Patch adapted from James to make new documents start in new windows
+	- Add context menu to plot window to change update period
+	- Also add force update option
+	- Change lots of button pressed() to clicked() as pressed() breaks
+	appearance of button
+	- Allow datasets to be unlinked in data edit dialog
+	- Add Import button to data edit dialog
+	- Dialog box improvements (spacing and so on)
+	
+* 2005-05-14 Jeremy Sanders <jeremy@jeremysanders.net>
+	- New widget property code using QTable
+	
+* 2005-05-11 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Make super and subscripts move further up and down
+	- Adjust alignment code to take account of above modification
+	- Document embedding Veusz in other programs
+	- Document security of Veusz scripts
+	
+* 2005-05-10 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Fit dataset options now have drop down menus
+	- Added \font{fontname}{text} and \size{[+-]fontsize}{text} to
+	LaTeX-like parser to change font or font size
+	- Also some bug fixes to LaTeX-like parser
+	- Modeless dialogs fixed to use close instead of done
+	- Fitting can now fit selected ranges of data (see fitRange parameter)
+	- Various fitting sanity checks
+	- Fitting should now work for functions of y as well as x
+	
+* 2005-05-09 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Fix problem with log axis if minimum is zero
+	- Highlight setting label if has mouse over / focus / context menu
+	- Remove label from top of context menus
+	- Fix properties shortcut label
+	
+* 2005-05-08 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Add embed module to embed Veusz in other Python apps
+	
+* 2005-05-07 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Complete data editing dialog
+	- Add data new dialog
+	- Add data new dialog to Data menu in main window
+	
+* 2005-05-04 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Put in Jamie Crummy's patch to show "Untitled" for new document
+	
+* 2005-05-03 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Take out toolbar position hack from mainwindow
+	- More work on data edit dialog
+	
+* 2005-05-02 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Axes on other side of graph are automatically reflected
+	- Reflected text rotated by 90 rather than 270 degrees
+	- Put property name on property context menu
+	- Shortcut keys added to quitting dialog
+	- Slight tooltip fixes in property editor
+	- Property context menu added for items in widget tree
+	- Widgets can now be renamed (Rename command added too)
+	- Labels for properties can now have keyboard focus. This allows
+	context menu to be used from keyboard.
+	- Widget names cannot contain /
+	
+* 2005-05-01 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Put in patch from James Graham to choose from list of fonts
+	- Use context menu for settings, rather than button
+	- Add missing descr for marker and markerSize
+	- View menu can show/hide dock windows
+	
+* 2005-04-28 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Fixed colour of axis/tick labels
+
+* 2005-04-25 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Allow subsettings to be set in Add command
+	a__b maps to a/b, e.g. Add('xy', MarkerFill__color='red')
+	- Numbers can be initial letter of dataset name
+	
+* 2005-04-23 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Twiddle rounding in axis.py to try to avoid off-by-one pixel bugs
+	- Move distance calculation code into Distance setting
+	
+* 2005-04-22 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Display drop down list of units based on James Graham's patch
+	- Use drop down list of datasets for appropriate settings
+	
+* 2005-04-21 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Widgets can now be added if a parent allows the widget as parent
+	- New item selected after widget is added
+	- Removed text widget from menu and tooltip
+	- Added widget buttons now in separate toolbar (ordering of
+	importance and alphabetical now)
+	
+* 2005-04-19 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Fix to allow unicode font names
+	- Lots more unicode fixes (like unicode labels, etc). Unicode
+	characters can now be used for filenames, and axis labels
+	- Handle bad descriptors in import dialog
+	
+* 2005-04-18 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Fixed fitting for old versions of numarray (no isnan)
+	- Fixed data reading bug, where numbers on columns which aren't
+	used are propagated to next line
+	- Show busy cursor while reading data and opening files, saving
+	files and exporting data
+	- Empty document is not "dirty", so don't show save dialog
+	- Added circ, odot, and (left|right|up|down) arrow in LaTeX mode
+	
+* 2005-04-16 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Get distutils working properly with standard distutils
+	- Added histogram example
+	- Released 0.5
+	
+* 2005-04-14 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Introduced patch by James Graham to make the save warning dialog
+	use verbs instead of yes/no
+	- Imported distutils (setuputils), and added support for distutils
+	- Add scripts to start veusz from bin directory
+	
+* 2005-04-11 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Imported data files may be linked to the document, which means
+	their data won't be saved with the document, but reloaded each
+	time it is loaded
+	
+* 2005-04-10 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Added exception dialog to send in bug reports
+	- Axis values checked for being round wrong way
+	
+* 2005-04-09 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Different types of error bars supported (diamond, curve, box)
+	- Improve function plot line clipping near edges
+	- Filled regions above/below/left/right of function
+	- Filled regions above/below xy points (or histogram)
+	- Axis setting to match one axis to another (equal scales)
+	- resolve function moved to document from commandinterface
+	(helps axis matching)
+	
+* 2005-04-03 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Fixed widget moving buttons! - correct algorithm now
+	- Implemented save/restore of window and dock positions between
+	sessions
+
+* 2005-04-02 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Fixed always-redrawing bug
+	- Implemented widget delete button
+	- Implemented widget moving buttons
+	
+* 2005-03-26 Jeremy Sanders <jeremy@jeremysanders.net>
+	- TextLabels now support rotation
+
+* 2005-03-25 Jeremy Sanders <jeremy@jeremysanders.net>
+	- Veusz now tracks default settings in ~/.veusz.def file for each
+	user
+	- It is possible to copy settings from one widget to another using
+	a menu
+	- The bullseye symbol works correctly now
+	- Reading data now gives the count of conversion errors rather
+	than throwing an exception (in the import dialog)
+	- ImportFile and ImportString now also return the number of
+	conversion errors during reading (as part of a tuple)
+	- Added ChangeLog file
+	- Fixed problems where Veusz doesn't update plot window due to Qt
+	clipping
+	- Fitting widget now stores chi2, dof, reduced chi2 setting
+	(readonly). This allows	scripts to query these values.
+	
+	
+	

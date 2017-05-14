@@ -1,0 +1,256 @@
+Changes in 1.16:
+ * Experimental MathML support
+ * Add upper/lower-left/right arrows
+ * Add options to clip text/lines/shapes to graphs
+ * Add stacked-area option to bar plot widget
+ * Draw stacked bar plots top-down for better overlapping line behaviour
+ * Axis labels can be placed at left or right of axes, in addition to centre
+ * Line widget now has length-angle or point-to-point modes. Better support
+   for only specifying some coordinates.
+ * Exception dialog records more detailed traceback
+ * Use top level windows for non-modal dialogs, giving minimize in window
+   and no always-on-top behaviour
+ * Zero length vectors and arrows in vector fields are not plotted
+ * Add support for strings to be translated
+ * Add "Sort" dataset plugin
+ * Add "Histogram 2D" dataset plugin
+ * Add "Divide by Maximum" and "Normalize" dataset plugins
+ * Support for *args and **kwargs for custom functions
+ * Custom colormaps can be defined in the custom editing dialog
+
+Bug fixes:
+ * Use correct definition of 1pt = 1/72in
+ * Workaround for splash screen problem
+ * Fix numerous problems reported by pyflakes
+ * Histograms fail when saved
+ * Fix plot with nan functions
+ * Fix failure of self tests on ARM platforms
+ * Force pages/documents to have physical sizes
+ * Fix crash if deleting multiple datasets in data edit dialog
+ * Check dimensions of datasets in SetData
+ * Handle better zero bytes in data files
+ * Fix error if page size zero
+ * Fix error if vector baselength is zero
+ * If dataset plugin parameter not given in saved file, use default
+ * Fix crash for axes with same minimum and maximum
+ * Fix CSV import problem when same dataset has multiple types
+ * Thinning markers works when using marker sizes / colors
+
+Changes in 1.15:
+ * Improved hatching:
+    - More hatch styles
+    - Adjust spacing of hatching
+    - Change hatching line style
+    - Allow hatching background color
+ * Axes will not extend beyond specified min and max values
+ * Add options to extend axes by 2, 5, 10 and 15% of data range
+ * Ctrl+MouseWheel zooms in and out of plot
+ * Full screen graph view mode
+ * New dataset plugins
+    - Linear interpolation
+    - Cumulative value
+    - Rolling average
+    - Subtract mean / minimum
+ * Allow grid widgets to be placed in grid widgets
+ * Catch EnvironmentError exceptions on Windows
+ * Allow multiple datasets to be selected in dataset browser
+ * Allow tagging of datasets and allow datasets be grouped by tags
+   in dataset browser
+ * Allow text to be written as text in SVG, rather than curves
+ * Add DBus interface to program, if DBus is installed
+ * 2D QDP support
+ * Add setup.py options for packagers
+    --veusz-resource-dir : location of data files
+    --disable-install-docs
+ * Add title option for keys
+
+Minor changes:
+ * Use / rather than \ for path separator in saved file names for
+   Windows/Unix compatibility
+ * Add diamond fill error bar type
+ * Add \color and \marker commands to text renderer
+ * Support labels on xy datasets if one of x or y datasets missing
+ * Reorganise dataset plugin menu
+ * Fix links in INSTALL/README
+ * Floating point intervals in capture dialog
+
+Bug fixes:
+ * Trap case where nan values could be plotted
+ * Fix error if website not accessible in exception dialog
+ * Crash when min and max of axes are too similar
+ * Fix clipping of paths after transform in SVG files
+ * Fix crash in picker
+ * Fix crash if duplication of characters in CSV date format
+ * Fix crash in tool tip in dataset browser
+ * Fix GlobalColor error (on certain dark color sets)
+ * Fix blocked data import if no descriptor
+ * Fix crash if log contours and minimum is zero
+ * Bug fix https://bugzilla.redhat.com/show_bug.cgi?id=800196
+
+Changes in 1.14:
+ * Added interactive tutorial
+ * Points in graphs can be colored depending on another dataset and
+   the scale shown in a colorbar widget
+ * Improved CSV import
+    - better data type detection
+    - locale-specific numeric and date formats
+    - single/multiple/none header modes
+    - option to skip lines at top of file
+    - better handling of missing values
+ * Data can be imported from clipboard
+ * Substantially reduced size of output SVG files
+ * In standard data import, descriptor can be left blank to generate
+   dataset names colX
+ * Axis plotting range can be interactively manipulated
+ * If axis is in date-time format, show and allow the min and max
+   values to be in date-time format
+ * ImageFile widget can have image data embedded in document file
+ * Fit widget can update the fit parameters and fit quality to a
+   label widget
+ * Allow editing of 2D datasets in data edit dialog
+ * Add copy and paste dataset command to dataset browser context menu
+
+Minor and API changes:
+ * Examples added to help menu
+ * Picker shows date values as dates
+ * Allow descriptor statement in standard data files after a comment
+   character, e.g. "#descriptor x y"
+ * Added some further color maps
+ * Draw key symbols for vector field widget
+ * Import plugin changes
+    - Register classes rather than instances (backward compatibility
+      is retained)
+    - Plugins can return constants and functions (see Constant and
+      Function types)
+    - Add DatasetDateTime for returning date-time datasets
+ * Custom definitions
+    - Add RemoveCustom API to remove custom definitions
+    - AddCustom API can specify order where custom definition is added
+ * C++ code to speed up plotting points of different sizes / colors
+ * Expand files by default in data navigator window
+ * Select created datasets in data edit dialog
+ * Tooltip wrapping used in data navigator window
+ * Grid lines are dropped if they overlap with edge of graph
+
+Bug fixes
+ * Fix initial extension in export dialog
+ * Fix crash on hiding pages
+ * Fixed validation for numeric values
+ * Position of grid lines in perpendicular direction for non default
+   positions
+ * Catch errors in example import plugin
+ * Fix crash for non existent key symbols
+ * Fix crash when mismatch of dataset sizes when combining 1D datasets
+   to make 2D dataset
+
+Changes in 1.13:
+ * Graphs are rendered in separate threads for speed and a responsive
+   user interface
+ * A changed Graph is rendered immediately on document modification,
+   improving latency
+ * A new ternary plot widget is included
+ * Size of pages can be modified individually in a document
+ * Binary data import added
+ * NPY/NPZ numpy data import added
+ * Axis and tick labels on axes can be rotated at 45 deg intervals
+ * Labels can be plotted next to points on non-orthogonal plots
+ * Add an option for DPI of output EPS and PDF files
+
+Minor improvements:
+ * Import dialog detects filename extension to show correct tab
+ * Polygon fill mode for non orthogonal plotting
+ * --plugin command line option added, for loading and testing plugins
+ * Plugin for swapping two colors in a plot
+ * Dataset navigator is moved to right of window by default
+ * Mac OS X binary release updated to Python 2.7.2
+ * Import plugins can say which file extensions they support
+ * Import plugins can be "promoted" to their own tab on the import dialog
+ * ForceUpdate command added to embedding API, to force an update of
+   the displayed plot (useful if SetUpdateInterval is set to 0)
+ * X or Y dataset can be left blank in plotter to plot by row number
+
+Bugs fixed:
+ * Images plotted when axes are inverted are inverted too
+ * Fixed crash when selecting datasets for plotting in the popup menu
+ * Picker crashes with a constant function
+ * 2D dataset creation using expressions fixed
+ * CSV reader treated dataset names ending in + or - incorrectly
+ * unique1d function no longer available in numpy
+
+Changes in 1.12:
+ * Multiple widgets can now be selected for editing properties
+ * Add Edit->Select menu and context menu for above
+ * Added context menu on dataset browser for filenames to reload,
+   delete or unlink all associated datasets
+ * New tree-like dataset browsing widget is shown in data edit dialog
+ * Importing 1D fits images is now supported
+ * Date / time data has its own dataset type
+ * The data edit dialog box can create or edit date/time data in
+   human-readable form
+
+Minor improvements:
+ * Add LaTeX commands \cdot, \nabla, \overline plus some arrows
+ * Inform user in exception dialog if a new version is available
+ * Add linevertbar and linehorzbar error bar styles
+
+Bug fixes:
+ * Fix crash on filling filled error regions if no error bars
+ * Remove grouping separator to numbers in locale as it creates
+   ambiguous lists of numbers
+ * Undo works properly for boolean and integer settings
+ * Prevent widgets getting the same names when dragging and dropping
+ * Hidden plot widgets are ignored when calculating axis ranges
+ * Combo boxes are now case sensitive when displaying matches with
+   previous text
+ * Fix errors if plotting DatasetRange or Dataset1DPlugin datasets
+   against data with nan values
+ * Fix division by zero in dataset preview
+ * Do not leave settings pointing to deleted widgets after an undo
+ * Fix errors when using super/subscripts of super/subscripts
+ * Fix crash when giving positions of bar plot and labels
+ * Do not allow dataset names to be invalid after remaining
+ * Several EMF format bug fixes, including not showing hidden lines
+   and not connecting points making curves
+ * Stop crash when contouring zero-sized datasets
+
+Changes in 1.11:
+ * New data point picker for finding coordinates of points on plot
+   (contributed by B.K. Stuhl)
+ * New data navigator window for filtering, sorting and examining
+   dataset statistics
+ * ".." button next to dataset settings pops up data navigator for
+   choosing datasets
+ * Data fitting can now use PyMinuit, giving error estimates
+   (B.K. Stuhl)
+ * Console history now uses currently entered characters to select
+   lines from history (B.K. Stuhl)
+ * New self test script, comparing graph output with expected output
+ * Put superscripts and subscripts above each other when
+   formatting (B.K. Stuhl)
+ * Key entries can have multiple lines (using \\) (B.K. Stuhl)
+ * Option to treat blanks as data items in CSV files
+ * Locale support added for number formatting
+    - Can use current locale or US/English in documents
+    - Can use US/English or current local in user interface
+ * Contours avoid missing (nan) values
+
+ * Linux binaries are now created on a more modern system
+ * Windows binaries now use MSVC for compilation
+
+Bug fixes:
+ * CSV import with blank columns fixed
+ * Embedding module now working when using binary
+ * Remember current directory with unicode characters
+ * Extension module now compiles under MSVC in Windows
+ * Output is always appended to console (B.K. Stuhl)
+ * \r characters sometimes break data import in Windows
+ * If using --export option, add directory of script to import path
+
+Minor bug fixes:
+ * Zero sized dataset contour plot fix
+ * Fix problem on context menu for axis match setting
+ * Small values on log axis fix
+ * Disable data edit dialog context menu when no datasets
+ * Loading files with unicode filenames on command line
+ * Do not allow non finite float settings
+
