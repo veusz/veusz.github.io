@@ -1,0 +1,110 @@
+Veusz 1.26.1
+------------
+https://veusz.github.io
+
+Veusz is a scientific plotting package.  It is designed to produce
+publication-ready Postscript, PDF or SVG output. Graphs are built-up
+by combining plotting widgets. The user interface aims to be simple,
+consistent and powerful.
+
+Veusz provides GUI, Python module, command line, scripting, DBUS and
+SAMP interfaces to its plotting facilities. It also allows for
+manipulation and editing of datasets. Data can be captured from
+external sources such as Internet sockets or other programs.
+
+Changes in 1.26.1:
+ * Change homepage in program to new site https://veusz.github.io/
+ * Change new version checking to use veusz.github.io
+
+Changes in 1.26:
+ * Add color themes and automatic coloring of widgets
+ * Custom color definitions
+ * Improved custom definition dialog box
+ * Fix loading translator via command line
+ * Show horizontal error lines/fills in key
+ * Use iMinuit if available for fitting
+ * Fix for dataset plugins returning nD datasets
+ * Add editable automatic axis range, including support for shrinking
+   range (-X%), percentage ranges (X-Y%) and limits (<X% and >Y%)
+ * Fix for key if invalid dataset
+ * For log scaling on image widget, show invalid values as being transparent
+
+Features of package:
+ Plotting features:
+  * X-Y plots (with errorbars)
+  * Line and function plots
+  * Contour plots
+  * Images (with colour mappings and colorbars)
+  * Stepped plots (for histograms)
+  * Bar graphs
+  * Vector field plots
+  * Box plots
+  * Polar plots
+  * Ternary plots
+  * Plotting dates
+  * Fitting functions to data
+  * Stacked plots and arrays of plots
+  * Nested plots
+  * Plot keys
+  * Plot labels
+  * Shapes and arrows on plots
+  * LaTeX-like formatting for text
+  * Multiple axes
+  * Axes with steps in axis scale (broken axes)
+  * Axis scales using functional forms
+  * Plotting functions of datasets
+ Input and output:
+  * EPS/PDF/PNG/SVG/EMF export
+  * Dataset creation/manipulation
+  * Embed Veusz within other programs
+  * Text, HDF5, CSV, FITS, NPY/NPZ, QDP, binary and user-plugin importing
+  * Data can be captured from external sources
+ Extending:
+  * Use as a Python module
+  * User defined functions, constants and can import external Python functions
+  * Plugin interface to allow user to write or load code to
+     - import data using new formats
+     - make new datasets, optionally linked to existing datasets
+     - arbitrarily manipulate the document
+  * Scripting interface
+  * Control with DBUS and SAMP
+ Other features:
+  * Data filtering and manipulation
+  * Data picker
+  * Interactive tutorial
+  * Multithreaded rendering
+
+Requirements for source install:
+ Python 2.x (2.6 or greater required) or 3.x (3.3 or greater required)
+   https://www.python.org/
+ Qt >= 4.6 (free edition)
+   https://www.qt.io/
+ PyQt >= 4.5 (SIP is required to be installed first)
+   http://www.riverbankcomputing.co.uk/software/pyqt/
+   http://www.riverbankcomputing.co.uk/software/sip/
+ numpy >= 1.0
+   http://numpy.scipy.org/
+
+Optional requirements:
+ h5py (optional for HDF5 support)
+   http://www.h5py.org/
+ astropy >= 0.2 or PyFITS >= 1.1 (optional for FITS import)
+   http://www.stsci.edu/resources/software_hardware/pyfits
+   http://www.astropy.org/
+ pyemf >= 2.0.0 (optional for EMF export)
+   http://pyemf.sourceforge.net/
+ PyMinuit >= 1.1.2 (optional improved fitting)
+   http://code.google.com/p/pyminuit/
+ dbus-python, for dbus interface
+   http://dbus.freedesktop.org/doc/dbus-python/
+ astropy (optional for VO table import)
+   http://www.astropy.org/
+ SAMPy or astropy >= 0.4 (optional for SAMP support)
+   http://pypi.python.org/pypi/sampy/
+
+Veusz is Copyright (C) 2003-2017 Jeremy Sanders <jeremy@jeremysanders.net>
+ and contributors.
+It is licensed under the GPL (version 2 or greater).
+
+The latest code can be found in the Git repository at
+https://github.com/veusz/veusz
