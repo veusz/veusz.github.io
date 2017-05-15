@@ -1,7 +1,7 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Veusz - a scientific plotting package</title><link rel="stylesheet" type="text/css" href="manual.css"><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="book"><div class="titlepage"><div><div><h1 class="title"><a name="idm45924451574944"></a>Veusz - a scientific plotting package</h1></div><div><div class="author"><h3 class="author"><span class="firstname">Jeremy</span> <span class="surname">Sanders</span></h3><code class="email">&lt;<a class="email" href="mailto:jeremy@jeremysanders.net">jeremy@jeremysanders.net</a>&gt;</code></div></div><div><p class="copyright">Copyright © 2017 </p></div><div><div class="legalnotice"><a name="idm45924451568944"></a><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Veusz - a scientific plotting package</title><link rel="stylesheet" type="text/css" href="manual.css"><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="book"><div class="titlepage"><div><div><h1 class="title"><a name="idm45711117789696"></a>Veusz - a scientific plotting package</h1></div><div><div class="author"><h3 class="author"><span class="firstname">Jeremy</span> <span class="surname">Sanders</span></h3><code class="email">&lt;<a class="email" href="mailto:jeremy@jeremysanders.net">jeremy@jeremysanders.net</a>&gt;</code></div></div><div><p class="copyright">Copyright © 2017 </p></div><div><div class="legalnotice"><a name="idm45711117783728"></a><p>
 	This document is licensed under the GNU General Public
 	License, version 2 or greater. Please see the file COPYING for
-	details, or see <a class="ulink" href="http://www.gnu.org/licenses/gpl-2.0.html" target="_top">http://www.gnu.org/licenses/gpl-2.0.html</a>.</p></div></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="chapter"><a href="#idm45924455398928">1. Introduction</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45924455398256">1. Veusz</a></span></dt><dt><span class="section"><a href="#idm45924455394896">2. Terminology</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45924455393840">2.1. Widget</a></span></dt><dt><span class="section"><a href="#idm45924455544144">2.2. Settings: properties and formatting</a></span></dt><dt><span class="section"><a href="#idm45924455540224">2.3. Datasets</a></span></dt><dt><span class="section"><a href="#idm45924455535536">2.4. Text</a></span></dt><dt><span class="section"><a href="#idm45924450471168">2.5. Measurements</a></span></dt><dt><span class="section"><a href="#idm45924450469712">2.6. Color theme</a></span></dt><dt><span class="section"><a href="#idm45924450467632">2.7. Axis numeric scales</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45924450462080">3. Installation</a></span></dt><dt><span class="section"><a href="#idm45924450460928">4. The main window</a></span></dt><dt><span class="section"><a href="#idm45924450439104">5. My first plot</a></span></dt></dl></dd><dt><span class="chapter"><a href="#idm45924450428592">2. Reading data</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45924450419920">1. Standard text import</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45924450414896">1.1. Data types in text import</a></span></dt><dt><span class="section"><a href="#idm45924450410544">1.2. Descriptors</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45924450383280">2. CSV files</a></span></dt><dt><span class="section"><a href="#idm45924450379440">3. HDF5 files</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45924450375040">3.1. Error bars</a></span></dt><dt><span class="section"><a href="#idm45924450372912">3.2. Slices</a></span></dt><dt><span class="section"><a href="#idm45924450367696">3.3. 2D data ranges</a></span></dt><dt><span class="section"><a href="#idm45924450365728">3.4. Dates</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45924450360032">4. 2D text or CSV format</a></span></dt><dt><span class="section"><a href="#idm45924450338560">5. FITS files</a></span></dt><dt><span class="section"><a href="#idm45924450332560">6. Reading other data formats</a></span></dt><dt><span class="section"><a href="#idm45924450325600">7. Manipulating datasets</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45924450324064">7.1. Using dataset plugins</a></span></dt><dt><span class="section"><a href="#idm45924450322144">7.2. Using expressions to create new datasets</a></span></dt><dt><span class="section"><a href="#idm45924450307376">7.3. Linking datasets to expressions</a></span></dt><dt><span class="section"><a href="#idm45924450306032">7.4. Splitting data</a></span></dt><dt><span class="section"><a href="#idm45924450303264">7.5. Defining new constants or functions</a></span></dt><dt><span class="section"><a href="#idm45924450299840">7.6. Dataset plugins</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45924450297776">8. Capturing data</a></span></dt></dl></dd><dt><span class="chapter"><a href="#idm45924450290000">3. Command line interface</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45924450288864">1. Introduction</a></span></dt><dt><span class="section"><a href="#idm45924450281568">2. Commands</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45924450280544">2.1. Action</a></span></dt><dt><span class="section"><a href="#idm45924450277936">2.2. Add</a></span></dt><dt><span class="section"><a href="#idm45924450270032">2.3. AddCustom</a></span></dt><dt><span class="section"><a href="#idm45924450265216">2.4. AddImportPath</a></span></dt><dt><span class="section"><a href="#idm45924450262736">2.5. CloneWidget</a></span></dt><dt><span class="section"><a href="#idm45924450260160">2.6. Close</a></span></dt><dt><span class="section"><a href="#idm45924450257680">2.7. CreateHistogram</a></span></dt><dt><span class="section"><a href="#idm45924450254496">2.8. DatasetPlugin</a></span></dt><dt><span class="section"><a href="#idm45924450251824">2.9. EnableToolbar</a></span></dt><dt><span class="section"><a href="#idm45924450249280">2.10. Export</a></span></dt><dt><span class="section"><a href="#idm45924450240352">2.11. FilterDatasets</a></span></dt><dt><span class="section"><a href="#idm45924450237376">2.12. ForceUpdate</a></span></dt><dt><span class="section"><a href="#idm45924450234736">2.13. Get</a></span></dt><dt><span class="section"><a href="#idm45924450231328">2.14. GetChildren</a></span></dt><dt><span class="section"><a href="#idm45924450228832">2.15. GetClick</a></span></dt><dt><span class="section"><a href="#idm45924450225712">2.16. GetColormap</a></span></dt><dt><span class="section"><a href="#idm45924450223152">2.17. GetData</a></span></dt><dt><span class="section"><a href="#idm45924450218944">2.18. GetDataType</a></span></dt><dt><span class="section"><a href="#idm45924450216368">2.19. GetDatasets</a></span></dt><dt><span class="section"><a href="#idm45924450213888">2.20. GPL</a></span></dt><dt><span class="section"><a href="#idm45924450211408">2.21. ImportFile</a></span></dt><dt><span class="section"><a href="#idm45924450205376">2.22. ImportFile2D</a></span></dt><dt><span class="section"><a href="#idm45924450194832">2.23. ImportFileCSV</a></span></dt><dt><span class="section"><a href="#idm45924450191760">2.24. ImportFileHDF5</a></span></dt><dt><span class="section"><a href="#idm45924450183072">2.25. ImportFileND</a></span></dt><dt><span class="section"><a href="#idm45924450178672">2.26. ImportFilePlugin</a></span></dt><dt><span class="section"><a href="#idm45924450175840">2.27. ImportFITSFile</a></span></dt><dt><span class="section"><a href="#idm45924450170560">2.28. ImportString</a></span></dt><dt><span class="section"><a href="#idm45924450165328">2.29. ImportString2D</a></span></dt><dt><span class="section"><a href="#idm45924450161264">2.30. ImportStringND</a></span></dt><dt><span class="section"><a href="#idm45924450157920">2.31. IsClosed</a></span></dt><dt><span class="section"><a href="#idm45924450154944">2.32. List</a></span></dt><dt><span class="section"><a href="#idm45924450152400">2.33. Load</a></span></dt><dt><span class="section"><a href="#idm45924450148720">2.34. MoveToPage</a></span></dt><dt><span class="section"><a href="#idm45924450145760">2.35. ReloadData</a></span></dt><dt><span class="section"><a href="#idm45924450142848">2.36. Rename</a></span></dt><dt><span class="section"><a href="#idm45924450139616">2.37. Remove</a></span></dt><dt><span class="section"><a href="#idm45924450136592">2.38. ResizeWindow</a></span></dt><dt><span class="section"><a href="#idm45924450133712">2.39. Save</a></span></dt><dt><span class="section"><a href="#idm45924450131312">2.40. Set</a></span></dt><dt><span class="section"><a href="#idm45924450126384">2.41. SetAntiAliasing</a></span></dt><dt><span class="section"><a href="#idm45924450123888">2.42. SetData</a></span></dt><dt><span class="section"><a href="#idm45924450121104">2.43. SetDataExpression</a></span></dt><dt><span class="section"><a href="#idm45924450116768">2.44. SetDataND</a></span></dt><dt><span class="section"><a href="#idm45924450114208">2.45. SetDataRange</a></span></dt><dt><span class="section"><a href="#idm45924450110960">2.46. SetData2D</a></span></dt><dt><span class="section"><a href="#idm45924450107488">2.47. SetData2DExpression</a></span></dt><dt><span class="section"><a href="#idm45924450104848">2.48. SetData2DExpressionXYZ</a></span></dt><dt><span class="section"><a href="#idm45924450101968">2.49. SetData2DXYFunc</a></span></dt><dt><span class="section"><a href="#idm45924450099168">2.50. SetDataDateTime</a></span></dt><dt><span class="section"><a href="#idm45924450096672">2.51. SetDataText</a></span></dt><dt><span class="section"><a href="#idm45924450092480">2.52. SetToReference</a></span></dt><dt><span class="section"><a href="#idm45924450090080">2.53. SetUpdateInterval</a></span></dt><dt><span class="section"><a href="#idm45924450086784">2.54. SetVerbose</a></span></dt><dt><span class="section"><a href="#idm45924450083136">2.55. StartSecondView</a></span></dt><dt><span class="section"><a href="#idm45924450079968">2.56. TagDatasets</a></span></dt><dt><span class="section"><a href="#idm45924450077568">2.57. To</a></span></dt><dt><span class="section"><a href="#idm45924450074800">2.58. Quit</a></span></dt><dt><span class="section"><a href="#idm45924450072400">2.59. WaitForClose</a></span></dt><dt><span class="section"><a href="#idm45924450069536">2.60. Zoom</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45924450066368">3. Security</a></span></dt></dl></dd><dt><span class="chapter"><a href="#idm45924450063264">4. Using Veusz from other programs</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45924450062624">1. Non-Qt Python programs</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45924450060384">1.1. Older path-based interface</a></span></dt><dt><span class="section"><a href="#idm45924450037424">1.2. New-style object interface</a></span></dt><dt><span class="section"><a href="#idm45924450019872">1.3. Translating old to new style</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45924450015568">2. PyQt4 programs</a></span></dt><dt><span class="section"><a href="#idm45924450014304">3. Non Python programs</a></span></dt><dt><span class="section"><a href="#idm45924450002912">4. C, C++ and Fortran</a></span></dt></dl></dd></dl></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idm45924455398928"></a>Chapter 1. Introduction</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="#idm45924455398256">1. Veusz</a></span></dt><dt><span class="section"><a href="#idm45924455394896">2. Terminology</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45924455393840">2.1. Widget</a></span></dt><dt><span class="section"><a href="#idm45924455544144">2.2. Settings: properties and formatting</a></span></dt><dt><span class="section"><a href="#idm45924455540224">2.3. Datasets</a></span></dt><dt><span class="section"><a href="#idm45924455535536">2.4. Text</a></span></dt><dt><span class="section"><a href="#idm45924450471168">2.5. Measurements</a></span></dt><dt><span class="section"><a href="#idm45924450469712">2.6. Color theme</a></span></dt><dt><span class="section"><a href="#idm45924450467632">2.7. Axis numeric scales</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45924450462080">3. Installation</a></span></dt><dt><span class="section"><a href="#idm45924450460928">4. The main window</a></span></dt><dt><span class="section"><a href="#idm45924450439104">5. My first plot</a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924455398256"></a>1. Veusz</h2></div></div></div><p>Veusz is a scientific plotting package. It was designed to
+	details, or see <a class="ulink" href="http://www.gnu.org/licenses/gpl-2.0.html" target="_top">http://www.gnu.org/licenses/gpl-2.0.html</a>.</p></div></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="chapter"><a href="#idm45711117845328">1. Introduction</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45711117844656">1. Veusz</a></span></dt><dt><span class="section"><a href="#idm45711117841296">2. Terminology</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45711117840240">2.1. Widget</a></span></dt><dt><span class="section"><a href="#idm45711117934496">2.2. Settings: properties and formatting</a></span></dt><dt><span class="section"><a href="#idm45711117930576">2.3. Datasets</a></span></dt><dt><span class="section"><a href="#idm45711117925968">2.4. Text</a></span></dt><dt><span class="section"><a href="#idm45711112918352">2.5. Measurements</a></span></dt><dt><span class="section"><a href="#idm45711112916896">2.6. Color theme</a></span></dt><dt><span class="section"><a href="#idm45711112914816">2.7. Axis numeric scales</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45711112909264">3. Installation</a></span></dt><dt><span class="section"><a href="#idm45711112908112">4. The main window</a></span></dt><dt><span class="section"><a href="#idm45711112886288">5. My first plot</a></span></dt></dl></dd><dt><span class="chapter"><a href="#idm45711112875776">2. Reading data</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45711112867104">1. Standard text import</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45711112862080">1.1. Data types in text import</a></span></dt><dt><span class="section"><a href="#idm45711112857728">1.2. Descriptors</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45711112830480">2. CSV files</a></span></dt><dt><span class="section"><a href="#idm45711112826640">3. HDF5 files</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45711112822240">3.1. Error bars</a></span></dt><dt><span class="section"><a href="#idm45711112820112">3.2. Slices</a></span></dt><dt><span class="section"><a href="#idm45711112814896">3.3. 2D data ranges</a></span></dt><dt><span class="section"><a href="#idm45711112812928">3.4. Dates</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45711112807232">4. 2D text or CSV format</a></span></dt><dt><span class="section"><a href="#idm45711112785760">5. FITS files</a></span></dt><dt><span class="section"><a href="#idm45711112779840">6. Reading other data formats</a></span></dt><dt><span class="section"><a href="#idm45711112772960">7. Manipulating datasets</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45711112771424">7.1. Using dataset plugins</a></span></dt><dt><span class="section"><a href="#idm45711112769504">7.2. Using expressions to create new datasets</a></span></dt><dt><span class="section"><a href="#idm45711112754736">7.3. Linking datasets to expressions</a></span></dt><dt><span class="section"><a href="#idm45711112753392">7.4. Splitting data</a></span></dt><dt><span class="section"><a href="#idm45711112750624">7.5. Defining new constants or functions</a></span></dt><dt><span class="section"><a href="#idm45711112747200">7.6. Dataset plugins</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45711112745136">8. Capturing data</a></span></dt></dl></dd><dt><span class="chapter"><a href="#idm45711112737360">3. Command line interface</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45711112736224">1. Introduction</a></span></dt><dt><span class="section"><a href="#idm45711112728928">2. Commands</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45711112727904">2.1. Action</a></span></dt><dt><span class="section"><a href="#idm45711112725296">2.2. Add</a></span></dt><dt><span class="section"><a href="#idm45711112717392">2.3. AddCustom</a></span></dt><dt><span class="section"><a href="#idm45711112712576">2.4. AddImportPath</a></span></dt><dt><span class="section"><a href="#idm45711112710096">2.5. CloneWidget</a></span></dt><dt><span class="section"><a href="#idm45711112707520">2.6. Close</a></span></dt><dt><span class="section"><a href="#idm45711112705040">2.7. CreateHistogram</a></span></dt><dt><span class="section"><a href="#idm45711112701856">2.8. DatasetPlugin</a></span></dt><dt><span class="section"><a href="#idm45711112699184">2.9. EnableToolbar</a></span></dt><dt><span class="section"><a href="#idm45711112696640">2.10. Export</a></span></dt><dt><span class="section"><a href="#idm45711112687712">2.11. FilterDatasets</a></span></dt><dt><span class="section"><a href="#idm45711112684736">2.12. ForceUpdate</a></span></dt><dt><span class="section"><a href="#idm45711112682096">2.13. Get</a></span></dt><dt><span class="section"><a href="#idm45711112678688">2.14. GetChildren</a></span></dt><dt><span class="section"><a href="#idm45711112676192">2.15. GetClick</a></span></dt><dt><span class="section"><a href="#idm45711112673072">2.16. GetColormap</a></span></dt><dt><span class="section"><a href="#idm45711112670512">2.17. GetData</a></span></dt><dt><span class="section"><a href="#idm45711112666304">2.18. GetDataType</a></span></dt><dt><span class="section"><a href="#idm45711112663728">2.19. GetDatasets</a></span></dt><dt><span class="section"><a href="#idm45711112661248">2.20. GPL</a></span></dt><dt><span class="section"><a href="#idm45711112658768">2.21. ImportFile</a></span></dt><dt><span class="section"><a href="#idm45711112652736">2.22. ImportFile2D</a></span></dt><dt><span class="section"><a href="#idm45711112642192">2.23. ImportFileCSV</a></span></dt><dt><span class="section"><a href="#idm45711112639120">2.24. ImportFileHDF5</a></span></dt><dt><span class="section"><a href="#idm45711112630432">2.25. ImportFileND</a></span></dt><dt><span class="section"><a href="#idm45711112626032">2.26. ImportFilePlugin</a></span></dt><dt><span class="section"><a href="#idm45711112623200">2.27. ImportFITSFile</a></span></dt><dt><span class="section"><a href="#idm45711112617920">2.28. ImportString</a></span></dt><dt><span class="section"><a href="#idm45711112612688">2.29. ImportString2D</a></span></dt><dt><span class="section"><a href="#idm45711112608624">2.30. ImportStringND</a></span></dt><dt><span class="section"><a href="#idm45711112605280">2.31. IsClosed</a></span></dt><dt><span class="section"><a href="#idm45711112602304">2.32. List</a></span></dt><dt><span class="section"><a href="#idm45711112599760">2.33. Load</a></span></dt><dt><span class="section"><a href="#idm45711112596080">2.34. MoveToPage</a></span></dt><dt><span class="section"><a href="#idm45711112593120">2.35. ReloadData</a></span></dt><dt><span class="section"><a href="#idm45711112590208">2.36. Rename</a></span></dt><dt><span class="section"><a href="#idm45711112586976">2.37. Remove</a></span></dt><dt><span class="section"><a href="#idm45711112583952">2.38. ResizeWindow</a></span></dt><dt><span class="section"><a href="#idm45711112581072">2.39. Save</a></span></dt><dt><span class="section"><a href="#idm45711112578672">2.40. Set</a></span></dt><dt><span class="section"><a href="#idm45711112573744">2.41. SetAntiAliasing</a></span></dt><dt><span class="section"><a href="#idm45711112571248">2.42. SetData</a></span></dt><dt><span class="section"><a href="#idm45711112568464">2.43. SetDataExpression</a></span></dt><dt><span class="section"><a href="#idm45711112564128">2.44. SetDataND</a></span></dt><dt><span class="section"><a href="#idm45711112561568">2.45. SetDataRange</a></span></dt><dt><span class="section"><a href="#idm45711112558320">2.46. SetData2D</a></span></dt><dt><span class="section"><a href="#idm45711112554848">2.47. SetData2DExpression</a></span></dt><dt><span class="section"><a href="#idm45711112552208">2.48. SetData2DExpressionXYZ</a></span></dt><dt><span class="section"><a href="#idm45711112549328">2.49. SetData2DXYFunc</a></span></dt><dt><span class="section"><a href="#idm45711112546528">2.50. SetDataDateTime</a></span></dt><dt><span class="section"><a href="#idm45711112544032">2.51. SetDataText</a></span></dt><dt><span class="section"><a href="#idm45711112539840">2.52. SetToReference</a></span></dt><dt><span class="section"><a href="#idm45711112537440">2.53. SetUpdateInterval</a></span></dt><dt><span class="section"><a href="#idm45711112534144">2.54. SetVerbose</a></span></dt><dt><span class="section"><a href="#idm45711112530496">2.55. StartSecondView</a></span></dt><dt><span class="section"><a href="#idm45711112527328">2.56. TagDatasets</a></span></dt><dt><span class="section"><a href="#idm45711112524928">2.57. To</a></span></dt><dt><span class="section"><a href="#idm45711112522160">2.58. Quit</a></span></dt><dt><span class="section"><a href="#idm45711112519760">2.59. WaitForClose</a></span></dt><dt><span class="section"><a href="#idm45711112516896">2.60. Zoom</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45711112513728">3. Security</a></span></dt></dl></dd><dt><span class="chapter"><a href="#idm45711112510624">4. Using Veusz from other programs</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45711112509984">1. Non-Qt Python programs</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45711112507744">1.1. Older path-based interface</a></span></dt><dt><span class="section"><a href="#idm45711112484784">1.2. New-style object interface</a></span></dt><dt><span class="section"><a href="#idm45711112467232">1.3. Translating old to new style</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45711112462928">2. PyQt4 programs</a></span></dt><dt><span class="section"><a href="#idm45711112461664">3. Non Python programs</a></span></dt><dt><span class="section"><a href="#idm45711112450272">4. C, C++ and Fortran</a></span></dt></dl></dd></dl></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idm45711117845328"></a>Chapter 1. Introduction</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="#idm45711117844656">1. Veusz</a></span></dt><dt><span class="section"><a href="#idm45711117841296">2. Terminology</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45711117840240">2.1. Widget</a></span></dt><dt><span class="section"><a href="#idm45711117934496">2.2. Settings: properties and formatting</a></span></dt><dt><span class="section"><a href="#idm45711117930576">2.3. Datasets</a></span></dt><dt><span class="section"><a href="#idm45711117925968">2.4. Text</a></span></dt><dt><span class="section"><a href="#idm45711112918352">2.5. Measurements</a></span></dt><dt><span class="section"><a href="#idm45711112916896">2.6. Color theme</a></span></dt><dt><span class="section"><a href="#idm45711112914816">2.7. Axis numeric scales</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45711112909264">3. Installation</a></span></dt><dt><span class="section"><a href="#idm45711112908112">4. The main window</a></span></dt><dt><span class="section"><a href="#idm45711112886288">5. My first plot</a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711117844656"></a>1. Veusz</h2></div></div></div><p>Veusz is a scientific plotting package. It was designed to
       be easy to use, easily extensible, but powerful. The program
       features a graphical user interface, which works under
       Unix/Linux, Windows or Mac OS X. It can also be easily scripted
@@ -20,7 +20,7 @@
       different data file types can be added with import
       plugins. Dataset plugins automate the manipulation of
       datasets. Tools plugins automate the manipulation of the
-      document.</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924455394896"></a>2. Terminology</h2></div></div></div><p>Here we define some terminology for future use.</p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924455393840"></a>2.1. Widget</h3></div></div></div><p>A document and its graphs are built up from widgets.
+      document.</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711117841296"></a>2. Terminology</h2></div></div></div><p>Here we define some terminology for future use.</p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711117840240"></a>2.1. Widget</h3></div></div></div><p>A document and its graphs are built up from widgets.
 	These widgets can often by placed within each other, depending
 	on the type of the widget. A widget has children (those
 	widgets placed within it) and its parent. The widgets have a
@@ -185,7 +185,7 @@
 		directly on the page rather than in a graph.</p></li><li class="listitem"><p><span class="command"><strong>ternary</strong></span> - plot data of three
 		variables which add up to 100 per cent.This is a
 		non-orthogonal plot and is placed directly on the page
-		rather than in a graph.</p></li></ol></div></li></ol></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924455544144"></a>2.2. Settings: properties and formatting</h3></div></div></div><p>The various settings of the widgets come in a number of
+		rather than in a graph.</p></li></ol></div></li></ol></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711117934496"></a>2.2. Settings: properties and formatting</h3></div></div></div><p>The various settings of the widgets come in a number of
 	types, including integers (e.g. 10), floats (e.g. 3.14),
 	dataset names ("mydata"), expressions ("x+y"), text ("hi
 	there!"), distances (see above), options ("horizontal" or
@@ -202,7 +202,7 @@
 	menu. Default settings are set on a per-document basis, but
 	can be saved into a separate file and loaded. A default
 	default settings file can be given to use for new documents
-	(set in the preferences dialog).</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924455540224"></a>2.3. Datasets</h3></div></div></div><p>
+	(set in the preferences dialog).</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711117930576"></a>2.3. Datasets</h3></div></div></div><p>
           Data are imported into Veusz as a dataset. A dataset is
           imported from a file, entered manually, set via the command
           line, or linked to other datasets via an expression or
@@ -232,7 +232,7 @@
           so that the values update if the file is reloaded, or they
           can be linked to other datasets via expressions or dataset
           plugins.
-        </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924455535536"></a>2.4. <a name="TextFonts"></a>Text</h3></div></div></div><p>Veusz understands a limited set of LaTeX-like formatting
+        </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711117925968"></a>2.4. <a name="TextFonts"></a>Text</h3></div></div></div><p>Veusz understands a limited set of LaTeX-like formatting
 	for text. There are some differences (for example, "10^23"
 	puts the 2 and 3 into superscript), but it is fairly
 	similar. You should also leave out the dollar signs. Veusz
@@ -324,19 +324,19 @@
                <span class="command"><strong>SETTING(path)</strong></span> - return the value of
                the Veusz setting given by the full path,
                e.g. <span class="command"><strong>%{{SETTING('/page1/width')}}%</strong></span>.
-             </p></li></ol></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450471168"></a>2.5. Measurements</h3></div></div></div><p>Distances, widths and lengths in Veusz can be specified
+             </p></li></ol></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112918352"></a>2.5. Measurements</h3></div></div></div><p>Distances, widths and lengths in Veusz can be specified
 	in a number of different ways. These include absolute
 	distances specified in physical units, e.g. 1cm, 0.05m, 10mm,
 	5in and 10pt, and relative units, which are relative to
 	the largest dimension of the page, including 5%, 1/20,
-	0.05.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450469712"></a>2.6. Color theme</h3></div></div></div><p>From version 1.26, widgets are colored automatically
+	0.05.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112916896"></a>2.6. Color theme</h3></div></div></div><p>From version 1.26, widgets are colored automatically
         using the color theme. This theme is specified in the main
         document widget settings. Widgets are given the colors in
         order given the order in a graph widget. The default theme can
         be specified in the preferences dialog box.</p><p>To override a theme, the user can manually specify the
         individual colors in the custom definitions dialog box. Color
         "theme1" is used as the first theme color, then "theme2",
-        etc.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450467632"></a>2.7. Axis numeric scales</h3></div></div></div><p>The way in which numbers are formatted in axis scales is
+        etc.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112914816"></a>2.7. Axis numeric scales</h3></div></div></div><p>The way in which numbers are formatted in axis scales is
 	chosen automatically. For standard numerical axes, values are
 	shown with the "%Vg" formatting (see below). For date axes, an
 	appropriate date formatting is used so that the interval shown
@@ -368,8 +368,8 @@
 	(Monday as first day of week), "x" date representation, "X"
 	time representation, "y" year without century 00..99 and "Y"
 	year. "%VDVS" is a special Veusz addon format which shows
-	seconds and fractions of seconds (e.g. 12.2).</p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924450462080"></a>3. Installation</h2></div></div></div><p>Please look at the Installation notes (INSTALL) for
-      details on installing Veusz.</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924450460928"></a>4. The main window</h2></div></div></div><p>You should see the main window when you run Veusz (you can
+	seconds and fractions of seconds (e.g. 12.2).</p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711112909264"></a>3. Installation</h2></div></div></div><p>Please look at the Installation notes (INSTALL) for
+      details on installing Veusz.</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711112908112"></a>4. The main window</h2></div></div></div><p>You should see the main window when you run Veusz (you can
       just type the veusz command in Unix).</p><div class="mediaobject"><img src="manimages/mainwindow.png"></div><p>The Veusz window is split into several sections. At the
       top is the menu bar and tool bar. These work in the usual way to
       other applications. Sometimes options are disabled (greyed out)
@@ -409,7 +409,7 @@
       the right of the screen. This window allows you to view the
       datasets currently loaded, their dimensions and type. Hovering a
       mouse over the size of the dataset will give you a preview of
-      the data.</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924450439104"></a>5. My first plot</h2></div></div></div><p>After opening Veusz, on the left of the main window, you
+      the data.</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711112886288"></a>5. My first plot</h2></div></div></div><p>After opening Veusz, on the left of the main window, you
       will see a Document, containing a Page, which contains a Graph
       with its axes. The Graph is selected in the selection
       window. The toolbar above adds a new widget to the selected
@@ -463,7 +463,7 @@
       subsetting, and clicking on the "hide" option. You can change
       the colour of the marker by going to the "Marker Fill"
       subsetting, and entering a new colour (e.g. red), into the
-      colour property.</p></div></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idm45924450428592"></a>Chapter 2. Reading data</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="#idm45924450419920">1. Standard text import</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45924450414896">1.1. Data types in text import</a></span></dt><dt><span class="section"><a href="#idm45924450410544">1.2. Descriptors</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45924450383280">2. CSV files</a></span></dt><dt><span class="section"><a href="#idm45924450379440">3. HDF5 files</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45924450375040">3.1. Error bars</a></span></dt><dt><span class="section"><a href="#idm45924450372912">3.2. Slices</a></span></dt><dt><span class="section"><a href="#idm45924450367696">3.3. 2D data ranges</a></span></dt><dt><span class="section"><a href="#idm45924450365728">3.4. Dates</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45924450360032">4. 2D text or CSV format</a></span></dt><dt><span class="section"><a href="#idm45924450338560">5. FITS files</a></span></dt><dt><span class="section"><a href="#idm45924450332560">6. Reading other data formats</a></span></dt><dt><span class="section"><a href="#idm45924450325600">7. Manipulating datasets</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45924450324064">7.1. Using dataset plugins</a></span></dt><dt><span class="section"><a href="#idm45924450322144">7.2. Using expressions to create new datasets</a></span></dt><dt><span class="section"><a href="#idm45924450307376">7.3. Linking datasets to expressions</a></span></dt><dt><span class="section"><a href="#idm45924450306032">7.4. Splitting data</a></span></dt><dt><span class="section"><a href="#idm45924450303264">7.5. Defining new constants or functions</a></span></dt><dt><span class="section"><a href="#idm45924450299840">7.6. Dataset plugins</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45924450297776">8. Capturing data</a></span></dt></dl></div><p>
+      colour property.</p></div></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idm45711112875776"></a>Chapter 2. Reading data</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="#idm45711112867104">1. Standard text import</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45711112862080">1.1. Data types in text import</a></span></dt><dt><span class="section"><a href="#idm45711112857728">1.2. Descriptors</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45711112830480">2. CSV files</a></span></dt><dt><span class="section"><a href="#idm45711112826640">3. HDF5 files</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45711112822240">3.1. Error bars</a></span></dt><dt><span class="section"><a href="#idm45711112820112">3.2. Slices</a></span></dt><dt><span class="section"><a href="#idm45711112814896">3.3. 2D data ranges</a></span></dt><dt><span class="section"><a href="#idm45711112812928">3.4. Dates</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45711112807232">4. 2D text or CSV format</a></span></dt><dt><span class="section"><a href="#idm45711112785760">5. FITS files</a></span></dt><dt><span class="section"><a href="#idm45711112779840">6. Reading other data formats</a></span></dt><dt><span class="section"><a href="#idm45711112772960">7. Manipulating datasets</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45711112771424">7.1. Using dataset plugins</a></span></dt><dt><span class="section"><a href="#idm45711112769504">7.2. Using expressions to create new datasets</a></span></dt><dt><span class="section"><a href="#idm45711112754736">7.3. Linking datasets to expressions</a></span></dt><dt><span class="section"><a href="#idm45711112753392">7.4. Splitting data</a></span></dt><dt><span class="section"><a href="#idm45711112750624">7.5. Defining new constants or functions</a></span></dt><dt><span class="section"><a href="#idm45711112747200">7.6. Dataset plugins</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45711112745136">8. Capturing data</a></span></dt></dl></div><p>
       Currently Veusz supports reading data from files with text, CSV,
       HDF5, FITS, 2D text or CSV, QDP, binary and NPY/NPZ formats. Use
       the
@@ -488,7 +488,7 @@
       <span class="symbol">suffix</span> can be given when importing. These are
       added to the front or back of each dataset name imported. They
       are convenient for grouping data together.
-    </p><div class="mediaobject"><img src="manimages/importdialog.png"></div><p>We list the various types of import below.</p><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924450419920"></a>1. Standard text import</h2></div></div></div><p>
+    </p><div class="mediaobject"><img src="manimages/importdialog.png"></div><p>We list the various types of import below.</p><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711112867104"></a>1. Standard text import</h2></div></div></div><p>
 	The default text import operates on simple text files. The
 	data are assumed to be in columns separated by
 	whitespace. Each column corresponds to dataset (or its error
@@ -517,7 +517,7 @@
 	datasets are created for each block, using a numeric suffix
 	giving the block number, e.g. <span class="symbol">_1</span>,
 	<span class="symbol">_2</span>.
-      </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450414896"></a>1.1. Data types in text import</h3></div></div></div><p>
+      </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112862080"></a>1.1. Data types in text import</h3></div></div></div><p>
 	  Veusz supports reading in several types of data. The type of
 	  data can be added in round brackets after the name in the
 	  descriptor. Veusz will try to guess the type of data based
@@ -552,7 +552,7 @@
 	  supports dates and times in the local format, though take
 	  note that the same file and data may not work on a system in
 	  a different location.
-	</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450410544"></a>1.2. Descriptors</h3></div></div></div><a name="Descriptors"></a><p>
+	</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112857728"></a>1.2. Descriptors</h3></div></div></div><a name="Descriptors"></a><p>
 	  A list of datasets, or a "Descriptor", is given in the
 	  Import dialog to describe how the data are formatted in the
 	  import file. The descriptor at its simplest is a space or
@@ -598,7 +598,7 @@ descriptor alpha beta gamma
 7 8 9
 
 # etc...
-</pre></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="idm45924455634512"></a>1.2.1. Descriptor examples</h4></div></div></div><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>
+</pre></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="idm45711118022320"></a>1.2.1. Descriptor examples</h4></div></div></div><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>
 	       <span class="command"><strong>x y</strong></span> two columns are present in the
 	       file, they will be read in as datasets "x" and "y".
 	     </p></li><li class="listitem"><p>
@@ -632,7 +632,7 @@ descriptor alpha beta gamma
 	    <span class="command"><strong>foo,,+-</strong></span>  read the first column as
 	    the foo dataset, skip a column, and read the third column as
 	    its symmetric error.
-	  </p></li></ol></div></div></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924450383280"></a>2. CSV files</h2></div></div></div><p>
+	  </p></li></ol></div></div></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711112830480"></a>2. CSV files</h2></div></div></div><p>
 	CVS (comma separated variable) files are often written from
 	other programs, such as spreadsheets, including Excel and
 	Gnumeric. Veusz supports reading from these files.
@@ -660,7 +660,7 @@ descriptor alpha beta gamma
 	import dialog box - see the examples given. In addition CSV
 	files support numbers in European format (e.g. 2,34 rather
 	than 2.34), depending on the setting in the dialog box.
-      </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924450379440"></a>3. HDF5 files</h2></div></div></div><p>
+      </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711112826640"></a>3. HDF5 files</h2></div></div></div><p>
 	HDF5 is a flexible data format. Datasets and tables can be
 	stored in a hierarchical arrangements of groups within a
 	file. Veusz supports reading 1D numeric, text, date-time, 2D
@@ -681,7 +681,7 @@ descriptor alpha beta gamma
 	<code class="varname">vsz_</code> attributes for columns are given by
 	appending the suffix <code class="varname">_columnname</code> to the
 	attribute.
-      </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450375040"></a>3.1. Error bars</h3></div></div></div><p>
+      </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112822240"></a>3.1. Error bars</h3></div></div></div><p>
 	  Error bars are supported in two ways. The first way is to
 	  combine 1D datasets. For the datasets which are error bars,
 	  use a name which is the same as the main dataset but with
@@ -693,7 +693,7 @@ descriptor alpha beta gamma
 	  dataset. This second method can also be enabled by adding an
 	  HDF5 attribute <code class="varname">vsz_twod_as_oned</code> set to a
 	  non-zero value for the dataset.
-	</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450372912"></a>3.2. Slices</h3></div></div></div><p>
+	</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112820112"></a>3.2. Slices</h3></div></div></div><p>
 	  You may wish to
 	  reduce the dimensions of a dataset before importing by
 	  slicing. You can also give a slice to import a subset of a
@@ -708,7 +708,7 @@ descriptor alpha beta gamma
 	  stopping index and optionally <code class="literal">c</code> is the
 	  step size. A slice can also be specified by providing an
 	  HDF5 attribute <code class="varname">vsz_slice</code> for the dataset.
-	</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450367696"></a>3.3. 2D data ranges</h3></div></div></div><p>
+	</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112814896"></a>3.3. 2D data ranges</h3></div></div></div><p>
 	  2D data have an associated X and Y range. By default the
 	  number of pixels of the image are used to give this range.
 	  A range can be specified by clicking on the dataset and
@@ -717,7 +717,7 @@ descriptor alpha beta gamma
 	  the dataset <code class="varname">vsz_range</code>, which should be set
 	  to an array of four values (minimum x, minimum y, maximum x,
 	  maximum y).
-	</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450365728"></a>3.4. Dates</h3></div></div></div><p>
+	</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112812928"></a>3.4. Dates</h3></div></div></div><p>
 	  Date/time datasets can be made from a 1D numeric dataset or
 	  from a text dataset. For the 1D dataset, use the number of
 	  seconds relative to the start of the year 2009 (this is
@@ -739,7 +739,7 @@ descriptor alpha beta gamma
 	  this, set the attribute
 	  <code class="varname">vsz_convert_datetime</code> to the format
 	  expression or <code class="literal">iso</code> to specify ISO format.
-	</p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924450360032"></a>4. 2D text or CSV format</h2></div></div></div><p>
+	</p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711112807232"></a>4. 2D text or CSV format</h2></div></div></div><p>
 	Veusz can import 2D data from standard text or CSV files. In
 	this case the data should consist of a matrix of data values,
 	with the columns separated by one or more spaces or tabs and
@@ -789,7 +789,7 @@ descriptor alpha beta gamma
 	after importing data.</p></li><li class="listitem"><p><span class="command"><strong>gridatedge</strong></span> - the first row and
 	leftmost column give the positions of the centres of the
 	pixels. This is also an option in the import dialog. The
-	values should be increasing or decreasing.</p></li></ol></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924450338560"></a>5. FITS files</h2></div></div></div><p>
+	values should be increasing or decreasing.</p></li></ol></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711112785760"></a>5. FITS files</h2></div></div></div><p>
 	1D, 2D or n-dimensional data can be read from FITS files. 1D
 	data, with optional errors bars, can be read from table
 	extensions, and 2D data from image or primary extensions.
@@ -813,7 +813,7 @@ descriptor alpha beta gamma
 	coordinates where the Pixel (WCS) coordinates are multiplied
 	by the respective <code class="varname">CDELT1/2</code> values and added
 	to the <code class="varname">CRVAL1/2</code> values.
-      </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924450332560"></a>6. Reading other data formats</h2></div></div></div><p>As mentioned above, a user may write some Python code to
+      </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711112779840"></a>6. Reading other data formats</h2></div></div></div><p>As mentioned above, a user may write some Python code to
       read a data file or set of data files. To write a plugin which
       is incorportated into Veusz, see
       <a class="ulink" href="http://barmag.net/veusz-wiki/ImportPlugins" target="_top">http://barmag.net/veusz-wiki/ImportPlugins</a></p><p>You can also include Python code in an input file to read
@@ -837,19 +837,19 @@ for line in open("in.dat"):
 
 SetData('x', x, symerr=0.1)
 SetData('y', y)
-</pre></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924450325600"></a>7. Manipulating datasets</h2></div></div></div><p>Imported datasets can easily be modified in the Data
+</pre></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711112772960"></a>7. Manipulating datasets</h2></div></div></div><p>Imported datasets can easily be modified in the Data
       Editor dialog box. This dialog box can also be used to create
       new datasets from scratch by typing them in. The Data Create
       dialog box is used to new datasets as a numerical sequence,
       parametrically or based on other datasets given expressions. If
       you want to plot a function of a dataset, you often do not have
       to create a new dataset. Veusz allows to enter expressions
-      directly in many places.</p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450324064"></a>7.1. Using dataset plugins</h3></div></div></div><p>Dataset plugins can be used to perform arbitrary
+      directly in many places.</p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112771424"></a>7.1. Using dataset plugins</h3></div></div></div><p>Dataset plugins can be used to perform arbitrary
 	manipulation of datasets. Veusz includes several plugins for
 	mathematical operation of data and other dataset
 	manipulations, such as concatenation or splitting. If you wish
 	to write your own plugins look at
-	<a class="ulink" href="http://barmag.net/veusz-wiki/DatasetPlugins" target="_top">http://barmag.net/veusz-wiki/DatasetPlugins</a>.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450322144"></a>7.2. Using expressions to create new datasets</h3></div></div></div><p>For instance, if the user has already imported dataset d,
+	<a class="ulink" href="http://barmag.net/veusz-wiki/DatasetPlugins" target="_top">http://barmag.net/veusz-wiki/DatasetPlugins</a>.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112769504"></a>7.2. Using expressions to create new datasets</h3></div></div></div><p>For instance, if the user has already imported dataset d,
       then they can create d2 which consists of d**2. Expressions are
       in Python numpy syntax and can include the usual mathematical
       functions.</p><div class="mediaobject"><img src="manimages/createdataset.png"></div><p>Expressions for error bars can also be given. By appending
@@ -883,27 +883,27 @@ SetData('y', y)
       best fitting parameters of a fit. <span class="command"><strong>ENVIRON</strong></span> is
       the Python environment variable dictionary, allowing values to
       be passed from the environment,
-      e.g. <span class="command"><strong>float(ENVIRON['myvar'])</strong></span>.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450307376"></a>7.3. Linking datasets to expressions</h3></div></div></div><p>A particularly useful feature is to be able to link a
+      e.g. <span class="command"><strong>float(ENVIRON['myvar'])</strong></span>.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112754736"></a>7.3. Linking datasets to expressions</h3></div></div></div><p>A particularly useful feature is to be able to link a
       dataset to an expression, so if the expression changes the
-      dataset changes with it, like in a spreadsheet.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450306032"></a>7.4. Splitting data</h3></div></div></div><p>Data can also be chopped in this method, for example
+      dataset changes with it, like in a spreadsheet.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112753392"></a>7.4. Splitting data</h3></div></div></div><p>Data can also be chopped in this method, for example
       using the expression <span class="command"><strong>x[10:20]</strong></span>, which makes a
       dataset based on the 11th to 20th item in the x dataset (the
       ranges are Python syntax, and are zero-based). Negative indices
       count backwards from the end of the dataset. Data can be skipped
       using expressions such as
-	  <span class="command"><strong>data[::2]</strong></span>, which skips every other element</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450303264"></a>7.5. Defining new constants or functions</h3></div></div></div><p>User defined constants or functions can be defined in
+	  <span class="command"><strong>data[::2]</strong></span>, which skips every other element</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112750624"></a>7.5. Defining new constants or functions</h3></div></div></div><p>User defined constants or functions can be defined in
 	the "Custom definitions" dialog box under the edit
 	menu. Functions can also be imported from external python
 	modules.</p><div class="mediaobject"><img src="manimages/customdefinition.png"></div><p>Custom definitions are defined on a per-document basis,
 	but can be saved or loaded into a file. A default custom
 	definitions file can be set in the preferences dialog
-	box.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450299840"></a>7.6. Dataset plugins</h3></div></div></div><p>In addition to creating datasets based on expressions, a
+	box.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112747200"></a>7.6. Dataset plugins</h3></div></div></div><p>In addition to creating datasets based on expressions, a
 	variety of dataset plugins exist, which make certain
 	operations on datasets much more convenient. See the Data,
 	Operations menu for a list of the default plugins. The user
 	can easily create new plugins. See
 	<a class="ulink" href="http://barmag.net/veusz-wiki/DatasetPlugins" target="_top">http://barmag.net/veusz-wiki/DatasetPlugins</a> for details.
-	</p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924450297776"></a>8. Capturing data</h2></div></div></div><p>
+	</p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711112745136"></a>8. Capturing data</h2></div></div></div><p>
 	In addition to the standard data import, data can be captured
 	as it is created from an external program, a network socket or
 	a file or named pipe. When capturing from a file, the
@@ -931,7 +931,7 @@ SetData('y', y)
 	capture. Click <code class="literal">Finish</code> or
 	<code class="literal">Cancel</code> to stop. Cancelling destroys
 	captured data.
-      </p></div></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idm45924450290000"></a>Chapter 3. Command line interface</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="#idm45924450288864">1. Introduction</a></span></dt><dt><span class="section"><a href="#idm45924450281568">2. Commands</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45924450280544">2.1. Action</a></span></dt><dt><span class="section"><a href="#idm45924450277936">2.2. Add</a></span></dt><dt><span class="section"><a href="#idm45924450270032">2.3. AddCustom</a></span></dt><dt><span class="section"><a href="#idm45924450265216">2.4. AddImportPath</a></span></dt><dt><span class="section"><a href="#idm45924450262736">2.5. CloneWidget</a></span></dt><dt><span class="section"><a href="#idm45924450260160">2.6. Close</a></span></dt><dt><span class="section"><a href="#idm45924450257680">2.7. CreateHistogram</a></span></dt><dt><span class="section"><a href="#idm45924450254496">2.8. DatasetPlugin</a></span></dt><dt><span class="section"><a href="#idm45924450251824">2.9. EnableToolbar</a></span></dt><dt><span class="section"><a href="#idm45924450249280">2.10. Export</a></span></dt><dt><span class="section"><a href="#idm45924450240352">2.11. FilterDatasets</a></span></dt><dt><span class="section"><a href="#idm45924450237376">2.12. ForceUpdate</a></span></dt><dt><span class="section"><a href="#idm45924450234736">2.13. Get</a></span></dt><dt><span class="section"><a href="#idm45924450231328">2.14. GetChildren</a></span></dt><dt><span class="section"><a href="#idm45924450228832">2.15. GetClick</a></span></dt><dt><span class="section"><a href="#idm45924450225712">2.16. GetColormap</a></span></dt><dt><span class="section"><a href="#idm45924450223152">2.17. GetData</a></span></dt><dt><span class="section"><a href="#idm45924450218944">2.18. GetDataType</a></span></dt><dt><span class="section"><a href="#idm45924450216368">2.19. GetDatasets</a></span></dt><dt><span class="section"><a href="#idm45924450213888">2.20. GPL</a></span></dt><dt><span class="section"><a href="#idm45924450211408">2.21. ImportFile</a></span></dt><dt><span class="section"><a href="#idm45924450205376">2.22. ImportFile2D</a></span></dt><dt><span class="section"><a href="#idm45924450194832">2.23. ImportFileCSV</a></span></dt><dt><span class="section"><a href="#idm45924450191760">2.24. ImportFileHDF5</a></span></dt><dt><span class="section"><a href="#idm45924450183072">2.25. ImportFileND</a></span></dt><dt><span class="section"><a href="#idm45924450178672">2.26. ImportFilePlugin</a></span></dt><dt><span class="section"><a href="#idm45924450175840">2.27. ImportFITSFile</a></span></dt><dt><span class="section"><a href="#idm45924450170560">2.28. ImportString</a></span></dt><dt><span class="section"><a href="#idm45924450165328">2.29. ImportString2D</a></span></dt><dt><span class="section"><a href="#idm45924450161264">2.30. ImportStringND</a></span></dt><dt><span class="section"><a href="#idm45924450157920">2.31. IsClosed</a></span></dt><dt><span class="section"><a href="#idm45924450154944">2.32. List</a></span></dt><dt><span class="section"><a href="#idm45924450152400">2.33. Load</a></span></dt><dt><span class="section"><a href="#idm45924450148720">2.34. MoveToPage</a></span></dt><dt><span class="section"><a href="#idm45924450145760">2.35. ReloadData</a></span></dt><dt><span class="section"><a href="#idm45924450142848">2.36. Rename</a></span></dt><dt><span class="section"><a href="#idm45924450139616">2.37. Remove</a></span></dt><dt><span class="section"><a href="#idm45924450136592">2.38. ResizeWindow</a></span></dt><dt><span class="section"><a href="#idm45924450133712">2.39. Save</a></span></dt><dt><span class="section"><a href="#idm45924450131312">2.40. Set</a></span></dt><dt><span class="section"><a href="#idm45924450126384">2.41. SetAntiAliasing</a></span></dt><dt><span class="section"><a href="#idm45924450123888">2.42. SetData</a></span></dt><dt><span class="section"><a href="#idm45924450121104">2.43. SetDataExpression</a></span></dt><dt><span class="section"><a href="#idm45924450116768">2.44. SetDataND</a></span></dt><dt><span class="section"><a href="#idm45924450114208">2.45. SetDataRange</a></span></dt><dt><span class="section"><a href="#idm45924450110960">2.46. SetData2D</a></span></dt><dt><span class="section"><a href="#idm45924450107488">2.47. SetData2DExpression</a></span></dt><dt><span class="section"><a href="#idm45924450104848">2.48. SetData2DExpressionXYZ</a></span></dt><dt><span class="section"><a href="#idm45924450101968">2.49. SetData2DXYFunc</a></span></dt><dt><span class="section"><a href="#idm45924450099168">2.50. SetDataDateTime</a></span></dt><dt><span class="section"><a href="#idm45924450096672">2.51. SetDataText</a></span></dt><dt><span class="section"><a href="#idm45924450092480">2.52. SetToReference</a></span></dt><dt><span class="section"><a href="#idm45924450090080">2.53. SetUpdateInterval</a></span></dt><dt><span class="section"><a href="#idm45924450086784">2.54. SetVerbose</a></span></dt><dt><span class="section"><a href="#idm45924450083136">2.55. StartSecondView</a></span></dt><dt><span class="section"><a href="#idm45924450079968">2.56. TagDatasets</a></span></dt><dt><span class="section"><a href="#idm45924450077568">2.57. To</a></span></dt><dt><span class="section"><a href="#idm45924450074800">2.58. Quit</a></span></dt><dt><span class="section"><a href="#idm45924450072400">2.59. WaitForClose</a></span></dt><dt><span class="section"><a href="#idm45924450069536">2.60. Zoom</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45924450066368">3. Security</a></span></dt></dl></div><a name="Commands"></a><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924450288864"></a>1. Introduction</h2></div></div></div><p>An alternative way to control Veusz is via its command
+      </p></div></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idm45711112737360"></a>Chapter 3. Command line interface</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="#idm45711112736224">1. Introduction</a></span></dt><dt><span class="section"><a href="#idm45711112728928">2. Commands</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45711112727904">2.1. Action</a></span></dt><dt><span class="section"><a href="#idm45711112725296">2.2. Add</a></span></dt><dt><span class="section"><a href="#idm45711112717392">2.3. AddCustom</a></span></dt><dt><span class="section"><a href="#idm45711112712576">2.4. AddImportPath</a></span></dt><dt><span class="section"><a href="#idm45711112710096">2.5. CloneWidget</a></span></dt><dt><span class="section"><a href="#idm45711112707520">2.6. Close</a></span></dt><dt><span class="section"><a href="#idm45711112705040">2.7. CreateHistogram</a></span></dt><dt><span class="section"><a href="#idm45711112701856">2.8. DatasetPlugin</a></span></dt><dt><span class="section"><a href="#idm45711112699184">2.9. EnableToolbar</a></span></dt><dt><span class="section"><a href="#idm45711112696640">2.10. Export</a></span></dt><dt><span class="section"><a href="#idm45711112687712">2.11. FilterDatasets</a></span></dt><dt><span class="section"><a href="#idm45711112684736">2.12. ForceUpdate</a></span></dt><dt><span class="section"><a href="#idm45711112682096">2.13. Get</a></span></dt><dt><span class="section"><a href="#idm45711112678688">2.14. GetChildren</a></span></dt><dt><span class="section"><a href="#idm45711112676192">2.15. GetClick</a></span></dt><dt><span class="section"><a href="#idm45711112673072">2.16. GetColormap</a></span></dt><dt><span class="section"><a href="#idm45711112670512">2.17. GetData</a></span></dt><dt><span class="section"><a href="#idm45711112666304">2.18. GetDataType</a></span></dt><dt><span class="section"><a href="#idm45711112663728">2.19. GetDatasets</a></span></dt><dt><span class="section"><a href="#idm45711112661248">2.20. GPL</a></span></dt><dt><span class="section"><a href="#idm45711112658768">2.21. ImportFile</a></span></dt><dt><span class="section"><a href="#idm45711112652736">2.22. ImportFile2D</a></span></dt><dt><span class="section"><a href="#idm45711112642192">2.23. ImportFileCSV</a></span></dt><dt><span class="section"><a href="#idm45711112639120">2.24. ImportFileHDF5</a></span></dt><dt><span class="section"><a href="#idm45711112630432">2.25. ImportFileND</a></span></dt><dt><span class="section"><a href="#idm45711112626032">2.26. ImportFilePlugin</a></span></dt><dt><span class="section"><a href="#idm45711112623200">2.27. ImportFITSFile</a></span></dt><dt><span class="section"><a href="#idm45711112617920">2.28. ImportString</a></span></dt><dt><span class="section"><a href="#idm45711112612688">2.29. ImportString2D</a></span></dt><dt><span class="section"><a href="#idm45711112608624">2.30. ImportStringND</a></span></dt><dt><span class="section"><a href="#idm45711112605280">2.31. IsClosed</a></span></dt><dt><span class="section"><a href="#idm45711112602304">2.32. List</a></span></dt><dt><span class="section"><a href="#idm45711112599760">2.33. Load</a></span></dt><dt><span class="section"><a href="#idm45711112596080">2.34. MoveToPage</a></span></dt><dt><span class="section"><a href="#idm45711112593120">2.35. ReloadData</a></span></dt><dt><span class="section"><a href="#idm45711112590208">2.36. Rename</a></span></dt><dt><span class="section"><a href="#idm45711112586976">2.37. Remove</a></span></dt><dt><span class="section"><a href="#idm45711112583952">2.38. ResizeWindow</a></span></dt><dt><span class="section"><a href="#idm45711112581072">2.39. Save</a></span></dt><dt><span class="section"><a href="#idm45711112578672">2.40. Set</a></span></dt><dt><span class="section"><a href="#idm45711112573744">2.41. SetAntiAliasing</a></span></dt><dt><span class="section"><a href="#idm45711112571248">2.42. SetData</a></span></dt><dt><span class="section"><a href="#idm45711112568464">2.43. SetDataExpression</a></span></dt><dt><span class="section"><a href="#idm45711112564128">2.44. SetDataND</a></span></dt><dt><span class="section"><a href="#idm45711112561568">2.45. SetDataRange</a></span></dt><dt><span class="section"><a href="#idm45711112558320">2.46. SetData2D</a></span></dt><dt><span class="section"><a href="#idm45711112554848">2.47. SetData2DExpression</a></span></dt><dt><span class="section"><a href="#idm45711112552208">2.48. SetData2DExpressionXYZ</a></span></dt><dt><span class="section"><a href="#idm45711112549328">2.49. SetData2DXYFunc</a></span></dt><dt><span class="section"><a href="#idm45711112546528">2.50. SetDataDateTime</a></span></dt><dt><span class="section"><a href="#idm45711112544032">2.51. SetDataText</a></span></dt><dt><span class="section"><a href="#idm45711112539840">2.52. SetToReference</a></span></dt><dt><span class="section"><a href="#idm45711112537440">2.53. SetUpdateInterval</a></span></dt><dt><span class="section"><a href="#idm45711112534144">2.54. SetVerbose</a></span></dt><dt><span class="section"><a href="#idm45711112530496">2.55. StartSecondView</a></span></dt><dt><span class="section"><a href="#idm45711112527328">2.56. TagDatasets</a></span></dt><dt><span class="section"><a href="#idm45711112524928">2.57. To</a></span></dt><dt><span class="section"><a href="#idm45711112522160">2.58. Quit</a></span></dt><dt><span class="section"><a href="#idm45711112519760">2.59. WaitForClose</a></span></dt><dt><span class="section"><a href="#idm45711112516896">2.60. Zoom</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45711112513728">3. Security</a></span></dt></dl></div><a name="Commands"></a><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711112736224"></a>1. Introduction</h2></div></div></div><p>An alternative way to control Veusz is via its command
       line interface. As Veusz is a a Python application it uses
       Python as its scripting language. Therefore you can freely mix
       Veusz and Python commands on the command line. Veusz can also
@@ -948,11 +948,11 @@ SetData('y', y)
       or using veusz_listen. Commands specific to particular modes are
       documented as such.</p><p>Veusz also includes a new object-oriented version of the
       interface, which is documented at
-      <a class="ulink" href="http://barmag.net/veusz-wiki/EmbeddingPython" target="_top">http://barmag.net/veusz-wiki/EmbeddingPython</a>.</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924450281568"></a>2. Commands</h2></div></div></div><p>We list the allowed set of commands below</p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450280544"></a>2.1. Action</h3></div></div></div><a name="Command.Action"></a><p><span class="command"><strong>Action('actionname',
+      <a class="ulink" href="http://barmag.net/veusz-wiki/EmbeddingPython" target="_top">http://barmag.net/veusz-wiki/EmbeddingPython</a>.</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711112728928"></a>2. Commands</h2></div></div></div><p>We list the allowed set of commands below</p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112727904"></a>2.1. Action</h3></div></div></div><a name="Command.Action"></a><p><span class="command"><strong>Action('actionname',
 	componentpath='.')</strong></span></p><p>Initiates the specified action on the widget (component)
 	given the action name. Actions perform certain automated
 	routines. These include "fit" on a fit widget, and
-	"zeroMargins" on grids.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450277936"></a>2.2. Add</h3></div></div></div><a name="Command.Add"></a><p><span class="command"><strong>Add('widgettype', name='nameforwidget',
+	"zeroMargins" on grids.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112725296"></a>2.2. Add</h3></div></div></div><a name="Command.Add"></a><p><span class="command"><strong>Add('widgettype', name='nameforwidget',
         autoadd=True, optionalargs)</strong></span></p><p>The Add command adds a graph into the current widget
         (See the <a class="link" href="#Command.To">To</a> command to change
         the current position).</p><p>The first argument is the type of widget to add. These
@@ -965,7 +965,7 @@ SetData('y', y)
         given, for example <span class="command"><strong>Add('axis', name='y',
         direction='vertical')</strong></span>.</p><p>Subsettings may be set by using double underscores, for
 	example <span class="command"><strong>Add('xy',
-	MarkerFill__color='red', ErrorBarLine__hide=True)</strong></span>.</p><p>Returns: Name of widget added.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450270032"></a>2.3. AddCustom</h3></div></div></div><a name="Command.AddCustom"></a><p><span class="command"><strong>AddCustom(type, name, value)</strong></span></p><p>Add a custom definition for evaluation of
+	MarkerFill__color='red', ErrorBarLine__hide=True)</strong></span>.</p><p>Returns: Name of widget added.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112717392"></a>2.3. AddCustom</h3></div></div></div><a name="Command.AddCustom"></a><p><span class="command"><strong>AddCustom(type, name, value)</strong></span></p><p>Add a custom definition for evaluation of
 	expressions. This can define a constant (can be in terms of
 	other constants), a function of 1 or more variables, or a
 	function imported from an external python module.</p><p>ctype is "constant", "function" or "import".</p><p>name is name of constant, or "function(x, y, ...)" or
@@ -976,12 +976,12 @@ SetData('y', y)
         name. If mode is 'replace', it replaces any existing
         definition in the same place in the list or is appended
         otherwise. If mode is 'append', then an existing definition is
-        deleted, and the new one appended to the end.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450265216"></a>2.4. AddImportPath</h3></div></div></div><a name="Command.AddImportPath"></a><p><span class="command"><strong>AddImportPath(directory)</strong></span></p><p>Add a directory to the list of directories to try to
-	import data from.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450262736"></a>2.5. CloneWidget</h3></div></div></div><a name="Command.CloneWidget"></a><p><span class="command"><strong>CloneWidget(widget, newparent,
+        deleted, and the new one appended to the end.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112712576"></a>2.4. AddImportPath</h3></div></div></div><a name="Command.AddImportPath"></a><p><span class="command"><strong>AddImportPath(directory)</strong></span></p><p>Add a directory to the list of directories to try to
+	import data from.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112710096"></a>2.5. CloneWidget</h3></div></div></div><a name="Command.CloneWidget"></a><p><span class="command"><strong>CloneWidget(widget, newparent,
 	newname=None)</strong></span></p><p>Clone the widget given, placing the copy in newparent
         and the name given.  newname is an optional new name to give
-        it Returns new widget path.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450260160"></a>2.6. Close</h3></div></div></div><a name="Command.Close"></a><p><span class="command"><strong>Close()</strong></span></p><p>Closes the plotwindow. This is only supported in
-	embedded mode.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450257680"></a>2.7. CreateHistogram</h3></div></div></div><a name="Command.CreateHistogram"></a><p><span class="command"><strong>CreateHistogram(inexpr, outbinsds,
+        it Returns new widget path.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112707520"></a>2.6. Close</h3></div></div></div><a name="Command.Close"></a><p><span class="command"><strong>Close()</strong></span></p><p>Closes the plotwindow. This is only supported in
+	embedded mode.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112705040"></a>2.7. CreateHistogram</h3></div></div></div><a name="Command.CreateHistogram"></a><p><span class="command"><strong>CreateHistogram(inexpr, outbinsds,
                         outvalsds, binparams=None, binmanual=None,
                         method='counts', cumulative = 'none',
                         errors=False)</strong></span></p><p>
@@ -994,15 +994,15 @@ SetData('y', y)
         calculate cumulative distributions which is 'none',
         'smalltolarge' or 'largetosmall'.  errors is to calculate
         Poisson error bars.
-	</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450254496"></a>2.8. DatasetPlugin</h3></div></div></div><a name="Command.DatasetPlugin"></a><p><span class="command"><strong>DatasetPlugin(pluginname, fields,
+	</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112701856"></a>2.8. DatasetPlugin</h3></div></div></div><a name="Command.DatasetPlugin"></a><p><span class="command"><strong>DatasetPlugin(pluginname, fields,
 	datasetnames={})&gt;</strong></span></p><p>
 	  Use a dataset plugin.  pluginname: name of plugin to use
         fields: dict of input values to plugin datasetnames: dict
         mapping old names to new names of datasets if they are
         renamed. The new name None means dataset is deleted
-	  </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450251824"></a>2.9. EnableToolbar</h3></div></div></div><a name="Command.EnableToolbar"></a><p><span class="command"><strong>EnableToolbar(enable=True)</strong></span></p><p>Enable/disable the zooming toolbar in the
+	  </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112699184"></a>2.9. EnableToolbar</h3></div></div></div><a name="Command.EnableToolbar"></a><p><span class="command"><strong>EnableToolbar(enable=True)</strong></span></p><p>Enable/disable the zooming toolbar in the
 	plotwindow. This command is only supported in embedded mode or
-	from veusz_listen.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450249280"></a>2.10. Export</h3></div></div></div><a name="Command.Export"></a><p><span class="command"><strong>Export(filename, color=True,
+	from veusz_listen.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112696640"></a>2.10. Export</h3></div></div></div><a name="Command.Export"></a><p><span class="command"><strong>Export(filename, color=True,
       page=0 dpi=100,
       antialias=True, quality=85, backcolor='#ffffff00',
 	pdfdpi=150, svgtextastext=False)</strong></span></p><p>Export the page given to the filename given. The
@@ -1024,28 +1024,28 @@ SetData('y', y)
 	dpi to use when exporting EPS or PDF
 	files. <span class="command"><strong>svgtextastext</strong></span> says whether to export
 	SVG text as text, rather than curves.
-</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450240352"></a>2.11. FilterDatasets</h3></div></div></div><a name="Command.FilterDatasets"></a><p><span class="command"><strong>FilterDatasets(filterexpr, datasets, prefix="",
+</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112687712"></a>2.11. FilterDatasets</h3></div></div></div><a name="Command.FilterDatasets"></a><p><span class="command"><strong>FilterDatasets(filterexpr, datasets, prefix="",
         suffix="", invert=False, replaceblanks=False)</strong></span></p><p>Filter a list of datasets given. Creates new datasets
         for each with prefix and suffix added to input dataset
         names. filterexpr is an input numpy eexpression for filtering
         the datasets. If invert is set, the filter condition is
         inverted. If replaceblanks is set, filtered values are not
         removed, but replaced with a blank or NaN value. This command
-        only works on 1D numeric, date or text datasets.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450237376"></a>2.12. ForceUpdate</h3></div></div></div><a name="Command.ForceUpdate"></a><p><span class="command"><strong>ForceUpdate()</strong></span></p><p>Force the window to be updated to reflect the current
+        only works on 1D numeric, date or text datasets.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112684736"></a>2.12. ForceUpdate</h3></div></div></div><a name="Command.ForceUpdate"></a><p><span class="command"><strong>ForceUpdate()</strong></span></p><p>Force the window to be updated to reflect the current
 	state of the document. Often used when periodic updates have
 	been disabled (see SetUpdateInterval). This command is only
-	supported in embedded mode or from veusz_listen.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450234736"></a>2.13. Get</h3></div></div></div><a name="Command.Get"></a><p><span class="command"><strong>Get('settingpath')</strong></span></p><p>Returns: The value of the setting given by the path.</p><div class="informalexample"><pre class="programlisting">
+	supported in embedded mode or from veusz_listen.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112682096"></a>2.13. Get</h3></div></div></div><a name="Command.Get"></a><p><span class="command"><strong>Get('settingpath')</strong></span></p><p>Returns: The value of the setting given by the path.</p><div class="informalexample"><pre class="programlisting">
 &gt;&gt;&gt; Get('/page1/graph1/x/min')
 'Auto'
-</pre></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450231328"></a>2.14. GetChildren</h3></div></div></div><a name="Command.GetChildren"></a><p><span class="command"><strong>GetChildren(where='.')</strong></span></p><p>Returns: The names of the widgets which are children of
-      the path given</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450228832"></a>2.15. GetClick</h3></div></div></div><a name="Command.GetClick"></a><p><span class="command"><strong>GetClick()</strong></span></p><p>Waits for the user to click on a graph and returns the
+</pre></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112678688"></a>2.14. GetChildren</h3></div></div></div><a name="Command.GetChildren"></a><p><span class="command"><strong>GetChildren(where='.')</strong></span></p><p>Returns: The names of the widgets which are children of
+      the path given</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112676192"></a>2.15. GetClick</h3></div></div></div><a name="Command.GetClick"></a><p><span class="command"><strong>GetClick()</strong></span></p><p>Waits for the user to click on a graph and returns the
 	position of the click on appropriate axes. Command only works
 	in embedded mode.</p><p>Returns: A list containing tuples of the form (axispath,
 	val) for each axis for which the click was in range. The value
-	is the value on the axis for the click.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450225712"></a>2.16. GetColormap</h3></div></div></div><a name="Command.GetColormap"></a><p><span class="command"><strong>GetColormap(name, invert=False, nvals=256)</strong></span></p><p>Returns a colormap as a numpy array of red, green, blue,
+	is the value on the axis for the click.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112673072"></a>2.16. GetColormap</h3></div></div></div><a name="Command.GetColormap"></a><p><span class="command"><strong>GetColormap(name, invert=False, nvals=256)</strong></span></p><p>Returns a colormap as a numpy array of red, green, blue,
         alpha values (ranging from 0 to 255) with the number of steps
         given.
-        </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450223152"></a>2.17. GetData</h3></div></div></div><a name="Command.GetData"></a><p><span class="command"><strong>GetData(name)</strong></span></p><p>Returns: For a 1D dataset, a tuple containing the
+        </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112670512"></a>2.17. GetData</h3></div></div></div><a name="Command.GetData"></a><p><span class="command"><strong>GetData(name)</strong></span></p><p>Returns: For a 1D dataset, a tuple containing the
 	dataset with the name given. The value is (data, symerr,
 	negerr, poserr), with each a numpy array of the same size or
 	None. data are the values of the dataset, symerr are the
@@ -1060,11 +1060,11 @@ SetData('y', y)
 	array.</p><div class="informalexample"><pre class="programlisting">
 data = GetData('x')
 SetData('x', data[0]*0.1, *data[1:])
-</pre></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450218944"></a>2.18. GetDataType</h3></div></div></div><a name="Command.GetDataType"></a><p><span class="command"><strong>GetDataType(name)</strong></span></p><p>Get type of dataset with name given. Returns '1d' for a
+</pre></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112666304"></a>2.18. GetDataType</h3></div></div></div><a name="Command.GetDataType"></a><p><span class="command"><strong>GetDataType(name)</strong></span></p><p>Get type of dataset with name given. Returns '1d' for a
 	1d dataset, '2d' for a 2d dataset, 'text' for a text dataset
-	and 'datetime' for a datetime dataset.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450216368"></a>2.19. GetDatasets</h3></div></div></div><a name="Command.GetDatasets"></a><p><span class="command"><strong>GetDatasets()</strong></span></p><p>Returns: The names of the datasets in the current
-      document.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450213888"></a>2.20. GPL</h3></div></div></div><a name="Command.GPL"></a><p><span class="command"><strong>GPL()</strong></span></p><p>Print out the GNU Public Licence, which Veusz is licenced
-      under.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450211408"></a>2.21. ImportFile</h3></div></div></div><a name="Command.ImportFile"></a><p><span class="command"><strong>ImportFile('filename', 'descriptor',
+	and 'datetime' for a datetime dataset.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112663728"></a>2.19. GetDatasets</h3></div></div></div><a name="Command.GetDatasets"></a><p><span class="command"><strong>GetDatasets()</strong></span></p><p>Returns: The names of the datasets in the current
+      document.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112661248"></a>2.20. GPL</h3></div></div></div><a name="Command.GPL"></a><p><span class="command"><strong>GPL()</strong></span></p><p>Print out the GNU Public Licence, which Veusz is licenced
+      under.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112658768"></a>2.21. ImportFile</h3></div></div></div><a name="Command.ImportFile"></a><p><span class="command"><strong>ImportFile('filename', 'descriptor',
 	    linked=False, prefix='', suffix='',
 	    encoding='utf_8',
 	    renames={})</strong></span></p><p>Imports data from a file. The arguments are the filename
@@ -1080,7 +1080,7 @@ SetData('x', data[0]*0.1, *data[1:])
 	import.</p><p>Returns: A tuple containing a list of the imported
 	datasets and the number of conversions which failed for a
 	dataset.</p><p>Changed in version 0.5: A tuple is returned rather than
-	just the number of imported variables.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450205376"></a>2.22. ImportFile2D</h3></div></div></div><a name="Command.ImportFile2D"></a><p><span class="command"><strong>ImportFile2D('filename', datasets,
+	just the number of imported variables.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112652736"></a>2.22. ImportFile2D</h3></div></div></div><a name="Command.ImportFile2D"></a><p><span class="command"><strong>ImportFile2D('filename', datasets,
 xrange=None, yrange=None, invertrows=False,
 invertcols=False, transpose=False,
 prefix='', suffix='', linked=False,
@@ -1108,7 +1108,7 @@ encoding='utf8', renames={})</strong></span></p><p>Imports two-dimensional data 
 	deliminated by using blank lines.</p><p>In addition to the matrix of numbers, the various
 	optional parameters this command takes can also be specified
 	in the data file. These commands should be given on separate
-	lines before the matrix of numbers. They are:</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>xrange A B</p></li><li class="listitem"><p>yrange C D</p></li><li class="listitem"><p>invertrows</p></li><li class="listitem"><p>invertcols</p></li><li class="listitem"><p>transpose</p></li></ol></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450194832"></a>2.23. ImportFileCSV</h3></div></div></div><a name="Command.ImportFileCSV"></a><p><span class="command"><strong>ImportFileCSV('filename', readrows=False,
+	lines before the matrix of numbers. They are:</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>xrange A B</p></li><li class="listitem"><p>yrange C D</p></li><li class="listitem"><p>invertrows</p></li><li class="listitem"><p>invertcols</p></li><li class="listitem"><p>transpose</p></li></ol></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112642192"></a>2.23. ImportFileCSV</h3></div></div></div><a name="Command.ImportFileCSV"></a><p><span class="command"><strong>ImportFileCSV('filename', readrows=False,
 	    dsprefix='', dssuffix='', linked=False, encoding='utf_8',
 	    renames={})
 	</strong></span></p><p>This command imports data from a CSV format file. Data
@@ -1120,7 +1120,7 @@ encoding='utf8', renames={})</strong></span></p><p>Imports two-dimensional data 
 	  the dataset name). linked specifies whether the data will be
 	  linked to the file. renames, if set, provides new names for
 	  datasets after import.
-	</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450191760"></a>2.24. ImportFileHDF5</h3></div></div></div><a name="Command.ImportFileHDF5"></a><p>
+	</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112639120"></a>2.24. ImportFileHDF5</h3></div></div></div><a name="Command.ImportFileHDF5"></a><p>
 	  <span class="command"><strong>ImportFileHDF5(filename, items, namemap={},
 	  slices={}, twodranges={}, twod_as_oned=set([]),
 	  convert_datetime={}, prefix='', suffix='', renames={},
@@ -1173,7 +1173,7 @@ encoding='utf8', renames={})</strong></span></p><p>Imports two-dimensional data 
 	  vsz_attributename_columnname.
 	</p><p>
 	  Returns: list of imported datasets
-	</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450183072"></a>2.25. ImportFileND</h3></div></div></div><a name="Command.ImportFileND"></a><p><span class="command"><strong>
+	</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112630432"></a>2.25. ImportFileND</h3></div></div></div><a name="Command.ImportFileND"></a><p><span class="command"><strong>
 def ImportFileND(comm, filename, dataset, shape=None, transpose=False, mode='text', csvdelimiter=',', csvtextdelimiter='"', csvlocale='en_US', prefix="", suffix="", encoding='utf_8', linked=False)
       </strong></span></p><p>
         Import an n-dimensional dataset from a file. The file should
@@ -1198,7 +1198,7 @@ def ImportFileND(comm, filename, dataset, shape=None, transpose=False, mode='tex
         inferred from the number of values and the other
         dimensions. Also supported is the "transpose" command or
         optional argument which reverses the order of the dimensions.
-      </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450178672"></a>2.26. ImportFilePlugin</h3></div></div></div><a name="Command.ImportFilePlugin"></a><p><span class="command"><strong>ImportFilePlugin('pluginname', 'filename',
+      </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112626032"></a>2.26. ImportFilePlugin</h3></div></div></div><a name="Command.ImportFilePlugin"></a><p><span class="command"><strong>ImportFilePlugin('pluginname', 'filename',
 	    **pluginargs, linked=False, encoding='utf_8',
 	    prefix='', suffix='', renames={})</strong></span></p><p>
 	  Import data from file using import plugin 'pluginname'. The
@@ -1206,7 +1206,7 @@ def ImportFileND(comm, filename, dataset, shape=None, transpose=False, mode='tex
 	  encoding, and prefix and suffix to prepend or append to
 	  dataset names.  renames, if set, provides new names for
 	  datasets after import.
-	</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450175840"></a>2.27. ImportFITSFile</h3></div></div></div><a name="Command.ImportFITSFile"></a><p><span class="command"><strong>ImportFITSFile(datasetname, filename, hdu,
+	</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112623200"></a>2.27. ImportFITSFile</h3></div></div></div><a name="Command.ImportFITSFile"></a><p><span class="command"><strong>ImportFITSFile(datasetname, filename, hdu,
 	    datacol='A', symerrcol='B', poserrcol='C', negerrcol='D',
 	    linked=True/False, renames={})</strong></span></p><p>This command does a simple import from a FITS file. The
 FITS format is used within the astronomical community to transport
@@ -1225,7 +1225,7 @@ name).</p><p>If the HDU specified is a primary HDU or image
 	columns.</p><p>If linked is True, then the dataset is not saved with a
 	saved document, but is reread from the data file each time the
 	document is loaded.  renames, if set, provides new names for
-	datasets after import.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450170560"></a>2.28. ImportString</h3></div></div></div><a name="Command.ImportString"></a><p><span class="command"><strong>ImportString('descriptor',
+	datasets after import.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112617920"></a>2.28. ImportString</h3></div></div></div><a name="Command.ImportString"></a><p><span class="command"><strong>ImportString('descriptor',
 	'data')</strong></span></p><p>Like, <a class="link" href="#Command.ImportFile">ImportFile</a>, but loads the
 	data from the specfied string rather than a file. This allows
 	data to be easily embedded within a document. The data string is
@@ -1238,66 +1238,66 @@ ImportString('x y', '''
 2   5
 3   10
 ''')
-</pre></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450165328"></a>2.29. ImportString2D</h3></div></div></div><a name="Command.ImportString2D"></a><p><span class="command"><strong>ImportString2D(datasets, string, xrange=None,
+</pre></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112612688"></a>2.29. ImportString2D</h3></div></div></div><a name="Command.ImportString2D"></a><p><span class="command"><strong>ImportString2D(datasets, string, xrange=None,
 	yrange=None, invertrows=None, invertcols=None,
 	transpose=None)</strong></span></p><p>Imports a two-dimensional dataset from the string
 	given. This is similar to the <a class="link" href="#Command.ImportFile2D">ImportFile2D</a> command,
 	with the same dataset format within the string. The optional
 	values are also listed there. The various controlling
 	parameters can be set within the string. See the <a class="link" href="#Command.ImportFile2D">ImportFile2D</a> section for
-	details.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450161264"></a>2.30. ImportStringND</h3></div></div></div><a name="Command.ImportStringND"></a><p><span class="command"><strong>ImportStringND(dataset, string, shape=None,
+	details.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112608624"></a>2.30. ImportStringND</h3></div></div></div><a name="Command.ImportStringND"></a><p><span class="command"><strong>ImportStringND(dataset, string, shape=None,
 	transpose=False)</strong></span></p><p>Imports a n-dimensional dataset from the string
 	given. This is similar to the <a class="link" href="#Command.ImportFileND">ImportFileND</a>
 	command. Please look there for more detail and the description
 	of the optional parameters and in-stream allowed
-	parameters.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450157920"></a>2.31. IsClosed</h3></div></div></div><a name="Command.IsClosed"></a><p><span class="command"><strong>IsClosed()</strong></span></p><p>Returns a boolean value telling the caller whether the
+	parameters.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112605280"></a>2.31. IsClosed</h3></div></div></div><a name="Command.IsClosed"></a><p><span class="command"><strong>IsClosed()</strong></span></p><p>Returns a boolean value telling the caller whether the
 	plotting window has been closed.
 	</p><p>Note: this command is only supported in the embedding
-	interface.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450154944"></a>2.32. List</h3></div></div></div><a name="Command.List"></a><p><span class="command"><strong>List(where='.')</strong></span></p><p>List the widgets which are contained within the widget
+	interface.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112602304"></a>2.32. List</h3></div></div></div><a name="Command.List"></a><p><span class="command"><strong>List(where='.')</strong></span></p><p>List the widgets which are contained within the widget
       with the path given, the type of widgets, and a brief
-      description.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450152400"></a>2.33. Load</h3></div></div></div><a name="Command.Load"></a><p><span class="command"><strong>Load('filename.vsz')</strong></span></p><p>Loads the veusz script file given. The script file can
+      description.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112599760"></a>2.33. Load</h3></div></div></div><a name="Command.Load"></a><p><span class="command"><strong>Load('filename.vsz')</strong></span></p><p>Loads the veusz script file given. The script file can
 	be any Python code. The code is executed using the Veusz
 	interpreter.</p><p>Note: this command is only supported at the command line
 	and not in a script. Scripts may use the python
-	<span class="command"><strong>execfile</strong></span> function instead.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450148720"></a>2.34. MoveToPage</h3></div></div></div><a name="Command.MoveToPage"></a><p><span class="command"><strong>MoveToPage(pagenum)</strong></span></p><p>Updates window to show the page number given of the
+	<span class="command"><strong>execfile</strong></span> function instead.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112596080"></a>2.34. MoveToPage</h3></div></div></div><a name="Command.MoveToPage"></a><p><span class="command"><strong>MoveToPage(pagenum)</strong></span></p><p>Updates window to show the page number given of the
 	document.</p><p>Note: this command is only supported in the embedding
-	interface or veusz_listen.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450145760"></a>2.35. ReloadData</h3></div></div></div><a name="Command.ReloadData"></a><p><span class="command"><strong>ReloadData()</strong></span></p><p>Reload any datasets which have been linked to
+	interface or veusz_listen.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112593120"></a>2.35. ReloadData</h3></div></div></div><a name="Command.ReloadData"></a><p><span class="command"><strong>ReloadData()</strong></span></p><p>Reload any datasets which have been linked to
 	files.</p><p>Returns: A tuple containing a list of the imported
 	datasets and the number of conversions which failed for a
-	dataset.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450142848"></a>2.36. Rename</h3></div></div></div><a name="Command.Rename"></a><p><span class="command"><strong>Remove('widgetpath', 'newname')</strong></span></p><p>Rename the widget at the path given to a new name. This
+	dataset.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112590208"></a>2.36. Rename</h3></div></div></div><a name="Command.Rename"></a><p><span class="command"><strong>Remove('widgetpath', 'newname')</strong></span></p><p>Rename the widget at the path given to a new name. This
 	command does not move widgets.  See <a class="link" href="#Command.To">To</a> for a description of the path
-	syntax. '.' can be used to select the current widget.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450139616"></a>2.37. Remove</h3></div></div></div><a name="Command.Remove"></a><p><span class="command"><strong>Remove('widgetpath')</strong></span></p><p>Remove the widget selected using the path. See <a class="link" href="#Command.To">To</a> for a description of the path
-	syntax.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450136592"></a>2.38. ResizeWindow</h3></div></div></div><a name="Command.ResizeWindow"></a><p><span class="command"><strong>ResizeWindow(width, height)</strong></span></p><p>Resizes window to be width by height pixels.</p><p>Note: this command is only supported in the embedding
-	interface or veusz_listen.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450133712"></a>2.39. Save</h3></div></div></div><a name="Command.Save"></a><p><span class="command"><strong>Save('filename.vsz')</strong></span></p><p>Save the current document under the filename
-	given.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450131312"></a>2.40. Set</h3></div></div></div><a name="Command.Set"></a><p><span class="command"><strong>Set('settingpath', val)</strong></span></p><p>Set the setting given by the path to the value given. If
+	syntax. '.' can be used to select the current widget.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112586976"></a>2.37. Remove</h3></div></div></div><a name="Command.Remove"></a><p><span class="command"><strong>Remove('widgetpath')</strong></span></p><p>Remove the widget selected using the path. See <a class="link" href="#Command.To">To</a> for a description of the path
+	syntax.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112583952"></a>2.38. ResizeWindow</h3></div></div></div><a name="Command.ResizeWindow"></a><p><span class="command"><strong>ResizeWindow(width, height)</strong></span></p><p>Resizes window to be width by height pixels.</p><p>Note: this command is only supported in the embedding
+	interface or veusz_listen.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112581072"></a>2.39. Save</h3></div></div></div><a name="Command.Save"></a><p><span class="command"><strong>Save('filename.vsz')</strong></span></p><p>Save the current document under the filename
+	given.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112578672"></a>2.40. Set</h3></div></div></div><a name="Command.Set"></a><p><span class="command"><strong>Set('settingpath', val)</strong></span></p><p>Set the setting given by the path to the value given. If
 	the type of <span class="command"><strong>val</strong></span> is incorrect, an
 	<span class="command"><strong>InvalidType</strong></span> exception is thrown. The path
 	to the setting is the optional path to the widget the setting
 	is contained within, an optional subsetting specifier, and the
 	setting itself.</p><div class="informalexample"><pre class="programlisting">
 Set('page1/graph1/x/min', -10.)
-</pre></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450126384"></a>2.41. SetAntiAliasing</h3></div></div></div><a name="Command.SetAntiAliasing"></a><p><span class="command"><strong>SetAntiAliasing(on)</strong></span></p><p>Enable or disable anti aliasing in the plot
-	window, replotting the image.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450123888"></a>2.42. SetData</h3></div></div></div><a name="Command.SetData"></a><p><span class="command"><strong>SetData(name, val, symerr=None, negerr=None,
+</pre></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112573744"></a>2.41. SetAntiAliasing</h3></div></div></div><a name="Command.SetAntiAliasing"></a><p><span class="command"><strong>SetAntiAliasing(on)</strong></span></p><p>Enable or disable anti aliasing in the plot
+	window, replotting the image.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112571248"></a>2.42. SetData</h3></div></div></div><a name="Command.SetData"></a><p><span class="command"><strong>SetData(name, val, symerr=None, negerr=None,
       poserr=None)</strong></span></p><p>Set the dataset name with the values given. If None is
       given for an item, it will be left blank. val is the actual
       data, symerr are the symmetric errors, negerr and poserr and the
       getative and positive asymmetric errors. The data can be given
-      as lists or numpys.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450121104"></a>2.43. SetDataExpression</h3></div></div></div><a name="Command.SetDataExpression"></a><p><span class="command"><strong>SetDataExpression(name, val, symerr=None, negerr=None,
+      as lists or numpys.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112568464"></a>2.43. SetDataExpression</h3></div></div></div><a name="Command.SetDataExpression"></a><p><span class="command"><strong>SetDataExpression(name, val, symerr=None, negerr=None,
       poserr=None, linked=False, parametric=None)</strong></span></p><p>Create a new dataset based on the expressions given. The
 	expressions are Python syntax expressions based on existing
 	datasets.
 </p><p>If linked is True, the dataset will change as the
 	datasets in the expressions change.</p><p>Parametric can be set to a tuple of (minval, maxval,
 	numitems). <span class="command"><strong>t</strong></span> in the expression will iterate
-	from minval to maxval in numitems values.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450116768"></a>2.44. SetDataND</h3></div></div></div><a name="Command.SetDataND"></a><p><span class="command"><strong>SetDataRange(name, val)</strong></span></p><p>Set a n-dimensional dataset to be the values given by
+	from minval to maxval in numitems values.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112564128"></a>2.44. SetDataND</h3></div></div></div><a name="Command.SetDataND"></a><p><span class="command"><strong>SetDataRange(name, val)</strong></span></p><p>Set a n-dimensional dataset to be the values given by
         val. val should be an n-dimensional numpy array of values, or
-        a list of lists.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450114208"></a>2.45. SetDataRange</h3></div></div></div><a name="Command.SetDataRange"></a><p><span class="command"><strong>SetDataRange(name, numsteps, val, symerr=None,
+        a list of lists.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112561568"></a>2.45. SetDataRange</h3></div></div></div><a name="Command.SetDataRange"></a><p><span class="command"><strong>SetDataRange(name, numsteps, val, symerr=None,
 	    negerr=None, poserr=None, linked=False)</strong></span></p><p>Set dataset to be a range of values with numsteps
 	steps. val is tuple made up of (minimum value, maximum
 	value). symerr, negerr and poserr are optional tuples for the
 	error bars.</p><p>If linked is True, the dataset can be saved in a
 	document as a SetDataRange, otherwise it is expanded to the
-	values which would make it up.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450110960"></a>2.46. SetData2D</h3></div></div></div><a name="Command.SetData2D"></a><p><span class="command"><strong>SetData2D('name', val, xrange=(A,B),
+	values which would make it up.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112558320"></a>2.46. SetData2D</h3></div></div></div><a name="Command.SetData2D"></a><p><span class="command"><strong>SetData2D('name', val, xrange=(A,B),
 	yrange=(C,D), xgrid=[1,2,3...],
 	ygrid=[4,5,6...])</strong></span></p><p>Creates a two-dimensional dataset with the name
 	given. val is either a two-dimensional numpy array, or is a
@@ -1307,54 +1307,54 @@ Set('page1/graph1/x/min', -10.)
 	inclusive range of the X and Y coordinates of the data. xgrid
 	and ygrid are optional lists, tuples or arrays which give the
 	coordinates of the edges of the pixels. There should be one
-	more item in each array than pixels.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450107488"></a>2.47. SetData2DExpression</h3></div></div></div><a name="Command.SetData2DExpression"></a><p><span class="command"><strong>SetData2DExpression('name', expr, linked=False)</strong></span></p><p>Create a 2D dataset based on expressions.  name is the
+	more item in each array than pixels.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112554848"></a>2.47. SetData2DExpression</h3></div></div></div><a name="Command.SetData2DExpression"></a><p><span class="command"><strong>SetData2DExpression('name', expr, linked=False)</strong></span></p><p>Create a 2D dataset based on expressions.  name is the
         new dataset name expr is an expression which should return a
         2D array linked specifies whether to permanently link the
-        dataset to the expressions.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450104848"></a>2.48. SetData2DExpressionXYZ</h3></div></div></div><a name="Command.SetData2DExpressionXYZ"></a><p><span class="command"><strong>SetData2DExpressionXYZ('name', 'xexpr',
+        dataset to the expressions.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112552208"></a>2.48. SetData2DExpressionXYZ</h3></div></div></div><a name="Command.SetData2DExpressionXYZ"></a><p><span class="command"><strong>SetData2DExpressionXYZ('name', 'xexpr',
 	'yexpr', 'zexpr', linked=False)</strong></span></p><p>Create a 2D dataset based on three 1D expressions. The
 	x, y expressions need to evaluate to a grid of x, y points,
 	with the z expression as the 2D value at that point. Currently
 	only linear fixed grids are supported. This function is
 	intended to convert calculations or measurements at fixed
 	points into a 2D dataset easily. Missing values are filled
-	with NaN.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450101968"></a>2.49. SetData2DXYFunc</h3></div></div></div><a name="Command.SetData2DXYFunc"></a><p><span class="command"><strong>SetData2DXYFunc('name', xstep, ystep, 'expr',
+	with NaN.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112549328"></a>2.49. SetData2DXYFunc</h3></div></div></div><a name="Command.SetData2DXYFunc"></a><p><span class="command"><strong>SetData2DXYFunc('name', xstep, ystep, 'expr',
 	linked=False)</strong></span></p><p>Construct a 2D dataset using a mathematical expression
 	of "x" and "y". The x values are specified as (min, max, step)
 	in xstep as a tuple, the y values similarly. If linked remains
 	as False, then a real 2D dataset is created, where values can
-	be modified and the data are stored in the saved file.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450099168"></a>2.50. SetDataDateTime</h3></div></div></div><a name="Command.SetDataDateTime"></a><p><span class="command"><strong>SetDataDateTime('name', vals)</strong></span></p><p>Creates a datetime dataset of name given. vals is a list
-	of Python datetime objects.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450096672"></a>2.51. SetDataText</h3></div></div></div><a name="Command.SetDataText"></a><p><span class="command"><strong>SetDataText(name, val)</strong></span></p><p>Set the text dataset name with the values given.
+	be modified and the data are stored in the saved file.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112546528"></a>2.50. SetDataDateTime</h3></div></div></div><a name="Command.SetDataDateTime"></a><p><span class="command"><strong>SetDataDateTime('name', vals)</strong></span></p><p>Creates a datetime dataset of name given. vals is a list
+	of Python datetime objects.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112544032"></a>2.51. SetDataText</h3></div></div></div><a name="Command.SetDataText"></a><p><span class="command"><strong>SetDataText(name, val)</strong></span></p><p>Set the text dataset name with the values given.
 	  <span class="command"><strong>val</strong></span> must be a type that can be converted into a
 	  Python list.</p><div class="informalexample"><pre class="programlisting">
 SetDataText('mylabel', ['oranges', 'apples', 'pears', 'spam'])
-</pre></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450092480"></a>2.52. SetToReference</h3></div></div></div><a name="Command.SetToReference"></a><p><span class="command"><strong>SetToReference(setting, refval)</strong></span></p><p>Set setting to match other setting refval
-	always..</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450090080"></a>2.53. SetUpdateInterval</h3></div></div></div><a name="Command.SetUpdateInterval"></a><p><span class="command"><strong>SetUpdateInterval(interval)</strong></span></p><p>Tells window to update every interval milliseconds at
+</pre></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112539840"></a>2.52. SetToReference</h3></div></div></div><a name="Command.SetToReference"></a><p><span class="command"><strong>SetToReference(setting, refval)</strong></span></p><p>Set setting to match other setting refval
+	always..</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112537440"></a>2.53. SetUpdateInterval</h3></div></div></div><a name="Command.SetUpdateInterval"></a><p><span class="command"><strong>SetUpdateInterval(interval)</strong></span></p><p>Tells window to update every interval milliseconds at
 	most. The value 0 disables updates until this function is
 	called with a non-zero. The value -1 tells Veusz to update the
 	window every time the document has changed. This will make
 	things slow if repeated changes are made to the
 	document. Disabling updates and using the ForceUpdate command
 	will allow the user to control updates directly.</p><p>Note: this command is only supported in the embedding
-	interface or veusz_listen.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450086784"></a>2.54. SetVerbose</h3></div></div></div><a name="Command.SetVerbose"></a><p><span class="command"><strong>SetVerbose(v=True)</strong></span></p><p>If <span class="command"><strong>v</strong></span> is <span class="command"><strong>True</strong></span>, then extra
-	information is printed out by commands.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450083136"></a>2.55. StartSecondView</h3></div></div></div><a name="Command.StartSecondView"></a><p><span class="command"><strong>StartSecondView(name = 'window
+	interface or veusz_listen.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112534144"></a>2.54. SetVerbose</h3></div></div></div><a name="Command.SetVerbose"></a><p><span class="command"><strong>SetVerbose(v=True)</strong></span></p><p>If <span class="command"><strong>v</strong></span> is <span class="command"><strong>True</strong></span>, then extra
+	information is printed out by commands.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112530496"></a>2.55. StartSecondView</h3></div></div></div><a name="Command.StartSecondView"></a><p><span class="command"><strong>StartSecondView(name = 'window
 	title')</strong></span></p><p>In the embedding interface, this method will open a new
 	Embedding interface onto the same document, returning the
 	object. This new window provides a second view onto the
 	document. It can, for instance, show a different page to the
 	primary view. name is a window title for the new
 	window.</p><p>Note: this command is only supported in the embedding
-	interface.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450079968"></a>2.56. TagDatasets</h3></div></div></div><a name="Command.TagDatasets"></a><p><span class="command"><strong>TagDatasets('tag', ['ds1', 'ds2'...])</strong></span></p><p>Adds the tag to the list of datasets given..</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450077568"></a>2.57. To</h3></div></div></div><a name="Command.To"></a><p><span class="command"><strong>To('widgetpath')</strong></span></p><p>The To command takes a path to a widget and moves to
+	interface.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112527328"></a>2.56. TagDatasets</h3></div></div></div><a name="Command.TagDatasets"></a><p><span class="command"><strong>TagDatasets('tag', ['ds1', 'ds2'...])</strong></span></p><p>Adds the tag to the list of datasets given..</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112524928"></a>2.57. To</h3></div></div></div><a name="Command.To"></a><p><span class="command"><strong>To('widgetpath')</strong></span></p><p>The To command takes a path to a widget and moves to
         that widget. For example, this may be "/", the root widget,
         "graph1", "/page1/graph1/x", "../x". The syntax is designed to
         mimic Unix paths for files. "/" represents the base widget
         (where the pages reside), and ".." represents the widget next
-        up the tree.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450074800"></a>2.58. Quit</h3></div></div></div><a name="Command.Quit"></a><p><span class="command"><strong>Quit()</strong></span></p><p>Quits Veusz. This is only supported in
-	veusz_listen.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450072400"></a>2.59. WaitForClose</h3></div></div></div><a name="Command.WaitForClose"></a><p><span class="command"><strong>WaitForClose()</strong></span></p><p>Wait until the plotting window has been closed.
+        up the tree.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112522160"></a>2.58. Quit</h3></div></div></div><a name="Command.Quit"></a><p><span class="command"><strong>Quit()</strong></span></p><p>Quits Veusz. This is only supported in
+	veusz_listen.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112519760"></a>2.59. WaitForClose</h3></div></div></div><a name="Command.WaitForClose"></a><p><span class="command"><strong>WaitForClose()</strong></span></p><p>Wait until the plotting window has been closed.
 	</p><p>Note: this command is only supported in the embedding
-	interface.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450069536"></a>2.60. Zoom</h3></div></div></div><a name="Command.Zoom"></a><p><span class="command"><strong>Zoom(factor)</strong></span></p><p>Sets the plot zoom factor, relative to a 1:1
+	interface.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112516896"></a>2.60. Zoom</h3></div></div></div><a name="Command.Zoom"></a><p><span class="command"><strong>Zoom(factor)</strong></span></p><p>Sets the plot zoom factor, relative to a 1:1
 	scaling. factor can also be "width", "height" or "page", to zoom
 	to the page width, height or page, respectively.</p><p>This is only supported in embedded mode or
-	veusz_listen.</p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924450066368"></a>3. Security</h2></div></div></div><p>With the 1.0 release of Veusz, input scripts and
+	veusz_listen.</p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711112513728"></a>3. Security</h2></div></div></div><p>With the 1.0 release of Veusz, input scripts and
       expressions are checked for possible security risks. Only a
       limited subset of Python functionality is allowed, or a dialog
       box is opened allowing the user to cancel the
@@ -1366,7 +1366,7 @@ SetDataText('mylabel', ['oranges', 'apples', 'pears', 'spam'])
       a system are also warned against, specifically Print(), Save()
       and Export().</p><p>If you are running your own scripts and do not want to be
       bothered by these dialogs, you can run veusz with the
-      <span class="command"><strong>--unsafe-mode</strong></span> option.</p></div></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idm45924450063264"></a>Chapter 4. Using Veusz from other programs</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="#idm45924450062624">1. Non-Qt Python programs</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45924450060384">1.1. Older path-based interface</a></span></dt><dt><span class="section"><a href="#idm45924450037424">1.2. New-style object interface</a></span></dt><dt><span class="section"><a href="#idm45924450019872">1.3. Translating old to new style</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45924450015568">2. PyQt4 programs</a></span></dt><dt><span class="section"><a href="#idm45924450014304">3. Non Python programs</a></span></dt><dt><span class="section"><a href="#idm45924450002912">4. C, C++ and Fortran</a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924450062624"></a>1. Non-Qt Python programs</h2></div></div></div><p>
+      <span class="command"><strong>--unsafe-mode</strong></span> option.</p></div></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="idm45711112510624"></a>Chapter 4. Using Veusz from other programs</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="#idm45711112509984">1. Non-Qt Python programs</a></span></dt><dd><dl><dt><span class="section"><a href="#idm45711112507744">1.1. Older path-based interface</a></span></dt><dt><span class="section"><a href="#idm45711112484784">1.2. New-style object interface</a></span></dt><dt><span class="section"><a href="#idm45711112467232">1.3. Translating old to new style</a></span></dt></dl></dd><dt><span class="section"><a href="#idm45711112462928">2. PyQt4 programs</a></span></dt><dt><span class="section"><a href="#idm45711112461664">3. Non Python programs</a></span></dt><dt><span class="section"><a href="#idm45711112450272">4. C, C++ and Fortran</a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711112509984"></a>1. Non-Qt Python programs</h2></div></div></div><p>
 	Veusz can be used as a Python module for plotting data. There
 	are two ways to use the module: (1) with an older path-based
 	Veusz commands, used in Veusz saved document files or (2)
@@ -1377,7 +1377,7 @@ SetDataText('mylabel', ['oranges', 'apples', 'pears', 'spam'])
 	<code class="literal">Root</code> object to access Nodes. The new
 	interface is likely to be easier to use unless you are
 	directly translating saved files.
-      </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450060384"></a>1.1. Older path-based interface</h3></div></div></div><pre class="programlisting">
+      </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112507744"></a>1.1. Older path-based interface</h3></div></div></div><pre class="programlisting">
 """An example embedding program. Veusz needs to be installed into
 the Python path for this to work (use setup.py)
 
@@ -1425,7 +1425,7 @@ g.Close()
 	</pre><p>
 	  The embed interface has the methods listed in the command
 	  line interface listed in the Veusz manual
-	  http://home.gna.org/veusz/docs/manual.html
+	  https://veusz.github.io/docs/manual.html
 	</p><p>
 	  Multiple Windows are supported by creating more than one
 	  <code class="literal">Embedded</code> object. Other useful methods
@@ -1447,7 +1447,7 @@ g.Close()
 	    start a second view onto the document of the current
 	    <code class="literal">Embedded</code> object. Returns a new
 	    <code class="literal">Embedded</code> object.</p></li><li class="listitem"><p><code class="literal">Wipe()</code> - wipe the document of all
-            widgets and datasets.</p></li></ul></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450037424"></a>1.2. New-style object interface</h3></div></div></div><p>
+            widgets and datasets.</p></li></ul></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112484784"></a>1.2. New-style object interface</h3></div></div></div><p>
 	  In versions of Veusz &gt;1.8 is a new style of object
 	  interface, which makes it easier to construct the widget
 	  tree. Each widget, group of settings or setting is stored as
@@ -1598,7 +1598,7 @@ class WidgetNode(Node):
 	</p><pre class="programlisting">
 for n in Root.WalkWidgets(widgettype='function'):
   n.function.val = 'x**2'
-	</pre></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45924450019872"></a>1.3. Translating old to new style</h3></div></div></div><p>
+	</pre></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm45711112467232"></a>1.3. Translating old to new style</h3></div></div></div><p>
 	  Here is an example how you might translate the old to new
 	  style interface (this is taken from the <code class="literal">sin.vsz</code>
 	  example).
@@ -1645,8 +1645,8 @@ xy.MarkerFill.color.val = 'cyan'
 func = graph.Add('function')
 func.function.val = 'sin(x)'
 func.Line.color.val = 'red'
-	</pre></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924450015568"></a>2. PyQt4 programs</h2></div></div></div><p>There is no direct PyQt4 interface. The standard
-      embedding interface should work, however.</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924450014304"></a>3. Non Python programs</h2></div></div></div><p>Support for non Python programs is available in a limited
+	</pre></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711112462928"></a>2. PyQt4 programs</h2></div></div></div><p>There is no direct PyQt4 interface. The standard
+      embedding interface should work, however.</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711112461664"></a>3. Non Python programs</h2></div></div></div><p>Support for non Python programs is available in a limited
       form. External programs may execute the
       <span class="command"><strong>veusz_listen</strong></span> executable or
       <span class="command"><strong>veusz_listen.py</strong></span> Python module. Veusz will
@@ -1672,6 +1672,6 @@ Quit()
     <span class="command"><strong>popen</strong></span> C Unix function, which allows a program
     to be started having control of its standard input and
     output. Veusz can then be controlled by writing commands to an
-    input pipe.</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45924450002912"></a>4. C, C++ and Fortran</h2></div></div></div><p>A callable library interface to Veusz is on my todo list
+    input pipe.</p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm45711112450272"></a>4. C, C++ and Fortran</h2></div></div></div><p>A callable library interface to Veusz is on my todo list
       for C, C++ and Fortran. Please tell me if you would be
       interested in this option.</p></div></div></div></body></html>

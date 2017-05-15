@@ -56,7 +56,7 @@ OPTIONS
                and exits.
 
 BUGS
-       Please report bugs at https://gna.org/bugs/?group=veusz
+       Please report bugs at https://github.com/veusz/veusz/issues
 
 AUTHORS
        Veusz was written by Jeremy Sanders <jeremy@jeremysanders.net>.
@@ -75,4 +75,4 @@ COPYRIGHT
        On Debian GNU/Linux systems, the complete text of the GNU General
        Public License can be found in `/usr/share/common-licenses/GPL'.
 
-1.26                            2015-04-22                        VEUSZ(1)
+1.26.1                          2017-05-14                        VEUSZ(1)
