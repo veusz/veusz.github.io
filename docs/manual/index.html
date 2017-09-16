@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Veusz documentation &mdash; Veusz 2.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Veusz 2.0 documentation" href="#" />
+    <link rel="next" title="Introduction" href="introduction.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="veusz-documentation">
+<h1>Veusz documentation<a class="headerlink" href="#veusz-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Jeremy Sanders</p>
+<p>Copyright 2017</p>
+<p>This document is licensed under the GNU General Public
+License, version 2 or greater. Please see the file COPYING for
+details, or see <a class="reference external" href="http://www.gnu.org/licenses/gpl-2.0.html">http://www.gnu.org/licenses/gpl-2.0.html</a>.</p>
+<p>This is the documentation for Veusz. Veusz is a multiplatform
+scientific plotting package with a graphical user interface.</p>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#veusz">Veusz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#getting-started">Getting started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#terminology">Terminology</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#widget">Widget</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#settings-properties-and-formatting">Settings: properties and formatting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#datasets">Datasets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#text">Text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#measurements">Measurements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#color-theme">Color theme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html#axis-numeric-scales">Axis numeric scales</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#the-main-window">The main window</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#my-first-plot">My first plot</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="datasets.html">Reading data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="datasets.html#standard-text-import">Standard text import</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="datasets.html#data-types-in-text-import">Data types in text import</a></li>
+<li class="toctree-l3"><a class="reference internal" href="datasets.html#descriptors">Descriptors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="datasets.html#descriptor-examples">Descriptor examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="datasets.html#csv-files">CSV files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datasets.html#hdf5-files">HDF5 files</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="datasets.html#error-bars">Error bars</a></li>
+<li class="toctree-l3"><a class="reference internal" href="datasets.html#slices">Slices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="datasets.html#d-data-ranges">2D data ranges</a></li>
+<li class="toctree-l3"><a class="reference internal" href="datasets.html#dates">Dates</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="datasets.html#d-text-or-csv-format">2D text or CSV format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datasets.html#fits-files">FITS files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datasets.html#reading-other-data-formats">Reading other data formats</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="datasets.html#manipulating-datasets">Manipulating datasets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="datasets.html#using-dataset-plugins">Using dataset plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datasets.html#using-expressions-to-create-new-datasets">Using expressions to create new datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datasets.html#linking-datasets-to-expressions">Linking datasets to expressions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datasets.html#splitting-data">Splitting data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datasets.html#defining-new-constants-or-functions">Defining new constants or functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datasets.html#dataset-plugins">Dataset plugins</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="datasets.html#capturing-data">Capturing data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Veusz command line and embedding interface (API)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#commands-and-api">Commands and API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api.html#action">Action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#add">Add</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#addcustom">AddCustom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#addimportpath">AddImportPath</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#clonewidget">CloneWidget</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#close">Close</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#createhistogram">CreateHistogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#datasetplugin">DatasetPlugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#enabletoolbar">EnableToolbar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#export">Export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#filterdatasets">FilterDatasets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#forceupdate">ForceUpdate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#get">Get</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#getchildren">GetChildren</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#getclick">GetClick</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#getcolormap">GetColormap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#getdata">GetData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#getdatatype">GetDataType</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#getdatasets">GetDatasets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#gpl">GPL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#importfile">ImportFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#importfile2d">ImportFile2D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#importfilecsv">ImportFileCSV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#importfilefits">ImportFileFITS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#importfilehdf5">ImportFileHDF5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#importfilend">ImportFileND</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#importfileplugin">ImportFilePlugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#importfitsfile">ImportFITSFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#importstring">ImportString</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#importstring2d">ImportString2D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#importstringnd">ImportStringND</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#isclosed">IsClosed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#list">List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#load">Load</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#movetopage">MoveToPage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#reloaddata">ReloadData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#rename">Rename</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#remove">Remove</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#resizewindow">ResizeWindow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#save">Save</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#set">Set</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#setantialiasing">SetAntiAliasing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#setdata">SetData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#setdataexpression">SetDataExpression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#setdatand">SetDataND</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#setdatarange">SetDataRange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#setdata2d">SetData2D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#setdata2dexpression">SetData2DExpression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#setdata2dexpressionxyz">SetData2DExpressionXYZ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#setdata2dxyfunc">SetData2DXYFunc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#setdatadatetime">SetDataDateTime</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#setdatatext">SetDataText</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#settoreference">SetToReference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#setupdateinterval">SetUpdateInterval</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#setverbose">SetVerbose</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#startsecondview">StartSecondView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#tagdatasets">TagDatasets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#to">To</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#quit">Quit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#waitforclose">WaitForClose</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#zoom">Zoom</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#security">Security</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#using-veusz-from-other-programs">Using Veusz from other programs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api.html#non-qt-python-programs">Non-Qt Python programs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#older-path-based-interface">Older path-based interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#new-style-object-interface">New-style object interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#translating-old-to-new-style">Translating old to new style</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span>Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span>Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span>Search Page</span></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Veusz documentation</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+      <li>Next: <a href="introduction.html" title="next chapter">Introduction</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Jeremy Sanders.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="_sources/index.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
