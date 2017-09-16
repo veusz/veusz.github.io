@@ -1,4 +1,4 @@
 name: Veusz
 markdown: kramdown
 permalink: /news/:year/:month/:day/:title
-include: docs/manual/_images docs/manual/_static docs/manual/_sources
+include: ['docs/manual/_images', 'docs/manual/_static', 'docs/manual/_sources']
