@@ -1,7 +1,7 @@
 # Veusz saved document (version 2.999)
-# Saved at 2018-06-07T05:31:40.368576
+# Saved at 2018-06-07T17:13:29.880671
 
-AddImportPath(u'/home/jss')
+AddImportPath(u'/home/jss/code/veusz.github.io/media')
 Set('height', u'12cm')
 Set('colorTheme', u'default-latest')
 Set('StyleSheet/axis-function/autoRange', u'next-tick')
@@ -42,8 +42,9 @@ Set('fnx', u'(t-0.5)*2')
 Set('fny', u'sin((t-0.5)*2*3*pi)')
 Set('fnz', u'cos((t-0.5)*2*3*pi)')
 Set('linesteps', 200)
-Set('Line/color', u'theme3')
+Set('Line/color', u'green')
 Set('Line/width', 10.0)
+Set('Line/reflectivity', 50.0)
 To('..')
 To('..')
 To('..')
