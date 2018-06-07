@@ -1,5 +1,5 @@
 # Veusz saved document (version 2.999)
-# Saved at 2018-06-07T17:34:25.714495
+# Saved at 2018-06-07T17:39:38.771616
 
 AddImportPath(u'/home/jss/code')
 ImportString(u'x(numeric)','''
@@ -3008,6 +3008,8 @@ ImportString(u'z(numeric)','''
 -1.070504e-01
 1.140170e+00
 ''')
+Set('width', u'15cm')
+Set('height', u'14.1cm')
 Set('colorTheme', u'default1')
 Set('StyleSheet/axis-function/autoRange', u'next-tick')
 Set('StyleSheet/axis3d/autoRange', u'+2%')
@@ -3019,6 +3021,10 @@ To(u'scene3d1')
 Set('xRotation', -27.0)
 Set('yRotation', 118.0)
 Set('zRotation', 49.0)
+Set('leftMargin', u'0.5cm')
+Set('rightMargin', u'0.5cm')
+Set('topMargin', u'0cm')
+Set('bottomMargin', u'0cm')
 Set('Lighting2/x', -2.0)
 Add('graph3d', name=u'graph3d1', autoadd=False)
 To(u'graph3d1')
