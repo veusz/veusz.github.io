@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Veusz command line and embedding interface (API) &mdash; Veusz 2.0 documentation</title>
+    <title>Veusz command line and embedding interface (API) &#8212; Veusz 3.0 documentation</title>
     
     <link rel="stylesheet" href="o_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="o_static/pygments.css" type="text/css" />
@@ -14,23 +14,27 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2.0',
+        VERSION:     '3.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="o_static/jquery.js"></script>
     <script type="text/javascript" src="o_static/underscore.js"></script>
     <script type="text/javascript" src="o_static/doctools.js"></script>
-    <link rel="top" title="Veusz 2.0 documentation" href="index.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Reading data" href="datasets.html" />
    
+  <link rel="stylesheet" href="o_static/custom.css" type="text/css" />
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head>
-  <body role="document">  
+  <body role="document">
+  
 
     <div class="document">
       <div class="documentwrapper">
@@ -52,7 +56,7 @@ externally from the operating system command line (using <cite>veusz
 language. You can therefore freely mix Veusz and Python commands on
 the Veusz command line (Click View, Windows, Console Window to get
 access to the command line). Veusz can also read in Python scripts
-from files on the command line (see the <a class="reference internal" href="#command-load"><span>Load</span></a>
+from files on the command line (see the <a class="reference internal" href="#command-load"><span class="std std-ref">Load</span></a>
 command).</p>
 <p>When commands are entered in the command prompt in the Veusz window,
 Veusz supports a simplified command syntax, whereq brackets following
@@ -86,7 +90,7 @@ routines. These include &#8220;fit&#8221; on a fit widget, and
 <h3>Add<a class="headerlink" href="#add" title="Permalink to this headline">¶</a></h3>
 <p id="command-add"><strong class="command">Add('widgettype', name='nameforwidget',
 autoadd=True, optionalargs)</strong></p>
-<p>The Add command adds a graph into the current widget (See the <a class="reference internal" href="#command-to"><span>To</span></a> command to change the current position).</p>
+<p>The Add command adds a graph into the current widget (See the <a class="reference internal" href="#command-to"><span class="std std-ref">To</span></a> command to change the current position).</p>
 <p>The first argument is the type of widget to add. These include
 &#8220;graph&#8221;, &#8220;page&#8221;, &#8220;axis&#8221;, &#8220;xy&#8221; and &#8220;grid&#8221;. <strong class="command">name</strong> is the name
 of the new widget (if not given, it will be generated from the type of
@@ -207,7 +211,7 @@ from <cite>veusz &#8211;listen</cite>.</p>
 <h3>Get<a class="headerlink" href="#get" title="Permalink to this headline">¶</a></h3>
 <p id="command-get"><strong class="command">Get('settingpath')</strong></p>
 <p>Returns: The value of the setting given by the path.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Get</span><span class="p">(</span><span class="s1">&#39;/page1/graph1/x/min&#39;</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Get</span><span class="p">(</span><span class="s1">&#39;/page1/graph1/x/min&#39;</span><span class="p">)</span>
 <span class="go">&#39;Auto&#39;</span>
 </pre></div>
 </div>
@@ -248,7 +252,7 @@ dataset, return a list of Python datetime objects. If the dataset is a
 numpy array and rangex/y are tuples giving the range of the x and y
 coordinates of the data. If it is an ND dataset, return an
 n-dimensional array.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">data</span> <span class="o">=</span> <span class="n">GetData</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">GetData</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">SetData</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mf">0.1</span><span class="p">,</span> \<span class="o">*</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
 </pre></div>
 </div>
@@ -279,7 +283,7 @@ renames={})</strong></p>
 <p>Imports data from a file. The arguments are the filename to load data
 from and the descriptor.</p>
 <p>The format of the descriptor is a list of variable names representing
-the columns of the data. For more information see <a class="reference internal" href="datasets.html#id1"><span>Descriptors</span></a>.</p>
+the columns of the data. For more information see <a class="reference internal" href="datasets.html#id1"><span class="std std-ref">Descriptors</span></a>.</p>
 <p>If the linked parameter is set to True, if the document is saved, the
 data imported will not be saved with the document, but will be reread
 from the filename given the next time the document is opened. The
@@ -359,9 +363,9 @@ linked=False)</strong></p>
 <p>Import data from a FITS file.</p>
 <p>items is a list of datasets to be imported.  items are formatted like
 the following:</p>
-<div class="highlight-python"><div class="highlight"><pre>&#39;/&#39;:               import whole file
-&#39;/hduname&#39;:        import whole HDU (image or table)
-&#39;/hduname/column&#39;: import column from table HDU
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s1">&#39;/&#39;</span><span class="p">:</span>               <span class="kn">import</span> <span class="nn">whole</span> <span class="n">file</span>
+<span class="s1">&#39;/hduname&#39;</span><span class="p">:</span>        <span class="kn">import</span> <span class="nn">whole</span> <span class="n">HDU</span> <span class="p">(</span><span class="n">image</span> <span class="ow">or</span> <span class="n">table</span><span class="p">)</span>
+<span class="s1">&#39;/hduname/column&#39;</span><span class="p">:</span> <span class="kn">import</span> <span class="nn">column</span> <span class="kn">from</span> <span class="nn">table</span> <span class="n">HDU</span>
 </pre></div>
 </div>
 <p>all values in items should be lower case.</p>
@@ -375,9 +379,9 @@ is the HDU number (0 is the primary HDU).</p>
 to a Veusz dataset name. Special suffixes can be used on the Veusz
 dataset name to indicate that the dataset should be imported
 specially.</p>
-<div class="highlight-python"><div class="highlight"><pre>&#39;foo (+)&#39;:  import as +ve error for dataset foo
-&#39;foo (-)&#39;:  import as -ve error for dataset foo
-&#39;foo (+-)&#39;: import as symmetric error for dataset foo
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s1">&#39;foo (+)&#39;</span><span class="p">:</span>  <span class="kn">import</span> <span class="nn">as</span> <span class="o">+</span><span class="n">ve</span> <span class="n">error</span> <span class="k">for</span> <span class="n">dataset</span> <span class="n">foo</span>
+<span class="s1">&#39;foo (-)&#39;</span><span class="p">:</span>  <span class="kn">import</span> <span class="nn">as</span> <span class="o">-</span><span class="n">ve</span> <span class="n">error</span> <span class="k">for</span> <span class="n">dataset</span> <span class="n">foo</span>
+<span class="s1">&#39;foo (+-)&#39;</span><span class="p">:</span> <span class="kn">import</span> <span class="nn">as</span> <span class="n">symmetric</span> <span class="n">error</span> <span class="k">for</span> <span class="n">dataset</span> <span class="n">foo</span>
 </pre></div>
 </div>
 <p>slices is an optional dict specifying slices to be selected when
@@ -399,19 +403,19 @@ datasets in HDUs. The keys are &#8216;/hduname&#8217; and the values can be
 be renamed after importing</p>
 <p>linked specifies that the dataset is linked to the file.</p>
 <p>Values under the VEUSZ header keyword can be used to override defaults:</p>
-<div class="highlight-python"><div class="highlight"><pre>&#39;name&#39;: override name for dataset
-&#39;slice&#39;: slice on importing (use format &quot;start:stop:step,...&quot;)
-&#39;range&#39;: should be 4 item array to specify x and y ranges:
-    [minx, miny, maxx, maxy]
-&#39;xrange&#39; / &#39;yrange&#39;: individual ranges for x and y
-&#39;xcent&#39; / &#39;ycent&#39;: arrays giving the centres of pixels
-&#39;xedge&#39; / &#39;yedge&#39;: arrays giving the edges of pixels
-&#39;twod_as_oned&#39;: treat 2d dataset as 1d dataset with errors
-&#39;wcsmode&#39;: use specific WCS mode for dataset (see values above)
-These are specified under the VEUSZ header keyword in the form
-    KEY=VALUE
-or for column-specific values
-COLUMNNAME: KEY=VALUE
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="n">override</span> <span class="n">name</span> <span class="k">for</span> <span class="n">dataset</span>
+<span class="s1">&#39;slice&#39;</span><span class="p">:</span> <span class="nb">slice</span> <span class="n">on</span> <span class="n">importing</span> <span class="p">(</span><span class="n">use</span> <span class="nb">format</span> <span class="s2">&quot;start:stop:step,...&quot;</span><span class="p">)</span>
+<span class="s1">&#39;range&#39;</span><span class="p">:</span> <span class="n">should</span> <span class="n">be</span> <span class="mi">4</span> <span class="n">item</span> <span class="n">array</span> <span class="n">to</span> <span class="n">specify</span> <span class="n">x</span> <span class="ow">and</span> <span class="n">y</span> <span class="n">ranges</span><span class="p">:</span>
+    <span class="p">[</span><span class="n">minx</span><span class="p">,</span> <span class="n">miny</span><span class="p">,</span> <span class="n">maxx</span><span class="p">,</span> <span class="n">maxy</span><span class="p">]</span>
+<span class="s1">&#39;xrange&#39;</span> <span class="o">/</span> <span class="s1">&#39;yrange&#39;</span><span class="p">:</span> <span class="n">individual</span> <span class="n">ranges</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">and</span> <span class="n">y</span>
+<span class="s1">&#39;xcent&#39;</span> <span class="o">/</span> <span class="s1">&#39;ycent&#39;</span><span class="p">:</span> <span class="n">arrays</span> <span class="n">giving</span> <span class="n">the</span> <span class="n">centres</span> <span class="n">of</span> <span class="n">pixels</span>
+<span class="s1">&#39;xedge&#39;</span> <span class="o">/</span> <span class="s1">&#39;yedge&#39;</span><span class="p">:</span> <span class="n">arrays</span> <span class="n">giving</span> <span class="n">the</span> <span class="n">edges</span> <span class="n">of</span> <span class="n">pixels</span>
+<span class="s1">&#39;twod_as_oned&#39;</span><span class="p">:</span> <span class="n">treat</span> <span class="mi">2</span><span class="n">d</span> <span class="n">dataset</span> <span class="k">as</span> <span class="mi">1</span><span class="n">d</span> <span class="n">dataset</span> <span class="k">with</span> <span class="n">errors</span>
+<span class="s1">&#39;wcsmode&#39;</span><span class="p">:</span> <span class="n">use</span> <span class="n">specific</span> <span class="n">WCS</span> <span class="n">mode</span> <span class="k">for</span> <span class="n">dataset</span> <span class="p">(</span><span class="n">see</span> <span class="n">values</span> <span class="n">above</span><span class="p">)</span>
+<span class="n">These</span> <span class="n">are</span> <span class="n">specified</span> <span class="n">under</span> <span class="n">the</span> <span class="n">VEUSZ</span> <span class="n">header</span> <span class="n">keyword</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">form</span>
+    <span class="n">KEY</span><span class="o">=</span><span class="n">VALUE</span>
+<span class="ow">or</span> <span class="k">for</span> <span class="n">column</span><span class="o">-</span><span class="n">specific</span> <span class="n">values</span>
+<span class="n">COLUMNNAME</span><span class="p">:</span> <span class="n">KEY</span><span class="o">=</span><span class="n">VALUE</span>
 </pre></div>
 </div>
 <p>Returns: list of imported datasets</p>
@@ -428,9 +432,9 @@ child datasets are imported.  namemap maps an input dataset
 to a veusz dataset name. Special suffixes can be used on the
 veusz dataset name to indicate that the dataset should be
 imported specially.</p>
-<div class="highlight-python"><div class="highlight"><pre>&#39;foo (+)&#39;: import as +ve error for dataset foo
-&#39;foo (-)&#39;: import as -ve error for dataset foo
-&#39;foo (+-)&#39;: import as symmetric error for dataset foo
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s1">&#39;foo (+)&#39;</span><span class="p">:</span> <span class="kn">import</span> <span class="nn">as</span> <span class="o">+</span><span class="n">ve</span> <span class="n">error</span> <span class="k">for</span> <span class="n">dataset</span> <span class="n">foo</span>
+<span class="s1">&#39;foo (-)&#39;</span><span class="p">:</span> <span class="kn">import</span> <span class="nn">as</span> <span class="o">-</span><span class="n">ve</span> <span class="n">error</span> <span class="k">for</span> <span class="n">dataset</span> <span class="n">foo</span>
+<span class="s1">&#39;foo (+-)&#39;</span><span class="p">:</span> <span class="kn">import</span> <span class="nn">as</span> <span class="n">symmetric</span> <span class="n">error</span> <span class="k">for</span> <span class="n">dataset</span> <span class="n">foo</span>
 </pre></div>
 </div>
 <p>slices is an optional dict specifying slices to be selected when
@@ -451,13 +455,13 @@ e.g. &#8216;YYYY-MM-DD|T|hh:mm:ss&#8217; or &#8216;iso&#8217; for iso format.</p
 after importing.  linked specifies that the dataset is linked to the
 file.</p>
 <p>Attributes can be used in datasets to override defaults:</p>
-<div class="highlight-python"><div class="highlight"><pre>&#39;vsz_name&#39;: set to override name for dataset in veusz
-&#39;vsz_slice&#39;: slice on importing (use format &quot;start:stop:step,...&quot;)
-&#39;vsz_range&#39;: should be 4 item array to specify x and y ranges:
-    [minx, miny, maxx, maxy]
-&#39;vsz_twod_as_oned&#39;: treat 2d dataset as 1d dataset with errors
-&#39;vsz_convert_datetime&#39;: treat as date/time, set to one of the values
-above.
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s1">&#39;vsz_name&#39;</span><span class="p">:</span> <span class="nb">set</span> <span class="n">to</span> <span class="n">override</span> <span class="n">name</span> <span class="k">for</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="n">veusz</span>
+<span class="s1">&#39;vsz_slice&#39;</span><span class="p">:</span> <span class="nb">slice</span> <span class="n">on</span> <span class="n">importing</span> <span class="p">(</span><span class="n">use</span> <span class="nb">format</span> <span class="s2">&quot;start:stop:step,...&quot;</span><span class="p">)</span>
+<span class="s1">&#39;vsz_range&#39;</span><span class="p">:</span> <span class="n">should</span> <span class="n">be</span> <span class="mi">4</span> <span class="n">item</span> <span class="n">array</span> <span class="n">to</span> <span class="n">specify</span> <span class="n">x</span> <span class="ow">and</span> <span class="n">y</span> <span class="n">ranges</span><span class="p">:</span>
+    <span class="p">[</span><span class="n">minx</span><span class="p">,</span> <span class="n">miny</span><span class="p">,</span> <span class="n">maxx</span><span class="p">,</span> <span class="n">maxy</span><span class="p">]</span>
+<span class="s1">&#39;vsz_twod_as_oned&#39;</span><span class="p">:</span> <span class="n">treat</span> <span class="mi">2</span><span class="n">d</span> <span class="n">dataset</span> <span class="k">as</span> <span class="mi">1</span><span class="n">d</span> <span class="n">dataset</span> <span class="k">with</span> <span class="n">errors</span>
+<span class="s1">&#39;vsz_convert_datetime&#39;</span><span class="p">:</span> <span class="n">treat</span> <span class="k">as</span> <span class="n">date</span><span class="o">/</span><span class="n">time</span><span class="p">,</span> <span class="nb">set</span> <span class="n">to</span> <span class="n">one</span> <span class="n">of</span> <span class="n">the</span> <span class="n">values</span>
+<span class="n">above</span><span class="o">.</span>
 </pre></div>
 </div>
 <p>For compound datasets these attributes can be given on a per-column
@@ -528,7 +532,7 @@ import.</p>
 <h3>ImportString<a class="headerlink" href="#importstring" title="Permalink to this headline">¶</a></h3>
 <p id="command-importstring"><strong class="command">ImportString('descriptor',
 'data')</strong></p>
-<p>Like, <a class="reference internal" href="#command-importfile"><span>ImportFile</span></a>, but loads the data from
+<p>Like, <a class="reference internal" href="#command-importfile"><span class="std std-ref">ImportFile</span></a>, but loads the data from
 the specfied string rather than a file. This allows data to be easily
 embedded within a document. The data string is usually a multi-line
 Python string.</p>
@@ -536,7 +540,7 @@ Python string.</p>
 number of conversions which failed for a dataset.</p>
 <p>Changed in version 0.5: A tuple is returned rather than just the
 number of imported variables.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">ImportString</span><span class="p">(</span><span class="s1">&#39;x y&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;&#39;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">ImportString</span><span class="p">(</span><span class="s1">&#39;x y&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;&#39;</span>
 <span class="s1">    1   2</span>
 <span class="s1">    2   5</span>
 <span class="s1">    3   10</span>
@@ -549,10 +553,10 @@ number of imported variables.</p>
 <p id="command-importstring2d"><strong class="command">ImportString2D(datasets, string, xrange=None, yrange=None,
 invertrows=None, invertcols=None, transpose=None)</strong></p>
 <p>Imports a two-dimensional dataset from the string given. This is
-similar to the <a class="reference internal" href="#command-importfile2d"><span>ImportFile2D</span></a> command,
+similar to the <a class="reference internal" href="#command-importfile2d"><span class="std std-ref">ImportFile2D</span></a> command,
 with the same dataset format within the string. The optional values
 are also listed there. The various controlling parameters can be set
-within the string. See the <a class="reference internal" href="#command-importfile2d"><span>ImportFile2D</span></a>
+within the string. See the <a class="reference internal" href="#command-importfile2d"><span class="std std-ref">ImportFile2D</span></a>
 section for details.</p>
 </div>
 <div class="section" id="importstringnd">
@@ -560,7 +564,7 @@ section for details.</p>
 <p id="command-importstringnd"><strong class="command">ImportStringND(dataset, string, shape=None,
 transpose=False)</strong></p>
 <p>Imports a n-dimensional dataset from the string given. This is similar
-to the <a class="reference internal" href="#command-importfilend"><span>ImportFileND</span></a> command. Please look
+to the <a class="reference internal" href="#command-importfilend"><span class="std std-ref">ImportFileND</span></a> command. Please look
 there for more detail and the description of the optional parameters
 and in-stream allowed parameters.</p>
 </div>
@@ -604,13 +608,13 @@ number of conversions which failed for a dataset.</p>
 <h3>Rename<a class="headerlink" href="#rename" title="Permalink to this headline">¶</a></h3>
 <p id="command-rename"><strong class="command">Remove('widgetpath', 'newname')</strong></p>
 <p>Rename the widget at the path given to a new name. This command does
-not move widgets.  See <a class="reference internal" href="#command-to"><span>To</span></a> for a description of the
+not move widgets.  See <a class="reference internal" href="#command-to"><span class="std std-ref">To</span></a> for a description of the
 path syntax. &#8216;.&#8217; can be used to select the current widget.</p>
 </div>
 <div class="section" id="remove">
 <h3>Remove<a class="headerlink" href="#remove" title="Permalink to this headline">¶</a></h3>
 <p id="command-remove"><strong class="command">Remove('widgetpath')</strong></p>
-<p>Remove the widget selected using the path. See <a class="reference internal" href="#command-to"><span>To</span></a>
+<p>Remove the widget selected using the path. See <a class="reference internal" href="#command-to"><span class="std std-ref">To</span></a>
 for a description of the path syntax.</p>
 </div>
 <div class="section" id="resizewindow">
@@ -634,7 +638,7 @@ given.</p>
 thrown. The path to the setting is the optional path to the widget the
 setting is contained within, an optional subsetting specifier, and the
 setting itself.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">Set</span><span class="p">(</span><span class="s1">&#39;page1/graph1/x/min&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mf">10.</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">Set</span><span class="p">(</span><span class="s1">&#39;page1/graph1/x/min&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mf">10.</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -732,7 +736,7 @@ datetime objects.</p>
 <p id="command-setdatatext"><strong class="command">SetDataText(name, val)</strong></p>
 <p>Set the text dataset name with the values given.  <strong class="command">val</strong> must
 be a type that can be converted into a Python list.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">SetDataText</span><span class="p">(</span><span class="s1">&#39;mylabel&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;oranges&#39;</span><span class="p">,</span> <span class="s1">&#39;apples&#39;</span><span class="p">,</span> <span class="s1">&#39;pears&#39;</span><span class="p">,</span> <span class="s1">&#39;spam&#39;</span><span class="p">])</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">SetDataText</span><span class="p">(</span><span class="s1">&#39;mylabel&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;oranges&#39;</span><span class="p">,</span> <span class="s1">&#39;apples&#39;</span><span class="p">,</span> <span class="s1">&#39;pears&#39;</span><span class="p">,</span> <span class="s1">&#39;spam&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -834,7 +838,7 @@ translating saved files.</p>
 </div>
 <div class="section" id="older-path-based-interface">
 <h3>Older path-based interface<a class="headerlink" href="#older-path-based-interface" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span class="sd">&quot;&quot;&quot;An example embedding program. Veusz needs to be installed into</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;An example embedding program. Veusz needs to be installed into</span>
 <span class="sd">the Python path for this to work (use setup.py)</span>
 
 <span class="sd">This animates a sin plot, then finishes</span>
@@ -917,27 +921,27 @@ Veusz some widgets can contain other widgets (Root, pages, graphs,
 grids). Widgets contain setting nodes, accessed as attributes. Widgets
 can also contain groups of settings, again accessed as attributes.</p>
 <p>An example tree for a document (not complete) might look like this</p>
-<div class="highlight-python"><div class="highlight"><pre>Root
-\-- page1                     (page widget)
-    \-- graph1                (graph widget)
-        \--  x                (axis widget)
-        \--  y                (axis widget)
-        \-- function          (function widget)
-    \-- grid1                 (grid widget)
-        \-- graph2            (graph widget)
-            \-- xy1           (xy widget)
-                \-- xData     (setting)
-                \-- yData     (setting)
-                \-- PlotLine  (setting group)
-                    \-- width (setting)
-                    ...
-                ...
-            \-- x             (axis widget)
-            \-- y             (axis widget)
-        \-- graph3            (graph widget)
-            \-- contour1      (contour widget)
-            \-- x             (axis widget)
-            \-- y             (axis widget)
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Root</span>
+\<span class="o">--</span> <span class="n">page1</span>                     <span class="p">(</span><span class="n">page</span> <span class="n">widget</span><span class="p">)</span>
+    \<span class="o">--</span> <span class="n">graph1</span>                <span class="p">(</span><span class="n">graph</span> <span class="n">widget</span><span class="p">)</span>
+        \<span class="o">--</span>  <span class="n">x</span>                <span class="p">(</span><span class="n">axis</span> <span class="n">widget</span><span class="p">)</span>
+        \<span class="o">--</span>  <span class="n">y</span>                <span class="p">(</span><span class="n">axis</span> <span class="n">widget</span><span class="p">)</span>
+        \<span class="o">--</span> <span class="n">function</span>          <span class="p">(</span><span class="n">function</span> <span class="n">widget</span><span class="p">)</span>
+    \<span class="o">--</span> <span class="n">grid1</span>                 <span class="p">(</span><span class="n">grid</span> <span class="n">widget</span><span class="p">)</span>
+        \<span class="o">--</span> <span class="n">graph2</span>            <span class="p">(</span><span class="n">graph</span> <span class="n">widget</span><span class="p">)</span>
+            \<span class="o">--</span> <span class="n">xy1</span>           <span class="p">(</span><span class="n">xy</span> <span class="n">widget</span><span class="p">)</span>
+                \<span class="o">--</span> <span class="n">xData</span>     <span class="p">(</span><span class="n">setting</span><span class="p">)</span>
+                \<span class="o">--</span> <span class="n">yData</span>     <span class="p">(</span><span class="n">setting</span><span class="p">)</span>
+                \<span class="o">--</span> <span class="n">PlotLine</span>  <span class="p">(</span><span class="n">setting</span> <span class="n">group</span><span class="p">)</span>
+                    \<span class="o">--</span> <span class="n">width</span> <span class="p">(</span><span class="n">setting</span><span class="p">)</span>
+                    <span class="o">...</span>
+                <span class="o">...</span>
+            \<span class="o">--</span> <span class="n">x</span>             <span class="p">(</span><span class="n">axis</span> <span class="n">widget</span><span class="p">)</span>
+            \<span class="o">--</span> <span class="n">y</span>             <span class="p">(</span><span class="n">axis</span> <span class="n">widget</span><span class="p">)</span>
+        \<span class="o">--</span> <span class="n">graph3</span>            <span class="p">(</span><span class="n">graph</span> <span class="n">widget</span><span class="p">)</span>
+            \<span class="o">--</span> <span class="n">contour1</span>      <span class="p">(</span><span class="n">contour</span> <span class="n">widget</span><span class="p">)</span>
+            \<span class="o">--</span> <span class="n">x</span>             <span class="p">(</span><span class="n">axis</span> <span class="n">widget</span><span class="p">)</span>
+            \<span class="o">--</span> <span class="n">y</span>             <span class="p">(</span><span class="n">axis</span> <span class="n">widget</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Here the user could access the xData setting node of the
@@ -945,13 +949,13 @@ xy1 widget using <code class="docutils literal"><span class="pre">Root.page1.gra
 actually read or modify the value of a setting, you should get
 or set the <code class="docutils literal"><span class="pre">val</span></code> property of the setting node. The line
 width could be changed like this</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">graph</span> <span class="o">=</span> <span class="n">embed</span><span class="o">.</span><span class="n">Root</span><span class="o">.</span><span class="n">page1</span><span class="o">.</span><span class="n">graph2</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">graph</span> <span class="o">=</span> <span class="n">embed</span><span class="o">.</span><span class="n">Root</span><span class="o">.</span><span class="n">page1</span><span class="o">.</span><span class="n">graph2</span>
 <span class="n">graph</span><span class="o">.</span><span class="n">xy1</span><span class="o">.</span><span class="n">PlotLine</span><span class="o">.</span><span class="n">width</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="s1">&#39;2pt&#39;</span>
 </pre></div>
 </div>
 <p>For instance, this constructs a simple x-squared plot which
 changes to x-cubed:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">veusz.embed</span> <span class="kn">as</span> <span class="nn">veusz</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">veusz.embed</span> <span class="kn">as</span> <span class="nn">veusz</span>
 <span class="kn">import</span> <span class="nn">time</span>
 
 <span class="c1">#  open a new window and return a new Embedded object</span>
@@ -983,7 +987,7 @@ names.</p>
 settings, or settings. Groups of settings can contain child
 settings. Settings cannot contain other nodes. Here are the useful
 operations of Nodes:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Node</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Node</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
   <span class="sd">&quot;&quot;&quot;properties:</span>
 <span class="sd">    path - return path to object in document, e.g. /page1/graph1/function1</span>
 <span class="sd">    type - type of node: &quot;widget&quot;, &quot;settinggroup&quot; or &quot;setting&quot;</span>
@@ -1053,7 +1057,7 @@ WidgetNode objects. The operators == and != can test whether
 a Node points to the same widget, setting or setting group.</p>
 <p>Here is an example to set all functions in the document to
 be <code class="docutils literal"><span class="pre">x**2</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">Root</span><span class="o">.</span><span class="n">WalkWidgets</span><span class="p">(</span><span class="n">widgettype</span><span class="o">=</span><span class="s1">&#39;function&#39;</span><span class="p">):</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">Root</span><span class="o">.</span><span class="n">WalkWidgets</span><span class="p">(</span><span class="n">widgettype</span><span class="o">=</span><span class="s1">&#39;function&#39;</span><span class="p">):</span>
     <span class="n">n</span><span class="o">.</span><span class="n">function</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="s1">&#39;x**2&#39;</span>
 </pre></div>
 </div>
@@ -1063,7 +1067,7 @@ be <code class="docutils literal"><span class="pre">x**2</span></code>:</p>
 <p>Here is an example how you might translate the old to new
 style interface (this is taken from the <code class="docutils literal"><span class="pre">sin.vsz</span></code>
 example).</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="c1"># old (from saved document file)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># old (from saved document file)</span>
 <span class="n">Add</span><span class="p">(</span><span class="s1">&#39;page&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;page1&#39;</span><span class="p">)</span>
 <span class="n">To</span><span class="p">(</span><span class="s1">&#39;page1&#39;</span><span class="p">)</span>
 <span class="n">Add</span><span class="p">(</span><span class="s1">&#39;graph&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;graph1&#39;</span><span class="p">,</span> <span class="n">autoadd</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
@@ -1090,7 +1094,7 @@ example).</p>
 <span class="n">To</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-python"><div class="highlight"><pre><span class="c1"># new (in python)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># new (in python)</span>
 <span class="kn">import</span> <span class="nn">veusz.embed</span>
 <span class="n">embed</span> <span class="o">=</span> <span class="n">veusz</span><span class="o">.</span><span class="n">embed</span><span class="o">.</span><span class="n">Embedded</span><span class="p">(</span><span class="s1">&#39;window title&#39;</span><span class="p">)</span>
 
@@ -1120,17 +1124,17 @@ form. External programs may execute Veusz using <strong class="command">veusz
 --listen</strong>. Veusz will read its input from the standard input, and
 write output to standard output. This is a full Python execution
 environment, and supports all the scripting commands mentioned in
-<a class="reference internal" href="#commands"><span>Commands</span></a>, a <strong class="command">Quit()</strong> command, the
+<a class="reference internal" href="#commands"><span class="std std-ref">Commands</span></a>, a <strong class="command">Quit()</strong> command, the
 <strong class="command">EnableToolbar()</strong> and the <strong class="command">Zoom(factor)</strong> command
 listed above. Only one window is supported at once, but many
 <strong class="command">veusz --listen</strong> programs may be started.</p>
 <p><strong class="command">veusz --listen</strong> may be used from the shell command line by
 doing something like:</p>
-<div class="highlight-bash"><div class="highlight"><pre>veusz --listen &lt; in.vsz
+<div class="highlight-bash"><div class="highlight"><pre><span></span>veusz --listen &lt; in.vsz
 </pre></div>
 </div>
 <p>where <strong class="command">in.vsz</strong> contains:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">To</span><span class="p">(</span><span class="n">Add</span><span class="p">(</span><span class="s1">&#39;page&#39;</span><span class="p">)</span> <span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">To</span><span class="p">(</span><span class="n">Add</span><span class="p">(</span><span class="s1">&#39;page&#39;</span><span class="p">)</span> <span class="p">)</span>
 <span class="n">To</span><span class="p">(</span><span class="n">Add</span><span class="p">(</span><span class="s1">&#39;graph&#39;</span><span class="p">)</span> <span class="p">)</span>
 <span class="n">SetData</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">arange</span><span class="p">(</span><span class="mi">20</span><span class="p">))</span>
 <span class="n">SetData</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">arange</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
@@ -1249,21 +1253,18 @@ controlled by writing commands to an input pipe.</p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="o_sources/api.txt"
+      <li><a href="o_sources/api.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -1271,14 +1272,14 @@ controlled by writing commands to an input pipe.</p>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2017, Jeremy Sanders.
+      &copy;2003-2018, Jeremy Sanders.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
       
       |
-      <a href="o_sources/api.txt"
+      <a href="o_sources/api.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

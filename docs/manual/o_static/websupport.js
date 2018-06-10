@@ -2,9 +2,9 @@
  * websupport.js
  * ~~~~~~~~~~~~~
  *
- * sphinx.websupport utilties for all documentation.
+ * sphinx.websupport utilities for all documentation.
  *
- * :copyright: Copyright 2007-2016 by the Sphinx team, see AUTHORS.
+ * :copyright: Copyright 2007-2017 by the Sphinx team, see AUTHORS.
  * :license: BSD, see LICENSE for details.
  *
  */
@@ -667,14 +667,14 @@
     getCommentsURL: '/_get_comments',
     acceptCommentURL: '/_accept_comment',
     deleteCommentURL: '/_delete_comment',
-    commentImage: '/static/_static/comment.png',
-    closeCommentImage: '/static/_static/comment-close.png',
-    loadingImage: '/static/_static/ajax-loader.gif',
-    commentBrightImage: '/static/_static/comment-bright.png',
-    upArrow: '/static/_static/up.png',
-    downArrow: '/static/_static/down.png',
-    upArrowPressed: '/static/_static/up-pressed.png',
-    downArrowPressed: '/static/_static/down-pressed.png',
+    commentImage: '/static/o_static/comment.png',
+    closeCommentImage: '/static/o_static/comment-close.png',
+    loadingImage: '/static/o_static/ajax-loader.gif',
+    commentBrightImage: '/static/o_static/comment-bright.png',
+    upArrow: '/static/o_static/up.png',
+    downArrow: '/static/o_static/down.png',
+    upArrowPressed: '/static/o_static/up-pressed.png',
+    downArrowPressed: '/static/o_static/down-pressed.png',
     voting: false,
     moderator: false
   };

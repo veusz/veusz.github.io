@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Reading data &mdash; Veusz 2.0 documentation</title>
+    <title>Reading data &#8212; Veusz 3.0 documentation</title>
     
     <link rel="stylesheet" href="o_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="o_static/pygments.css" type="text/css" />
@@ -14,24 +14,28 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2.0',
+        VERSION:     '3.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="o_static/jquery.js"></script>
     <script type="text/javascript" src="o_static/underscore.js"></script>
     <script type="text/javascript" src="o_static/doctools.js"></script>
-    <link rel="top" title="Veusz 2.0 documentation" href="index.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Veusz command line and embedding interface (API)" href="api.html" />
     <link rel="prev" title="Introduction" href="introduction.html" />
    
+  <link rel="stylesheet" href="o_static/custom.css" type="text/css" />
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head>
-  <body role="document">  
+  <body role="document">
+  
 
     <div class="document">
       <div class="documentwrapper">
@@ -144,16 +148,16 @@ the descriptor can be placed in the data file using a
 descriptor statement on a separate line, consisting of
 &#8220;descriptor&#8221; followed by the descriptor. Multiple
 descriptors can be placed in a single file, for example:</p>
-<div class="highlight-python"><div class="highlight"><pre># here is one section
-descriptor x,+- y,+,-
-1 0.5  2 0.1 -0.1
-2 0.3  4 0.2 -0.1
-# my next block
-descriptor alpha beta gamma
-1 2 3
-4 5 6
-7 8 9
-# etc...
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># here is one section</span>
+<span class="n">descriptor</span> <span class="n">x</span><span class="p">,</span><span class="o">+-</span> <span class="n">y</span><span class="p">,</span><span class="o">+</span><span class="p">,</span><span class="o">-</span>
+<span class="mi">1</span> <span class="mf">0.5</span>  <span class="mi">2</span> <span class="mf">0.1</span> <span class="o">-</span><span class="mf">0.1</span>
+<span class="mi">2</span> <span class="mf">0.3</span>  <span class="mi">4</span> <span class="mf">0.2</span> <span class="o">-</span><span class="mf">0.1</span>
+<span class="c1"># my next block</span>
+<span class="n">descriptor</span> <span class="n">alpha</span> <span class="n">beta</span> <span class="n">gamma</span>
+<span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span>
+<span class="mi">4</span> <span class="mi">5</span> <span class="mi">6</span>
+<span class="mi">7</span> <span class="mi">8</span> <span class="mi">9</span>
+<span class="c1"># etc...</span>
 </pre></div>
 </div>
 </div>
@@ -170,9 +174,9 @@ consists of three columns (note the comma between + and -). The
 first column are the values, the second positive asymmetric errors,
 and the third negative asymmetric errors.  Suppose the input file
 contains:</p>
-<div class="highlight-python"><div class="highlight"><pre>1.0  0.3  2    0.1  -0.2
-1.5  0.2  2.3  2e-2 -0.3E0
-2.19 0.02 5    0.1  -0.1
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mf">1.0</span>  <span class="mf">0.3</span>  <span class="mi">2</span>    <span class="mf">0.1</span>  <span class="o">-</span><span class="mf">0.2</span>
+<span class="mf">1.5</span>  <span class="mf">0.2</span>  <span class="mf">2.3</span>  <span class="mf">2e-2</span> <span class="o">-</span><span class="mf">0.3E0</span>
+<span class="mf">2.19</span> <span class="mf">0.02</span> <span class="mi">5</span>    <span class="mf">0.1</span>  <span class="o">-</span><span class="mf">0.1</span>
 </pre></div>
 </div>
 <p>Then x will contain <cite>1+-0.3</cite>, <cite>1.5+-0.2</cite>, <cite>2.19+-0.02</cite>. y will
@@ -411,17 +415,17 @@ into Veusz, see <a class="reference external" href="https://github.com/veusz/veu
 <p>You can also include Python code in an input file to read data, which
 we describe here. Suppose an input file &#8220;in.dat&#8221; contains the
 following data:</p>
-<div class="highlight-python"><div class="highlight"><pre>1   2
-2   4
-3   9
-4   16
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mi">1</span>   <span class="mi">2</span>
+<span class="mi">2</span>   <span class="mi">4</span>
+<span class="mi">3</span>   <span class="mi">9</span>
+<span class="mi">4</span>   <span class="mi">16</span>
 </pre></div>
 </div>
-<p>Of course this data could be read using the <a class="reference internal" href="api.html#command-importfile"><span>ImportFile</span></a> command. However, you could also read it with
+<p>Of course this data could be read using the <a class="reference internal" href="api.html#command-importfile"><span class="std std-ref">ImportFile</span></a> command. However, you could also read it with
 the following Veusz script (which could be saved to a file and loaded
-with <strong class="command">execfile</strong> or <a class="reference internal" href="api.html#command-load"><span>Load</span></a>. The script
+with <strong class="command">execfile</strong> or <a class="reference internal" href="api.html#command-load"><span class="std std-ref">Load</span></a>. The script
 also places symmetric errors of 0.1 on the x dataset.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="p">[]</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">y</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;in.dat&quot;</span><span class="p">):</span>
     <span class="n">parts</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
@@ -532,7 +536,7 @@ the simple line based standard Veusz text format. Data are whitespace
 separated, with one value per dataset given on a single line.</p>
 <p>To capture data, use the dialog box <span class="menuselection">Data ‣
 Capture</span>. A list of datasets should be given. This is the
-<a class="reference internal" href="#id1"><span>standard descriptor format</span></a>.  Choose the source of
+<a class="reference internal" href="#id1"><span class="std std-ref">standard descriptor format</span></a>.  Choose the source of
 the data, which is either a a filename or named pipe, a network socket
 to connect to, or a command line for an external program. Capturing
 ends if the source of the data runs out (for external programs or
@@ -597,21 +601,18 @@ update when the data are updated.</p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="o_sources/datasets.txt"
+      <li><a href="o_sources/datasets.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -619,14 +620,14 @@ update when the data are updated.</p>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2017, Jeremy Sanders.
+      &copy;2003-2018, Jeremy Sanders.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
       
       |
-      <a href="o_sources/datasets.txt"
+      <a href="o_sources/datasets.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 
