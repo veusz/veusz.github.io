@@ -8,9 +8,11 @@ Veusz has long existed as a 2D-only plotting GUI application and
 library. From version 3, Veusz now supports several types of 3D
 plots. As with previous versions of Veusz, plots are flexibly built
 out of a number of plotting widgets, allowing several 3D graphs to
-occupy a 3D space.  Currently implemented plot types include 3D
-points, line, data surface, functional surface, functional line and
-volume plots. This post is a guide for how this works.
+occupy a 3D space. Veusz renders the 3D output in vector format, which
+means the full quality of the plot is retained when scaling. Currently
+implemented plot types include 3D points, line, data surface,
+functional surface, functional line and volume plots.  This page is a
+guide for how 3D plotting works.
 
 [![3d example](3d_example.png)](3d_example.vsz)
 

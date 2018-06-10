@@ -56,3 +56,7 @@ ul.posts li {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
+
+#screenshottable {
+    border-spacing: 0.5em;
+}
