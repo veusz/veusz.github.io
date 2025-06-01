@@ -6,7 +6,7 @@ title: Download Veusz
 {% assign ver = site.data.release["release"] %}
 
 {% capture dlroot %}
-https://github.com/veusz/veusz/releases/download/veusz-{{ver}}
+https://github.com/veusz/veusz/releases/download/veusz-{{ver}}-fix
 {% endcapture %}
 
 <div class="blurb">
@@ -17,21 +17,23 @@ https://github.com/veusz/veusz/releases/download/veusz-{{ver}}
   </p>
   <ul>
     <li>
-      <a href="{{dlroot}}/veusz-{{ver}}-x64-windows-setup.exe">Latest Windows binary (64 bit)</a>
-      (<a href="{{dlroot}}/veusz-{{ver}}-x64-windows-setup.exe.asc">GPG/PGP signature</a>)
+      <a href="{{dlroot}}/veusz-{{ver}}-windows-x86-setup.exe">Latest Windows binary (64 bit)</a>
+      (<a href="{{dlroot}}/veusz-{{ver}}-windows-x86-setup.exe.sig">GPG/PGP signature</a>)
     </li>
     <li>
-      <a href="{{dlroot}}/veusz-{{ver}}-AppleOSX.dmg">Latest MacOS binary (MacOS 10.13 or later)</a>
-      (<a href="{{dlroot}}/veusz-{{ver}}-AppleOSX.dmg.asc">GPG/PGP signature</a>).
+      Latest MacOS <a href="{{dlroot}}/veusz-{{ver}}-AppleOSX-arm.dmg">ARM</a>
+      (<a href="{{dlroot}}/veusz-{{ver}}-AppleOSX-arm.dmg.sig">signature</a>),
+      Latest MacOS <a href="{{dlroot}}/veusz-{{ver}}-AppleOSX-x86_64.dmg">x86_64</a>
+      (<a href="{{dlroot}}/veusz-{{ver}}-AppleOSX-x86_64.dmg.sig">signature</a>).
       Please note that this application is not signed, so you will need to open by holding down Control, clicking, then selecting Open.
     </li>
     <li>
       <a href="{{dlroot}}/veusz-{{ver}}-linux-x86_64.tar.xz">Latest Linux binary (64 bit x86-64)</a>
-      (<a href="{{dlroot}}/veusz-{{ver}}-linux-x86_64.tar.xz.asc">GPG/PGP signature</a>)
+      (<a href="{{dlroot}}/veusz-{{ver}}-linux-x86_64.tar.xz.sig">GPG/PGP signature</a>)
     </li>
     <li>
       <a href="{{dlroot}}/veusz-{{ver}}.tar.gz">Latest source code</a> with <a href="/releasenotes/{{ver}}-install.txt">install notes</a>
-      (<a href="{{dlroot}}/veusz-{{ver}}.tar.gz.asc">GPG/PGP signature</a>)
+      (<a href="{{dlroot}}/veusz-{{ver}}.tar.gz.sig">GPG/PGP signature</a>)
       or on <a href="https://pypi.python.org/pypi/veusz/">PyPI</a>
     </li>
     <li><a href="https://github.com/veusz/veusz/releases">All recent releases</a> (<a href="https://github.com/veusz/veusz/releases.atom">release feed</a>)</li>
@@ -39,7 +41,7 @@ https://github.com/veusz/veusz/releases/download/veusz-{{ver}}
 
   <p>
     Veusz is Copyright &copy;
-      2003-2023 <a href="http://www.jeremysanders.net">Jeremy
+      2003-2025 <a href="http://www.jeremysanders.net">Jeremy
       Sanders</a> and contributors.
 
     Veusz is <a href="https://www.gnu.org/philosophy/free-sw.html">Free
