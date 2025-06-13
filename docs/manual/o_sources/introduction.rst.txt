@@ -56,7 +56,7 @@ Widget
 ------
 
 A document and its graphs are built up from widgets.  These widgets
-can often by placed within each other, depending on the type of the
+can often be placed within each other, depending on the type of the
 widget. A widget has children (those widgets placed within it) and its
 parent. The widgets have a number of different settings which modify
 their behaviour. These settings are divided into properties, which
@@ -192,6 +192,9 @@ The widget types include
       placed directly on the page or on a graph. The centre can be
       given in axis coordinates or fractional coordinates.
    #. :command:`imagefile` - draw an external graphs file on the graph
+      or page, with size and rotation given. The centre can be given
+      in axis coordinates or fractional coordinates.
+   #. :command:`svgfile` - draw an external scalable vector graphic on the graph
       or page, with size and rotation given. The centre can be given
       in axis coordinates or fractional coordinates.
    #. :command:`line` - draw a line with optional arrowheads on the
@@ -377,7 +380,7 @@ Supported LaTeX symbols include: \\AA, \\Alpha, \\Beta,
 \\rightarrow, \\sigma, \\sim, \\simeq, \\sqrt, \\sqsubset, \\sqsubseteq,
 \\sqsupset, \\sqsupseteq, \\star, \\stigma, \\subset, \\subseteq, \\succ,
 \\succeq, \\supset, \\supseteq, \\tau, \\theta, \\times, \\umid, \\unlhd,
-\\unrhd, \\uparrow, \\uplus, \\upsilon, \\vdash, \\vee, \\wedge, \\xi, \\zeta.
+\\unrhd, \\uparrow, \\uplus, \\upsilon, \\vdash, \\vee, \\wedge, \\wtilde, \\xi, \\zeta.
 Please request additional characters if they are required (and exist
 in the unicode character set). Special symbols can be included
 directly from a character map.
@@ -613,7 +616,7 @@ The main window
 You should see the main window when you run Veusz (you can just type
 the veusz command in Unix).
 
-.. image:: o_images/mainwindow.png
+.. image:: _images/mainwindow.png
 
 The Veusz window is split into several sections. At the top is the
 menu bar and tool bar. These work in the usual way to other
@@ -676,7 +679,7 @@ automatically adds a new Page and Graph (with axes) to the document.
 
 You will see something like this:
 
-.. image:: o_images/winwithgraph.png
+.. image:: _images/winwithgraph.png
 
 Select the x axis which has been added to the document (click on `x`
 in the selection window). In the properties window you will see a

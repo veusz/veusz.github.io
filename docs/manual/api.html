@@ -1,57 +1,46 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" data-content_root="./">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Veusz command line and embedding interface (API) &#8212; Veusz 3.0 documentation</title>
-    
-    <link rel="stylesheet" href="o_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="o_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '3.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
-    <script type="text/javascript" src="o_static/jquery.js"></script>
-    <script type="text/javascript" src="o_static/underscore.js"></script>
-    <script type="text/javascript" src="o_static/doctools.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Veusz command line and embedding interface (API) &#8212; Veusz 4.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="o_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="o_static/alabaster.css?v=cb25574f" />
+    <script src="o_static/documentation_options.js?v=3b2dd2c4"></script>
+    <script src="o_static/doctools.js?v=888ff710"></script>
+    <script src="o_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Reading data" href="datasets.html" />
    
   <link rel="stylesheet" href="o_static/custom.css" type="text/css" />
   
+  
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
-  </head>
-  <body role="document">
+  </head><body>
   
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
-  <div class="section" id="veusz-command-line-and-embedding-interface-api">
-<h1>Veusz command line and embedding interface (API)<a class="headerlink" href="#veusz-command-line-and-embedding-interface-api" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction">
-<span id="commands"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+  <section id="veusz-command-line-and-embedding-interface-api">
+<h1>Veusz command line and embedding interface (API)<a class="headerlink" href="#veusz-command-line-and-embedding-interface-api" title="Link to this heading">¶</a></h1>
+<section id="introduction">
+<span id="commands"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
 <p>Veusz uses a common API, or set of commands, to control the program
 via its command line (from the Veusz console; click View, Windows,
 Console Window), the embedding interface (when Veusz is embedded in
 other Python programs), from within plugins, within documents (VSZ
 documents contain commands used to generate the document) or
 externally from the operating system command line (using <cite>veusz
-&#8211;listen</cite>).</p>
+–listen</cite>).</p>
 <p>As Veusz is a a Python application it uses Python as its scripting
 language. You can therefore freely mix Veusz and Python commands on
 the Veusz command line (Click View, Windows, Console Window to get
@@ -69,30 +58,30 @@ interface (as <cite>*</cite>), so you do not need to import it first.</p>
 to recall previous commands).</p>
 <p>Most of the commands listed below can be used in the in-program
 command line interface, using the embedding interface or using <cite>veusz
-&#8211;listen</cite>. Commands specific to particular modes are documented as
+–listen</cite>. Commands specific to particular modes are documented as
 such.</p>
 <p>Veusz also includes a new object-oriented version of the API, which is
 documented at <a class="reference internal" href="#new-api">new_api</a>.</p>
-</div>
-<div class="section" id="commands-and-api">
-<h2>Commands and API<a class="headerlink" href="#commands-and-api" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="commands-and-api">
+<h2>Commands and API<a class="headerlink" href="#commands-and-api" title="Link to this heading">¶</a></h2>
 <p>We list the allowed set of commands below</p>
-<div class="section" id="action">
-<h3>Action<a class="headerlink" href="#action" title="Permalink to this headline">¶</a></h3>
+<section id="action">
+<h3>Action<a class="headerlink" href="#action" title="Link to this heading">¶</a></h3>
 <p id="command-action"><strong class="command">Action('actionname',
 componentpath='.')</strong></p>
 <p>Initiates the specified action on the widget (component)
 given the action name. Actions perform certain automated
-routines. These include &#8220;fit&#8221; on a fit widget, and
-&#8220;zeroMargins&#8221; on grids.</p>
-</div>
-<div class="section" id="add">
-<h3>Add<a class="headerlink" href="#add" title="Permalink to this headline">¶</a></h3>
+routines. These include “fit” on a fit widget, and
+“zeroMargins” on grids.</p>
+</section>
+<section id="add">
+<h3>Add<a class="headerlink" href="#add" title="Link to this heading">¶</a></h3>
 <p id="command-add"><strong class="command">Add('widgettype', name='nameforwidget',
 autoadd=True, optionalargs)</strong></p>
 <p>The Add command adds a graph into the current widget (See the <a class="reference internal" href="#command-to"><span class="std std-ref">To</span></a> command to change the current position).</p>
 <p>The first argument is the type of widget to add. These include
-&#8220;graph&#8221;, &#8220;page&#8221;, &#8220;axis&#8221;, &#8220;xy&#8221; and &#8220;grid&#8221;. <strong class="command">name</strong> is the name
+“graph”, “page”, “axis”, “xy” and “grid”. <strong class="command">name</strong> is the name
 of the new widget (if not given, it will be generated from the type of
 the widget plus a number). The <strong class="command">autoadd</strong> parameter if set,
 constructs the default sub-widgets this widget has (for example, axes
@@ -103,43 +92,43 @@ example <strong class="command">Add('axis', name='y', direction='vertical')</str
 <strong class="command">Add('xy', MarkerFill__color='red',
 ErrorBarLine__hide=True)</strong>.</p>
 <p>Returns: Name of widget added.</p>
-</div>
-<div class="section" id="addcustom">
-<h3>AddCustom<a class="headerlink" href="#addcustom" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="addcustom">
+<h3>AddCustom<a class="headerlink" href="#addcustom" title="Link to this heading">¶</a></h3>
 <p id="command-addcustom"><strong class="command">AddCustom(type, name, value)</strong></p>
 <p>Add a custom definition for evaluation of expressions. This can define
 a constant (can be in terms of other constants), a function of 1 or
 more variables, or a function imported from an external python module.</p>
-<p>ctype is &#8220;constant&#8221;, &#8220;function&#8221; or &#8220;import&#8221;.</p>
-<p>name is name of constant, or &#8220;function(x, y, ...)&#8221; or module name.</p>
+<p>ctype is “constant”, “function” or “import”.</p>
+<p>name is name of constant, or “function(x, y, …)” or module name.</p>
 <p>val is definition for constant or function (both are _strings_), or is
 a list of symbols for a module (comma separated items in a string).</p>
-<p>If mode is &#8216;appendalways&#8217;, the custom value is appended to the end of
+<p>If mode is ‘appendalways’, the custom value is appended to the end of
 the list even if there is one with the same name. If mode is
-&#8216;replace&#8217;, it replaces any existing definition in the same place in
-the list or is appended otherwise. If mode is &#8216;append&#8217;, then an
+‘replace’, it replaces any existing definition in the same place in
+the list or is appended otherwise. If mode is ‘append’, then an
 existing definition is deleted, and the new one appended to the end.</p>
-</div>
-<div class="section" id="addimportpath">
-<h3>AddImportPath<a class="headerlink" href="#addimportpath" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="addimportpath">
+<h3>AddImportPath<a class="headerlink" href="#addimportpath" title="Link to this heading">¶</a></h3>
 <p id="command-addimportpath"><strong class="command">AddImportPath(directory)</strong></p>
 <p>Add a directory to the list of directories to try to import data from.</p>
-</div>
-<div class="section" id="clonewidget">
-<h3>CloneWidget<a class="headerlink" href="#clonewidget" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="clonewidget">
+<h3>CloneWidget<a class="headerlink" href="#clonewidget" title="Link to this heading">¶</a></h3>
 <p id="command-clonewidget"><strong class="command">CloneWidget(widget, newparent,
 newname=None)</strong></p>
 <p>Clone the widget given, placing the copy in newparent and the name
 given.  newname is an optional new name to give it Returns new widget
 path.</p>
-</div>
-<div class="section" id="close">
-<h3>Close<a class="headerlink" href="#close" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="close">
+<h3>Close<a class="headerlink" href="#close" title="Link to this heading">¶</a></h3>
 <p id="command-close"><strong class="command">Close()</strong></p>
 <p>Closes the plotwindow. This is only supported in embedded mode.</p>
-</div>
-<div class="section" id="createhistogram">
-<h3>CreateHistogram<a class="headerlink" href="#createhistogram" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="createhistogram">
+<h3>CreateHistogram<a class="headerlink" href="#createhistogram" title="Link to this heading">¶</a></h3>
 <p id="command-createhistogram"><strong class="command">CreateHistogram(inexpr, outbinsds,
 outvalsds, binparams=None, binmanual=None,
 method='counts', cumulative = 'none',
@@ -148,34 +137,39 @@ errors=False)</strong></p>
 is the name of the dataset to create giving bin positions.  outvalsds
 is name of dataset for bin values.  binparams is None or (numbins,
 minval, maxval, islogbins).  binmanual is None or a list of bin
-values.  method is &#8216;counts&#8217;, &#8216;density&#8217;, or &#8216;fractions&#8217;.  cumulative is
-to calculate cumulative distributions which is &#8216;none&#8217;, &#8216;smalltolarge&#8217;
-or &#8216;largetosmall&#8217;.  errors is to calculate Poisson error bars.</p>
-</div>
-<div class="section" id="datasetplugin">
-<h3>DatasetPlugin<a class="headerlink" href="#datasetplugin" title="Permalink to this headline">¶</a></h3>
+values.  method is ‘counts’, ‘density’, or ‘fractions’.  cumulative is
+to calculate cumulative distributions which is ‘none’, ‘smalltolarge’
+or ‘largetosmall’.  errors is to calculate Poisson error bars.</p>
+</section>
+<section id="currentpath">
+<h3>CurrentPath<a class="headerlink" href="#currentpath" title="Link to this heading">¶</a></h3>
+<p id="command-currentpath"><strong class="command">CurrentPath()</strong></p>
+<p>Returns current widget path, as set by <a class="reference internal" href="#command-to"><span class="std std-ref">To</span></a>.</p>
+</section>
+<section id="datasetplugin">
+<h3>DatasetPlugin<a class="headerlink" href="#datasetplugin" title="Link to this heading">¶</a></h3>
 <p id="command-datasetplugin"><strong class="command">DatasetPlugin(pluginname, fields,
 datasetnames={})&gt;</strong></p>
 <p>Use a dataset plugin.  pluginname: name of plugin to use fields: dict
 of input values to plugin datasetnames: dict mapping old names to new
 names of datasets if they are renamed. The new name None means dataset
 is deleted</p>
-</div>
-<div class="section" id="enabletoolbar">
-<h3>EnableToolbar<a class="headerlink" href="#enabletoolbar" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="enabletoolbar">
+<h3>EnableToolbar<a class="headerlink" href="#enabletoolbar" title="Link to this heading">¶</a></h3>
 <p id="command-enabletoolbar"><strong class="command">EnableToolbar(enable=True)</strong></p>
 <p>Enable/disable the zooming toolbar in the plotwindow. This command is
-only supported in embedded mode or from <cite>veusz &#8211;listen</cite>.</p>
-</div>
-<div class="section" id="export">
-<h3>Export<a class="headerlink" href="#export" title="Permalink to this headline">¶</a></h3>
+only supported in embedded mode or from <cite>veusz –listen</cite>.</p>
+</section>
+<section id="export">
+<h3>Export<a class="headerlink" href="#export" title="Link to this heading">¶</a></h3>
 <p id="command-export"><strong class="command">Export(filename, color=True, page=0, dpi=100,
 antialias=True, quality=85, backcolor='#ffffff00', pdfdpi=150,
-svgtextastext=False)</strong></p>
+svgdpi=96, svgtextastext=False)</strong></p>
 <p>Export the page given to the filename given. The <strong class="command">filename</strong>
 must end with the correct extension to get the right sort of output
-file. Currrenly supported extensions are &#8216;.eps&#8217;, &#8216;.pdf&#8217;, &#8216;.ps&#8217;,
-&#8216;.svg&#8217;, &#8216;.jpg&#8217;, &#8216;.jpeg&#8217;, &#8216;.bmp&#8217; and &#8216;.png&#8217;. If <strong class="command">color</strong> is
+file. Currrenly supported extensions are ‘.eps’, ‘.pdf’, ‘.ps’,
+‘.svg’, ‘.jpg’, ‘.jpeg’, ‘.bmp’ and ‘.png’. If <strong class="command">color</strong> is
 True, then the output is in colour, else greyscale. <strong class="command">page</strong> is
 the page number of the document to export (starting from 0 for the
 first page!). A list of pages can be given for multipage formats (.pdf
@@ -185,11 +179,12 @@ True. <strong class="command">quality</strong> is a quality parameter for jpeg
 output. <strong class="command">backcolor</strong> is the background color for bitmap files,
 which is a name or a #RRGGBBAA value (red, green, blue,
 alpha). <strong class="command">pdfdpi</strong> is the dpi to use when exporting EPS or PDF
-files. <strong class="command">svgtextastext</strong> says whether to export SVG text as
+files. <strong class="command">svgdpi</strong> is the dpi to use when exporting to SVG files.
+<strong class="command">svgtextastext</strong> says whether to export SVG text as
 text, rather than curves.</p>
-</div>
-<div class="section" id="filterdatasets">
-<h3>FilterDatasets<a class="headerlink" href="#filterdatasets" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="filterdatasets">
+<h3>FilterDatasets<a class="headerlink" href="#filterdatasets" title="Link to this heading">¶</a></h3>
 <p id="command-filterdatasets"><strong class="command">FilterDatasets(filterexpr, datasets, prefix=&quot;&quot;, suffix=&quot;&quot;,
 invert=False, replaceblanks=False)</strong></p>
 <p>Filter a list of datasets given. Creates new datasets for each with
@@ -198,32 +193,32 @@ numpy eexpression for filtering the datasets. If invert is set, the
 filter condition is inverted. If replaceblanks is set, filtered values
 are not removed, but replaced with a blank or NaN value. This command
 only works on 1D numeric, date or text datasets.</p>
-</div>
-<div class="section" id="forceupdate">
-<h3>ForceUpdate<a class="headerlink" href="#forceupdate" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="forceupdate">
+<h3>ForceUpdate<a class="headerlink" href="#forceupdate" title="Link to this heading">¶</a></h3>
 <p id="command-forceupdate"><strong class="command">ForceUpdate()</strong></p>
 <p>Force the window to be updated to reflect the current state of the
 document. Often used when periodic updates have been disabled (see
 SetUpdateInterval). This command is only supported in embedded mode or
-from <cite>veusz &#8211;listen</cite>.</p>
-</div>
-<div class="section" id="get">
-<h3>Get<a class="headerlink" href="#get" title="Permalink to this headline">¶</a></h3>
+from <cite>veusz –listen</cite>.</p>
+</section>
+<section id="get">
+<h3>Get<a class="headerlink" href="#get" title="Link to this heading">¶</a></h3>
 <p id="command-get"><strong class="command">Get('settingpath')</strong></p>
 <p>Returns: The value of the setting given by the path.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Get</span><span class="p">(</span><span class="s1">&#39;/page1/graph1/x/min&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Get</span><span class="p">(</span><span class="s1">&#39;/page1/graph1/x/min&#39;</span><span class="p">)</span>
 <span class="go">&#39;Auto&#39;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="getchildren">
-<h3>GetChildren<a class="headerlink" href="#getchildren" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="getchildren">
+<h3>GetChildren<a class="headerlink" href="#getchildren" title="Link to this heading">¶</a></h3>
 <p id="command-getchildren"><strong class="command">GetChildren(where='.')</strong></p>
 <p>Returns: The names of the widgets which are children of
 the path given</p>
-</div>
-<div class="section" id="getclick">
-<h3>GetClick<a class="headerlink" href="#getclick" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="getclick">
+<h3>GetClick<a class="headerlink" href="#getclick" title="Link to this heading">¶</a></h3>
 <p id="command-getclick"><strong class="command">GetClick()</strong></p>
 <p>Waits for the user to click on a graph and returns the
 position of the click on appropriate axes. Command only works
@@ -231,15 +226,15 @@ in embedded mode.</p>
 <p>Returns: A list containing tuples of the form (axispath,
 val) for each axis for which the click was in range. The value
 is the value on the axis for the click.</p>
-</div>
-<div class="section" id="getcolormap">
-<h3>GetColormap<a class="headerlink" href="#getcolormap" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="getcolormap">
+<h3>GetColormap<a class="headerlink" href="#getcolormap" title="Link to this heading">¶</a></h3>
 <p id="command-getcolormap"><strong class="command">GetColormap(name, invert=False, nvals=256)</strong></p>
 <p>Returns a colormap as a numpy array of red, green, blue, alpha values
 (ranging from 0 to 255) with the number of steps given.</p>
-</div>
-<div class="section" id="getdata">
-<h3>GetData<a class="headerlink" href="#getdata" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="getdata">
+<h3>GetData<a class="headerlink" href="#getdata" title="Link to this heading">¶</a></h3>
 <p id="command-getdata"><strong class="command">GetData(name)</strong></p>
 <p>Returns: For a 1D dataset, a tuple containing the dataset with the
 name given. The value is (data, symerr, negerr, poserr), with each a
@@ -252,34 +247,31 @@ dataset, return a list of Python datetime objects. If the dataset is a
 numpy array and rangex/y are tuples giving the range of the x and y
 coordinates of the data. If it is an ND dataset, return an
 n-dimensional array.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">GetData</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">GetData</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">SetData</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mf">0.1</span><span class="p">,</span> \<span class="o">*</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="getdatatype">
-<h3>GetDataType<a class="headerlink" href="#getdatatype" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="getdatatype">
+<h3>GetDataType<a class="headerlink" href="#getdatatype" title="Link to this heading">¶</a></h3>
 <p id="command-getdatatype"><strong class="command">GetDataType(name)</strong></p>
-<p>Get type of dataset with name given. Returns &#8216;1d&#8217; for a
-1d dataset, &#8216;2d&#8217; for a 2d dataset, &#8216;text&#8217; for a text dataset
-and &#8216;datetime&#8217; for a datetime dataset.</p>
-</div>
-<div class="section" id="getdatasets">
-<h3>GetDatasets<a class="headerlink" href="#getdatasets" title="Permalink to this headline">¶</a></h3>
+<p>Get type of dataset with name given. Returns ‘1d’ for a
+1d dataset, ‘2d’ for a 2d dataset, ‘text’ for a text dataset
+and ‘datetime’ for a datetime dataset.</p>
+</section>
+<section id="getdatasets">
+<h3>GetDatasets<a class="headerlink" href="#getdatasets" title="Link to this heading">¶</a></h3>
 <p id="command-getdatasets"><strong class="command">GetDatasets()</strong></p>
 <p>Returns: The names of the datasets in the current document.</p>
-</div>
-<div class="section" id="gpl">
-<h3>GPL<a class="headerlink" href="#gpl" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="gpl">
+<h3>GPL<a class="headerlink" href="#gpl" title="Link to this heading">¶</a></h3>
 <p id="command-gpl"><strong class="command">GPL()</strong></p>
 <p>Print out the GNU Public Licence, which Veusz is licenced under.</p>
-</div>
-<div class="section" id="importfile">
-<h3>ImportFile<a class="headerlink" href="#importfile" title="Permalink to this headline">¶</a></h3>
-<p id="command-importfile"><strong class="command">ImportFile('filename', 'descriptor',
-linked=False, prefix='', suffix='',
-encoding='utf_8',
-renames={})</strong></p>
+</section>
+<section id="importfile">
+<h3>ImportFile<a class="headerlink" href="#importfile" title="Link to this heading">¶</a></h3>
+<p id="command-importfile"><strong class="command">ImportFile(comm, filename, descriptor, useblocks=False, linked=False, prefix='', suffix='', ignoretext=False, encoding='utf_8', renames=None)</strong></p>
 <p>Imports data from a file. The arguments are the filename to load data
 from and the descriptor.</p>
 <p>The format of the descriptor is a list of variable names representing
@@ -288,74 +280,109 @@ the columns of the data. For more information see <a class="reference internal" 
 data imported will not be saved with the document, but will be reread
 from the filename given the next time the document is opened. The
 linked parameter is optional.</p>
+<p>If useblocks is set, then blank lines or the word ‘no’ are used to
+split the data into blocks. Dataset names are appended with an
+underscore and the block number (starting from 1). encoding is the
+name of the text file encoding. renames is a dict mapping existing to
+new names after import.</p>
 <p>If prefix and/or suffix are set, then the prefix and suffix are added
 to each dataset name. If set, renames maps imported dataset names to
 final dataset names after import.</p>
 <p>Returns: A tuple containing a list of the imported datasets and the
 number of conversions which failed for a dataset.</p>
-<p>Changed in version 0.5: A tuple is returned rather than just the
-number of imported variables.</p>
-</div>
-<div class="section" id="importfile2d">
-<h3>ImportFile2D<a class="headerlink" href="#importfile2d" title="Permalink to this headline">¶</a></h3>
-<p id="command-importfile2d"><strong class="command">ImportFile2D('filename', datasets,
-xrange=None, yrange=None, invertrows=False,
-invertcols=False, transpose=False,
-prefix='', suffix='', linked=False,
-encoding='utf8', renames={})</strong></p>
+</section>
+<section id="importfile2d">
+<h3>ImportFile2D<a class="headerlink" href="#importfile2d" title="Link to this heading">¶</a></h3>
+<p id="command-importfile2d"><strong class="command">ImportFile2D(filename, datasetnames, xrange=None, yrange=None, invertrows=None, invertcols=None, transpose=None, gridatedge=None, mode='text', csvdelimiter=',', csvtextdelimiter='&quot;', csvlocale='en_US', prefix=&quot;&quot;, suffix=&quot;&quot;, encoding='utf_8', linked=False)</strong></p>
 <p>Imports two-dimensional data from a file. The required arguments are
 the filename to load data from and the dataset name, or a list of
 names to use.</p>
-<p>filename is a string which contains the filename to use. datasets is
-either a string (for a single dataset), or a list of strings (for
-multiple datasets).</p>
-<p>The xrange parameter is a tuple which contains the range of the X-axis
-along the two-dimensional dataset, for example (-1., 1.) represents an
-inclusive range of -1 to 1. The yrange parameter specifies the range
-of the Y-axis similarly. If they are not specified, (0, N) is the
-default, where N is the number of datapoints along a particular axis.</p>
-<p>invertrows and invertcols if set to True, invert the rows and columns
-respectively after they are read by Veusz. transpose swaps the rows
-and columns.</p>
-<p>If prefix and/or suffix are set, they are prepended or appended to
-imported dataset names. If set, renames maps imported dataset names to
-final dataset names after import.</p>
-<p>If the linked parameter is True, then the datasets are linked to the
-imported file, and are not saved within a saved document.</p>
-<p>The file format this command accepts is a two-dimensional matrix of
-numbers, with the columns separated by spaces or tabs, and the rows
-separated by new lines. The X-coordinate is taken to be in the
-direction of the columns. Comments are supported (use <cite>#</cite>, <cite>!</cite> or
-<cite>%</cite>), as are continuation characters (<cite>\</cite>). Separate datasets are
-deliminated by using blank lines.</p>
+<p>In text mode, the file format this command accepts is a
+two-dimensional matrix of numbers, with the columns separated by
+spaces or tabs, and the rows separated by new lines.  The X-coordinate
+is taken to be in the direction of the columns. Comments are supported
+(use <cite>#</cite>, <cite>!</cite> or <cite>%</cite>), as are continuation characters (<cite>\</cite>). Separate
+datasets are deliminated by using blank lines. In csv mode, the csv
+parameters give the type of CSV file sypported.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">xrange</span> <span class="ow">is</span> <span class="n">a</span> <span class="nb">tuple</span> <span class="n">containing</span> <span class="n">the</span> <span class="nb">range</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">x</span> <span class="n">coordinates</span>
+<span class="n">yrange</span> <span class="ow">is</span> <span class="n">a</span> <span class="nb">tuple</span> <span class="n">containing</span> <span class="n">the</span> <span class="nb">range</span> <span class="n">of</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">y</span> <span class="n">coordinates</span>
+<span class="k">if</span> <span class="n">invertrows</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">then</span> <span class="n">rows</span> <span class="n">are</span> <span class="n">inverted</span> <span class="n">when</span> <span class="n">read</span>
+<span class="k">if</span> <span class="n">invertcols</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">then</span> <span class="n">cols</span> <span class="n">are</span> <span class="n">inverted</span> <span class="n">when</span> <span class="n">read</span>
+<span class="k">if</span> <span class="n">transpose</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">then</span> <span class="n">rows</span> <span class="ow">and</span> <span class="n">columns</span> <span class="n">are</span> <span class="n">swapped</span>
+<span class="k">if</span> <span class="n">gridatedge</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">use</span> <span class="n">top</span> <span class="n">row</span> <span class="ow">and</span> <span class="n">left</span> <span class="n">column</span> <span class="k">for</span> <span class="n">pixel</span> <span class="n">positions</span>
+
+<span class="n">mode</span> <span class="ow">is</span> <span class="n">either</span> <span class="s1">&#39;text&#39;</span> <span class="ow">or</span> <span class="s1">&#39;csv&#39;</span>
+<span class="n">csvdelimiter</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">csv</span> <span class="n">delimiter</span> <span class="k">for</span> <span class="n">csv</span>
+<span class="n">csvtextdelimiter</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">csv</span> <span class="n">text</span> <span class="n">delimiter</span> <span class="k">for</span> <span class="n">csv</span>
+<span class="n">csvlocale</span> <span class="ow">is</span> <span class="n">locale</span> <span class="n">to</span> <span class="n">use</span> <span class="n">when</span> <span class="n">reading</span> <span class="n">csv</span> <span class="n">data</span>
+
+<span class="n">prefix</span> <span class="ow">and</span> <span class="n">suffix</span> <span class="n">are</span> <span class="n">prepended</span> <span class="ow">and</span> <span class="n">appended</span> <span class="n">to</span> <span class="n">dataset</span> <span class="n">names</span>
+
+<span class="n">encoding</span> <span class="ow">is</span> <span class="n">encoding</span> <span class="n">character</span> <span class="nb">set</span>
+
+<span class="k">if</span> <span class="n">linked</span><span class="o">=</span><span class="kc">True</span> <span class="n">then</span> <span class="n">the</span> <span class="n">dataset</span> <span class="ow">is</span> <span class="n">linked</span> <span class="n">to</span> <span class="n">the</span> <span class="n">file</span>
+
+<span class="n">Returns</span><span class="p">:</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">imported</span> <span class="n">datasets</span>
+</pre></div>
+</div>
 <p>In addition to the matrix of numbers, the various optional parameters
 this command takes can also be specified in the data file. These
 commands should be given on separate lines before the matrix of
 numbers. They are:</p>
 <ol class="arabic simple">
-<li>xrange A B</li>
-<li>yrange C D</li>
-<li>invertrows</li>
-<li>invertcols</li>
-<li>transpose</li>
+<li><p>xrange A B</p></li>
+<li><p>yrange C D</p></li>
+<li><p>invertrows</p></li>
+<li><p>invertcols</p></li>
+<li><p>transpose</p></li>
 </ol>
-</div>
-<div class="section" id="importfilecsv">
-<h3>ImportFileCSV<a class="headerlink" href="#importfilecsv" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="importfilecsv">
+<h3>ImportFileCSV<a class="headerlink" href="#importfilecsv" title="Link to this heading">¶</a></h3>
 <p id="command-importfilecsv"><strong class="command">ImportFileCSV('filename', readrows=False,
-dsprefix='', dssuffix='', linked=False, encoding='utf_8',
-renames={})</strong></p>
+delimiter=',', skipwhitespace=False, textdelimiter='&quot;',
+encoding='utf_8',
+headerignore=0, rowsignore=0,
+blanksaredata=False,
+numericlocale='en_US',
+dateformat='YYYY-MM-DD|T|hh:mm:ss',
+headermode='multi',
+dsprefix='', dssuffix='', prefix=None,
+renames=None,
+linked=False)</strong></p>
 <p>This command imports data from a CSV format file. Data are read from
 the file using the dataset names given at the top of the files in
 columns. Please see the reading data section of this manual for more
-information. dsprefix is prepended to each dataset name and dssuffix
-is added (the prefix option is deprecated and also addeds an
-underscore to the dataset name). linked specifies whether the data
-will be linked to the file. renames, if set, provides new names for
-datasets after import.</p>
+information. The options are explained below.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">readrows</span><span class="p">:</span> <span class="k">if</span> <span class="n">true</span><span class="p">,</span> <span class="n">data</span> <span class="n">are</span> <span class="n">read</span> <span class="n">across</span> <span class="n">rather</span> <span class="n">than</span> <span class="n">down</span>
+<span class="n">delimiter</span><span class="p">:</span> <span class="n">character</span> <span class="k">for</span> <span class="n">delimiting</span> <span class="n">data</span> <span class="p">(</span><span class="n">usually</span> <span class="s1">&#39;,&#39;</span><span class="p">)</span>
+<span class="n">skipwhitespace</span><span class="p">:</span> <span class="k">if</span> <span class="n">true</span><span class="p">,</span> <span class="n">white</span> <span class="n">space</span> <span class="n">following</span> <span class="n">delimiter</span> <span class="ow">is</span> <span class="n">ignored</span>
+<span class="n">textdelimiter</span><span class="p">:</span> <span class="n">character</span> <span class="n">surrounding</span> <span class="n">text</span> <span class="p">(</span><span class="n">usually</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)</span>
+<span class="n">encoding</span><span class="p">:</span> <span class="n">encoding</span> <span class="n">used</span> <span class="ow">in</span> <span class="n">file</span>
+<span class="n">headerignore</span><span class="p">:</span> <span class="n">number</span> <span class="n">of</span> <span class="n">lines</span> <span class="n">to</span> <span class="n">ignore</span> <span class="n">after</span> <span class="n">header</span> <span class="n">text</span>
+<span class="n">rowsignore</span><span class="p">:</span> <span class="n">number</span> <span class="n">of</span> <span class="n">rows</span> <span class="n">to</span> <span class="n">ignore</span> <span class="n">at</span> <span class="n">top</span> <span class="n">of</span> <span class="n">file</span>
+<span class="n">blanksaredata</span><span class="p">:</span> <span class="n">treats</span> <span class="n">blank</span> <span class="n">lines</span> <span class="ow">in</span> <span class="n">csv</span> <span class="n">files</span> <span class="k">as</span> <span class="n">blank</span> <span class="n">data</span> <span class="n">values</span>
+<span class="n">numericlocale</span><span class="p">:</span> <span class="nb">format</span> <span class="n">to</span> <span class="n">use</span> <span class="k">for</span> <span class="n">reading</span> <span class="n">numbers</span>
+<span class="n">dateformat</span><span class="p">:</span> <span class="nb">format</span> <span class="k">for</span> <span class="n">interpreting</span> <span class="n">dates</span>
+<span class="n">headermode</span><span class="p">:</span> <span class="s1">&#39;multi&#39;</span><span class="p">:</span> <span class="n">multiple</span> <span class="n">headers</span> <span class="n">allowed</span> <span class="ow">in</span> <span class="n">file</span>
+            <span class="s1">&#39;1st&#39;</span><span class="p">:</span> <span class="n">first</span> <span class="n">text</span> <span class="n">found</span> <span class="n">are</span> <span class="n">headers</span>
+            <span class="s1">&#39;none&#39;</span><span class="p">:</span> <span class="n">no</span> <span class="n">headers</span><span class="p">,</span> <span class="n">guess</span> <span class="n">data</span> <span class="ow">and</span> <span class="n">use</span> <span class="n">default</span> <span class="n">names</span>
+
+<span class="n">Dataset</span> <span class="n">names</span> <span class="n">are</span> <span class="n">prepended</span> <span class="ow">and</span> <span class="n">appended</span><span class="p">,</span> <span class="n">by</span> <span class="n">dsprefix</span> <span class="ow">and</span> <span class="n">dssuffix</span><span class="p">,</span>
+<span class="n">respectively</span>
+ <span class="p">(</span><span class="n">prefix</span> <span class="ow">is</span> <span class="n">backware</span> <span class="n">compatibility</span> <span class="n">only</span><span class="p">,</span> <span class="n">it</span> <span class="n">adds</span> <span class="n">an</span> <span class="n">underscore</span>
+  <span class="n">relative</span> <span class="n">to</span> <span class="n">dsprefix</span><span class="p">)</span>
+
+<span class="n">renames</span> <span class="ow">is</span> <span class="n">a</span> <span class="nb">map</span> <span class="n">of</span> <span class="n">old</span> <span class="n">names</span> <span class="n">to</span> <span class="n">new</span> <span class="n">names</span> <span class="n">to</span> <span class="n">rename</span> <span class="n">on</span> <span class="kn">import</span>
+
+<span class="nn">If</span> <span class="n">linked</span> <span class="ow">is</span> <span class="kc">True</span> <span class="n">the</span> <span class="n">data</span> <span class="n">are</span> <span class="n">linked</span> <span class="k">with</span> <span class="n">the</span> <span class="n">file</span><span class="o">.</span>
+
+<span class="n">Returns</span><span class="p">:</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">imported</span> <span class="n">datasets</span>
+</pre></div>
 </div>
-<div class="section" id="importfilefits">
-<h3>ImportFileFITS<a class="headerlink" href="#importfilefits" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="importfilefits">
+<h3>ImportFileFITS<a class="headerlink" href="#importfilefits" title="Link to this heading">¶</a></h3>
 <p id="command-importfilefits"><strong class="command">ImportFileFits(filename, items, namemap={},
 slices={}, twodranges={}, twod_as_oned=set([]),
 wcsmodes={}, prefix='', suffix='', renames={},
@@ -363,7 +390,7 @@ linked=False)</strong></p>
 <p>Import data from a FITS file.</p>
 <p>items is a list of datasets to be imported.  items are formatted like
 the following:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s1">&#39;/&#39;</span><span class="p">:</span>               <span class="kn">import</span> <span class="nn">whole</span> <span class="n">file</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;/&#39;</span><span class="p">:</span>               <span class="kn">import</span> <span class="nn">whole</span> <span class="n">file</span>
 <span class="s1">&#39;/hduname&#39;</span><span class="p">:</span>        <span class="kn">import</span> <span class="nn">whole</span> <span class="n">HDU</span> <span class="p">(</span><span class="n">image</span> <span class="ow">or</span> <span class="n">table</span><span class="p">)</span>
 <span class="s1">&#39;/hduname/column&#39;</span><span class="p">:</span> <span class="kn">import</span> <span class="nn">column</span> <span class="kn">from</span> <span class="nn">table</span> <span class="n">HDU</span>
 </pre></div>
@@ -373,13 +400,13 @@ the following:</p>
 standard name (e.g. primary or events), then this is used.  If the
 HDU has a EXTVER keyword then this number is appended to this
 name.  An extra number is appended if this name is not unique.  If
-the HDU has no name, then the name used should be &#8216;hduX&#8217;, where X
+the HDU has no name, then the name used should be ‘hduX’, where X
 is the HDU number (0 is the primary HDU).</p>
 <p>namemap maps an input dataset (using the scheme above for items)
 to a Veusz dataset name. Special suffixes can be used on the Veusz
 dataset name to indicate that the dataset should be imported
 specially.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s1">&#39;foo (+)&#39;</span><span class="p">:</span>  <span class="kn">import</span> <span class="nn">as</span> <span class="o">+</span><span class="n">ve</span> <span class="n">error</span> <span class="k">for</span> <span class="n">dataset</span> <span class="n">foo</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;foo (+)&#39;</span><span class="p">:</span>  <span class="kn">import</span> <span class="nn">as</span> <span class="o">+</span><span class="n">ve</span> <span class="n">error</span> <span class="k">for</span> <span class="n">dataset</span> <span class="n">foo</span>
 <span class="s1">&#39;foo (-)&#39;</span><span class="p">:</span>  <span class="kn">import</span> <span class="nn">as</span> <span class="o">-</span><span class="n">ve</span> <span class="n">error</span> <span class="k">for</span> <span class="n">dataset</span> <span class="n">foo</span>
 <span class="s1">&#39;foo (+-)&#39;</span><span class="p">:</span> <span class="kn">import</span> <span class="nn">as</span> <span class="n">symmetric</span> <span class="n">error</span> <span class="k">for</span> <span class="n">dataset</span> <span class="n">foo</span>
 </pre></div>
@@ -394,16 +421,16 @@ datasets. It maps names to (minx, miny, maxx, maxy).</p>
 <p>twod_as_oned: optional set containing 2D datasets to attempt to
 read as 1D, treating extra columns as error bars</p>
 <p>wcsmodes is an optional dict specfying the WCS import mode for 2D
-datasets in HDUs. The keys are &#8216;/hduname&#8217; and the values can be
-&#8216;pixel&#8217;:      number pixel range from 0 to maximum (default)
-&#8216;pixel_wcs&#8217;:  pixel number relative to WCS reference pixel
-&#8216;linear_wcs&#8217;: linear coordinate system from the WCS keywords
-&#8216;fraction&#8217;:   fractional values from 0 to 1.</p>
+datasets in HDUs. The keys are ‘/hduname’ and the values can be
+‘pixel’:      number pixel range from 0 to maximum (default)
+‘pixel_wcs’:  pixel number relative to WCS reference pixel
+‘linear_wcs’: linear coordinate system from the WCS keywords
+‘fraction’:   fractional values from 0 to 1.</p>
 <p>renames is an optional dict mapping old to new dataset names, to
 be renamed after importing</p>
 <p>linked specifies that the dataset is linked to the file.</p>
 <p>Values under the VEUSZ header keyword can be used to override defaults:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="n">override</span> <span class="n">name</span> <span class="k">for</span> <span class="n">dataset</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="n">override</span> <span class="n">name</span> <span class="k">for</span> <span class="n">dataset</span>
 <span class="s1">&#39;slice&#39;</span><span class="p">:</span> <span class="nb">slice</span> <span class="n">on</span> <span class="n">importing</span> <span class="p">(</span><span class="n">use</span> <span class="nb">format</span> <span class="s2">&quot;start:stop:step,...&quot;</span><span class="p">)</span>
 <span class="s1">&#39;range&#39;</span><span class="p">:</span> <span class="n">should</span> <span class="n">be</span> <span class="mi">4</span> <span class="n">item</span> <span class="n">array</span> <span class="n">to</span> <span class="n">specify</span> <span class="n">x</span> <span class="ow">and</span> <span class="n">y</span> <span class="n">ranges</span><span class="p">:</span>
     <span class="p">[</span><span class="n">minx</span><span class="p">,</span> <span class="n">miny</span><span class="p">,</span> <span class="n">maxx</span><span class="p">,</span> <span class="n">maxy</span><span class="p">]</span>
@@ -419,9 +446,9 @@ be renamed after importing</p>
 </pre></div>
 </div>
 <p>Returns: list of imported datasets</p>
-</div>
-<div class="section" id="importfilehdf5">
-<h3>ImportFileHDF5<a class="headerlink" href="#importfilehdf5" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="importfilehdf5">
+<h3>ImportFileHDF5<a class="headerlink" href="#importfilehdf5" title="Link to this heading">¶</a></h3>
 <p id="command-importfilehdf5"><strong class="command">ImportFileHDF5(filename, items, namemap={},
 slices={}, twodranges={}, twod_as_oned=set([]),
 convert_datetime={}, prefix='', suffix='', renames={},
@@ -432,7 +459,7 @@ child datasets are imported.  namemap maps an input dataset
 to a veusz dataset name. Special suffixes can be used on the
 veusz dataset name to indicate that the dataset should be
 imported specially.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s1">&#39;foo (+)&#39;</span><span class="p">:</span> <span class="kn">import</span> <span class="nn">as</span> <span class="o">+</span><span class="n">ve</span> <span class="n">error</span> <span class="k">for</span> <span class="n">dataset</span> <span class="n">foo</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;foo (+)&#39;</span><span class="p">:</span> <span class="kn">import</span> <span class="nn">as</span> <span class="o">+</span><span class="n">ve</span> <span class="n">error</span> <span class="k">for</span> <span class="n">dataset</span> <span class="n">foo</span>
 <span class="s1">&#39;foo (-)&#39;</span><span class="p">:</span> <span class="kn">import</span> <span class="nn">as</span> <span class="o">-</span><span class="n">ve</span> <span class="n">error</span> <span class="k">for</span> <span class="n">dataset</span> <span class="n">foo</span>
 <span class="s1">&#39;foo (+-)&#39;</span><span class="p">:</span> <span class="kn">import</span> <span class="nn">as</span> <span class="n">symmetric</span> <span class="n">error</span> <span class="k">for</span> <span class="n">dataset</span> <span class="n">foo</span>
 </pre></div>
@@ -447,15 +474,15 @@ maps names to (minx, miny, maxx, maxy).  twod_as_oned: optional set
 containing 2d datasets to attempt to read as 1d</p>
 <p>convert_datetime should be a dict mapping hdf name to specify
 date/time importing.  For a 1d numeric dataset: if this is set to
-&#8216;veusz&#8217;, this is the number of seconds since 2009-01-01, if this is
-set to &#8216;unix&#8217;, this is the number of seconds since 1970-01-01.  For a
+‘veusz’, this is the number of seconds since 2009-01-01, if this is
+set to ‘unix’, this is the number of seconds since 1970-01-01.  For a
 text dataset, this should give the format of the date/time,
-e.g. &#8216;YYYY-MM-DD|T|hh:mm:ss&#8217; or &#8216;iso&#8217; for iso format.</p>
+e.g. ‘YYYY-MM-DD|T|hh:mm:ss’ or ‘iso’ for iso format.</p>
 <p>renames is a dict mapping old to new dataset names, to be renamed
 after importing.  linked specifies that the dataset is linked to the
 file.</p>
 <p>Attributes can be used in datasets to override defaults:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s1">&#39;vsz_name&#39;</span><span class="p">:</span> <span class="nb">set</span> <span class="n">to</span> <span class="n">override</span> <span class="n">name</span> <span class="k">for</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="n">veusz</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;vsz_name&#39;</span><span class="p">:</span> <span class="nb">set</span> <span class="n">to</span> <span class="n">override</span> <span class="n">name</span> <span class="k">for</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="n">veusz</span>
 <span class="s1">&#39;vsz_slice&#39;</span><span class="p">:</span> <span class="nb">slice</span> <span class="n">on</span> <span class="n">importing</span> <span class="p">(</span><span class="n">use</span> <span class="nb">format</span> <span class="s2">&quot;start:stop:step,...&quot;</span><span class="p">)</span>
 <span class="s1">&#39;vsz_range&#39;</span><span class="p">:</span> <span class="n">should</span> <span class="n">be</span> <span class="mi">4</span> <span class="n">item</span> <span class="n">array</span> <span class="n">to</span> <span class="n">specify</span> <span class="n">x</span> <span class="ow">and</span> <span class="n">y</span> <span class="n">ranges</span><span class="p">:</span>
     <span class="p">[</span><span class="n">minx</span><span class="p">,</span> <span class="n">miny</span><span class="p">,</span> <span class="n">maxx</span><span class="p">,</span> <span class="n">maxy</span><span class="p">]</span>
@@ -467,15 +494,15 @@ file.</p>
 <p>For compound datasets these attributes can be given on a per-column
 basis using attribute names vsz_attributename_columnname.</p>
 <p>Returns: list of imported datasets</p>
-</div>
-<div class="section" id="importfilend">
-<h3>ImportFileND<a class="headerlink" href="#importfilend" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="importfilend">
+<h3>ImportFileND<a class="headerlink" href="#importfilend" title="Link to this heading">¶</a></h3>
 <p id="command-importfilend"><strong class="command">def ImportFileND(comm, filename, dataset, shape=None,
 transpose=False, mode='text', csvdelimiter=',', csvtextdelimiter='&quot;',
 csvlocale='en_US', prefix=&quot;&quot;, suffix=&quot;&quot;, encoding='utf_8',
 linked=False)</strong></p>
 <p>Import an n-dimensional dataset from a file. The file should either be
-in CSV format (mode=&#8217;csv&#8217;) or whitespace-separated text (mode=&#8217;text&#8217;).
+in CSV format (mode=’csv’) or whitespace-separated text (mode=’text’).
 A one-dimensional dataset is given as a list of numbers on a single
 line/row.  A two-dimensional dataset is given by a set of rows.  A
 three-dimensional dataset is given by a set of two-dimensional
@@ -483,27 +510,27 @@ datasets, with blank lines between them. a four-dimensional dataset is
 given by a set of three-dimensional datasets with two blank lines
 between each. Each additional dataset increases the separating number
 of blank lines by one.  Alternatively, the numbers can be given in any
-form (number of numbers on each row) and &#8220;shape&#8221; is included to
+form (number of numbers on each row) and “shape” is included to
 reshape the data into the desired shape.</p>
-<p>In the file, or included as parameters above, the command &#8220;shape num1
-num2...&#8221; can be included to reshape the output dataset to the shape
-given by the numbers in the row after &#8220;shape&#8221; (these should be in
+<p>In the file, or included as parameters above, the command “shape num1
+num2…” can be included to reshape the output dataset to the shape
+given by the numbers in the row after “shape” (these should be in
 separate columns in CSV format). If one of these numbers is -1, then
 this dimension is inferred from the number of values and the other
-dimensions. Also supported is the &#8220;transpose&#8221; command or optional
+dimensions. Also supported is the “transpose” command or optional
 argument which reverses the order of the dimensions.</p>
-</div>
-<div class="section" id="importfileplugin">
-<h3>ImportFilePlugin<a class="headerlink" href="#importfileplugin" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="importfileplugin">
+<h3>ImportFilePlugin<a class="headerlink" href="#importfileplugin" title="Link to this heading">¶</a></h3>
 <p id="command-importfileplugin"><strong class="command">ImportFilePlugin('pluginname', 'filename', **pluginargs,
 linked=False, encoding='utf_8', prefix='', suffix='', renames={})</strong></p>
-<p>Import data from file using import plugin &#8216;pluginname&#8217;. The arguments
+<p>Import data from file using import plugin ‘pluginname’. The arguments
 to the plugin are given, plus optionally a text encoding, and prefix
 and suffix to prepend or append to dataset names.  renames, if set,
 provides new names for datasets after import.</p>
-</div>
-<div class="section" id="importfitsfile">
-<h3>ImportFITSFile<a class="headerlink" href="#importfitsfile" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="importfitsfile">
+<h3>ImportFITSFile<a class="headerlink" href="#importfitsfile" title="Link to this heading">¶</a></h3>
 <p id="command-importfitsfile"><strong class="command">ImportFITSFile(datasetname, filename, hdu, datacol='A',
 symerrcol='B', poserrcol='C', negerrcol='D', linked=True/False,
 renames={})</strong></p>
@@ -527,9 +554,9 @@ from the other specified columns.</p>
 document, but is reread from the data file each time the document is
 loaded.  renames, if set, provides new names for datasets after
 import.</p>
-</div>
-<div class="section" id="importstring">
-<h3>ImportString<a class="headerlink" href="#importstring" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="importstring">
+<h3>ImportString<a class="headerlink" href="#importstring" title="Link to this heading">¶</a></h3>
 <p id="command-importstring"><strong class="command">ImportString('descriptor',
 'data')</strong></p>
 <p>Like, <a class="reference internal" href="#command-importfile"><span class="std std-ref">ImportFile</span></a>, but loads the data from
@@ -540,16 +567,16 @@ Python string.</p>
 number of conversions which failed for a dataset.</p>
 <p>Changed in version 0.5: A tuple is returned rather than just the
 number of imported variables.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">ImportString</span><span class="p">(</span><span class="s1">&#39;x y&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;&#39;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ImportString</span><span class="p">(</span><span class="s1">&#39;x y&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;&#39;</span>
 <span class="s1">    1   2</span>
 <span class="s1">    2   5</span>
 <span class="s1">    3   10</span>
 <span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="importstring2d">
-<h3>ImportString2D<a class="headerlink" href="#importstring2d" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="importstring2d">
+<h3>ImportString2D<a class="headerlink" href="#importstring2d" title="Link to this heading">¶</a></h3>
 <p id="command-importstring2d"><strong class="command">ImportString2D(datasets, string, xrange=None, yrange=None,
 invertrows=None, invertcols=None, transpose=None)</strong></p>
 <p>Imports a two-dimensional dataset from the string given. This is
@@ -558,106 +585,111 @@ with the same dataset format within the string. The optional values
 are also listed there. The various controlling parameters can be set
 within the string. See the <a class="reference internal" href="#command-importfile2d"><span class="std std-ref">ImportFile2D</span></a>
 section for details.</p>
-</div>
-<div class="section" id="importstringnd">
-<h3>ImportStringND<a class="headerlink" href="#importstringnd" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="importstringnd">
+<h3>ImportStringND<a class="headerlink" href="#importstringnd" title="Link to this heading">¶</a></h3>
 <p id="command-importstringnd"><strong class="command">ImportStringND(dataset, string, shape=None,
 transpose=False)</strong></p>
 <p>Imports a n-dimensional dataset from the string given. This is similar
 to the <a class="reference internal" href="#command-importfilend"><span class="std std-ref">ImportFileND</span></a> command. Please look
 there for more detail and the description of the optional parameters
 and in-stream allowed parameters.</p>
-</div>
-<div class="section" id="isclosed">
-<h3>IsClosed<a class="headerlink" href="#isclosed" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="isclosed">
+<h3>IsClosed<a class="headerlink" href="#isclosed" title="Link to this heading">¶</a></h3>
 <p id="command-isclosed"><strong class="command">IsClosed()</strong></p>
 <p>Returns a boolean value telling the caller whether the plotting window
 has been closed.</p>
 <p>Note: this command is only supported in the embedding interface.</p>
-</div>
-<div class="section" id="list">
-<h3>List<a class="headerlink" href="#list" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="list">
+<h3>List<a class="headerlink" href="#list" title="Link to this heading">¶</a></h3>
 <p id="command-list"><strong class="command">List(where='.')</strong></p>
 <p>List the widgets which are contained within the widget with the path
 given, the type of widgets, and a brief description.</p>
-</div>
-<div class="section" id="load">
-<h3>Load<a class="headerlink" href="#load" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="load">
+<h3>Load<a class="headerlink" href="#load" title="Link to this heading">¶</a></h3>
 <p id="command-load"><strong class="command">Load('filename.vsz')</strong></p>
 <p>Loads the veusz script file given. The script file can be any Python
 code. The code is executed using the Veusz interpreter.</p>
 <p>Note: this command is only supported at the command line and not in a
 script. Scripts may use the python <strong class="command">execfile</strong> function
 instead.</p>
-</div>
-<div class="section" id="movetopage">
-<h3>MoveToPage<a class="headerlink" href="#movetopage" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="movetopage">
+<h3>MoveToPage<a class="headerlink" href="#movetopage" title="Link to this heading">¶</a></h3>
 <p id="command-movetopage"><strong class="command">MoveToPage(pagenum)</strong></p>
 <p>Updates window to show the page number given of the document.</p>
 <p>Note: this command is only supported in the embedding interface or
-<cite>veusz &#8211;listen</cite>.</p>
-</div>
-<div class="section" id="reloaddata">
-<h3>ReloadData<a class="headerlink" href="#reloaddata" title="Permalink to this headline">¶</a></h3>
+<cite>veusz –listen</cite>.</p>
+</section>
+<section id="reloaddata">
+<h3>ReloadData<a class="headerlink" href="#reloaddata" title="Link to this heading">¶</a></h3>
 <p id="command-reloaddata"><strong class="command">ReloadData()</strong></p>
 <p>Reload any datasets which have been linked to files.</p>
 <p>Returns: A tuple containing a list of the imported datasets and the
 number of conversions which failed for a dataset.</p>
-</div>
-<div class="section" id="rename">
-<h3>Rename<a class="headerlink" href="#rename" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="rename">
+<h3>Rename<a class="headerlink" href="#rename" title="Link to this heading">¶</a></h3>
 <p id="command-rename"><strong class="command">Remove('widgetpath', 'newname')</strong></p>
 <p>Rename the widget at the path given to a new name. This command does
 not move widgets.  See <a class="reference internal" href="#command-to"><span class="std std-ref">To</span></a> for a description of the
-path syntax. &#8216;.&#8217; can be used to select the current widget.</p>
-</div>
-<div class="section" id="remove">
-<h3>Remove<a class="headerlink" href="#remove" title="Permalink to this headline">¶</a></h3>
+path syntax. ‘.’ can be used to select the current widget.</p>
+</section>
+<section id="remove">
+<h3>Remove<a class="headerlink" href="#remove" title="Link to this heading">¶</a></h3>
 <p id="command-remove"><strong class="command">Remove('widgetpath')</strong></p>
 <p>Remove the widget selected using the path. See <a class="reference internal" href="#command-to"><span class="std std-ref">To</span></a>
 for a description of the path syntax.</p>
-</div>
-<div class="section" id="resizewindow">
-<h3>ResizeWindow<a class="headerlink" href="#resizewindow" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="resizewindow">
+<h3>ResizeWindow<a class="headerlink" href="#resizewindow" title="Link to this heading">¶</a></h3>
 <p id="command-resizewindow"><strong class="command">ResizeWindow(width, height)</strong></p>
 <p>Resizes window to be width by height pixels.</p>
 <p>Note: this command is only supported in the embedding interface or
-<cite>veusz &#8211;listen</cite>.</p>
-</div>
-<div class="section" id="save">
-<h3>Save<a class="headerlink" href="#save" title="Permalink to this headline">¶</a></h3>
+<cite>veusz –listen</cite>.</p>
+</section>
+<section id="save">
+<h3>Save<a class="headerlink" href="#save" title="Link to this heading">¶</a></h3>
 <p id="command-save"><strong class="command">Save('filename.vsz')</strong></p>
 <p>Save the current document under the filename
 given.</p>
-</div>
-<div class="section" id="set">
-<h3>Set<a class="headerlink" href="#set" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="set">
+<h3>Set<a class="headerlink" href="#set" title="Link to this heading">¶</a></h3>
 <p id="command-set"><strong class="command">Set('settingpath', val)</strong></p>
 <p>Set the setting given by the path to the value given. If the type of
 <strong class="command">val</strong> is incorrect, an <strong class="command">InvalidType</strong> exception is
 thrown. The path to the setting is the optional path to the widget the
 setting is contained within, an optional subsetting specifier, and the
 setting itself.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">Set</span><span class="p">(</span><span class="s1">&#39;page1/graph1/x/min&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mf">10.</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Set</span><span class="p">(</span><span class="s1">&#39;page1/graph1/x/min&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mf">10.</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="setantialiasing">
-<h3>SetAntiAliasing<a class="headerlink" href="#setantialiasing" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="setantialiasing">
+<h3>SetAntiAliasing<a class="headerlink" href="#setantialiasing" title="Link to this heading">¶</a></h3>
 <p id="command-setantialiasing"><strong class="command">SetAntiAliasing(on)</strong></p>
 <p>Enable or disable anti aliasing in the plot window, replotting the
 image.</p>
-</div>
-<div class="section" id="setdata">
-<h3>SetData<a class="headerlink" href="#setdata" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="setcompatlevel">
+<h3>SetCompatLevel<a class="headerlink" href="#setcompatlevel" title="Link to this heading">¶</a></h3>
+<p id="command-setcompatlevel"><strong class="command">SetCompatLevel(level)</strong></p>
+<p>Set the document compatibility level. If <cite>level&lt;0</cite>, then choose the latest version. As a side effect, this wipes any widgets in the document and resets all settings.</p>
+</section>
+<section id="setdata">
+<h3>SetData<a class="headerlink" href="#setdata" title="Link to this heading">¶</a></h3>
 <p id="command-setdata"><strong class="command">SetData(name, val, symerr=None, negerr=None, poserr=None)</strong></p>
 <p>Set the dataset name with the values given. If None is given for an
 item, it will be left blank. val is the actual data, symerr are the
 symmetric errors, negerr and poserr and the getative and positive
 asymmetric errors. The data can be given as lists or numpys.</p>
-</div>
-<div class="section" id="setdataexpression">
-<h3>SetDataExpression<a class="headerlink" href="#setdataexpression" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="setdataexpression">
+<h3>SetDataExpression<a class="headerlink" href="#setdataexpression" title="Link to this heading">¶</a></h3>
 <p id="command-setdataexpression"><strong class="command">SetDataExpression(name, val, symerr=None, negerr=None,
 poserr=None, linked=False, parametric=None)</strong></p>
 <p>Create a new dataset based on the expressions given. The expressions
@@ -667,15 +699,15 @@ expressions change.</p>
 <p>Parametric can be set to a tuple of (minval, maxval,
 numitems). <strong class="command">t</strong> in the expression will iterate from minval to
 maxval in numitems values.</p>
-</div>
-<div class="section" id="setdatand">
-<h3>SetDataND<a class="headerlink" href="#setdatand" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="setdatand">
+<h3>SetDataND<a class="headerlink" href="#setdatand" title="Link to this heading">¶</a></h3>
 <p id="command-setdatand"><strong class="command">SetDataRange(name, val)</strong></p>
 <p>Set a n-dimensional dataset to be the values given by val. val should
 be an n-dimensional numpy array of values, or a list of lists.</p>
-</div>
-<div class="section" id="setdatarange">
-<h3>SetDataRange<a class="headerlink" href="#setdatarange" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="setdatarange">
+<h3>SetDataRange<a class="headerlink" href="#setdatarange" title="Link to this heading">¶</a></h3>
 <p id="command-setdatarange"><strong class="command">SetDataRange(name, numsteps, val, symerr=None, negerr=None,
 poserr=None, linked=False)</strong></p>
 <p>Set dataset to be a range of values with numsteps steps. val is tuple
@@ -684,9 +716,9 @@ are optional tuples for the error bars.</p>
 <p>If linked is True, the dataset can be saved in a document as a
 SetDataRange, otherwise it is expanded to the values which would make
 it up.</p>
-</div>
-<div class="section" id="setdata2d">
-<h3>SetData2D<a class="headerlink" href="#setdata2d" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="setdata2d">
+<h3>SetData2D<a class="headerlink" href="#setdata2d" title="Link to this heading">¶</a></h3>
 <p id="command-setdata2d"><strong class="command">SetData2D('name', val, xrange=(A,B), yrange=(C,D),
 xgrid=[1,2,3...], ygrid=[4,5,6...])</strong></p>
 <p>Creates a two-dimensional dataset with the name given. val is either a
@@ -697,16 +729,16 @@ not give yrange if ygrid is set, and vice versa.</p>
 the X and Y coordinates of the data. xgrid and ygrid are optional
 lists, tuples or arrays which give the coordinates of the edges of the
 pixels. There should be one more item in each array than pixels.</p>
-</div>
-<div class="section" id="setdata2dexpression">
-<h3>SetData2DExpression<a class="headerlink" href="#setdata2dexpression" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="setdata2dexpression">
+<h3>SetData2DExpression<a class="headerlink" href="#setdata2dexpression" title="Link to this heading">¶</a></h3>
 <p id="command-setdata2dexpression"><strong class="command">SetData2DExpression('name', expr, linked=False)</strong></p>
 <p>Create a 2D dataset based on expressions.  name is the new dataset
 name expr is an expression which should return a 2D array linked
 specifies whether to permanently link the dataset to the expressions.</p>
-</div>
-<div class="section" id="setdata2dexpressionxyz">
-<h3>SetData2DExpressionXYZ<a class="headerlink" href="#setdata2dexpressionxyz" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="setdata2dexpressionxyz">
+<h3>SetData2DExpressionXYZ<a class="headerlink" href="#setdata2dexpressionxyz" title="Link to this heading">¶</a></h3>
 <p id="command-setdata2dexpressionxyz"><strong class="command">SetData2DExpressionXYZ('name', 'xexpr', 'yexpr', 'zexpr',
 linked=False)</strong></p>
 <p>Create a 2D dataset based on three 1D expressions. The x, y
@@ -715,38 +747,38 @@ expression as the 2D value at that point. Currently only linear fixed
 grids are supported. This function is intended to convert calculations
 or measurements at fixed points into a 2D dataset easily. Missing
 values are filled with NaN.</p>
-</div>
-<div class="section" id="setdata2dxyfunc">
-<h3>SetData2DXYFunc<a class="headerlink" href="#setdata2dxyfunc" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="setdata2dxyfunc">
+<h3>SetData2DXYFunc<a class="headerlink" href="#setdata2dxyfunc" title="Link to this heading">¶</a></h3>
 <p id="command-setdata2dxyfunc"><strong class="command">SetData2DXYFunc('name', xstep, ystep, 'expr', linked=False)</strong></p>
-<p>Construct a 2D dataset using a mathematical expression of &#8220;x&#8221; and
-&#8220;y&#8221;. The x values are specified as (min, max, step) in xstep as a
+<p>Construct a 2D dataset using a mathematical expression of “x” and
+“y”. The x values are specified as (min, max, step) in xstep as a
 tuple, the y values similarly. If linked remains as False, then a real
 2D dataset is created, where values can be modified and the data are
 stored in the saved file.</p>
-</div>
-<div class="section" id="setdatadatetime">
-<h3>SetDataDateTime<a class="headerlink" href="#setdatadatetime" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="setdatadatetime">
+<h3>SetDataDateTime<a class="headerlink" href="#setdatadatetime" title="Link to this heading">¶</a></h3>
 <p id="command-setdatadatetime"><strong class="command">SetDataDateTime('name', vals)</strong></p>
 <p>Creates a datetime dataset of name given. vals is a list of Python
 datetime objects.</p>
-</div>
-<div class="section" id="setdatatext">
-<h3>SetDataText<a class="headerlink" href="#setdatatext" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="setdatatext">
+<h3>SetDataText<a class="headerlink" href="#setdatatext" title="Link to this heading">¶</a></h3>
 <p id="command-setdatatext"><strong class="command">SetDataText(name, val)</strong></p>
 <p>Set the text dataset name with the values given.  <strong class="command">val</strong> must
 be a type that can be converted into a Python list.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">SetDataText</span><span class="p">(</span><span class="s1">&#39;mylabel&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;oranges&#39;</span><span class="p">,</span> <span class="s1">&#39;apples&#39;</span><span class="p">,</span> <span class="s1">&#39;pears&#39;</span><span class="p">,</span> <span class="s1">&#39;spam&#39;</span><span class="p">])</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">SetDataText</span><span class="p">(</span><span class="s1">&#39;mylabel&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;oranges&#39;</span><span class="p">,</span> <span class="s1">&#39;apples&#39;</span><span class="p">,</span> <span class="s1">&#39;pears&#39;</span><span class="p">,</span> <span class="s1">&#39;spam&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="settoreference">
-<h3>SetToReference<a class="headerlink" href="#settoreference" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="settoreference">
+<h3>SetToReference<a class="headerlink" href="#settoreference" title="Link to this heading">¶</a></h3>
 <p id="command-settoreference"><strong class="command">SetToReference(setting, refval)</strong></p>
 <p>Link setting given to other setting refval.</p>
-</div>
-<div class="section" id="setupdateinterval">
-<h3>SetUpdateInterval<a class="headerlink" href="#setupdateinterval" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="setupdateinterval">
+<h3>SetUpdateInterval<a class="headerlink" href="#setupdateinterval" title="Link to this heading">¶</a></h3>
 <p id="command-setupdateinterval"><strong class="command">SetUpdateInterval(interval)</strong></p>
 <p>Tells window to update every interval milliseconds at most. The value
 0 disables updates until this function is called with a non-zero. The
@@ -755,16 +787,16 @@ changed. This will make things slow if repeated changes are made to
 the document. Disabling updates and using the ForceUpdate command will
 allow the user to control updates directly.</p>
 <p>Note: this command is only supported in the embedding interface or
-<cite>veusz &#8211;listen</cite>.</p>
-</div>
-<div class="section" id="setverbose">
-<h3>SetVerbose<a class="headerlink" href="#setverbose" title="Permalink to this headline">¶</a></h3>
+<cite>veusz –listen</cite>.</p>
+</section>
+<section id="setverbose">
+<h3>SetVerbose<a class="headerlink" href="#setverbose" title="Link to this heading">¶</a></h3>
 <p id="command-setverbose"><strong class="command">SetVerbose(v=True)</strong></p>
 <p>If <strong class="command">v</strong> is <strong class="command">True</strong>, then extra information is printed
 out by commands.</p>
-</div>
-<div class="section" id="startsecondview">
-<h3>StartSecondView<a class="headerlink" href="#startsecondview" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="startsecondview">
+<h3>StartSecondView<a class="headerlink" href="#startsecondview" title="Link to this heading">¶</a></h3>
 <p id="command-startsecondview"><strong class="command">StartSecondView(name = 'window title')</strong></p>
 <p>In the embedding interface, this method will open a new Embedding
 interface onto the same document, returning the object. This new
@@ -772,43 +804,43 @@ window provides a second view onto the document. It can, for instance,
 show a different page to the primary view. name is a window title for
 the new window.</p>
 <p>Note: this command is only supported in the embedding interface.</p>
-</div>
-<div class="section" id="tagdatasets">
-<h3>TagDatasets<a class="headerlink" href="#tagdatasets" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="tagdatasets">
+<h3>TagDatasets<a class="headerlink" href="#tagdatasets" title="Link to this heading">¶</a></h3>
 <p id="command-tagdatasets"><strong class="command">TagDatasets('tag', ['ds1', 'ds2'...])</strong></p>
 <p>Adds the tag to the list of datasets given..</p>
-</div>
-<div class="section" id="to">
-<h3>To<a class="headerlink" href="#to" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="to">
+<h3>To<a class="headerlink" href="#to" title="Link to this heading">¶</a></h3>
 <p id="command-to"><strong class="command">To('widgetpath')</strong></p>
 <p>The To command takes a path to a widget and moves to that widget. For
-example, this may be &#8220;/&#8221;, the root widget, &#8220;graph1&#8221;,
-&#8220;/page1/graph1/x&#8221;, &#8221;../x&#8221;. The syntax is designed to mimic Unix paths
-for files. &#8220;/&#8221; represents the base widget (where the pages reside),
-and &#8221;..&#8221; represents the widget next up the tree.</p>
-</div>
-<div class="section" id="quit">
-<h3>Quit<a class="headerlink" href="#quit" title="Permalink to this headline">¶</a></h3>
+example, this may be “/”, the root widget, “graph1”,
+“/page1/graph1/x”, “../x”. The syntax is designed to mimic Unix paths
+for files. “/” represents the base widget (where the pages reside),
+and “..” represents the widget next up the tree.</p>
+</section>
+<section id="quit">
+<h3>Quit<a class="headerlink" href="#quit" title="Link to this heading">¶</a></h3>
 <p id="command-quit"><strong class="command">Quit()</strong></p>
-<p>Quits Veusz. This is only supported in <cite>veusz &#8211;listen</cite>.</p>
-</div>
-<div class="section" id="waitforclose">
-<h3>WaitForClose<a class="headerlink" href="#waitforclose" title="Permalink to this headline">¶</a></h3>
+<p>Quits Veusz. This is only supported in <cite>veusz –listen</cite>.</p>
+</section>
+<section id="waitforclose">
+<h3>WaitForClose<a class="headerlink" href="#waitforclose" title="Link to this heading">¶</a></h3>
 <p id="command-waitforclose"><strong class="command">WaitForClose()</strong></p>
 <p>Wait until the plotting window has been closed.</p>
 <p>Note: this command is only supported in the embedding interface.</p>
-</div>
-<div class="section" id="zoom">
-<h3>Zoom<a class="headerlink" href="#zoom" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="zoom">
+<h3>Zoom<a class="headerlink" href="#zoom" title="Link to this heading">¶</a></h3>
 <p id="command-zoom"><strong class="command">Zoom(factor)</strong></p>
 <p>Sets the plot zoom factor, relative to a 1:1 scaling. factor can also
-be &#8220;width&#8221;, &#8220;height&#8221; or &#8220;page&#8221;, to zoom to the page width, height or
+be “width”, “height” or “page”, to zoom to the page width, height or
 page, respectively.</p>
-<p>This is only supported in embedded mode or <cite>veusz &#8211;listen</cite>.</p>
-</div>
-</div>
-<div class="section" id="security">
-<h2>Security<a class="headerlink" href="#security" title="Permalink to this headline">¶</a></h2>
+<p>This is only supported in embedded mode or <cite>veusz –listen</cite>.</p>
+</section>
+</section>
+<section id="security">
+<h2>Security<a class="headerlink" href="#security" title="Link to this heading">¶</a></h2>
 <p>With the 1.0 release of Veusz, input scripts and expressions are
 checked for possible security risks. Only a limited subset of Python
 functionality is allowed, or a dialog box is opened allowing the user
@@ -821,24 +853,24 @@ against, specifically Print(), Save() and Export().</p>
 <p>If you are running your own scripts and do not want to be bothered by
 these dialogs, you can run veusz with the <strong class="command">--unsafe-mode</strong>
 option.</p>
-</div>
-<div class="section" id="using-veusz-from-other-programs">
-<h2>Using Veusz from other programs<a class="headerlink" href="#using-veusz-from-other-programs" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="non-qt-python-programs">
-<h3>Non-Qt Python programs<a class="headerlink" href="#non-qt-python-programs" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="using-veusz-from-other-programs">
+<h2>Using Veusz from other programs<a class="headerlink" href="#using-veusz-from-other-programs" title="Link to this heading">¶</a></h2>
+<section id="non-qt-python-programs">
+<h3>Non-Qt Python programs<a class="headerlink" href="#non-qt-python-programs" title="Link to this heading">¶</a></h3>
 <p>Veusz can be used as a Python module for plotting data. There are two
 ways to use the module: (1) with an older path-based Veusz commands,
 used in Veusz saved document files or (2) using an object-oriented
 interface. With the old style method the user uses a unix-path
 inspired API to navigate the widget tree and add or manipulate
 widgets. With the new style interface, the user navigates the tree
-with attributes of the <code class="docutils literal"><span class="pre">Root</span></code> object to access Nodes. The new
+with attributes of the <code class="docutils literal notranslate"><span class="pre">Root</span></code> object to access Nodes. The new
 interface is likely to be easier to use unless you are directly
 translating saved files.</p>
-</div>
-<div class="section" id="older-path-based-interface">
-<h3>Older path-based interface<a class="headerlink" href="#older-path-based-interface" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;An example embedding program. Veusz needs to be installed into</span>
+</section>
+<section id="older-path-based-interface">
+<h3>Older path-based interface<a class="headerlink" href="#older-path-based-interface" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;An example embedding program. Veusz needs to be installed into</span>
 <span class="sd">the Python path for this to work (use setup.py)</span>
 
 <span class="sd">This animates a sin plot, then finishes</span>
@@ -846,7 +878,7 @@ translating saved files.</p>
 
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">numpy</span>
-<span class="kn">import</span> <span class="nn">veusz.embed</span> <span class="kn">as</span> <span class="nn">veusz</span>
+<span class="kn">import</span> <span class="nn">veusz.embed</span> <span class="k">as</span> <span class="nn">veusz</span>
 
 <span class="c1"># construct a Veusz embedded window</span>
 <span class="c1"># many of these can be opened at any time</span>
@@ -859,8 +891,8 @@ translating saved files.</p>
 <span class="n">g</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="s1">&#39;xy&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;tiehorz&#39;</span><span class="p">,</span> <span class="n">MarkerFill__color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
 
 <span class="c1"># this stops intelligent axis extending</span>
-<span class="n">g</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="s1">&#39;x/autoExtend&#39;</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
-<span class="n">g</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="s1">&#39;x/autoExtendZero&#39;</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="s1">&#39;x/autoExtend&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="s1">&#39;x/autoExtendZero&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
 
 <span class="c1"># zoom out</span>
 <span class="n">g</span><span class="o">.</span><span class="n">Zoom</span><span class="p">(</span><span class="mf">0.8</span><span class="p">)</span>
@@ -876,9 +908,9 @@ translating saved files.</p>
     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 
 <span class="c1"># let the user see the final result</span>
-<span class="k">print</span> <span class="s2">&quot;Waiting for 10 seconds&quot;</span>
+<span class="nb">print</span> <span class="s2">&quot;Waiting for 10 seconds&quot;</span>
 <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="k">print</span> <span class="s2">&quot;Done!&quot;</span>
+<span class="nb">print</span> <span class="s2">&quot;Done!&quot;</span>
 
 <span class="c1"># close the window (this is not strictly necessary)</span>
 <span class="n">g</span><span class="o">.</span><span class="n">Close</span><span class="p">()</span>
@@ -887,41 +919,41 @@ translating saved files.</p>
 <p>The embed interface has the methods listed in the command line
 interface listed in the Veusz manual
 <a class="reference external" href="https://veusz.github.io/docs/manual.html">https://veusz.github.io/docs/manual.html</a></p>
-<p>Multiple Windows are supported by creating more than one <code class="docutils literal"><span class="pre">Embedded</span></code>
+<p>Multiple Windows are supported by creating more than one <code class="docutils literal notranslate"><span class="pre">Embedded</span></code>
 object. Other useful methods include:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">WaitForClose()</span></code> - wait until window has closed</li>
-<li><code class="docutils literal"><span class="pre">GetClick()</span></code> - return a list of <code class="docutils literal"><span class="pre">(axis,</span> <span class="pre">value)</span></code> tuples where the
-user clicks on a graph</li>
-<li><code class="docutils literal"><span class="pre">ResizeWndow(width,</span> <span class="pre">height)</span></code> - resize window to be <code class="docutils literal"><span class="pre">width</span></code> x
-<code class="docutils literal"><span class="pre">height</span></code> pixels</li>
-<li><code class="docutils literal"><span class="pre">SetUpdateInterval(interval)</span></code> - set update interval in ms or 0 to
-disable</li>
-<li><code class="docutils literal"><span class="pre">MoveToPage(page)</span></code> - display page given (starting from 1)</li>
-<li><code class="docutils literal"><span class="pre">IsClosed()</span></code> - has the page been closed</li>
-<li><code class="docutils literal"><span class="pre">Zoom(factor)</span></code> - set zoom level (float) or &#8216;page&#8217;, &#8216;width&#8217;,
-&#8216;height&#8217;</li>
-<li><code class="docutils literal"><span class="pre">Close()</span></code> - close window</li>
-<li><code class="docutils literal"><span class="pre">SetAntiAliasing(enable)</span></code> - enable or disable antialiasing</li>
-<li><code class="docutils literal"><span class="pre">EnableToolbar(enable=True)</span></code> - enable plot toolbar</li>
-<li><code class="docutils literal"><span class="pre">StartSecondView(name='Veusz')</span></code> - start a second view onto the
-document of the current <code class="docutils literal"><span class="pre">Embedded</span></code> object. Returns a new
-<code class="docutils literal"><span class="pre">Embedded</span></code> object.</li>
-<li><code class="docutils literal"><span class="pre">Wipe()</span></code> - wipe the document of all widgets and datasets.</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">WaitForClose()</span></code> - wait until window has closed</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">GetClick()</span></code> - return a list of <code class="docutils literal notranslate"><span class="pre">(axis,</span> <span class="pre">value)</span></code> tuples where the
+user clicks on a graph</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ResizeWndow(width,</span> <span class="pre">height)</span></code> - resize window to be <code class="docutils literal notranslate"><span class="pre">width</span></code> x
+<code class="docutils literal notranslate"><span class="pre">height</span></code> pixels</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SetUpdateInterval(interval)</span></code> - set update interval in ms or 0 to
+disable</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">MoveToPage(page)</span></code> - display page given (starting from 1)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IsClosed()</span></code> - has the page been closed</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Zoom(factor)</span></code> - set zoom level (float) or ‘page’, ‘width’,
+‘height’</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Close()</span></code> - close window</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SetAntiAliasing(enable)</span></code> - enable or disable antialiasing</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">EnableToolbar(enable=True)</span></code> - enable plot toolbar</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">StartSecondView(name='Veusz')</span></code> - start a second view onto the
+document of the current <code class="docutils literal notranslate"><span class="pre">Embedded</span></code> object. Returns a new
+<code class="docutils literal notranslate"><span class="pre">Embedded</span></code> object.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Wipe()</span></code> - wipe the document of all widgets and datasets.</p></li>
 </ul>
-</div>
-<div class="section" id="new-style-object-interface">
-<span id="new-api"></span><h3>New-style object interface<a class="headerlink" href="#new-style-object-interface" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="new-style-object-interface">
+<span id="new-api"></span><h3>New-style object interface<a class="headerlink" href="#new-style-object-interface" title="Link to this heading">¶</a></h3>
 <p>In Veusz 1.9 or late a new style of object interface is present, which
 makes it easier to construct the widget tree. Each widget, group of
 settings or setting is stored as a Node object, or its subclass, in a
-tree. The root document widget can be accessed with the <code class="docutils literal"><span class="pre">Root</span></code>
-object. The dot operator &#8221;.&#8221; finds children inside other nodes. In
+tree. The root document widget can be accessed with the <code class="docutils literal notranslate"><span class="pre">Root</span></code>
+object. The dot operator “.” finds children inside other nodes. In
 Veusz some widgets can contain other widgets (Root, pages, graphs,
 grids). Widgets contain setting nodes, accessed as attributes. Widgets
 can also contain groups of settings, again accessed as attributes.</p>
 <p>An example tree for a document (not complete) might look like this</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Root</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Root</span>
 \<span class="o">--</span> <span class="n">page1</span>                     <span class="p">(</span><span class="n">page</span> <span class="n">widget</span><span class="p">)</span>
     \<span class="o">--</span> <span class="n">graph1</span>                <span class="p">(</span><span class="n">graph</span> <span class="n">widget</span><span class="p">)</span>
         \<span class="o">--</span>  <span class="n">x</span>                <span class="p">(</span><span class="n">axis</span> <span class="n">widget</span><span class="p">)</span>
@@ -945,17 +977,17 @@ can also contain groups of settings, again accessed as attributes.</p>
 </pre></div>
 </div>
 <p>Here the user could access the xData setting node of the
-xy1 widget using <code class="docutils literal"><span class="pre">Root.page1.graph2.xy1.xData</span></code>. To
+xy1 widget using <code class="docutils literal notranslate"><span class="pre">Root.page1.graph2.xy1.xData</span></code>. To
 actually read or modify the value of a setting, you should get
-or set the <code class="docutils literal"><span class="pre">val</span></code> property of the setting node. The line
+or set the <code class="docutils literal notranslate"><span class="pre">val</span></code> property of the setting node. The line
 width could be changed like this</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">graph</span> <span class="o">=</span> <span class="n">embed</span><span class="o">.</span><span class="n">Root</span><span class="o">.</span><span class="n">page1</span><span class="o">.</span><span class="n">graph2</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">graph</span> <span class="o">=</span> <span class="n">embed</span><span class="o">.</span><span class="n">Root</span><span class="o">.</span><span class="n">page1</span><span class="o">.</span><span class="n">graph2</span>
 <span class="n">graph</span><span class="o">.</span><span class="n">xy1</span><span class="o">.</span><span class="n">PlotLine</span><span class="o">.</span><span class="n">width</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="s1">&#39;2pt&#39;</span>
 </pre></div>
 </div>
 <p>For instance, this constructs a simple x-squared plot which
 changes to x-cubed:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">veusz.embed</span> <span class="kn">as</span> <span class="nn">veusz</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">veusz.embed</span> <span class="k">as</span> <span class="nn">veusz</span>
 <span class="kn">import</span> <span class="nn">time</span>
 
 <span class="c1">#  open a new window and return a new Embedded object</span>
@@ -975,11 +1007,11 @@ changes to x-cubed:</p>
 <span class="n">Root</span><span class="o">.</span><span class="n">page1</span><span class="o">.</span><span class="n">graph1</span><span class="o">.</span><span class="n">function1</span><span class="o">.</span><span class="n">function</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="s1">&#39;x**3&#39;</span>
 </pre></div>
 </div>
-<p>If the document contains a page called &#8220;page1&#8221; then <code class="docutils literal"><span class="pre">Root.page1</span></code> is
-the object representing the page. Similarly, <code class="docutils literal"><span class="pre">Root.page1.graph1</span></code> is
-a graph called <code class="docutils literal"><span class="pre">graph1</span></code> in the page. You can also use
+<p>If the document contains a page called “page1” then <code class="docutils literal notranslate"><span class="pre">Root.page1</span></code> is
+the object representing the page. Similarly, <code class="docutils literal notranslate"><span class="pre">Root.page1.graph1</span></code> is
+a graph called <code class="docutils literal notranslate"><span class="pre">graph1</span></code> in the page. You can also use
 dictionary-style indexing to get child widgets,
-e.g. Root[&#8216;page1&#8217;][&#8216;graph1&#8217;]. This style is easier to use if the names
+e.g. Root[‘page1’][‘graph1’]. This style is easier to use if the names
 of widgets contain spaces or if widget names shadow methods or
 properties of the Node object, i.e. if you do not control the widget
 names.</p>
@@ -987,8 +1019,8 @@ names.</p>
 settings, or settings. Groups of settings can contain child
 settings. Settings cannot contain other nodes. Here are the useful
 operations of Nodes:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Node</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-  <span class="sd">&quot;&quot;&quot;properties:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Node</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<span class="w">  </span><span class="sd">&quot;&quot;&quot;properties:</span>
 <span class="sd">    path - return path to object in document, e.g. /page1/graph1/function1</span>
 <span class="sd">    type - type of node: &quot;widget&quot;, &quot;settinggroup&quot; or &quot;setting&quot;</span>
 <span class="sd">    name - name of this node, e.g. &quot;graph1&quot;</span>
@@ -1009,45 +1041,45 @@ operations of Nodes:</p>
 <span class="sd">  &quot;&quot;&quot;</span>
 
   <span class="k">def</span> <span class="nf">fromPath</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
-     <span class="sd">&quot;&quot;&quot;Returns a new Node corresponding to the path given, e.g. &#39;/page1/graph1&#39;&quot;&quot;&quot;</span>
+<span class="w">     </span><span class="sd">&quot;&quot;&quot;Returns a new Node corresponding to the path given, e.g. &#39;/page1/graph1&#39;&quot;&quot;&quot;</span>
 
 <span class="k">class</span> <span class="nc">SettingNode</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;A node which corresponds to a setting. Extra properties:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;A node which corresponds to a setting. Extra properties:</span>
 <span class="sd">    val - get or set the setting value corresponding to this value, e.g.</span>
 <span class="sd">     Root.page1.graph1.leftMargin.val = &#39;2cm&#39;</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <span class="k">class</span> <span class="nc">SettingGroupNode</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;A node corresponding to a setting group. No extra properties.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;A node corresponding to a setting group. No extra properties.&quot;&quot;&quot;</span>
 
 <span class="k">class</span> <span class="nc">WidgetNode</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;A node corresponding to a widget.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;A node corresponding to a widget.</span>
 
 <span class="sd">       property:</span>
 <span class="sd">         widgettype - get Veusz type of widget</span>
 
 <span class="sd">       Methods are below.&quot;&quot;&quot;</span>
 
-    <span class="k">def</span> <span class="nf">WalkWidgets</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widgettype</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Generator to walk widget tree and get widgets below this</span>
+    <span class="k">def</span> <span class="nf">WalkWidgets</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widgettype</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Generator to walk widget tree and get widgets below this</span>
 <span class="sd">        WidgetNode of type given.</span>
 
 <span class="sd">        widgettype is a Veusz widget type name or None to get all</span>
 <span class="sd">        widgets.&quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="nf">Add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widgettype</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">args_opt</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Add a widget of the type given, returning the Node instance.</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Add a widget of the type given, returning the Node instance.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="nf">Rename</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">newname</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Renames widget to name given.</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Renames widget to name given.</span>
 <span class="sd">        Existing Nodes corresponding to children are no longer valid.&quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="nf">Action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Applies action on widget.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Applies action on widget.&quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="nf">Remove</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Removes a widget and its children.</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Removes a widget and its children.</span>
 <span class="sd">        Existing Nodes corresponding to children are no longer valid.&quot;&quot;&quot;</span>
 </pre></div>
 </div>
@@ -1056,29 +1088,29 @@ the fly. A real widget in Veusz can have several different
 WidgetNode objects. The operators == and != can test whether
 a Node points to the same widget, setting or setting group.</p>
 <p>Here is an example to set all functions in the document to
-be <code class="docutils literal"><span class="pre">x**2</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">Root</span><span class="o">.</span><span class="n">WalkWidgets</span><span class="p">(</span><span class="n">widgettype</span><span class="o">=</span><span class="s1">&#39;function&#39;</span><span class="p">):</span>
+be <code class="docutils literal notranslate"><span class="pre">x**2</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">Root</span><span class="o">.</span><span class="n">WalkWidgets</span><span class="p">(</span><span class="n">widgettype</span><span class="o">=</span><span class="s1">&#39;function&#39;</span><span class="p">):</span>
     <span class="n">n</span><span class="o">.</span><span class="n">function</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="s1">&#39;x**2&#39;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="translating-old-to-new-style">
-<h3>Translating old to new style<a class="headerlink" href="#translating-old-to-new-style" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="translating-old-to-new-style">
+<h3>Translating old to new style<a class="headerlink" href="#translating-old-to-new-style" title="Link to this heading">¶</a></h3>
 <p>Here is an example how you might translate the old to new
-style interface (this is taken from the <code class="docutils literal"><span class="pre">sin.vsz</span></code>
+style interface (this is taken from the <code class="docutils literal notranslate"><span class="pre">sin.vsz</span></code>
 example).</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># old (from saved document file)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># old (from saved document file)</span>
 <span class="n">Add</span><span class="p">(</span><span class="s1">&#39;page&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;page1&#39;</span><span class="p">)</span>
 <span class="n">To</span><span class="p">(</span><span class="s1">&#39;page1&#39;</span><span class="p">)</span>
-<span class="n">Add</span><span class="p">(</span><span class="s1">&#39;graph&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;graph1&#39;</span><span class="p">,</span> <span class="n">autoadd</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">Add</span><span class="p">(</span><span class="s1">&#39;graph&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;graph1&#39;</span><span class="p">,</span> <span class="n">autoadd</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">To</span><span class="p">(</span><span class="s1">&#39;graph1&#39;</span><span class="p">)</span>
 <span class="n">Add</span><span class="p">(</span><span class="s1">&#39;axis&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">To</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
-<span class="n">Set</span><span class="p">(</span><span class="s1">&#39;label&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\\\</span><span class="s1">italic{x}&#39;</span><span class="p">)</span>
+<span class="n">Set</span><span class="p">(</span><span class="s1">&#39;label&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">italic</span><span class="si">{x}</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="n">To</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span>
 <span class="n">Add</span><span class="p">(</span><span class="s1">&#39;axis&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
 <span class="n">To</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
-<span class="n">Set</span><span class="p">(</span><span class="s1">&#39;label&#39;</span><span class="p">,</span> <span class="s1">&#39;sin </span><span class="se">\\\\</span><span class="s1">italic{x}&#39;</span><span class="p">)</span>
+<span class="n">Set</span><span class="p">(</span><span class="s1">&#39;label&#39;</span><span class="p">,</span> <span class="s1">&#39;sin </span><span class="se">\\</span><span class="s1">italic</span><span class="si">{x}</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="n">Set</span><span class="p">(</span><span class="s1">&#39;direction&#39;</span><span class="p">,</span> <span class="s1">&#39;vertical&#39;</span><span class="p">)</span>
 <span class="n">To</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span>
 <span class="n">Add</span><span class="p">(</span><span class="s1">&#39;xy&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;xy1&#39;</span><span class="p">)</span>
@@ -1094,16 +1126,17 @@ example).</p>
 <span class="n">To</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># new (in python)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># new (in python)</span>
 <span class="kn">import</span> <span class="nn">veusz.embed</span>
 <span class="n">embed</span> <span class="o">=</span> <span class="n">veusz</span><span class="o">.</span><span class="n">embed</span><span class="o">.</span><span class="n">Embedded</span><span class="p">(</span><span class="s1">&#39;window title&#39;</span><span class="p">)</span>
 
 <span class="n">page</span> <span class="o">=</span> <span class="n">embed</span><span class="o">.</span><span class="n">Root</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="s1">&#39;page&#39;</span><span class="p">)</span>
 <span class="c1"># note: autoAdd=False stops graph automatically adding own axes (used in saved files)</span>
-<span class="n">graph</span> <span class="o">=</span> <span class="n">page</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="s1">&#39;graph&#39;</span><span class="p">,</span> <span class="n">autoadd</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">graph</span> <span class="o">=</span> <span class="n">page</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="s1">&#39;graph&#39;</span><span class="p">,</span> <span class="n">autoadd</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">graph</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="s1">&#39;axis&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
-<span class="n">x</span><span class="o">.</span><span class="n">label</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\\\\</span><span class="s1">italic{x}&#39;</span>
+<span class="n">x</span><span class="o">.</span><span class="n">label</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">italic</span><span class="si">{x}</span><span class="s1">&#39;</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">graph</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="s1">&#39;axis&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">y</span><span class="o">.</span><span class="n">label</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="s1">&#39;sin </span><span class="se">\\</span><span class="s1">italic</span><span class="si">{x}</span><span class="s1">&#39;</span>
 <span class="n">y</span><span class="o">.</span><span class="n">direction</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="s1">&#39;vertical&#39;</span>
 <span class="n">xy</span> <span class="o">=</span> <span class="n">graph</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="s1">&#39;xy&#39;</span><span class="p">)</span>
 <span class="n">xy</span><span class="o">.</span><span class="n">MarkerFill</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="s1">&#39;cyan&#39;</span>
@@ -1112,13 +1145,13 @@ example).</p>
 <span class="n">func</span><span class="o">.</span><span class="n">Line</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span>
 </pre></div>
 </div>
-<div class="section" id="pyqt-programs">
-<h4>PyQt programs<a class="headerlink" href="#pyqt-programs" title="Permalink to this headline">¶</a></h4>
+<section id="pyqt-programs">
+<h4>PyQt programs<a class="headerlink" href="#pyqt-programs" title="Link to this heading">¶</a></h4>
 <p>There is no direct PyQt interface. The standard embedding interface
 should work, however.</p>
-</div>
-<div class="section" id="non-python-programs">
-<h4>Non Python programs<a class="headerlink" href="#non-python-programs" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="non-python-programs">
+<h4>Non Python programs<a class="headerlink" href="#non-python-programs" title="Link to this heading">¶</a></h4>
 <p>Support for non Python programs is available in a limited
 form. External programs may execute Veusz using <strong class="command">veusz
 --listen</strong>. Veusz will read its input from the standard input, and
@@ -1130,11 +1163,11 @@ listed above. Only one window is supported at once, but many
 <strong class="command">veusz --listen</strong> programs may be started.</p>
 <p><strong class="command">veusz --listen</strong> may be used from the shell command line by
 doing something like:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>veusz --listen &lt; in.vsz
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>veusz<span class="w"> </span>--listen<span class="w"> </span>&lt;<span class="w"> </span><span class="k">in</span>.vsz
 </pre></div>
 </div>
 <p>where <strong class="command">in.vsz</strong> contains:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">To</span><span class="p">(</span><span class="n">Add</span><span class="p">(</span><span class="s1">&#39;page&#39;</span><span class="p">)</span> <span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">To</span><span class="p">(</span><span class="n">Add</span><span class="p">(</span><span class="s1">&#39;page&#39;</span><span class="p">)</span> <span class="p">)</span>
 <span class="n">To</span><span class="p">(</span><span class="n">Add</span><span class="p">(</span><span class="s1">&#39;graph&#39;</span><span class="p">)</span> <span class="p">)</span>
 <span class="n">SetData</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">arange</span><span class="p">(</span><span class="mi">20</span><span class="p">))</span>
 <span class="n">SetData</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">arange</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
@@ -1148,100 +1181,113 @@ doing something like:</p>
 <strong class="command">popen</strong> C Unix function, which allows a program to be started
 having control of its standard input and output. Veusz can then be
 controlled by writing commands to an input pipe.</p>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
+</section>
 
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Veusz command line and embedding interface (API)</a><ul>
-<li><a class="reference internal" href="#introduction">Introduction</a></li>
-<li><a class="reference internal" href="#commands-and-api">Commands and API</a><ul>
-<li><a class="reference internal" href="#action">Action</a></li>
-<li><a class="reference internal" href="#add">Add</a></li>
-<li><a class="reference internal" href="#addcustom">AddCustom</a></li>
-<li><a class="reference internal" href="#addimportpath">AddImportPath</a></li>
-<li><a class="reference internal" href="#clonewidget">CloneWidget</a></li>
-<li><a class="reference internal" href="#close">Close</a></li>
-<li><a class="reference internal" href="#createhistogram">CreateHistogram</a></li>
-<li><a class="reference internal" href="#datasetplugin">DatasetPlugin</a></li>
-<li><a class="reference internal" href="#enabletoolbar">EnableToolbar</a></li>
-<li><a class="reference internal" href="#export">Export</a></li>
-<li><a class="reference internal" href="#filterdatasets">FilterDatasets</a></li>
-<li><a class="reference internal" href="#forceupdate">ForceUpdate</a></li>
-<li><a class="reference internal" href="#get">Get</a></li>
-<li><a class="reference internal" href="#getchildren">GetChildren</a></li>
-<li><a class="reference internal" href="#getclick">GetClick</a></li>
-<li><a class="reference internal" href="#getcolormap">GetColormap</a></li>
-<li><a class="reference internal" href="#getdata">GetData</a></li>
-<li><a class="reference internal" href="#getdatatype">GetDataType</a></li>
-<li><a class="reference internal" href="#getdatasets">GetDatasets</a></li>
-<li><a class="reference internal" href="#gpl">GPL</a></li>
-<li><a class="reference internal" href="#importfile">ImportFile</a></li>
-<li><a class="reference internal" href="#importfile2d">ImportFile2D</a></li>
-<li><a class="reference internal" href="#importfilecsv">ImportFileCSV</a></li>
-<li><a class="reference internal" href="#importfilefits">ImportFileFITS</a></li>
-<li><a class="reference internal" href="#importfilehdf5">ImportFileHDF5</a></li>
-<li><a class="reference internal" href="#importfilend">ImportFileND</a></li>
-<li><a class="reference internal" href="#importfileplugin">ImportFilePlugin</a></li>
-<li><a class="reference internal" href="#importfitsfile">ImportFITSFile</a></li>
-<li><a class="reference internal" href="#importstring">ImportString</a></li>
-<li><a class="reference internal" href="#importstring2d">ImportString2D</a></li>
-<li><a class="reference internal" href="#importstringnd">ImportStringND</a></li>
-<li><a class="reference internal" href="#isclosed">IsClosed</a></li>
-<li><a class="reference internal" href="#list">List</a></li>
-<li><a class="reference internal" href="#load">Load</a></li>
-<li><a class="reference internal" href="#movetopage">MoveToPage</a></li>
-<li><a class="reference internal" href="#reloaddata">ReloadData</a></li>
-<li><a class="reference internal" href="#rename">Rename</a></li>
-<li><a class="reference internal" href="#remove">Remove</a></li>
-<li><a class="reference internal" href="#resizewindow">ResizeWindow</a></li>
-<li><a class="reference internal" href="#save">Save</a></li>
-<li><a class="reference internal" href="#set">Set</a></li>
-<li><a class="reference internal" href="#setantialiasing">SetAntiAliasing</a></li>
-<li><a class="reference internal" href="#setdata">SetData</a></li>
-<li><a class="reference internal" href="#setdataexpression">SetDataExpression</a></li>
-<li><a class="reference internal" href="#setdatand">SetDataND</a></li>
-<li><a class="reference internal" href="#setdatarange">SetDataRange</a></li>
-<li><a class="reference internal" href="#setdata2d">SetData2D</a></li>
-<li><a class="reference internal" href="#setdata2dexpression">SetData2DExpression</a></li>
-<li><a class="reference internal" href="#setdata2dexpressionxyz">SetData2DExpressionXYZ</a></li>
-<li><a class="reference internal" href="#setdata2dxyfunc">SetData2DXYFunc</a></li>
-<li><a class="reference internal" href="#setdatadatetime">SetDataDateTime</a></li>
-<li><a class="reference internal" href="#setdatatext">SetDataText</a></li>
-<li><a class="reference internal" href="#settoreference">SetToReference</a></li>
-<li><a class="reference internal" href="#setupdateinterval">SetUpdateInterval</a></li>
-<li><a class="reference internal" href="#setverbose">SetVerbose</a></li>
-<li><a class="reference internal" href="#startsecondview">StartSecondView</a></li>
-<li><a class="reference internal" href="#tagdatasets">TagDatasets</a></li>
-<li><a class="reference internal" href="#to">To</a></li>
-<li><a class="reference internal" href="#quit">Quit</a></li>
-<li><a class="reference internal" href="#waitforclose">WaitForClose</a></li>
-<li><a class="reference internal" href="#zoom">Zoom</a></li>
+<h1 class="logo"><a href="index.html">Veusz</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datasets.html">Reading data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datasets.html#manipulating-datasets">Manipulating datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datasets.html#capturing-data">Capturing data</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Veusz command line and embedding interface (API)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#commands-and-api">Commands and API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#action">Action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add">Add</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#addcustom">AddCustom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#addimportpath">AddImportPath</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#clonewidget">CloneWidget</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#close">Close</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#createhistogram">CreateHistogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#currentpath">CurrentPath</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#datasetplugin">DatasetPlugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enabletoolbar">EnableToolbar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export">Export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#filterdatasets">FilterDatasets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#forceupdate">ForceUpdate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get">Get</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getchildren">GetChildren</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getclick">GetClick</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getcolormap">GetColormap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getdata">GetData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getdatatype">GetDataType</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getdatasets">GetDatasets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gpl">GPL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#importfile">ImportFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#importfile2d">ImportFile2D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#importfilecsv">ImportFileCSV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#importfilefits">ImportFileFITS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#importfilehdf5">ImportFileHDF5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#importfilend">ImportFileND</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#importfileplugin">ImportFilePlugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#importfitsfile">ImportFITSFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#importstring">ImportString</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#importstring2d">ImportString2D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#importstringnd">ImportStringND</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#isclosed">IsClosed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#list">List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#load">Load</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#movetopage">MoveToPage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reloaddata">ReloadData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rename">Rename</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove">Remove</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#resizewindow">ResizeWindow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#save">Save</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set">Set</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setantialiasing">SetAntiAliasing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setcompatlevel">SetCompatLevel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setdata">SetData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setdataexpression">SetDataExpression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setdatand">SetDataND</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setdatarange">SetDataRange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setdata2d">SetData2D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setdata2dexpression">SetData2DExpression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setdata2dexpressionxyz">SetData2DExpressionXYZ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setdata2dxyfunc">SetData2DXYFunc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setdatadatetime">SetDataDateTime</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setdatatext">SetDataText</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#settoreference">SetToReference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setupdateinterval">SetUpdateInterval</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setverbose">SetVerbose</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#startsecondview">StartSecondView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tagdatasets">TagDatasets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#to">To</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#quit">Quit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#waitforclose">WaitForClose</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zoom">Zoom</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#security">Security</a></li>
-<li><a class="reference internal" href="#using-veusz-from-other-programs">Using Veusz from other programs</a><ul>
-<li><a class="reference internal" href="#non-qt-python-programs">Non-Qt Python programs</a></li>
-<li><a class="reference internal" href="#older-path-based-interface">Older path-based interface</a></li>
-<li><a class="reference internal" href="#new-style-object-interface">New-style object interface</a></li>
-<li><a class="reference internal" href="#translating-old-to-new-style">Translating old to new style</a><ul>
-<li><a class="reference internal" href="#pyqt-programs">PyQt programs</a></li>
-<li><a class="reference internal" href="#non-python-programs">Non Python programs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#security">Security</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-veusz-from-other-programs">Using Veusz from other programs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#non-qt-python-programs">Non-Qt Python programs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#older-path-based-interface">Older path-based interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#new-style-object-interface">New-style object interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#translating-old-to-new-style">Translating old to new style</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
+
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
@@ -1250,33 +1296,34 @@ controlled by writing commands to an input pipe.</p>
   </ul></li>
 </ul>
 </div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="o_sources/api.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
     </form>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2003-2018, Jeremy Sanders.
+      &copy;2003-2021, Jeremy Sanders.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="o_sources/api.rst.txt"

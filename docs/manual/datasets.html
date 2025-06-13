@@ -1,29 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" data-content_root="./">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Reading data &#8212; Veusz 3.0 documentation</title>
-    
-    <link rel="stylesheet" href="o_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="o_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '3.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
-    <script type="text/javascript" src="o_static/jquery.js"></script>
-    <script type="text/javascript" src="o_static/underscore.js"></script>
-    <script type="text/javascript" src="o_static/doctools.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Reading data &#8212; Veusz 4.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="o_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="o_static/alabaster.css?v=cb25574f" />
+    <script src="o_static/documentation_options.js?v=3b2dd2c4"></script>
+    <script src="o_static/doctools.js?v=888ff710"></script>
+    <script src="o_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Veusz command line and embedding interface (API)" href="api.html" />
@@ -31,28 +18,30 @@
    
   <link rel="stylesheet" href="o_static/custom.css" type="text/css" />
   
+  
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
-  </head>
-  <body role="document">
+  </head><body>
   
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
-  <div class="section" id="reading-data">
-<h1>Reading data<a class="headerlink" href="#reading-data" title="Permalink to this headline">¶</a></h1>
-<p>Currently Veusz supports reading data from files with text, CSV, HDF5,
-FITS, 2D text or CSV, QDP, binary and NPY/NPZ formats. Use the
-<span class="menuselection">Data ‣ Import</span> dialog to read data, or the importing
-commands in the API can be used.  In addition, the user can load or
-write import plugins in Python which load data into Veusz in an
-arbitrary format. At the moment QDP, binary and NPY/NPZ files are
-supported with this method. The HDF5 file format is the most
+  <section id="reading-data">
+<h1>Reading data<a class="headerlink" href="#reading-data" title="Link to this heading">¶</a></h1>
+<p>Veusz can read data from files or the clipboard. Currently supported
+formats are text, CSV, HDF5, FITS, 2D text or CSV, QDP, binary and
+NPY/NPZ. Use the <span class="menuselection">Data ‣ Import</span> dialog to read data,
+or the importing commands in the API can be used.  In addition, the
+user can load or write import plugins in Python which load data into
+Veusz in an arbitrary format. At the moment QDP, binary and NPY/NPZ
+files are supported with this method. The HDF5 file format is the most
 sophisticated, and is recommended for complex datasets.</p>
-<p>By default, data are &#8220;linked&#8221; to the file imported from. This means
+<p>By default, data are “linked” to the file imported from. This means
 that the data are not stored in the Veusz saved file and are reloaded
 from the original data file when opening. In addition, the user can
 use the <span class="menuselection">Data ‣ Reload</span> menu option to reload data
@@ -64,13 +53,13 @@ added to the front or back of each dataset name imported. They are
 convenient for grouping data together.</p>
 <img alt="o_images/importdialog.png" src="o_images/importdialog.png" />
 <p>We list the various types of import below.</p>
-<div class="section" id="standard-text-import">
-<h2>Standard text import<a class="headerlink" href="#standard-text-import" title="Permalink to this headline">¶</a></h2>
+<section id="standard-text-import">
+<h2>Standard text import<a class="headerlink" href="#standard-text-import" title="Link to this heading">¶</a></h2>
 <p>The default text import operates on simple text files. The data are
 assumed to be in columns separated by whitespace. Each column
 corresponds to dataset (or its error bars). Each row is an entry in
 the dataset.</p>
-<p>The way the data are read is goverened by a simple &#8220;descriptor&#8221;. This
+<p>The way the data are read is goverened by a simple “descriptor”. This
 can simply be a list of dataset names separated by spaces. If no
 descriptor is given, the columns are treated as separate datasets and
 are given names <cite>col1</cite>, <cite>col2</cite>, etc. Veusz attempts to automatically
@@ -87,8 +76,8 @@ can be used to specify a break in a dataset.</p>
 lines (or lines starting with the word <cite>no</cite>) as block separators. For
 each dataset in the descriptor, separate datasets are created for each
 block, using a numeric suffix giving the block number, e.g. <cite>_1</cite>, <cite>_2</cite>.</p>
-<div class="section" id="data-types-in-text-import">
-<h3>Data types in text import<a class="headerlink" href="#data-types-in-text-import" title="Permalink to this headline">¶</a></h3>
+<section id="data-types-in-text-import">
+<h3>Data types in text import<a class="headerlink" href="#data-types-in-text-import" title="Link to this heading">¶</a></h3>
 <p>Veusz supports reading in several types of data. The type of data can
 be added in round brackets after the name in the descriptor. Veusz
 will try to guess the type of data based on the first value, so you
@@ -100,13 +89,13 @@ by its symmetric errors, a y dataset followed by two columns of
 asymmetric errors, and a final column of text for the label dataset.</p>
 <p>A text column does not need quotation unless it contains space
 characters or escape characters. However make sure you deselect the
-&#8220;ignore text&#8221; option in the import dialog. This ignores lines of text
+“ignore text” option in the import dialog. This ignores lines of text
 to ease the import of data from other applications.  Quotation marks
 are recommended around text if you wish to avoid ambiguity. Text is
 quoted according to the Python rules for text. Double or single
-quotation marks can be used, e.g. <cite>&#8220;A &#8216;test&#8217;&#8221;</cite>, <cite>&#8216;A second
-&#8220;test&#8221;&#8217;</cite>. Quotes can be escaped by prefixing them with a backslash,
-e.g. <cite>&#8220;A new \&#8221;test\&#8221;&#8220;</cite>. If the data are generated from a Python
+quotation marks can be used, e.g. <cite>“A ‘test’”</cite>, <cite>‘A second
+“test”’</cite>. Quotes can be escaped by prefixing them with a backslash,
+e.g. <cite>“A new \”test\””</cite>. If the data are generated from a Python
 script, the repr function provides the text in a suitable form.</p>
 <p>Dates and times are also supported with the syntax
 <cite>dataset(date)</cite>. Dates must be in ISO format <cite>YYYY-MM-DD</cite>. Times are
@@ -117,10 +106,10 @@ Veusz as a number which is the number of seconds since the start of
 January 1st 2009. Veusz also supports dates and times in the local
 format, though take note that the same file and data may not work on a
 system in a different location.</p>
-</div>
-<div class="section" id="descriptors">
-<h3>Descriptors<a class="headerlink" href="#descriptors" title="Permalink to this headline">¶</a></h3>
-<p id="id1">A list of datasets, or a &#8220;Descriptor&#8221;, is given in the
+</section>
+<section id="descriptors">
+<h3>Descriptors<a class="headerlink" href="#descriptors" title="Link to this heading">¶</a></h3>
+<p id="id1">A list of datasets, or a “Descriptor”, is given in the
 Import dialog to describe how the data are formatted in the
 import file. The descriptor at its simplest is a space or
 comma-separated list of the names of the datasets to import.
@@ -146,9 +135,9 @@ spaces and brackets in their names.</p>
 <p>Instead of specifying the descriptor in the Import dialog,
 the descriptor can be placed in the data file using a
 descriptor statement on a separate line, consisting of
-&#8220;descriptor&#8221; followed by the descriptor. Multiple
+“descriptor” followed by the descriptor. Multiple
 descriptors can be placed in a single file, for example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># here is one section</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># here is one section</span>
 <span class="n">descriptor</span> <span class="n">x</span><span class="p">,</span><span class="o">+-</span> <span class="n">y</span><span class="p">,</span><span class="o">+</span><span class="p">,</span><span class="o">-</span>
 <span class="mi">1</span> <span class="mf">0.5</span>  <span class="mi">2</span> <span class="mf">0.1</span> <span class="o">-</span><span class="mf">0.1</span>
 <span class="mi">2</span> <span class="mf">0.3</span>  <span class="mi">4</span> <span class="mf">0.2</span> <span class="o">-</span><span class="mf">0.1</span>
@@ -160,21 +149,20 @@ descriptors can be placed in a single file, for example:</p>
 <span class="c1"># etc...</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="descriptor-examples">
-<h3>Descriptor examples<a class="headerlink" href="#descriptor-examples" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="descriptor-examples">
+<h3>Descriptor examples<a class="headerlink" href="#descriptor-examples" title="Link to this heading">¶</a></h3>
 <ol class="arabic">
-<li><p class="first"><strong class="command">x y</strong> two columns are present in the file, they will be
-read in as datasets <cite>x</cite> and <cite>y</cite>.</p>
-</li>
-<li><p class="first"><strong class="command">x,+- y,+,-</strong> or <strong class="command">x +- y + -</strong> two datasets are in
-the file. Dataset &#8220;x&#8221; consists of the first two columns. The first
-column are the values and the second are the symmetric errors. &#8220;y&#8221;
+<li><p><strong class="command">x y</strong> two columns are present in the file, they will be
+read in as datasets <cite>x</cite> and <cite>y</cite>.</p></li>
+<li><p><strong class="command">x,+- y,+,-</strong> or <strong class="command">x +- y + -</strong> two datasets are in
+the file. Dataset “x” consists of the first two columns. The first
+column are the values and the second are the symmetric errors. “y”
 consists of three columns (note the comma between + and -). The
 first column are the values, the second positive asymmetric errors,
 and the third negative asymmetric errors.  Suppose the input file
 contains:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mf">1.0</span>  <span class="mf">0.3</span>  <span class="mi">2</span>    <span class="mf">0.1</span>  <span class="o">-</span><span class="mf">0.2</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">1.0</span>  <span class="mf">0.3</span>  <span class="mi">2</span>    <span class="mf">0.1</span>  <span class="o">-</span><span class="mf">0.2</span>
 <span class="mf">1.5</span>  <span class="mf">0.2</span>  <span class="mf">2.3</span>  <span class="mf">2e-2</span> <span class="o">-</span><span class="mf">0.3E0</span>
 <span class="mf">2.19</span> <span class="mf">0.02</span> <span class="mi">5</span>    <span class="mf">0.1</span>  <span class="o">-</span><span class="mf">0.1</span>
 </pre></div>
@@ -182,24 +170,21 @@ contains:</p>
 <p>Then x will contain <cite>1+-0.3</cite>, <cite>1.5+-0.2</cite>, <cite>2.19+-0.02</cite>. y will
 contain <cite>2 +0.1 -0.2</cite>, <cite>2.3 +0.02 -0.3</cite>, <cite>5 +0.1 -0.1</cite>.</p>
 </li>
-<li><p class="first"><strong class="command">x[1:2] y[:]</strong> the first column is the data <cite>x_1</cite>, the
-second <cite>x_2</cite>. Subsequent columns are read as <cite>y[1]</cite> to <cite>y[n]</cite>.</p>
-</li>
-<li><p class="first"><strong class="command">y[:]+-</strong> read each pair of columns as a dataset and its
-symmetric error, calling them <cite>y[1]</cite> to <cite>y[n]</cite>.</p>
-</li>
-<li><p class="first"><strong class="command">foo,,+-</strong> read the first column as the foo dataset, skip a
-column, and read the third column as its symmetric error.</p>
-</li>
+<li><p><strong class="command">x[1:2] y[:]</strong> the first column is the data <cite>x_1</cite>, the
+second <cite>x_2</cite>. Subsequent columns are read as <cite>y[1]</cite> to <cite>y[n]</cite>.</p></li>
+<li><p><strong class="command">y[:]+-</strong> read each pair of columns as a dataset and its
+symmetric error, calling them <cite>y[1]</cite> to <cite>y[n]</cite>.</p></li>
+<li><p><strong class="command">foo,,+-</strong> read the first column as the foo dataset, skip a
+column, and read the third column as its symmetric error.</p></li>
 </ol>
-</div>
-</div>
-<div class="section" id="csv-files">
-<h2>CSV files<a class="headerlink" href="#csv-files" title="Permalink to this headline">¶</a></h2>
-<p>CVS (comma separated variable) files are often written from other
+</section>
+</section>
+<section id="csv-files">
+<h2>CSV files<a class="headerlink" href="#csv-files" title="Link to this heading">¶</a></h2>
+<p>CSV (comma separated variable) files are often written from other
 programs, such as spreadsheets, including Excel and Gnumeric. Veusz
 supports reading from these files.</p>
-<p>In the import dialog choose &#8220;CSV&#8221;, then choose a filename to import
+<p>In the import dialog choose “CSV”, then choose a filename to import
 from. In the CSV file the user should place the data in either rows or
 columns. Veusz will use a name above a column or to the left of a row
 to specify what the dataset name should be. The user can use new names
@@ -219,9 +204,9 @@ CSV files can be specified in the import dialog box - see the examples
 given. In addition CSV files support numbers in European format
 (e.g. 2,34 rather than 2.34), depending on the setting in the dialog
 box.</p>
-</div>
-<div class="section" id="hdf5-files">
-<h2>HDF5 files<a class="headerlink" href="#hdf5-files" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="hdf5-files">
+<h2>HDF5 files<a class="headerlink" href="#hdf5-files" title="Link to this heading">¶</a></h2>
 <p>HDF5 is a flexible data format. Datasets and tables can be stored in a
 hierarchical arrangements of groups within a file. Veusz supports
 reading 1D numeric, text, date-time, 2D numeric or n-dimensional
@@ -232,13 +217,13 @@ or selecting a group to import all the datasets within the group. If
 selecting a group, datasets in the group incompatible with Veusz are
 ignored.</p>
 <p>A name can be provided for each dataset imported by entering one under
-&#8220;Import as&#8221;. If one is not given, the dataset or column name is
+“Import as”. If one is not given, the dataset or column name is
 used. The name can also be specified by setting the HDF5 dataset
-attribute <code class="docutils literal"><span class="pre">vsz_name</span></code> to the name. Note that for compound datasets
-(tables), <code class="docutils literal"><span class="pre">vsz_</span></code> attributes for columns are given by appending the
-suffix <code class="docutils literal"><span class="pre">_columnname</span></code> to the attribute.</p>
-<div class="section" id="error-bars">
-<h3>Error bars<a class="headerlink" href="#error-bars" title="Permalink to this headline">¶</a></h3>
+attribute <code class="docutils literal notranslate"><span class="pre">vsz_name</span></code> to the name. Note that for compound datasets
+(tables), <code class="docutils literal notranslate"><span class="pre">vsz_</span></code> attributes for columns are given by appending the
+suffix <code class="docutils literal notranslate"><span class="pre">_columnname</span></code> to the attribute.</p>
+<section id="error-bars">
+<h3>Error bars<a class="headerlink" href="#error-bars" title="Link to this heading">¶</a></h3>
 <p>Error bars are supported in two ways. The first way is to combine 1D
 datasets. For the datasets which are error bars, use a name which is
 the same as the main dataset but with the suffix <cite>(+-)</cite>, <cite>(+)</cite> or
@@ -247,40 +232,40 @@ respectively. The second method is to use a 2D dataset with two or
 three columns, for symmetric or asymmetric error bars,
 respectively. Click on the dataset in the dialog and choose the option
 to import as a 1D dataset. This second method can also be enabled by
-adding an HDF5 attribute <code class="docutils literal"><span class="pre">vsz_twod_as_oned</span></code> set to a non-zero value
+adding an HDF5 attribute <code class="docutils literal notranslate"><span class="pre">vsz_twod_as_oned</span></code> set to a non-zero value
 for the dataset.</p>
-</div>
-<div class="section" id="slices">
-<h3>Slices<a class="headerlink" href="#slices" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="slices">
+<h3>Slices<a class="headerlink" href="#slices" title="Link to this heading">¶</a></h3>
 <p>You may wish to reduce the dimensions of a dataset before importing by
 slicing. You can also give a slice to import a subset of a
 dataset. When importing, in the slice column you can give a slice
 expression. This should have the same number of entries as the dataset
 has dimensions, separated by commas. An entry can be a single number,
 to select a particular row or column. Alternatively it could be an
-expression like <code class="docutils literal"><span class="pre">a:b:c</span></code> or <code class="docutils literal"><span class="pre">a:b</span></code>, where <code class="docutils literal"><span class="pre">a</span></code> is the starting
-index, <code class="docutils literal"><span class="pre">b</span></code> is one beyond the stopping index and optionally <code class="docutils literal"><span class="pre">c</span></code> is
+expression like <code class="docutils literal notranslate"><span class="pre">a:b:c</span></code> or <code class="docutils literal notranslate"><span class="pre">a:b</span></code>, where <code class="docutils literal notranslate"><span class="pre">a</span></code> is the starting
+index, <code class="docutils literal notranslate"><span class="pre">b</span></code> is one beyond the stopping index and optionally <code class="docutils literal notranslate"><span class="pre">c</span></code> is
 the step size. A slice can also be specified by providing an HDF5
-attribute <code class="docutils literal"><span class="pre">vsz_slice</span></code> for the dataset.</p>
-</div>
-<div class="section" id="d-data-ranges">
-<h3>2D data ranges<a class="headerlink" href="#d-data-ranges" title="Permalink to this headline">¶</a></h3>
+attribute <code class="docutils literal notranslate"><span class="pre">vsz_slice</span></code> for the dataset.</p>
+</section>
+<section id="d-data-ranges">
+<h3>2D data ranges<a class="headerlink" href="#d-data-ranges" title="Link to this heading">¶</a></h3>
 <p>2D data have an associated X and Y range. By default the number of
 pixels of the image are used to give this range.  A range can be
 specified by clicking on the dataset and entering a minimum and
 maximum X and Y coordinates. Alternatively, provide the HDF5 attribute
-for the dataset <code class="docutils literal"><span class="pre">vsz_range</span></code>, which should be set to an array of four
+for the dataset <code class="docutils literal notranslate"><span class="pre">vsz_range</span></code>, which should be set to an array of four
 values (minimum x, minimum y, maximum x, maximum y).</p>
-</div>
-<div class="section" id="dates">
-<h3>Dates<a class="headerlink" href="#dates" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="dates">
+<h3>Dates<a class="headerlink" href="#dates" title="Link to this heading">¶</a></h3>
 <p>Date/time datasets can be made from a 1D numeric dataset or from a
 text dataset. For the 1D dataset, use the number of seconds relative
 to the start of the year 2009 (this is Veusz format) or the year 1970
 (this is Unix format). In the import dialog, click on the name of the
 dataset and choose the date option. To specify a date format in the
-HDF5 file, set the attribute <code class="docutils literal"><span class="pre">vsz_convert_datetime</span></code> to either
-<code class="docutils literal"><span class="pre">veusz</span></code> or <code class="docutils literal"><span class="pre">unix</span></code>.</p>
+HDF5 file, set the attribute <code class="docutils literal notranslate"><span class="pre">vsz_convert_datetime</span></code> to either
+<code class="docutils literal notranslate"><span class="pre">veusz</span></code> or <code class="docutils literal notranslate"><span class="pre">unix</span></code>.</p>
 <p>For text datasets, dates must be given in the right format, selected
 in the import dialog after clicking on the dataset name. As in other
 file formats, by default Veusz uses ISO 8601 format, which looks like
@@ -289,12 +274,12 @@ T is also optional. You can also provide your own format when
 importing by giving a date expression using YYYY, MM, DD, hh, mm and
 ss (e.g. <cite>YYYY-MM-DD|T|hh:mm:ss</cite>), where vertical bars mark optional
 parts of the expression. To automate this, set the attribute
-<code class="docutils literal"><span class="pre">vsz_convert_datetime</span></code> to the format expression or <code class="docutils literal"><span class="pre">iso</span></code> to
+<code class="docutils literal notranslate"><span class="pre">vsz_convert_datetime</span></code> to the format expression or <code class="docutils literal notranslate"><span class="pre">iso</span></code> to
 specify ISO format.</p>
-</div>
-</div>
-<div class="section" id="d-text-or-csv-format">
-<h2>2D text or CSV format<a class="headerlink" href="#d-text-or-csv-format" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="d-text-or-csv-format">
+<h2>2D text or CSV format<a class="headerlink" href="#d-text-or-csv-format" title="Link to this heading">¶</a></h2>
 <p>Veusz can import 2D data from standard text or CSV files. In this case
 the data should consist of a matrix of data values, with the columns
 separated by one or more spaces or tabs and the rows on different
@@ -308,46 +293,46 @@ bottom-left value in the table of imported values. When using
 specifiers in CSV files, put the different parts (separated by spaces)
 in separate columns. Below are listed the specifiers:</p>
 <ol class="arabic simple">
-<li><strong class="command">xrange A B</strong> - make the 2D dataset span the coordinate
+<li><p><strong class="command">xrange A B</strong> - make the 2D dataset span the coordinate
 range A to B in the x-axis (where A and B are numbers). Note that
 the range is inclusive, so a 1 pixel wide image with A=0 and B=1
 would have the pixel centre at 0.5. The pixels are assumed to have
 the same spacing. Do not use this as the same time as the
-<strong class="command">xedge</strong> or <strong class="command">xcent</strong> options.</li>
-<li><strong class="command">yrange A B</strong> - make the 2D dataset span the coordinate
-range A to B in the y-axis (where A and B are numbers).</li>
-<li><strong class="command">xedge A B C...</strong> - rather than assume the pixels have the
+<strong class="command">xedge</strong> or <strong class="command">xcent</strong> options.</p></li>
+<li><p><strong class="command">yrange A B</strong> - make the 2D dataset span the coordinate
+range A to B in the y-axis (where A and B are numbers).</p></li>
+<li><p><strong class="command">xedge A B C...</strong> - rather than assume the pixels have the
 same spacing, give the coordinates of the edges of the pixels in
 the x-axis. The numbers should be space-separated and there should
 be one more number than pixels. Do not give <strong class="command">xrange</strong> or
 <strong class="command">xcent</strong> if this is given. If the values are increasing,
 the lowest coordinate value is at the left of the dataset,
 otherwise if they are decreasing, it is on the right (unless the
-rows/columns are inverted or transposed).</li>
-<li><strong class="command">yedge A B C...</strong> - rather than assume the pixels have the
+rows/columns are inverted or transposed).</p></li>
+<li><p><strong class="command">yedge A B C...</strong> - rather than assume the pixels have the
 same spacing, give the coordinates of the edges of the pixels in
 the y-axis. If the values are increasing, the lowest coordinate
 value is at the bottom row. If they instead decrease, it is at the
-top.</li>
-<li><strong class="command">xcent A B C...</strong> - rather than give a total range or pixel
+top.</p></li>
+<li><p><strong class="command">xcent A B C...</strong> - rather than give a total range or pixel
 edges, give the centres of the pixels. There should be the same
 number of values as pixels in the image. Do not give
 <strong class="command">xrange</strong> or <strong class="command">xedge</strong> if this is given. The order
 of the values specify whether the pixels are left to right or right
-to left.</li>
-<li><strong class="command">ycent A B C...</strong> - rather than give a total range or pixel
+to left.</p></li>
+<li><p><strong class="command">ycent A B C...</strong> - rather than give a total range or pixel
 edges, give the centres of the pixels. The value order specifies
-whether the pixels are bottom to top, or top to bottom.</li>
-<li><strong class="command">invertrows</strong> - invert the rows after reading the data.</li>
-<li><strong class="command">invertcols</strong> - invert the columns after reading the data.</li>
-<li><strong class="command">transpose</strong> - swap rows and columns after importing data.</li>
-<li><strong class="command">gridatedge</strong> - the first row and leftmost column give the
+whether the pixels are bottom to top, or top to bottom.</p></li>
+<li><p><strong class="command">invertrows</strong> - invert the rows after reading the data.</p></li>
+<li><p><strong class="command">invertcols</strong> - invert the columns after reading the data.</p></li>
+<li><p><strong class="command">transpose</strong> - swap rows and columns after importing data.</p></li>
+<li><p><strong class="command">gridatedge</strong> - the first row and leftmost column give the
 positions of the centres of the pixels. This is also an option in
-the import dialog. The values should be increasing or decreasing.</li>
+the import dialog. The values should be increasing or decreasing.</p></li>
 </ol>
-</div>
-<div class="section" id="fits-files">
-<h2>FITS files<a class="headerlink" href="#fits-files" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="fits-files">
+<h2>FITS files<a class="headerlink" href="#fits-files" title="Link to this heading">¶</a></h2>
 <p>1D, 2D or n-dimensional data can be read from FITS files. 1D or 2D
 data can be read from image, primary or table HDUs. nD data can be
 read from from image or primary extensions.  Note that pyfits or
@@ -361,7 +346,7 @@ dataset. Otherwise the HDU or table column name is used.  Note that a
 prefix and/or suffix can be specified to be added to all dataset
 names.</p>
 <p>If dataset y should have an error bar specified by column yerr, then
-in the name for yerr, enter &#8216;y (+-)&#8217;. Asymmetric error bars can be
+in the name for yerr, enter ‘y (+-)’. Asymmetric error bars can be
 specified using (+) and (-) on inidividual columns.</p>
 <p>The slice column can be used to only import a subset of the dataset
 imported. This uses Python slicing syntax, which is comma-separated
@@ -383,39 +368,39 @@ numbering (numbering from 0 to N-1). There is a fraction option for
 using a range of 0 to 1. Finally there is a pixel numbering scheme
 which numbers in pixels from the CRPIX keyword items.</p>
 <p>Some of these options can be specified in the FITS file using the
-&#8216;VEUSZ&#8217; header keyword. This header keyword can be added with the
-value &#8216;KEY=VALUE&#8217; (applying to the whole HDU) or &#8216;COLUMN: KEY=VALUE&#8217;
+‘VEUSZ’ header keyword. This header keyword can be added with the
+value ‘KEY=VALUE’ (applying to the whole HDU) or ‘COLUMN: KEY=VALUE’
 (applying to a particular column in a table). Supported options for
 KEY are:</p>
-<dl class="docutils">
-<dt>name</dt>
-<dd>provide name for dataset in VALUE</dd>
-<dt>slice</dt>
-<dd>VALUE is slice to apply when importing dataset</dd>
-<dt>range</dt>
-<dd>range of data for 2D dataset in form <cite>[minx, miny, maxx, maxy]</cite></dd>
-<dt>xrange/yrange</dt>
-<dd>range of dataset individually in x or y</dd>
-<dt>xcent/ycent</dt>
-<dd>set to list of values giving centers of pixels</dd>
-<dt>xedge/yedge</dt>
-<dd>set to list of values giving edges of pixels</dd>
-<dt>twod_as_oned</dt>
-<dd>treat as 1D data with error bars if VALUE=1</dd>
-<dt>wcsmode</dt>
-<dd>use specific WCS mode for 2D dataset (should be
-pixel/pixel_wcs/linear_wcs/fraction)</dd>
+<dl class="simple">
+<dt>name</dt><dd><p>provide name for dataset in VALUE</p>
+</dd>
+<dt>slice</dt><dd><p>VALUE is slice to apply when importing dataset</p>
+</dd>
+<dt>range</dt><dd><p>range of data for 2D dataset in form <cite>[minx, miny, maxx, maxy]</cite></p>
+</dd>
+<dt>xrange/yrange</dt><dd><p>range of dataset individually in x or y</p>
+</dd>
+<dt>xcent/ycent</dt><dd><p>set to list of values giving centers of pixels</p>
+</dd>
+<dt>xedge/yedge</dt><dd><p>set to list of values giving edges of pixels</p>
+</dd>
+<dt>twod_as_oned</dt><dd><p>treat as 1D data with error bars if VALUE=1</p>
+</dd>
+<dt>wcsmode</dt><dd><p>use specific WCS mode for 2D dataset (should be
+pixel/pixel_wcs/linear_wcs/fraction)</p>
+</dd>
 </dl>
-</div>
-<div class="section" id="reading-other-data-formats">
-<h2>Reading other data formats<a class="headerlink" href="#reading-other-data-formats" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="reading-other-data-formats">
+<h2>Reading other data formats<a class="headerlink" href="#reading-other-data-formats" title="Link to this heading">¶</a></h2>
 <p>As mentioned above, a user may write some Python code to read a data
 file or set of data files. To write a plugin which is incorportated
 into Veusz, see <a class="reference external" href="https://github.com/veusz/veusz/wiki/ImportPlugins">https://github.com/veusz/veusz/wiki/ImportPlugins</a></p>
 <p>You can also include Python code in an input file to read data, which
-we describe here. Suppose an input file &#8220;in.dat&#8221; contains the
+we describe here. Suppose an input file “in.dat” contains the
 following data:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mi">1</span>   <span class="mi">2</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>   <span class="mi">2</span>
 <span class="mi">2</span>   <span class="mi">4</span>
 <span class="mi">3</span>   <span class="mi">9</span>
 <span class="mi">4</span>   <span class="mi">16</span>
@@ -425,7 +410,7 @@ following data:</p>
 the following Veusz script (which could be saved to a file and loaded
 with <strong class="command">execfile</strong> or <a class="reference internal" href="api.html#command-load"><span class="std std-ref">Load</span></a>. The script
 also places symmetric errors of 0.1 on the x dataset.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="p">[]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">y</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;in.dat&quot;</span><span class="p">):</span>
     <span class="n">parts</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
@@ -435,10 +420,38 @@ also places symmetric errors of 0.1 on the x dataset.</p>
 <span class="n">SetData</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="manipulating-datasets">
-<h1>Manipulating datasets<a class="headerlink" href="#manipulating-datasets" title="Permalink to this headline">¶</a></h1>
+</section>
+<section id="reading-data-from-the-clipboard">
+<h2>Reading data from the clipboard<a class="headerlink" href="#reading-data-from-the-clipboard" title="Link to this heading">¶</a></h2>
+<p>Data can be imported into Veusz from the clipboard via
+<span class="menuselection">Data ‣ Import</span> (or pressing the corresponding
+button) and then pressing the button at the top right corner
+(or by entering {clipboard} in the field for the Filename).
+The data in the clipboard appears below in the chosen tab
+(Standard, CSV, 2D, etc.). The CSV tab gives you various options
+about how the clipboard is interpreted. Finally, you press the
+import button so the data appears in the Data panel. There remains
+no link to the file.</p>
+<p>There is a convenient and quick way of importing data via the
+clipboard from spreadsheets like MS Excel, where you can choose a
+number of columns at once. Highlight the data in multiple columns
+you like to import. If the columns have different number of rows of
+data, just highlight so many rows that all the data is contained in
+the highlighted area. You may include the first row containing the
+names. Then copy. Switch to Veusz, (if it is the first time you need
+to press the button at the top right corner) and use the CSV tab,
+because there you have the option to choose the Column Delimiter
+{tab}, so all data columns appear (if you only import a single
+column, the delimiter does not matter). You also have the option to
+define the first row as Header mode. Then press import. Each column
+of data will appear as separate entity in the data panel. Next time
+you copy data from a spread sheet, you need only press the Import
+button in Veusz because the importing settings stay alive.</p>
+<img alt="o_images/importdialog_clipboard.png" src="o_images/importdialog_clipboard.png" />
+</section>
+</section>
+<section id="manipulating-datasets">
+<h1>Manipulating datasets<a class="headerlink" href="#manipulating-datasets" title="Link to this heading">¶</a></h1>
 <p>Imported datasets can easily be modified in the Data Editor dialog
 box. This dialog box can also be used to create new datasets from
 scratch by typing them in. The Data Create dialog box is used to new
@@ -446,16 +459,16 @@ datasets as a numerical sequence, parametrically or based on other
 datasets given expressions. If you want to plot a function of a
 dataset, you often do not have to create a new dataset. Veusz allows
 to enter expressions directly in many places.</p>
-<div class="section" id="using-dataset-plugins">
-<h2>Using dataset plugins<a class="headerlink" href="#using-dataset-plugins" title="Permalink to this headline">¶</a></h2>
+<section id="using-dataset-plugins">
+<h2>Using dataset plugins<a class="headerlink" href="#using-dataset-plugins" title="Link to this heading">¶</a></h2>
 <p>Dataset plugins can be used to perform arbitrary manipulation of
 datasets. Veusz includes several plugins for mathematical operation of
 data and other dataset manipulations, such as concatenation or
 splitting. If you wish to write your own plugins look at
 <a class="reference external" href="https://github.com/veusz/veusz/wiki/DatasetPlugins">https://github.com/veusz/veusz/wiki/DatasetPlugins</a>.</p>
-</div>
-<div class="section" id="using-expressions-to-create-new-datasets">
-<h2>Using expressions to create new datasets<a class="headerlink" href="#using-expressions-to-create-new-datasets" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="using-expressions-to-create-new-datasets">
+<h2>Using expressions to create new datasets<a class="headerlink" href="#using-expressions-to-create-new-datasets" title="Link to this heading">¶</a></h2>
 <p>For instance, if the user has already imported dataset d, then they
 can create d2 which consists of d**2. Expressions are in Python numpy
 syntax and can include the usual mathematical functions.</p>
@@ -484,49 +497,49 @@ bars of 0.1. Asymmetric bars are given as <strong class="command">(a,a*0.1,-a*0.
 <p>Other useful functions in evaluation include those already mentioned
 in the LaTeX expansion description. <strong class="command">DATA(name, [part])</strong>
 returns the dataset with name given. The optional part, which can be
-&#8216;data&#8217;, &#8216;serr&#8217;, &#8216;perr&#8217; or &#8216;nerr&#8217;, allows error bars to be returned for
+‘data’, ‘serr’, ‘perr’ or ‘nerr’, allows error bars to be returned for
 numerical data. <strong class="command">SETTING(path)</strong> returns the value of the
 Veusz setting, which can include, for example, the best fitting
 parameters of a fit. <strong class="command">ENVIRON</strong> is the Python environment
 variable dictionary, allowing values to be passed from the
 environment, e.g. <strong class="command">float(ENVIRON['myvar'])</strong>.</p>
-</div>
-<div class="section" id="linking-datasets-to-expressions">
-<h2>Linking datasets to expressions<a class="headerlink" href="#linking-datasets-to-expressions" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="linking-datasets-to-expressions">
+<h2>Linking datasets to expressions<a class="headerlink" href="#linking-datasets-to-expressions" title="Link to this heading">¶</a></h2>
 <p>A particularly useful feature is to be able to link a dataset to an
 expression, so if the expression changes the dataset changes with it,
 like in a spreadsheet.</p>
-</div>
-<div class="section" id="splitting-data">
-<h2>Splitting data<a class="headerlink" href="#splitting-data" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="splitting-data">
+<h2>Splitting data<a class="headerlink" href="#splitting-data" title="Link to this heading">¶</a></h2>
 <p>Data can also be chopped in this method, for example using the
 expression <strong class="command">x[10:20]</strong>, which makes a dataset based on the
 11th to 20th item in the x dataset (the ranges are Python syntax, and
 are zero-based). Negative indices count backwards from the end of the
 dataset. Data can be skipped using expressions such as
 <strong class="command">data[::2]</strong>, which skips every other element</p>
-</div>
-<div class="section" id="defining-new-constants-or-functions">
-<h2>Defining new constants or functions<a class="headerlink" href="#defining-new-constants-or-functions" title="Permalink to this headline">¶</a></h2>
-<p>User defined constants or functions can be defined in the &#8220;Custom
-definitions&#8221; dialog box under the edit menu. Functions can also be
+</section>
+<section id="defining-new-constants-or-functions">
+<h2>Defining new constants or functions<a class="headerlink" href="#defining-new-constants-or-functions" title="Link to this heading">¶</a></h2>
+<p>User defined constants or functions can be defined in the “Custom
+definitions” dialog box under the edit menu. Functions can also be
 imported from external python modules.</p>
 <img alt="o_images/customdefinition.png" src="o_images/customdefinition.png" />
 <p>Custom definitions are defined on a per-document basis, but can be
 saved or loaded into a file. A default custom definitions file can be
 set in the preferences dialog box.</p>
-</div>
-<div class="section" id="dataset-plugins">
-<h2>Dataset plugins<a class="headerlink" href="#dataset-plugins" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="dataset-plugins">
+<h2>Dataset plugins<a class="headerlink" href="#dataset-plugins" title="Link to this heading">¶</a></h2>
 <p>In addition to creating datasets based on expressions, a variety of
 dataset plugins exist, which make certain operations on datasets much
 more convenient. See the Data, Operations menu for a list of the
 default plugins. The user can easily create new plugins. See
 <a class="reference external" href="https://github.com/veusz/veusz/wiki/DatasetPlugins">https://github.com/veusz/veusz/wiki/DatasetPlugins</a> for details.</p>
-</div>
-</div>
-<div class="section" id="capturing-data">
-<h1>Capturing data<a class="headerlink" href="#capturing-data" title="Permalink to this headline">¶</a></h1>
+</section>
+</section>
+<section id="capturing-data">
+<h1>Capturing data<a class="headerlink" href="#capturing-data" title="Link to this heading">¶</a></h1>
 <p>In addition to the standard data import, data can be captured as it is
 created from an external program, a network socket or a file or named
 pipe. When capturing from a file, the behaviour is like the Unix
@@ -546,49 +559,63 @@ expired. Normally the data are updated in Veusz when the capturing is
 finished. There is an option to update the document at intervals,
 which is useful for monitoring.  A plot using the variables will
 update when the data are updated.</p>
-<p>Click the <code class="docutils literal"><span class="pre">Capture</span></code> button to start the capture. Click <code class="docutils literal"><span class="pre">Finish</span></code> or
-<code class="docutils literal"><span class="pre">Cancel</span></code> to stop. Cancelling destroys captured data.</p>
-</div>
+<p>Click the <code class="docutils literal notranslate"><span class="pre">Capture</span></code> button to start the capture. Click <code class="docutils literal notranslate"><span class="pre">Finish</span></code> or
+<code class="docutils literal notranslate"><span class="pre">Cancel</span></code> to stop. Cancelling destroys captured data.</p>
+</section>
 
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Reading data</a><ul>
-<li><a class="reference internal" href="#standard-text-import">Standard text import</a><ul>
-<li><a class="reference internal" href="#data-types-in-text-import">Data types in text import</a></li>
-<li><a class="reference internal" href="#descriptors">Descriptors</a></li>
-<li><a class="reference internal" href="#descriptor-examples">Descriptor examples</a></li>
+<h1 class="logo"><a href="index.html">Veusz</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Reading data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#standard-text-import">Standard text import</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#data-types-in-text-import">Data types in text import</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#descriptors">Descriptors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#descriptor-examples">Descriptor examples</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#csv-files">CSV files</a></li>
-<li><a class="reference internal" href="#hdf5-files">HDF5 files</a><ul>
-<li><a class="reference internal" href="#error-bars">Error bars</a></li>
-<li><a class="reference internal" href="#slices">Slices</a></li>
-<li><a class="reference internal" href="#d-data-ranges">2D data ranges</a></li>
-<li><a class="reference internal" href="#dates">Dates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#csv-files">CSV files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hdf5-files">HDF5 files</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#error-bars">Error bars</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#slices">Slices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#d-data-ranges">2D data ranges</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dates">Dates</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#d-text-or-csv-format">2D text or CSV format</a></li>
-<li><a class="reference internal" href="#fits-files">FITS files</a></li>
-<li><a class="reference internal" href="#reading-other-data-formats">Reading other data formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d-text-or-csv-format">2D text or CSV format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fits-files">FITS files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reading-other-data-formats">Reading other data formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reading-data-from-the-clipboard">Reading data from the clipboard</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#manipulating-datasets">Manipulating datasets</a><ul>
-<li><a class="reference internal" href="#using-dataset-plugins">Using dataset plugins</a></li>
-<li><a class="reference internal" href="#using-expressions-to-create-new-datasets">Using expressions to create new datasets</a></li>
-<li><a class="reference internal" href="#linking-datasets-to-expressions">Linking datasets to expressions</a></li>
-<li><a class="reference internal" href="#splitting-data">Splitting data</a></li>
-<li><a class="reference internal" href="#defining-new-constants-or-functions">Defining new constants or functions</a></li>
-<li><a class="reference internal" href="#dataset-plugins">Dataset plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#manipulating-datasets">Manipulating datasets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-dataset-plugins">Using dataset plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-expressions-to-create-new-datasets">Using expressions to create new datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#linking-datasets-to-expressions">Linking datasets to expressions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#splitting-data">Splitting data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#defining-new-constants-or-functions">Defining new constants or functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dataset-plugins">Dataset plugins</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#capturing-data">Capturing data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#capturing-data">Capturing data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Veusz command line and embedding interface (API)</a></li>
 </ul>
+
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
@@ -598,33 +625,34 @@ update when the data are updated.</p>
   </ul></li>
 </ul>
 </div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="o_sources/datasets.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
     </form>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2003-2018, Jeremy Sanders.
+      &copy;2003-2021, Jeremy Sanders.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="o_sources/datasets.rst.txt"

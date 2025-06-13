@@ -1,50 +1,39 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" data-content_root="./">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Veusz documentation &#8212; Veusz 3.0 documentation</title>
-    
-    <link rel="stylesheet" href="o_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="o_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '3.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
-    <script type="text/javascript" src="o_static/jquery.js"></script>
-    <script type="text/javascript" src="o_static/underscore.js"></script>
-    <script type="text/javascript" src="o_static/doctools.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Veusz documentation &#8212; Veusz 4.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="o_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="o_static/alabaster.css?v=cb25574f" />
+    <script src="o_static/documentation_options.js?v=3b2dd2c4"></script>
+    <script src="o_static/doctools.js?v=888ff710"></script>
+    <script src="o_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Introduction" href="introduction.html" />
    
   <link rel="stylesheet" href="o_static/custom.css" type="text/css" />
   
+  
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
-  </head>
-  <body role="document">
+  </head><body>
   
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
-  <div class="section" id="veusz-documentation">
-<h1>Veusz documentation<a class="headerlink" href="#veusz-documentation" title="Permalink to this headline">¶</a></h1>
+  <section id="veusz-documentation">
+<h1>Veusz documentation<a class="headerlink" href="#veusz-documentation" title="Link to this heading">¶</a></h1>
 <p>Jeremy Sanders</p>
-<p>Copyright 2018</p>
+<p>Copyright 2025</p>
 <p>This document is licensed under the GNU General Public
 License, version 2 or greater. Please see the file COPYING for
 details, or see <a class="reference external" href="http://www.gnu.org/licenses/gpl-2.0.html">http://www.gnu.org/licenses/gpl-2.0.html</a>.</p>
@@ -90,6 +79,7 @@ scientific plotting package with a graphical user interface.</p>
 <li class="toctree-l2"><a class="reference internal" href="datasets.html#d-text-or-csv-format">2D text or CSV format</a></li>
 <li class="toctree-l2"><a class="reference internal" href="datasets.html#fits-files">FITS files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="datasets.html#reading-other-data-formats">Reading other data formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datasets.html#reading-data-from-the-clipboard">Reading data from the clipboard</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="datasets.html#manipulating-datasets">Manipulating datasets</a><ul>
@@ -112,6 +102,7 @@ scientific plotting package with a graphical user interface.</p>
 <li class="toctree-l3"><a class="reference internal" href="api.html#clonewidget">CloneWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="api.html#close">Close</a></li>
 <li class="toctree-l3"><a class="reference internal" href="api.html#createhistogram">CreateHistogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#currentpath">CurrentPath</a></li>
 <li class="toctree-l3"><a class="reference internal" href="api.html#datasetplugin">DatasetPlugin</a></li>
 <li class="toctree-l3"><a class="reference internal" href="api.html#enabletoolbar">EnableToolbar</a></li>
 <li class="toctree-l3"><a class="reference internal" href="api.html#export">Export</a></li>
@@ -147,6 +138,7 @@ scientific plotting package with a graphical user interface.</p>
 <li class="toctree-l3"><a class="reference internal" href="api.html#save">Save</a></li>
 <li class="toctree-l3"><a class="reference internal" href="api.html#set">Set</a></li>
 <li class="toctree-l3"><a class="reference internal" href="api.html#setantialiasing">SetAntiAliasing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#setcompatlevel">SetCompatLevel</a></li>
 <li class="toctree-l3"><a class="reference internal" href="api.html#setdata">SetData</a></li>
 <li class="toctree-l3"><a class="reference internal" href="api.html#setdataexpression">SetDataExpression</a></li>
 <li class="toctree-l3"><a class="reference internal" href="api.html#setdatand">SetDataND</a></li>
@@ -180,27 +172,41 @@ scientific plotting package with a graphical user interface.</p>
 </li>
 </ul>
 </div>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading">¶</a></h1>
 <ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
-<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
 </ul>
-</div>
+</section>
 
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="#">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Veusz documentation</a></li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+<h1 class="logo"><a href="#">Veusz</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datasets.html">Reading data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datasets.html#manipulating-datasets">Manipulating datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datasets.html#capturing-data">Capturing data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Veusz command line and embedding interface (API)</a></li>
 </ul>
+
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
@@ -209,33 +215,34 @@ scientific plotting package with a graphical user interface.</p>
   </ul></li>
 </ul>
 </div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="o_sources/index.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
     </form>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2003-2018, Jeremy Sanders.
+      &copy;2003-2021, Jeremy Sanders.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="o_sources/index.rst.txt"
